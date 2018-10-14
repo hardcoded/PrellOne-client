@@ -6,25 +6,14 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            boards: [
-                {title: "My Board 1"}, 
-                {title: "My Board 2"}, 
-                {title: "My Board 3"}, 
-                {title: "My Board 4"}, 
-                {title: "My Board 5"}
-            ]
+            boards: [{title: "MY board"}]
         }
     }
 
     // componentWillMount() {
     //     fetch(`/api/board/`)
-    //         .then(res => {
-    //             console.log(res);
-    //             res.json()
-    //         })
-    //         .then(data => {
-    //             this.setState({boards: data}); 
-    //             console.log(this.state);
+    //         .then(res => res.json())
+    //         .then(data => {this.setState({boards: data}); console.log(this.state);
     //         })
     // }
 
@@ -40,7 +29,7 @@ class Home extends Component {
                 </p>
             </Jumbotron>,
             <legend>Board titles loaded from the API : </legend>,
-            <ul> {this.state.boards.map((board, index) => <li id={index}>{board.title}</li>)} </ul>
+            <ul> {this.state.boards.map(b => <li>{b.title}</li>)} </ul>
         ]
     }
 }
