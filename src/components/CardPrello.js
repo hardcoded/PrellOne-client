@@ -8,21 +8,22 @@ class CardPrello extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: this.props.title,
-            text: this.props.text,
-            member: this.props.member,
-            due_date: this.props.due_date,
-            creation_date: this.props.creation_date
+            title: this.props.card.title,
+            text: this.props.card.text,
+            member: this.props.member||[],
+            due_date: this.props.due_date||null,
+            creation_date: this.props.creation_date||null
         };
       }
 
   render() {
+    console.log(this.props)
       return(
     <div>
-      <Card className="w-25 p-3" body inverse color="info" top width="100%">
+      <Card body outline color="secondary">
         <CardBody>
-          <CardTitle>Test {this.props.title}</CardTitle>
-          <CardText>Do the JUnit tests{this.props.text}</CardText>
+          <CardTitle>{this.state.title}</CardTitle>
+          <CardText>{this.state.text}</CardText>
           <Button>Add Comment</Button>
         </CardBody>
       </Card>

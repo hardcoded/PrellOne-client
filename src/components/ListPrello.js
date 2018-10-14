@@ -4,23 +4,27 @@ import { Card, Button, CardTitle, CardText } from 'reactstrap';
 import CardPrello from './CardPrello'
 
 class ListPrello extends Component {
+
+  
     constructor(props) {
+      console.log(props.list)
       super(props);
       this.state = {
         cards:this.props.cards ||[],
-        title :this.props.title,
-        numberCards:this.props.numberCards
+        title :this.props.list,
+        numberCards:this.props.numberCards||0
       };
     }
 
 render() {
+  const cardItems=[{title:"Task1",text:"BBBBBdezdedez"},{title:"Task2",text:"BBBBBdezdedededez"}]
   return (
     <div>
       <Card body outline color="secondary">
-        <CardTitle>{this.props.title} {this.props.numberCards}</CardTitle>
+        <CardTitle>{this.state.title }</CardTitle>
         <ul>            
-        {this.state.cards.map(element => (
-            <li><CardPrello card={element}>
+        {cardItems.map(element => (
+            <li><CardPrello key={element.title} card={element}>
             </CardPrello></li>
                 
             ))
