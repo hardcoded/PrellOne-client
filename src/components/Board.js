@@ -4,18 +4,18 @@ import { Row, Col } from 'reactstrap'
 
 class Board extends Component {
   render() {
-    const list=["Todo","In progress","Done"]
+    const list=["Todo","In progress","Done", "Done","Done"]
     return  [
               <Row>
                 <Col>
                   <h1>Board</h1>
                 </Col>
               </Row>,
-              <Row>
+              <Row className="scrolling-wrapper-flexbox">              
                 {list.map(element => (
-                  <Col xs="auto" md="6" lg="6" xl="4">
+                    <Col className="list" lg="4">
                       <ListPrello key={element} list={element}></ListPrello>
-                  </Col>
+                    </Col>
                   )
                 )}
               </Row>
