@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap'
 
 class Board extends Component {
   render() {
-    const lists=["Todo","In progress","Done"]
+    const list=["Todo","In progress","Done", "Done","Done"]
     return  [
               <Row>
                 <Col>
