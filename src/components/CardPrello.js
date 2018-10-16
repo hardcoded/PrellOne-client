@@ -35,7 +35,7 @@ class CardPrello extends Component {
           {this.state.text}
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={this.toggle}>Cancel</Button>
+          <Button color="secondary" onClick={this.toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
       <Card outline className="mb-1" color="secondary" onClick={this.toggle}>

@@ -20,14 +20,14 @@ render() {
   const cardItems=[{title:"Task1",text:"BBBBBdezdedez"},{title:"Task2",text:"BBBBBdezdedededez"}]
   return (
     <div>
-      <Card className="bg-light mb-3">
+      <Card className="bg-light mb-3" tag="div">
         <CardHeader>
           {this.state.title } <Badge  color = "primary" className="float-right">{cardItems.length}</Badge> 
         </CardHeader>
         <CardBody>
-          <CardText>
-          { cardItems.map(element => (
-              <CardPrello key={element.title} card={element}></CardPrello>
+          <CardText tag="div">
+          { cardItems.map((element)=> (
+              <CardPrello key={element.title} card={element} ></CardPrello>
             )
           )}
           </CardText>

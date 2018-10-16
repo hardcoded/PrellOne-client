@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap'
 
 class Board extends Component {
   render() {
-    const list=["Todo","In progress","Done"]
+    const lists=["Todo","In progress","Done"]
     return  [
               <Row>
                 <Col>
@@ -12,9 +12,9 @@ class Board extends Component {
                 </Col>
               </Row>,
               <Row>
-                {list.map(element => (
-                  <Col xs="auto" md="6" lg="6" xl="4">
-                      <ListPrello key={element} list={element}></ListPrello>
+                {lists.map((element, index) => (
+                  <Col xs="auto" md="6" lg="6" xl="4"  key={index} >
+                      <ListPrello list={element}></ListPrello>
                   </Col>
                   )
                 )}
