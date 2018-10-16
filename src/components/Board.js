@@ -12,7 +12,7 @@ class Board extends Component {
                 </Col>
               </Row>,
               <Row>
-                {lists.map((element, index) => (
+                {list.map((element, index) => (
                   <Col xs="auto" md="6" lg="6" xl="4"  key={index} >
                       <ListPrello list={element}></ListPrello>
                   </Col>
