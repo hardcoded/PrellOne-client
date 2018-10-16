@@ -29,7 +29,7 @@ class AppNav extends Component {
   }
   render() {
     return (
-        <Navbar color="light" light expand="md">
+        <Navbar className="navbar-dark bg-primary" expand="md">
           <Link className="navbar-brand" to="/">Prello</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

@@ -20,11 +20,9 @@ class CardPrello extends Component {
     console.log(this.props)
       return(
     <div>
-      <Card body outline color="secondary">
+      <Card outline className="mb-1" color="secondary">
         <CardBody>
           <CardTitle>{this.state.title}</CardTitle>
-          <CardText>{this.state.text}</CardText>
-          <Button>Add Comment</Button>
         </CardBody>
       </Card>
     </div>);

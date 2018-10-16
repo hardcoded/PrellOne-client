@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Card, Button, CardTitle, CardBody, CardFooter, CardText, Badge } from 'reactstrap';
+import { Card, Button, CardHeader, CardBody, CardFooter, CardText, Badge } from 'reactstrap';
 import CardPrello from './CardPrello'
 
 class ListPrello extends Component {
@@ -20,10 +20,10 @@ render() {
   const cardItems=[{title:"Task1",text:"BBBBBdezdedez"},{title:"Task2",text:"BBBBBdezdedededez"}]
   return (
     <div>
-      <Card body outline color="secondary">
-        <CardTitle>
-          {this.state.title } <Badge color="secondary" className="float-right">{cardItems.length}</Badge> 
-        </CardTitle>
+      <Card className="bg-light mb-3">
+        <CardHeader>
+          {this.state.title } <Badge  color = "primary" className="float-right">{cardItems.length}</Badge> 
+        </CardHeader>
         <CardBody>
           <CardText>
           { cardItems.map(element => (
