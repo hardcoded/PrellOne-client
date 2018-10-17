@@ -5,39 +5,27 @@ import CardPrello from './CardPrello'
 
 class ListPrello extends Component {
 
-  
-    constructor(props) {
-      console.log(props.list)
-      super(props);
-      this.state = {
-        cards:this.props.cards ||[],
-        title :this.props.list,
-        numberCards:this.props.numberCards||0
-      };
-    }
 
-render() {
-  const cardItems=[{title:"Task1",text:"BBBBBdezdedez"},{title:"Task2",text:"BBBBBdezdedededez"}]
-  return (
-    <div>
+  render() {
+    
+    return (
       <Card className="bg-light mb-3" tag="div">
         <CardHeader>
-          {this.state.title } <Badge  color = "primary" className="float-right">{cardItems.length}</Badge> 
+          {this.props.list.title } <Badge  color = "primary" className="float-right">{this.props.cards.length}</Badge> 
         </CardHeader>
         <CardBody>
           <CardText tag="div">
-          { cardItems.map((element)=> (
-              <CardPrello key={element.title} card={element} ></CardPrello>
-            )
-          )}
+          {this.props.cards.map(card => 
+            <CardPrello key={card.id} card={card} ></CardPrello>
+            )}
           </CardText>
         </CardBody>
         <CardFooter>
           <Button outline color="primary" block>Add card</Button>
         </CardFooter>
       </Card>
-    </div> );
-    }
+    )
+  }
 }
 
 export default ListPrello;

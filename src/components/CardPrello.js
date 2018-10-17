@@ -8,14 +8,7 @@ class CardPrello extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            title: this.props.card.title,
-            text: this.props.card.text,
-            member: this.props.member||[],
-            due_date: this.props.due_date||null,
-            creation_date: this.props.creation_date||null,
-            modal: false
-        };
+        this.state = props.card
         this.toggle = this.toggle.bind(this);
       }
 
