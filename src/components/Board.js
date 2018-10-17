@@ -1,28 +1,110 @@
 import React, { Component } from 'react'
 import ListPrello from './ListPrello'
-import { Row, Col } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
+import { DragDropContext } from 'react-beautiful-dnd'
 import demoData from './demo-data'
 
 class Board extends Component {
-  state = demoData
+  constructor(props){
+    super(props)
+    this.state = demoData
+  }
+  
+
+  onDragEnd = result => {
+    const {destination, source, draggableId} = result
+
+    // Do nothing if there is no destination
+    if (!destination) {
+      return
+    }
+
+    // Do nothing if draggable didn't change position
+    if (
+      destination.droppableId === source.draggableId &&
+      destination.index === source.index
+    ) {
+      return
+    }
+
+    const startList = this.state.lists[source.droppableId]
+    const finishList = this.state.lists[destination.droppableId]
+    const newCardIds = Array.from(startList.cardIds)
+    
+    // Dragging inside same list
+    if (startList === finishList){
+      newCardIds.splice(source.index, 1) // remove dragged item from source
+      newCardIds.splice(destination.index, 0, draggableId) // insert added card id
+
+      const newList = {
+        ...startList,
+        cardIds: newCardIds
+      }
+
+      const newState = {
+        ...this.state,
+        lists: {
+          ...this.state.lists,
+          [newList.id]: newList
+        }
+      }
+
+      this.setState(newState)
+      return
+    }
+    
+    // Moving from one list to another
+    const startCardIds = Array.from(startList.cardIds)
+    startCardIds.splice(source.index, 1)
+    const newStartList = {
+      ...startList,
+      cardIds: startCardIds
+    }
+
+    const finishCardIds = Array.from(finishList.cardIds)
+    finishCardIds.splice(destination.index, 0, draggableId)
+    const newFinishList = {
+      ...finishList,
+      cardIds: finishCardIds
+    }
+
+    const newState = {
+      ...this.state,
+      lists: {
+        ...this.state.lists,
+        [newStartList.id]: newStartList,
+        [newFinishList.id]: newFinishList,
+      }
+    }
+
+    this.setState(newState)
+    return
+  }
+
   render() {
     return  [
-              <Row>
-                <Col>
-                  <h1>Board</h1>
-                </Col>
-              </Row>,
-              <Row  className="scrolling-wrapper-flexbox">
-              {this.state.listOrder.map((listId) => {
-                const list = this.state.lists[listId];
-                const cards = list.cardIds.map(taskId => this.state.cards[taskId]);
-                return (
-                  <Col className="list" md="5" lg="4" >
-                    <ListPrello key={list.id} list={list} cards={cards}></ListPrello>
-                  </Col>
-                )
-              })}
-              </Row>
+              <header>
+                <Container>
+                    <h1>Board</h1>
+                </Container>
+              </header>,
+              <section>
+                <Container>
+                  <Row className="scrolling-wrapper-flexbox">
+                      <DragDropContext onDragEnd={this.onDragEnd}>
+                      {this.state.listOrder.map((listId) => {
+                        const list = this.state.lists[listId];
+                        const cards = list.cardIds.map(taskId => this.state.cards[taskId]);
+                        return (
+                          <Col className="list" md="5" lg="4" >
+                            <ListPrello key={list.id} list={list} cards={cards}></ListPrello>
+                          </Col>
+                        )
+                      })}
+                      </DragDropContext>
+                  </Row>
+                </Container>
+              </section>
             ]
   }
 }

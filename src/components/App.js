@@ -10,14 +10,12 @@ class App extends Component {
     render(){
         return [
             <AppNav />,
-            <div className="container">
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/board' component={Board}/>
                     <Route path='/card' component={CardPrello}/>
                     <Route path='/list' component={ListPrello}/>
                 </Switch>
-            </div>
         ]
     }
 }
