@@ -118,12 +118,12 @@ class Board extends Component {
   render() {
     return  [
               <header>
-                <Container>
+                <Container style={{maxWidth:"100%"}}>
                     <h1>Board</h1>
                 </Container>
               </header>,
               <section>
-                <Container>
+                <Container style={{maxWidth:"100%"}}>
                   <Row className="scrolling-wrapper-flexbox">
                       <DragDropContext onDragEnd={this.onDragEnd}>
                       {this.state.listOrder.map((listId) => {
@@ -131,12 +131,12 @@ class Board extends Component {
                         const cards = list.cardIds.map(taskId => this.state.cards[taskId]);
                         const labels = this.state.labels;
                         return (
-                          <Col className="list" md="5" lg="4">
+                          <Col className="list" xs="12" sm="12" md="6" lg="3">
                             <ListPrello key={list.id} labels={labels} cards={cards} list={list}></ListPrello>
                           </Col>
                         )
                       })}
-                      <Col  md="5" lg="4">
+                      <Col  md="2" lg="3">
                       {!this.state.isHidden && 
                       <Input className="mb-2" name="newListTitle" id="newListTitle" placeholder="type the list title"  value={this.state.newListTitle} onChange={this.handleChange}/>}
                       {!this.state.isHidden && 
