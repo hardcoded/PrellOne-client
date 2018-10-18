@@ -19,7 +19,8 @@ class Board extends Component {
 
   toggleHidden () {
     this.setState({
-      isHidden: !this.state.isHidden
+      isHidden: !this.state.isHidden,
+      newListTitle : ''
     })
   }
 
@@ -38,7 +39,8 @@ class Board extends Component {
     const newListOrder = this.state.listOrder
     newListOrder.push(newList.id)
     this.setState({
-      lists: newLists
+      lists: newLists,
+      newListTitle : ''
     })
     this.toggleHidden()
   }
