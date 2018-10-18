@@ -2,8 +2,8 @@ const demoData = {
     cards: {
         'task1': {
             id: 'task1', 
-            title:'Have a pillowfight',
-            description: '',
+            title:'Make the report',
+            description: 'You need to make the report in English',
             members: [],
             labels: ['label1','label2'],
             due_date: null,
@@ -11,8 +11,8 @@ const demoData = {
         },
         'task2': {
             id: 'task2', 
-            title:'“Meow” on each received mail.',
-            description: '',
+            title:'Make the presentation',
+            description: 'You need to make the presentation in English',
             members: [],
             labels: ['label1','label2'],
             due_date: null,
@@ -20,8 +20,8 @@ const demoData = {
         },
         'task3': {
             id: 'task3', 
-            title:'Prank a stranger',
-            description: '',
+            title:'Add a list on board',
+            description: 'You need to add a list on board with a button. The button stays in the right of the board.',
             members: [],
             labels: ['label1','label2'],
             due_date: null,
@@ -29,7 +29,7 @@ const demoData = {
         },
         'task4': {
             id: 'task4', 
-            title:'Hide from professor',
+            title:'Add a card on list',
             description: '',
             members: [],
             labels: ['label4','label2','label1'],
@@ -38,7 +38,7 @@ const demoData = {
         },
         'task5': {
             id: 'task5', 
-            title:'Throw water balloons on strangers',
+            title:'Make the tests',
             description: '',
             members: [],
             labels: [],
@@ -47,7 +47,7 @@ const demoData = {
         },
         'task6': {
             id: 'task6', 
-            title:'Dress up like a Bruce Lee',
+            title:'Read the documentation',
             description: '',
             members: [],
             labels: ['label1'],
@@ -56,7 +56,7 @@ const demoData = {
         },
         'task7': {
             id: 'task7', 
-            title:'Act like a dead person',
+            title:'Read the courses',
             description: '',
             members: [],
             labels: ['label1','label3'],
