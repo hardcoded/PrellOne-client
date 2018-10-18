@@ -135,11 +135,11 @@ class Board extends Component {
                       })}
                       <Col  md="5" lg="4">
                       {!this.state.isHidden && 
-                      <Input name="newListTitle" id="newListTitle" placeholder="saisissez le titre de la liste"  value={this.state.newListTitle} onChange={this.handleChange}/>}
+                      <Input name="newListTitle" id="newListTitle" placeholder="type the list title"  value={this.state.newListTitle} onChange={this.handleChange}/>}
                       {!this.state.isHidden && 
-                      <Button outline color="primary" block onClick={this.handleSubmit}>Add</Button>}
+                      <Button outline color="primary" block onClick={this.handleSubmit}>Add a list</Button>}
                       {this.state.isHidden && 
-                      <Button outline color="primary" block onClick={(e) => this.toggleHidden()}>Add list</Button>}
+                      <Button outline color="primary" block onClick={(e) => this.toggleHidden()}>Add another list</Button>}
                       </Col>
                       </DragDropContext>
                   </Row>
