@@ -19,7 +19,6 @@ class CardPrello extends Component {
       }
 
   render() {
-    console.log(this.props)
       return(
     <div>
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
