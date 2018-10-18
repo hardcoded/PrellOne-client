@@ -6,7 +6,9 @@ class CardPrello extends Component {
 
     constructor(props) {
         super(props);
-        this.state = props.card
+        this.state = {
+          modal: false
+        }
         this.toggle = this.toggle.bind(this);
       }
 
@@ -21,15 +23,15 @@ class CardPrello extends Component {
       return(
     <div>
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-        <ModalHeader toggle={this.toggle}>{this.state.title}</ModalHeader>
+        <ModalHeader toggle={this.toggle}>{this.props.card.title}</ModalHeader>
         <ModalBody>
-          {this.state.text}
+          {this.props.card.description}
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={this.toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
-      <Draggable draggableId={this.state.id} index={this.props.index}>
+      <Draggable draggableId={this.props.card.id} index={this.props.index}>
         {(provided) => (
           <div 
             ref={provided.innerRef}
@@ -38,7 +40,7 @@ class CardPrello extends Component {
             >
             <Card outline className="mb-1" color="secondary" onClick={this.toggle}>
               <CardBody>
-                <CardTitle>{this.state.title}</CardTitle>
+                <CardTitle>{this.props.card.title}</CardTitle>
               </CardBody>
             </Card>
           </div>

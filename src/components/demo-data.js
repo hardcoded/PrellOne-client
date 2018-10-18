@@ -6,8 +6,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task2': {
             id: 'task2', 
@@ -15,8 +14,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task3': {
             id: 'task3', 
@@ -24,8 +22,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task4': {
             id: 'task4', 
@@ -33,8 +30,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task5': {
             id: 'task5', 
@@ -42,8 +38,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task6': {
             id: 'task6', 
@@ -51,8 +46,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         },
         'task7': {
             id: 'task7', 
@@ -60,8 +54,7 @@ const demoData = {
             description: '',
             members: [],
             due_date: null,
-            creation_date: null,
-            modal: false
+            creation_date: null
         }
     },
     lists: {
