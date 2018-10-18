@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardTitle, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import { Card, CardBody, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row} from 'reactstrap';
 import { Draggable } from 'react-beautiful-dnd';
+import Label from './Label'
 
 class CardPrello extends Component {
 
@@ -19,7 +20,6 @@ class CardPrello extends Component {
       }
 
   render() {
-    console.log(this.props)
       return(
     <div>
       <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
@@ -39,8 +39,15 @@ class CardPrello extends Component {
             {...provided.dragHandleProps}
             >
             <Card outline className="mb-1" color="secondary" onClick={this.toggle}>
-              <CardBody>
-                <CardTitle>{this.props.card.title}</CardTitle>
+              <CardBody className="p-2">
+                <CardText className="container">
+                  <Row>
+                    {this.props.labels.map(label => <Label label={label}></Label> )}
+                  </Row>
+                  <Row>
+                    {this.props.card.title}
+                  </Row>
+                </CardText>
               </CardBody>
             </Card>
           </div>

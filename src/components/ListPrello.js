@@ -19,9 +19,10 @@ class ListPrello extends Component {
               className="card-body"
               style={{flexGrow: 1, minHeight:'50px'}}
               >
-              {this.props.cards.map((card, index) => 
-                <CardPrello key={card.id} card={card} index={index}></CardPrello>
-              )}
+              {this.props.cards.map((card, index) => {
+                const labels = card.labels.map(labelId => this.props.labels[labelId]) 
+                return <CardPrello key={card.id} labels={labels} card={card} index={index}></CardPrello>
+              })}
               {provided.placeholder}
             </div>
           )}

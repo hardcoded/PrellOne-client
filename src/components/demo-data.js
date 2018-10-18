@@ -5,6 +5,7 @@ const demoData = {
             title:'Have a pillowfight',
             description: '',
             members: [],
+            labels: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
@@ -13,6 +14,7 @@ const demoData = {
             title:'“Meow” on each received mail.',
             description: '',
             members: [],
+            labels: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
@@ -21,6 +23,7 @@ const demoData = {
             title:'Prank a stranger',
             description: '',
             members: [],
+            labels: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
@@ -29,6 +32,7 @@ const demoData = {
             title:'Hide from professor',
             description: '',
             members: [],
+            labels: ['label4','label2','label1'],
             due_date: null,
             creation_date: null
         },
@@ -37,6 +41,7 @@ const demoData = {
             title:'Throw water balloons on strangers',
             description: '',
             members: [],
+            labels: [],
             due_date: null,
             creation_date: null
         },
@@ -45,6 +50,7 @@ const demoData = {
             title:'Dress up like a Bruce Lee',
             description: '',
             members: [],
+            labels: ['label1'],
             due_date: null,
             creation_date: null
         },
@@ -53,6 +59,7 @@ const demoData = {
             title:'Act like a dead person',
             description: '',
             members: [],
+            labels: ['label1','label3'],
             due_date: null,
             creation_date: null
         }
@@ -72,6 +79,28 @@ const demoData = {
             id: 'list3',
             title:'Done',
             cardIds: ['task5', 'task6', 'task7']
+        }
+    },
+    labels: {
+        'label1': {
+            id: 'label1',
+            title: 'Optional',
+            color: 'primary'
+        },
+        'label2': {
+            id: 'label2',
+            title: 'Low',
+            color: 'success'
+        },
+        'label3': {
+            id: 'label3',
+            title: 'Urgent',
+            color: 'danger'
+        },
+        'label4': {
+            id: 'label4',
+            title: 'Important',
+            color: 'warning'
         }
     },
     listOrder: ['list1','list2','list3']

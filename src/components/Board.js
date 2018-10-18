@@ -95,9 +95,10 @@ class Board extends Component {
                       {this.state.listOrder.map((listId) => {
                         const list = this.state.lists[listId];
                         const cards = list.cardIds.map(taskId => this.state.cards[taskId]);
+                        const labels = this.state.labels;
                         return (
-                          <Col className="list" md="5" lg="4" >
-                            <ListPrello key={list.id} list={list} cards={cards}></ListPrello>
+                          <Col className="list" md="5" lg="4">
+                            <ListPrello key={list.id} labels={labels} cards={cards} list={list}></ListPrello>
                           </Col>
                         )
                       })}
