@@ -1,15 +1,47 @@
 import React, { Component } from 'react'
 import ListPrello from './ListPrello'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col, Button , Input} from 'reactstrap'
 import { DragDropContext } from 'react-beautiful-dnd'
 import demoData from './demo-data'
 
 class Board extends Component {
   constructor(props){
     super(props)
-    this.state = demoData
+    this.state = {
+      ...demoData, 
+      newListTitle : '',
+      isHidden: true
+    }
+    this.toggleHidden = this.toggleHidden.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
-  
+
+  toggleHidden () {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+  handleChange (event) {
+    this.setState({newListTitle: event.target.value})
+  }
+
+  handleSubmit = () => {
+    const newList = {
+      id: 'list4',
+      title: this.state.newListTitle,
+      cardIds: []
+    }
+    const newLists = this.state.lists
+    newLists[newList.id] = newList
+    const newListOrder = this.state.listOrder
+    newListOrder.push(newList.id)
+    this.setState({
+      lists: newLists
+    })
+    this.toggleHidden()
+  }
 
   onDragEnd = result => {
     const {destination, source, draggableId} = result
@@ -102,12 +134,29 @@ class Board extends Component {
                           </Col>
                         )
                       })}
+                      <Col  md="5" lg="4">
+                      {!this.state.isHidden && 
+                      <Input className="mb-2" name="newListTitle" id="newListTitle" placeholder="type the list title"  value={this.state.newListTitle} onChange={this.handleChange}/>}
+                      {!this.state.isHidden && 
+                      <Row>
+                        <Col>
+                          <Button color="success" block onClick={this.handleSubmit}>Add a list</Button>
+                        </Col>
+                        <Col>
+                          <Button color="danger" block  onClick={(e) => this.toggleHidden()}>Cancel</Button>
+                        </Col>
+                      </Row>}
+                      {this.state.isHidden && 
+                      <Button outline color="primary" block onClick={(e) => this.toggleHidden()}>Add another list</Button>}
+                      </Col>
                       </DragDropContext>
                   </Row>
                 </Container>
               </section>
             ]
   }
+
 }
 
+  
 export default Board
