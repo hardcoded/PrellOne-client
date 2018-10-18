@@ -40,7 +40,7 @@ class Board extends Component {
     this.setState({
       lists: newLists
     })
-    console.log(this.state)
+    this.toggleHidden()
   }
 
   onDragEnd = result => {
