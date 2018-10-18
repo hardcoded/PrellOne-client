@@ -45,9 +45,11 @@ class ListPrello extends Component {
 
     this.setState({
       cards: newCards,
-      list: newList
+      list: newList,
+      newCardTitle: ''
     })
     this.toggleHidden()
+  
   }
 
   render() {
