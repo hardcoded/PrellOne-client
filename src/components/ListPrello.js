@@ -13,6 +13,7 @@ class ListPrello extends Component {
       newCardTitle : '',
       isHidden: true
     }
+    
     this.toggleHidden = this.toggleHidden.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -34,6 +35,7 @@ class ListPrello extends Component {
       title: this.state.newCardTitle,
       description: '',
       members: [],
+      labels: [],
       due_date: null,
       creation_date: null
     }
@@ -66,8 +68,8 @@ class ListPrello extends Component {
               className="card-body"
               style={{flexGrow: 1, minHeight:'50px'}}
               >
-              {this.props.cards.map((card, index) => {
-                const labels = card.labels.map(labelId => this.props.labels[labelId]) 
+              {this.state.cards.map((card, index) => {
+                const labels = card.labels.map(labelId => this.state.labels[labelId]) 
                 return <CardPrello key={card.id} labels={labels} card={card} index={index}></CardPrello>
               })}
               {provided.placeholder}
