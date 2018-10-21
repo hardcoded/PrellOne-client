@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import reducerCard from './reducer.card'
+import reducerCard from './card.reducer'
 
 export default combineReducers({
     reducerCard

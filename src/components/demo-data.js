@@ -68,17 +68,20 @@ const demoData = {
         'list1': {
             id: 'list1',
             title:'Todo',
-            cardIds: ['task1', 'task2']
+            cardIds: ['task1', 'task2'],
+            toggleAddCard: false
         },
         'list2': {
             id: 'list2',
             title:'In progress',
-            cardIds: ['task3', 'task4']
+            cardIds: ['task3', 'task4'],
+            toggleAddCard: false
         },
         'list3': {
             id: 'list3',
             title:'Done',
-            cardIds: ['task5', 'task6', 'task7']
+            cardIds: ['task5', 'task6', 'task7'],
+            toggleAddCard: false
         }
     },
     labels: {

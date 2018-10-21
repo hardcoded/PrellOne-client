@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Badge } from 'reactstrap';
 
-class Label extends Component {
-  render() {
-    return <Badge className="mr-1" color={this.props.label.color} style={{minWidth:'5px'}}>{this.props.label.title}</Badge>
-  }
-}
+const Label = (title, color) => <Badge className="mr-1" color={color} style={{minWidth:'5px'}}>{title}</Badge>
+
 export default Label

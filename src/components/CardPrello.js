@@ -1,24 +1,24 @@
 import React from 'react';
-import { Card, CardBody, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Input} from 'reactstrap';
+import { Card, CardBody, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row} from 'reactstrap';
 import { Draggable } from 'react-beautiful-dnd';
 import Label from './Label'
 import PropTypes from  'prop-types'
 
-const CardPrello = ({id,title,desc,members,labels,toggle,modal })=>(
+const CardPrello = ({id,index,title,desc,members,labels,toggle,modal })=>(
   <div>
-  <Modal isOpen={modal} toggle={toggle} className={this.state.className}>
+  <Modal isOpen={modal} toggle={toggle}>
     <ModalHeader toggle={toggle}>{title}</ModalHeader>
     <ModalBody>
-      <h5>Description</h5>
-      <p>{desc}</p>
-      <h5>Members</h5>
-      <p>{members}</p>
+      <h5> Description </h5>
+      <p>{ desc }</p>
+      <h5> Members </h5>
+      <p>{ members }</p>
     </ModalBody>
     <ModalFooter>
       <Button color="secondary" onClick={toggle}>Cancel</Button>
     </ModalFooter>
   </Modal>
-  <Draggable draggableId={id} index={this.state.index}>
+  <Draggable draggableId={id} index={index}>
     {(provided) => (
       <div 
         ref={provided.innerRef}
@@ -29,7 +29,7 @@ const CardPrello = ({id,title,desc,members,labels,toggle,modal })=>(
           <CardBody className="p-2">
             <CardText className="container">
               <Row>
-                {labels.map(label => <Label label={label}></Label> )}
+                {labels.map(label => <Label {...label}></Label>)}
               </Row>
               <Row>
                 {title}
@@ -48,7 +48,7 @@ CardPrello.PropTypes={
   desc:PropTypes.string,
   members:PropTypes.arrayOf(PropTypes.string),
   labels:PropTypes.arrayOf(Label),
-  toggle:PropTypes.func.isRequiredl,
+  toggle:PropTypes.func.isRequired,
   modal:Modal
 }
 export default CardPrello
