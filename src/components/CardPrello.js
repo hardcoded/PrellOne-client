@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card, CardBody, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Input} from 'reactstrap';
 import { Draggable } from 'react-beautiful-dnd';
 import Label from './Label'
 import PropTypes from  'prop-types'
-import {addCard,updateDesc,addMember,removeMember,addLabel,removeLabel,changeToggle} from '../actions/action.card.js'
 
-const CardPrello = ({id,title,desc,members,labels,toogle,modal })=>(
+const CardPrello = ({id,title,desc,members,labels,toggle,modal })=>(
   <div>
   <Modal isOpen={modal} toggle={toggle} className={this.state.className}>
     <ModalHeader toggle={toggle}>{title}</ModalHeader>
@@ -16,7 +15,7 @@ const CardPrello = ({id,title,desc,members,labels,toogle,modal })=>(
       <p>{members}</p>
     </ModalBody>
     <ModalFooter>
-      <Button color="secondary" onClick={changeToggle}>Cancel</Button>
+      <Button color="secondary" onClick={toggle}>Cancel</Button>
     </ModalFooter>
   </Modal>
   <Draggable draggableId={id} index={this.state.index}>
@@ -26,7 +25,7 @@ const CardPrello = ({id,title,desc,members,labels,toogle,modal })=>(
         {...provided.draggableProps}
         {...provided.dragHandleProps}
         >
-        <Card outline className="mb-1" color="secondary" onClick={toogle}>
+        <Card outline className="mb-1" color="secondary" onClick={toggle}>
           <CardBody className="p-2">
             <CardText className="container">
               <Row>
@@ -45,11 +44,11 @@ const CardPrello = ({id,title,desc,members,labels,toogle,modal })=>(
 )
 
 CardPrello.PropTypes={
-  title:ProtoTypes.string.isRequired,
-  desc:ProtoTypes.string,
-  members:ProtoTypes.arrayOf(ProtoTypes.string),
-  labels:ProtoTypes.arrayOf(label),
-  toggle:ProtoTypes.bool,
+  title:PropTypes.string.isRequired,
+  desc:PropTypes.string,
+  members:PropTypes.arrayOf(PropTypes.string),
+  labels:PropTypes.arrayOf(Label),
+  toggle:PropTypes.func.isRequiredl,
   modal:Modal
 }
 export default CardPrello
