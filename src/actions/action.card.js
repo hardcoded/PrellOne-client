@@ -29,7 +29,7 @@ export const addLabel=(label,id)=>({
     id,
     label
 })
-export const removeMember=(indexLabel,id)=>({
+export const removeLabel=(indexLabel,id)=>({
     type: 'ADD_MEMBER',
     id,
     indexLabel

@@ -10,7 +10,7 @@ const reducerCard=(state,action)=>{
                 toogle:false
             }
 
-        case 'ADD_MEMBERS':
+        case 'ADD_MEMBER':
             if(state.id!=action.id){
                 return state;
             }
