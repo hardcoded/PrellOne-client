@@ -3,7 +3,7 @@ import { Button,Input, Row, Col } from 'reactstrap'
 import PropTypes from  'prop-types'
 
 
-const AddCard=(addCard, hide)=>{
+const AddCard=(newCardTitle,addCard, hide)=>{
     return(
         <div>
             <Input className="mb-2" name="newCardTitle" id="newCardTitle" placeholder="type the card title"  value={newCardTitle}/>
@@ -12,13 +12,14 @@ const AddCard=(addCard, hide)=>{
                     <Button outline color="primary" block onClick={addCard}>Add another card</Button>
                 </Col>
                 <Col>
-                    <Button color="danger" block  onClick={hide()}>Cancel</Button>
+                    <Button color="danger" block  onClick={hide}>Cancel</Button>
                 </Col>
             </Row>
         </div>
     )
 }
 AddCard.PropTypes={
+    newCardTitle:PropTypes.string,
     addCard:  PropTypes.func,
     hide:  PropTypes.func
   }
