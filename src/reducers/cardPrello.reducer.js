@@ -1,4 +1,6 @@
-const card = (state = {}, action) => {
+import demoData from '../components/demo-data'
+
+const cardPrello = (state = demoData.cards, action) => {
     switch (action.type) {
         case 'ADD_CARD':
             return {
@@ -72,4 +74,4 @@ const card = (state = {}, action) => {
     }
 }
 
-export default card
+export default cardPrello

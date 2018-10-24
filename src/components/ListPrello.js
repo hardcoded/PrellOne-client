@@ -1,17 +1,15 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Card, Button, CardHeader, CardFooter, Badge } from 'reactstrap'
+import { Card, CardHeader, CardFooter, Badge } from 'reactstrap'
 import { Droppable } from 'react-beautiful-dnd'
-import CardPrello from './CardPrello'
-import AddCard from '../containers/addCard'
-import Label from './Label';
+import CardPrello from '../containers/CardPrello.container'
+import AddCard from '../containers/AddCard.container'
 
-const ListPrello = (id, title, cards, labels, toggleAddCard) => {
+const ListPrello = ({id, title, cardIds, toggleAddCard}) => {
   return (
     <Card className="bg-light mb-3" tag="div">
       <CardHeader>
-        {title} <Badge  color = "primary" className="float-right">{cards.length}</Badge> 
+        {title} <Badge  color = "primary" className="float-right">{cardIds.length}</Badge> 
       </CardHeader>
         <Droppable droppableId={id}>
         { (provided) => (
@@ -21,17 +19,15 @@ const ListPrello = (id, title, cards, labels, toggleAddCard) => {
             className="card-body"
             style={{flexGrow: 1, minHeight:'50px'}}
             >
-            {cards.map((card, index) => {
-              const labels = card.labels.map(labelId => labels[labelId]) 
-              return <CardPrello key={card.id} labels={labels} card={card} index={index}></CardPrello>
+            {cardIds.map((cardId) => {
+              return <CardPrello key={cardId} cardId={cardId}></CardPrello>
             })}
             {provided.placeholder}
-            <AddCard />
           </div>
         )}
         </Droppable>
       <CardFooter>
-        <Button outline color="primary" block onClick={(e) => this.toggleHidden()}>Add another card</Button>
+        <AddCard listId={id}></AddCard>
       </CardFooter>
     </Card>
   )
@@ -40,8 +36,7 @@ const ListPrello = (id, title, cards, labels, toggleAddCard) => {
 ListPrello.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  cards: PropTypes.arrayOf(CardPrello),
-  labels: PropTypes.arrayOf(Label),
+  cardIds: PropTypes.arrayOf(CardPrello).isRequired,
   toggleAddCard: PropTypes.func.isRequired
 }
 

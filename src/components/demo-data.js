@@ -2,64 +2,71 @@ const demoData = {
     cards: {
         'task1': {
             id: 'task1', 
+            index: 0,
             title:'Make the report',
             description: 'You need to make the report in English',
-            members: [],
-            labels: ['label1','label2'],
+            membersIds: [],
+            labelIds: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
         'task2': {
-            id: 'task2', 
+            id: 'task2',
+            index: 1, 
             title:'Make the presentation',
             description: 'You need to make the presentation in English',
-            members: [],
-            labels: ['label1','label2'],
+            membersIds: [],
+            labelIds: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
         'task3': {
-            id: 'task3', 
+            id: 'task3',
+            index: 0, 
             title:'Add a list on board',
             description: 'You need to add a list on board with a button. The button stays in the right of the board.',
             members: [],
-            labels: ['label1','label2'],
+            labelIds: ['label1','label2'],
             due_date: null,
             creation_date: null
         },
         'task4': {
-            id: 'task4', 
+            id: 'task4',
+            index: 1, 
             title:'Add a card on list',
             description: '',
-            members: [],
-            labels: ['label4','label2','label1'],
+            membersIds: [],
+            labelIds: ['label4','label2','label1'],
             due_date: null,
             creation_date: null
         },
         'task5': {
-            id: 'task5', 
+            id: 'task5',
+            index: 0, 
             title:'Make the tests',
             description: '',
-            members: [],
-            labels: [],
+            membersIds: [],
+            labelIds: [],
             due_date: null,
             creation_date: null
         },
         'task6': {
-            id: 'task6', 
+            id: 'task6',
+            index: 1, 
             title:'Read the documentation',
             description: '',
-            members: [],
-            labels: ['label1'],
+            membersIds: [],
+            labelIds: ['label1'],
             due_date: null,
             creation_date: null
         },
         'task7': {
-            id: 'task7', 
+            id: 'task7',
+            index: 2, 
             title:'Read the courses',
             description: '',
-            members: [],
-            labels: ['label1','label3'],
+            membersIds: [],
+            labelIds: ['label1','label3'],
             due_date: null,
             creation_date: null
         }
@@ -106,7 +113,10 @@ const demoData = {
             color: 'warning'
         }
     },
-    listOrder: ['list1','list2','list3']
+    board: {
+        title: 'First Board',
+        lists: ['list1','list2','list3']
+    }
 }
 
 export default demoData;

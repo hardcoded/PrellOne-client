@@ -1,23 +1,14 @@
 import React from 'react';
-import { Card, CardBody, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row} from 'reactstrap';
+import { Card, CardBody, CardText,Row } from 'reactstrap';
 import { Draggable } from 'react-beautiful-dnd';
-import Label from './Label'
+import Label from '../containers/Label.container'
+import ModalCard from '../containers/ModalCard.container'
 import PropTypes from  'prop-types'
 
-const CardPrello = ({id,index,title,desc,members,labels,toggle,modal })=>(
+const CardPrello = ({id, index, title, labelIds, toggleModal})=>{
+  return(
   <div>
-  <Modal isOpen={modal} toggle={toggle}>
-    <ModalHeader toggle={toggle}>{title}</ModalHeader>
-    <ModalBody>
-      <h5> Description </h5>
-      <p>{ desc }</p>
-      <h5> Members </h5>
-      <p>{ members }</p>
-    </ModalBody>
-    <ModalFooter>
-      <Button color="secondary" onClick={toggle}>Cancel</Button>
-    </ModalFooter>
-  </Modal>
+  <ModalCard cardId = {id}></ModalCard>
   <Draggable draggableId={id} index={index}>
     {(provided) => (
       <div 
@@ -25,11 +16,11 @@ const CardPrello = ({id,index,title,desc,members,labels,toggle,modal })=>(
         {...provided.draggableProps}
         {...provided.dragHandleProps}
         >
-        <Card outline className="mb-1" color="secondary" onClick={toggle}>
+        <Card outline className="mb-1" color="secondary" onClick={toggleModal}>
           <CardBody className="p-2">
             <CardText className="container">
               <Row>
-                {labels.map(label => <Label {...label}></Label>)}
+                {labelIds.map(labelId => <Label labelId={labelId}></Label>)}
               </Row>
               <Row>
                 {title}
@@ -41,14 +32,14 @@ const CardPrello = ({id,index,title,desc,members,labels,toggle,modal })=>(
     )}
   </Draggable>
 </div>
-)
+  )
+}
 
 CardPrello.PropTypes={
-  title:PropTypes.string.isRequired,
-  desc:PropTypes.string,
-  members:PropTypes.arrayOf(PropTypes.string),
-  labels:PropTypes.arrayOf(Label),
-  toggle:PropTypes.func.isRequired,
-  modal:Modal
+  id:           PropTypes.number.isRequired,
+  index:        PropTypes.number.isRequired,
+  title:        PropTypes.string.isRequired,
+  labelIds:     PropTypes.arrayOf(PropTypes.string),
+  toggleModal:  PropTypes.func.isRequired,
 }
 export default CardPrello
