@@ -1,14 +1,11 @@
 import { connect } from 'react-redux'
 import Board from '../components/Board'
-//import {  } from '../actions'
+import reducerBoard from '../reducers/board.reducer'
 
-const onDragEnd = result => ({})
-
-const mapStateToProps = state => {
+const mapStateToProps = (state )=> {
   return ({
     title: state.reducerBoard.title,
-    lists: state.reducerBoard.lists,
-    onDragEnd: onDragEnd(state.dragResult)
+    lists: state.reducerBoard.lists
 })
 }
 

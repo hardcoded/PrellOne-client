@@ -19,4 +19,12 @@ export const updateTitle = (id, title) => ({
 export const toggleAddCard = id => ({
     type: 'TOGGLE_ADD_CARD',
     id
+}
+)
+
+export const getList=(id,title,cardsIds)=>({
+    type: "GET_LIST",
+    id,
+    title,
+    cardsIds
 })

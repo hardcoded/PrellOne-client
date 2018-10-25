@@ -2,7 +2,7 @@ let nextListId = 0
 
 export const addList = (id, title) => ({
     type: 'ADD_LIST',
-    id, // board id
+    id,
     list: {
         id: nextListId++,
         title: title,

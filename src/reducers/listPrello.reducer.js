@@ -2,7 +2,6 @@ import demoData from '../components/demo-data'
 
 const listPrello = (state = demoData.lists, action) => {
     switch (action.type) {
-        // TODO add card to cards list with CardPrello Reducer 
         case 'ADD_CARD':
             return {
                 ...state,
