@@ -5,8 +5,6 @@ import { stat } from 'fs';
 
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps)
-  console.log(state.reducerListPrello[ownProps.listId].title)
   return ({
     id: state.reducerListPrello[ownProps.listId].id,
     title: state.reducerListPrello[ownProps.listId].title,

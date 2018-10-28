@@ -114,6 +114,7 @@ const demoData = {
         }
     },
     board: {
+        id: 'board1',
         title: 'First Board',
         lists: ['list1','list2','list3']
     }

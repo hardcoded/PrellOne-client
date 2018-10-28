@@ -2,6 +2,11 @@ import demoData from '../components/demo-data'
 
 const listPrello = (state = demoData.lists, action) => {
     switch (action.type) {
+        case 'ADD_LIST' :
+            return {
+                ...state,
+                [action.list.id]: action.list
+            }
         case 'ADD_CARD':
             return {
                 ...state,

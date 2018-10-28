@@ -2,15 +2,12 @@ import demoData from '../components/demo-data'
 
 const board = (state = demoData.board, action) => {
     switch (action.type) {
+
         case 'ADD_LIST':
             return {
                 ...state,
                 lists: [
-                    ...state.cards,
-                    action.list
-                ],
-                listOrder : [
-                    ...state.listOrder,
+                    ...state.lists,
                     action.list.id
                 ]
             }
