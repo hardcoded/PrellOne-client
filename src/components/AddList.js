@@ -1,21 +1,21 @@
 import React from 'react';
-import { Form,FormGroup,Input, Button, Label} from 'reactstrap';
+import { Form,FormGroup,Input, Label} from 'reactstrap';
 import PropTypes from  'prop-types'
 
 const AddList = ({boardId, addList})=> {
-  let newListTitle = ""
+  let input
 
-  function handleChange(event) {
-    newListTitle = event.target.value
-  }
 
   return (
-    <Form>
+    <Form onSubmit={e => {e.preventDefault()
+      addList(boardId, input.value)
+      input.value = ''
+    }}>
       <FormGroup>
         <Label for="list">add new list</Label>
-        <Input  name="list" id="newList" placeholder="Title" onChange={handleChange}/>
+        <Input placeholder="Title"  ref={node => input = node}/>
       </FormGroup>
-      <button type="button" onClick={() => addList}>Submit</button>
+      <button type="submit">Submit</button>
     </Form>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import ListPrello from '../containers/ListPrello.container'
 import ListPrelloCompo from '../components/ListPrello'
 import AddList from '../containers/AddList.container'
-import { Container, Row, Col } from 'reactstrap'
+import { Container } from 'reactstrap'
 import PropTypes from  'prop-types'
 
 const Board = ({id, title, lists}) => (

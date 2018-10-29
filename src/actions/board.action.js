@@ -1,11 +1,11 @@
-let nextListId = 'list4'
+let nextListId = "List8"
 
 export const addList = (id, title) => ({
     type: 'ADD_LIST',
     id,
     list: {
         id: nextListId,
-        title: title,
+        title,
         cardIds: [],
         creation_date: Date() 
     }

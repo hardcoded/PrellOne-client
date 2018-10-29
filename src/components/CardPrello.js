@@ -6,7 +6,7 @@ const CardPrello = ({id, title})=>(
   <div>
     <Card outline className="mb-1" color="secondary">
       <CardBody className="p-2">
-        <CardText className="container">
+        <CardText tag="div" className="container">
           <Row>
             {title}
           </Row>

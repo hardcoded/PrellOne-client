@@ -1,7 +1,5 @@
 import { connect } from 'react-redux'
 import ListPrello from '../components/ListPrello'
-import {toggleAddCard  } from '../actions/list.action'
-import { stat } from 'fs';
 
 
 const mapStateToProps = (state, ownProps) => {

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Card, CardHeader, CardFooter, Badge } from 'reactstrap'
 import CardPrello from '../containers/CardPrello.container'
+import CardPrelloComponent from '../components/CardPrello'
 
 const ListPrello = ({id, title, cardIds}) =>(
     <Card className="bg-light mb-3" tag="div">
@@ -24,7 +25,8 @@ const ListPrello = ({id, title, cardIds}) =>(
 ListPrello.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  cardIds: PropTypes.arrayOf(PropTypes.string).isRequired
+  cardIds: PropTypes.arrayOf(CardPrelloComponent
+    ).isRequired
 }
 
 export default ListPrello;

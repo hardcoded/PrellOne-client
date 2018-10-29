@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import Board from '../components/Board'
-import reducerBoard from '../reducers/board.reducer'
 
 const mapStateToProps = ( state )=> {
   return ({
