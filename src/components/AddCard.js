@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from  'prop-types'
 
-const AddList = ({boardId, addList})=> {
+const AddCard = ({listId, addCard})=> {
   let input
   
 
   return (
     <div>
     <form onSubmit={e => {e.preventDefault()
-      addList(boardId, input.value)
+      console.log("BON", input.value)
+      addCard(listId, input.value)
       input.value = ''
     }}>
     <input placeholder="Title"  ref={node => input = node} />
@@ -18,9 +19,9 @@ const AddList = ({boardId, addList})=> {
   );
 }
 
-AddList.propTypes={
-  boardId: PropTypes.string.isRequired,
-  addList: PropTypes.func.isRequired
+AddCard.propTypes={
+  listId: PropTypes.string.isRequired,
+  addCard: PropTypes.func.isRequired
 }
 
-export default AddList
+export default AddCard

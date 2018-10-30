@@ -8,16 +8,16 @@ const listPrello = (state = demoData.lists, action) => {
                 [action.list.id]: action.list
             }
         case 'ADD_CARD':
-            return {
-                ...state,
-                [action.id]: {
-                    ...state[action.id],
-                    cardIds: [
-                        ...state[action.id].cardIds,
-                        action.card.id
-                    ]
-                }
+        return {
+            ...state,
+            [action.id]: {
+                ...state[action.id],
+                cardIds: [
+                    ...state[action.id].cardIds,
+                    action.card.id
+                ]
             }
+        }
         case 'TOGGLE_ADD_CARD':
             if (state.id !== action.id) {
                 return state;

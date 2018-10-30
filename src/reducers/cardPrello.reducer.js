@@ -3,14 +3,10 @@ import demoData from '../components/demo-data'
 const cardPrello = (state = demoData.cards, action) => {
     switch (action.type) {
         case 'ADD_CARD':
-            return {
-                id: action.card.id,
-                title: action.card.title,
-                desc: "",
-                members: [],
-                labels: [],
-                toogle: false
-            }
+        return {
+            ...state,
+            [action.card.id]: action.card
+        }
 
         case 'ADD_MEMBER':
             if (state.id !== action.id) {

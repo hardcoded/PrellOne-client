@@ -1,11 +1,16 @@
-let nextCardId = 0
+let nextCardId = 7
 
-export const addCard = (id, card) => ({
+export const addCard = (id, title) => ({
     type: 'ADD_CARD',
     id, // list id
     card: {
         id: nextCardId++,
-        ...card,
+        index: 0,
+        title: title,
+        description: '',
+        membersIds: [],
+        labelIds: [],
+        due_date: null,
         creation_date: Date() 
     }
 })

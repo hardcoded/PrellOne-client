@@ -1,17 +1,17 @@
 import { connect } from 'react-redux'
-import AddList from '../components/AddList'
-import { addList } from '../actions/board.action'
+import AddCard from '../components/AddCard'
+import { addCard } from '../actions/list.action'
 
 const mapStateToProps = (state, ownProps) => ({
-  boardId: ownProps.boardId
+  listId: ownProps.listId
 })
 
 const mapDispatchToProps = dispatch => ({
-  addList: (id, title) => { 
-    dispatch(addList(id, title))}
+  addCard: (id, title) => { 
+    dispatch(addCard(id, title))}
 })
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AddList)
+)(AddCard)

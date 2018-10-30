@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Card, CardHeader, CardFooter, Badge } from 'reactstrap'
 import CardPrello from '../containers/CardPrello.container'
 import CardPrelloComponent from '../components/CardPrello'
+import AddCard from '../containers/AddCard.container'
 
 const ListPrello = ({id, title, cardIds}) =>(
     <Card className="bg-light mb-3" tag="div">
@@ -18,6 +19,7 @@ const ListPrello = ({id, title, cardIds}) =>(
             }
           </div>
       <CardFooter>
+      <AddCard listId={id}></AddCard>
       </CardFooter>
     </Card>
   )

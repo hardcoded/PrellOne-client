@@ -3,10 +3,9 @@ import CardPrello from '../components/CardPrello'
 
 
 const mapStateToProps = (state, ownProps) => {
-  const card = state.reducerCardPrello[ownProps.cardId]
   return ({
-    id: card.id,
-    title: card.title,
+    id: state.reducerCardPrello[ownProps.cardId].id,
+    title: state.reducerCardPrello[ownProps.cardId].title
   })
 }
 
