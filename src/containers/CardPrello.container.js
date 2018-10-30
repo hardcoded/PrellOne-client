@@ -11,8 +11,8 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  openModal: () => { 
-    dispatch(openModal())}
+  openModal: (id) => {
+    dispatch(openModal(id))}
 })
 
 export default connect(

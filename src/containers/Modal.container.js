@@ -3,9 +3,11 @@ import ModalPrello from '../components/ModalPrello'
 import { openModal, closeModal } from '../actions/modal.action'
 
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return ({
-    modal: state.reducerModal.modal
+    modal: state.reducerModal.modal,
+    title: state.reducerModal.title,
+    description: state.reducerModal.description
   })
 }
 

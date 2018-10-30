@@ -1,11 +1,12 @@
 import demoData from '../components/demo-data'
 
-const modal = (state = demoData.board, action) => {
+const modal = (state = {}, action) => {
     switch (action.type) {
 
     case 'OPEN_MODAL':
+            const card = demoData.cards[action.cardId]
             return {
-                ...state,
+                ...card,
                 modal: action.payload
             }
         case 'CLOSE_MODAL':

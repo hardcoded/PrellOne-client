@@ -2,6 +2,7 @@ import React from 'react'
 import ListPrello from '../containers/ListPrello.container'
 import ListPrelloCompo from '../components/ListPrello'
 import AddList from '../containers/AddList.container'
+import Modal from '../containers/Modal.container'
 import { Container } from 'reactstrap'
 import PropTypes from  'prop-types'
 
@@ -21,6 +22,7 @@ const Board = ({id, title, lists}) => (
         ))}
         <AddList boardId={id}></AddList>
         </Container>
+        <Modal/>
       </section>
     </div>
 )

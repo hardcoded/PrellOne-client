@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, CardBody, CardText,Row } from 'reactstrap';
 import PropTypes from  'prop-types'
 
-const CardPrello = ({title, openModal})=>(
+const CardPrello = ({id, title, openModal})=>(
   <div>
-    <Card outline className="mb-1" color="secondary" onClick={openModal}>
+    <Card outline className="mb-1" color="secondary" onClick={() => openModal(id)}>
       <CardBody className="p-2">
         <CardText tag="div" className="container">
           <Row>
