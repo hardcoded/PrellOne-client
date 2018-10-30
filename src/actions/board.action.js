@@ -5,7 +5,7 @@ export const addList = (id, title) => ({
     id,
     list: {
         id: nextListId,
-        title,
+        title: title,
         cardIds: [],
         creation_date: Date() 
     }

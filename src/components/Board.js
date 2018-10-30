@@ -16,9 +16,9 @@ const Board = ({id, title, lists}) => (
       <section>
         <Container style={{maxWidth:"100%"}}>
         {
-          lists.map(list=>
+          lists.map(list=> (
           <ListPrello key={list} listId={list}></ListPrello>
-        )}
+        ))}
         <AddList boardId={id}></AddList>
         </Container>
       </section>

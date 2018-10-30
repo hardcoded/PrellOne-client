@@ -1,25 +1,23 @@
 import React from 'react';
-import { Form,FormGroup,Input, Label} from 'reactstrap';
 import PropTypes from  'prop-types'
 
 const AddList = ({boardId, addList})=> {
   let input
-
+  
 
   return (
-    <Form onSubmit={e => {e.preventDefault()
+    <div>
+    <form onSubmit={e => {e.preventDefault()
+      console.log("BON", input.value)
       addList(boardId, input.value)
       input.value = ''
     }}>
-      <FormGroup>
-        <Label for="list">add new list</Label>
-        <Input placeholder="Title"  ref={node => input = node}/>
-      </FormGroup>
-      <button type="submit">Submit</button>
-    </Form>
+    <input placeholder="Title"  ref={node => input = node} />
+    <button type="submit">Submit</button>
+    </form>
+    </div>
   );
 }
- 
 
 AddList.propTypes={
   boardId: PropTypes.string.isRequired,
