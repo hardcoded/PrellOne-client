@@ -117,7 +117,8 @@ const demoData = {
         id: 'board1',
         title: 'First Board',
         lists: ['list1','list2','list3']
-    }
+    },
+    modal: false
 }
 
 export default demoData;

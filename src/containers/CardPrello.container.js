@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import CardPrello from '../components/CardPrello'
+import { openModal } from '../actions/modal.action'
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -9,7 +10,10 @@ const mapStateToProps = (state, ownProps) => {
   })
 }
 
-const mapDispatchToProps = dispatch => ({})
+const mapDispatchToProps = dispatch => ({
+  openModal: () => { 
+    dispatch(openModal())}
+})
 
 export default connect(
   mapStateToProps,
