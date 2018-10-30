@@ -17,6 +17,7 @@ const CardPrello = ({id, title, openModal})=>(
   )
 
 CardPrello.propTypes={
+  id: PropTypes.string.isRequired,
   title:PropTypes.string.isRequired,
   openModal: PropTypes.func.isRequired
   

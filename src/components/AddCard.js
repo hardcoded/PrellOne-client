@@ -9,7 +9,6 @@ const AddCard = ({listId, addCard})=> {
   return (
     <div>
     <form onSubmit={e => {e.preventDefault()
-      console.log("BON", input.value)
       addCard(listId, input.value)
       input.value = ''
     }}>
