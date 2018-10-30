@@ -1,7 +1,8 @@
 
-export const openModal = () => ({
+export const openModal = (cardId) => ({
     type: 'OPEN_MODAL',
-    payload: true
+    payload: true,
+    cardId
 })
 
 export const closeModal = () => ({

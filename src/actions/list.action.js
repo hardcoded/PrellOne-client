@@ -4,7 +4,7 @@ export const addCard = (id, title) => ({
     type: 'ADD_CARD',
     id, // list id
     card: {
-        id: nextCardId++,
+        id: 'task' + nextCardId++,
         index: 0,
         title: title,
         description: '',

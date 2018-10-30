@@ -1,5 +1,3 @@
-let nextCardId = 0
-
 export const updateDesc = (desc, id) => ({
     type: 'UPDATE_DESC',
     id,
