@@ -19,8 +19,6 @@ const ModalPrello = ({closeModal, openModal})=>(
   )
 
 ModalPrello.propTypes={
-  title:PropTypes.string.isRequired,
-  description: PropTypes.string,
   closeModal: PropTypes.func.isRequired,
   openModal: PropTypes.func.isRequired
   
