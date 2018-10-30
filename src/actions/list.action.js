@@ -1,4 +1,4 @@
-let nextCardId = 7
+let nextCardId = 8
 
 export const addCard = (id, title) => ({
     type: 'ADD_CARD',

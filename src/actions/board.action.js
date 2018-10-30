@@ -1,4 +1,4 @@
-let nextListId = 3
+let nextListId = 4
 
 export const addList = (id, title) => ({
     type: 'ADD_LIST',
