@@ -1,9 +1,7 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Row } from 'reactstrap';
-import BoardCompo from '../components/Board'
-import PropTypes from  'prop-types'
+import { Container, Jumbotron, Button, Row } from 'reactstrap'
 
-const Home = ({boards}) => (
+const Home = () => (
             <div>
             <header>
                 <Jumbotron>
@@ -18,20 +16,10 @@ const Home = ({boards}) => (
             </header>
             <section>
                 <Container>
-                    <legend>Board titles loaded from the API : </legend>
-                    <Row className="scrolling-wrapper-flexbox">
-                     {
-                        boards.map(board =>(board.title
-                        ))}
-                    </Row>
+                    <Row> </Row>
                 </Container>
             </section>
             </div>
     )
-
-Home.propTypes={
-    boards:PropTypes.arrayOf(BoardCompo)
-  }
-  
 
 export default Home;
