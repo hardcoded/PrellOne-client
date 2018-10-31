@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from  'prop-types'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Input, Button } from 'reactstrap'
 
 const AddList = ({boardId, addList, hidden, hide, show})=> {
   let input
@@ -10,21 +10,22 @@ const AddList = ({boardId, addList, hidden, hide, show})=> {
     <div>
     <form>
     {hidden && 
-    <input className="mb-2" placeholder="Type the title of the list"  ref={node => input = node} />}
-    {hidden && 
     <Row>
-      <Col>
-        <button type="submit" onClick = {e => {e.preventDefault()
+      <Col xs="12">
+        <Input className="mb-2" placeholder="Type the title of the list"  ref={node => input = node} />
+      </Col>
+      <Col xs="6">
+        <Button block color="success" type="submit" onClick = {e => {e.preventDefault()
           addList(boardId, input.value)
           input.value = ''
-        }}>Add a list</button>
+        }}>Add a list</Button>
       </Col>
-      <Col>
-        <button onClick = {() => show()}>Cancel</button>
+      <Col xs="6">
+        <Button block color="danger" onClick = {() => show()}>Cancel</Button>
       </Col>
     </Row>}
     {!hidden && 
-    <button onClick = {() => hide()}>Add another list</button>}
+    <Button block outline color="primary" onClick = {() => hide()}>Add another list</Button>}
     </form>
     </div>
   );
