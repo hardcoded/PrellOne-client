@@ -11,6 +11,7 @@ const board = (state = demoData.board, action) => {
                     action.list.id
                 ]
             }
+
         case 'TOGGLE_ADD_LIST':
             if (state.id !== action.id) {
                 return state;

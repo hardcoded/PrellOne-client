@@ -15,6 +15,7 @@ export const addCard = (id, title) => ({
     }
 })
 
+
 export const updateTitle = (id, title) => ({
     type: 'UPDATE_TITLE',
     id,

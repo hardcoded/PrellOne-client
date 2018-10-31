@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
 import Board from '../components/Board'
 
+
 const mapStateToProps = ( state )=> {
   return ({
     id: state.reducerBoard.id,
     title: state.reducerBoard.title,
-    lists: state.reducerBoard.lists
+    lists: state.reducerBoard.lists,
 })
 }
 
