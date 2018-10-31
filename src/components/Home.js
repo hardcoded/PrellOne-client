@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Row, Card, CardImg, CardBody,
+import { Container, Jumbotron, Button, Row, Card, CardBody,
     CardTitle } from 'reactstrap'
 
-const Home = (boards) => (
+const Home = ({boards}) => (
             <div>
             <header>
                 <Jumbotron>
@@ -17,14 +17,14 @@ const Home = (boards) => (
             </header>
             <Container>
                 <Row>
-            <Card>
-                <CardImg top width="20%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                <CardBody>
-                    <CardTitle>Board title</CardTitle>
-                    <Button>Button to go to the board</Button>
-                </CardBody>
-            </Card>
-            </Row>
+                    {boards.map(board => (
+                        <Card>
+                            <CardBody>
+                                <CardTitle>{board.title}</CardTitle>
+                            </CardBody>
+                        </Card>
+                    ))}
+                </Row>
             </Container>
             </div>
     )

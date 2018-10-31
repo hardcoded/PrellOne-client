@@ -1,7 +1,7 @@
 import React from 'react'
 import AppNav from '../containers/AppNav.container'
 import Board from '../containers/Board.container'
-import Home from '../components/Home'
+import Home from '../containers/Home.container'
 import { Switch, Route } from 'react-router-dom'
 
 const App = () => (

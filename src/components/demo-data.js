@@ -124,7 +124,8 @@ const demoData = {
             title: 'Marion Board',
             lists: ['list1']
         }
-    }
+    },
+    home: ['board1','board2']
 }
 
 export default demoData;
