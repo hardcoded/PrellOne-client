@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Row, Card, CardBody,
+import { Container, Jumbotron, Row, Card, CardBody,
     CardTitle } from 'reactstrap'
 
 const Home = ({boards}) => (
@@ -11,7 +11,6 @@ const Home = ({boards}) => (
                     <hr className="my-2" />
                     <p>It is built with Node.js and React.</p>
                     <p className="lead">
-                    <Button color="primary">Learn More</Button>
                     </p>
                 </Jumbotron>
             </header>
