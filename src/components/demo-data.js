@@ -1,11 +1,27 @@
 const demoData = {
+    users: {
+        'user1': {
+            id: 'user1',
+            userName: 'medihebfaiza',
+            firstName: 'Mohamed Iheb',
+            lastName: 'FAIZA',
+            photo: 'https://avatars1.githubusercontent.com/u/22474480?s=460&v=4'
+        },
+        'user2': {
+            id: 'user2',
+            userName: 'marion-rul',
+            firstName: 'Marion',
+            lastName: 'RUL',
+            photo: 'https://bit.ly/2yHma2e'
+        }
+    },
     cards: {
         'task1': {
             id: 'task1', 
             index: 0,
             title:'Make the report',
             description: 'You need to make the report in English',
-            membersIds: [],
+            memberIds: ['user1','user2'],
             labelIds: ['label1','label2'],
             due_date: null,
             creation_date: null
