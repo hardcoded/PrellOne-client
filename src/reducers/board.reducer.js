@@ -1,9 +1,6 @@
 import demoData from '../components/demo-data'
 
 const board = (state = demoData.boards, action) => {
-    console.clear()
-    console.log(action)
-    console.log(state)
     switch (action.type) {
 
         case 'ADD_LIST':

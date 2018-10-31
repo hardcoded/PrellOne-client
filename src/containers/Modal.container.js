@@ -9,7 +9,8 @@ const mapStateToProps = (state) => {
     title: state.reducerModal.title,
     description: state.reducerModal.description,
     labelIds: state.reducerModal.labelIds,
-    memberIds: state.reducerModal.memberIds
+    memberIds: state.reducerModal.memberIds,
+    comments: state.reducerModal.comments
   })
 }
 

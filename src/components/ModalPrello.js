@@ -2,9 +2,10 @@ import React from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
+import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
 
-const ModalPrello = ({modal, title, description, labelIds, memberIds, closeModal})=>(
+const ModalPrello = ({modal, title, description, labelIds, memberIds, comments, closeModal})=>(
   <div>
     <Modal isOpen={modal} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
@@ -22,7 +23,7 @@ const ModalPrello = ({modal, title, description, labelIds, memberIds, closeModal
           <h5>Description</h5>
           <p>{description}</p>
           <h5>Members</h5>
-          <Row>
+          <Row className="pl-3 mb-3">
             {
               memberIds && memberIds.map(memberId => 
                 <Col xs="2" className="p-2">
@@ -31,6 +32,12 @@ const ModalPrello = ({modal, title, description, labelIds, memberIds, closeModal
               )
             }
           </Row>
+          <h5>Comments</h5>
+          {
+            comments && comments.map(comment => 
+              <Comment commentId={comment.id} content={comment.content} userId={comment.userId}></Comment>
+            )
+          }
         </ModalBody>
         <ModalFooter>
           <Button color="success" onClick={closeModal}>Cancel</Button>
@@ -45,6 +52,7 @@ ModalPrello.propTypes={
   description: PropTypes.string.isRequired,
   labelIds: PropTypes.array.isRequired,
   memberIds: PropTypes.array.isRequired,
+  comments: PropTypes.array.isRequired,
   closeModal: PropTypes.func.isRequired
   
 }

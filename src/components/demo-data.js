@@ -23,6 +23,18 @@ const demoData = {
             description: 'You need to make the report in English',
             memberIds: ['user1','user2'],
             labelIds: ['label1','label2'],
+            comments: [
+                {
+                    id: 'comment1',
+                    content: 'This should be easy to do !',
+                    userId: 'user1'
+                },
+                {
+                    id: 'comment2',
+                    content: 'Yes !',
+                    userId: 'user2'
+                },
+            ],
             due_date: null,
             creation_date: null
         },
