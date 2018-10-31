@@ -7,6 +7,7 @@ const listPrello = (state = demoData.lists, action) => {
                 ...state,
                 [action.list.id]: action.list
             }
+        
         case 'ADD_CARD':
         return {
             ...state,
