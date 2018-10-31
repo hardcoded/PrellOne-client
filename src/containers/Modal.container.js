@@ -4,12 +4,11 @@ import { closeModal } from '../actions/modal.action'
 
 
 const mapStateToProps = (state) => {
-  console.clear()
-  console.log(state)
   return ({
     modal: state.reducerModal.modal,
     title: state.reducerModal.title,
     description: state.reducerModal.description,
+    labelIds: state.reducerModal.labelIds,
     memberIds: state.reducerModal.memberIds
   })
 }
