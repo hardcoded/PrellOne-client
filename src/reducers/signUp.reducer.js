@@ -1,5 +1,3 @@
-import { submitSignUp } from '../actions/signUp.action';
-
 const signUp = (state = {}, action) => {
     switch (action.type) {
         case 'SUBMIT_SIGN_UP' :
