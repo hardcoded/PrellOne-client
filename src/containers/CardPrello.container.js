@@ -6,7 +6,8 @@ import { openModal } from '../actions/modal.action'
 const mapStateToProps = (state, ownProps) => {
   return ({
     id: state.reducerCardPrello[ownProps.cardId].id,
-    title: state.reducerCardPrello[ownProps.cardId].title
+    title: state.reducerCardPrello[ownProps.cardId].title,
+    labels: state.reducerCardPrello[ownProps.cardId].labelIds
   })
 }
 

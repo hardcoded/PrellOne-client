@@ -3,9 +3,10 @@ import Board from '../components/Board'
 
 
 const mapStateToProps = state => ({
-    id: state.reducerBoard.id,
-    title: state.reducerBoard.title,
-    lists: state.reducerBoard.lists,
+    id: state.reducerBoard['board1'].id,
+    title: state.reducerBoard['board1'].title,
+    lists: state.reducerBoard['board1'].lists,
+    labels: state.reducerLabel
   })
 
 const mapDispatchToProps = dispatch => ({})
