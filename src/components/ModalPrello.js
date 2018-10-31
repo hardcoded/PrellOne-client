@@ -1,8 +1,9 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
+import Member from '../containers/Member.container'
 import PropTypes from  'prop-types'
 
-const ModalPrello = ({modal, title, description, closeModal})=>(
+const ModalPrello = ({modal, title, description, memberIds, closeModal})=>(
   <div>
     <Modal isOpen={modal} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
@@ -10,6 +11,15 @@ const ModalPrello = ({modal, title, description, closeModal})=>(
           <h5>Description</h5>
           <p>{description}</p>
           <h5>Members</h5>
+          <Row>
+            {
+              memberIds && memberIds.map(memberId => 
+                <Col xs="2" className="p-2">
+                  <Member memberId={memberId}></Member>
+                </Col>
+              )
+            }
+          </Row>
         </ModalBody>
         <ModalFooter>
           <Button color="success" onClick={closeModal}>Cancel</Button>
@@ -19,6 +29,10 @@ const ModalPrello = ({modal, title, description, closeModal})=>(
   )
 
 ModalPrello.propTypes={
+  modal: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  memberIds: PropTypes.array.isRequired,
   closeModal: PropTypes.func.isRequired
   
 }
