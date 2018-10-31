@@ -1,6 +1,6 @@
 import demoData from '../components/demo-data'
 
-const home = (state = demoData.boards, action) => {
+const home = (state = demoData.home, action) => {
     switch (action.type) {
 
         default:

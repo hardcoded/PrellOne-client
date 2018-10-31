@@ -118,7 +118,15 @@ const demoData = {
             id: 'board1',
             title: 'First Board',
             lists: ['list1','list2','list3']
+        },
+        'board2': {
+            id: 'board2',
+            title: 'Marion Board',
+            lists: ['list1']
         }
+    },
+    home: {
+        boards: ['board1', 'board2']
     }
 }
 
