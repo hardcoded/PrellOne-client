@@ -1,6 +1,6 @@
 import demoData from '../components/demo-data'
 
-const board = (state = demoData.board, action) => {
+const board = (state = demoData.boards, action) => {
     switch (action.type) {
 
         case 'ADD_LIST':

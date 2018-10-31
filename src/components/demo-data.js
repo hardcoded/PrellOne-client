@@ -113,10 +113,12 @@ const demoData = {
             color: 'warning'
         }
     },
-    board: {
-        id: 'board1',
-        title: 'First Board',
-        lists: ['list1','list2','list3']
+    boards: {
+        'board1': {
+            id: 'board1',
+            title: 'First Board',
+            lists: ['list1','list2','list3']
+        }
     }
 }
 
