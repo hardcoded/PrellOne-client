@@ -4,7 +4,6 @@ import Home from '../components/Home'
 
 const mapStateToProps = ( state )=> ({
     boards: state.reducerHome.map((boardId)=> {
-      console.log(boardId)
       return {
         id: state.reducerBoard[boardId].id,
         title: state.reducerBoard[boardId].title

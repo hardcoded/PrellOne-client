@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from  'prop-types'
-import { Row, Col, Input, Button } from 'reactstrap'
+import { Row, Col, Button } from 'reactstrap'
 
 const AddCard = ({listId, addCard, hidden, hide, show})=> {
   let input
