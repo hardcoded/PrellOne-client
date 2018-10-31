@@ -22,11 +22,15 @@ export const updateTitle = (id, title) => ({
     title
 })
 
-export const toggleAddCard = id => ({
-    type: 'TOGGLE_ADD_CARD',
+export const hideAddCard = id => ({
+    type: 'HIDE_ADD_CARD',
     id
-}
-)
+})
+
+export const showAddCard = id => ({
+    type: 'SHOW_ADD_CARD',
+    id
+})
 
 export const getList=(id,title,cardsIds)=>({
     type: "GET_LIST",

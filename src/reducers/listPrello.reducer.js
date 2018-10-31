@@ -9,23 +9,30 @@ const listPrello = (state = demoData.lists, action) => {
             }
         
         case 'ADD_CARD':
-        return {
-            ...state,
-            [action.id]: {
-                ...state[action.id],
-                cardIds: [
-                    ...state[action.id].cardIds,
-                    action.card.id
-                ]
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    cardIds: [
+                        ...state[action.id].cardIds,
+                        action.card.id
+                    ]
+                }
             }
-        }
-        case 'TOGGLE_ADD_CARD':
-            if (state.id !== action.id) {
-                return state;
-            } else {
-                return {
-                    ...state,
-                    toggleAddCard: !state.toggleAddCard
+        case 'SHOW_ADD_CARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addCard: true
+                }
+            }
+        case 'HIDE_ADD_CARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addCard: false
                 }
             }
         default:
