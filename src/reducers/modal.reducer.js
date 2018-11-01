@@ -4,17 +4,16 @@ const modal = (state = {}, action) => {
     switch (action.type) {
 
     case 'OPEN_MODAL':
-            const card = demoData.cards[action.cardId]
             return {
-                ...card,
-                modal: action.payload
+                activeCard: action.cardId,
+                modal: true
             }
         case 'CLOSE_MODAL':
         return {
-            ...state,
-            modal: action.payload
+            activeCard: undefined,
+            modal: false
         }
-        default: return state;
+    default: return state;
     }
 }
 

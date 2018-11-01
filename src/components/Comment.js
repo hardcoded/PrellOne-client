@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import PropTypes from  'prop-types';
 
 const Comment = ({id, content, userName, photo}) => {

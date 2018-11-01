@@ -1,3 +1,5 @@
+let nextCommentId = 2
+
 export const updateDesc = (desc, id) => ({
     type: 'UPDATE_DESC',
     id,
@@ -25,6 +27,15 @@ export const removeLabel = (indexLabel, id) => ({
     type: 'ADD_MEMBER',
     id,
     indexLabel
+})
+export const addComment = (cardId, content, userId) => ({
+    type: 'ADD_COMMENT',
+    id: cardId,
+    comment : {
+        id: 'comment' + nextCommentId++,
+        content,
+        userId    
+    }
 })
 
 export const toggleModal = id => ({

@@ -45,6 +45,7 @@ const demoData = {
             description: 'You need to make the presentation in English',
             membersIds: [],
             labelIds: ['label1','label2'],
+            comments: [],
             due_date: null,
             creation_date: null
         },
@@ -55,6 +56,7 @@ const demoData = {
             description: 'You need to add a list on board with a button. The button stays in the right of the board.',
             members: [],
             labelIds: ['label1','label2'],
+            comments: [],
             due_date: null,
             creation_date: null
         },
@@ -65,6 +67,7 @@ const demoData = {
             description: '',
             membersIds: [],
             labelIds: ['label4','label2','label1'],
+            comments: [],
             due_date: null,
             creation_date: null
         },
@@ -75,6 +78,7 @@ const demoData = {
             description: '',
             membersIds: [],
             labelIds: [],
+            comments: [],
             due_date: null,
             creation_date: null
         },
@@ -85,6 +89,7 @@ const demoData = {
             description: '',
             membersIds: [],
             labelIds: ['label1'],
+            comments: [],
             due_date: null,
             creation_date: null
         },
@@ -95,6 +100,7 @@ const demoData = {
             description: '',
             membersIds: [],
             labelIds: ['label1','label3'],
+            comments: [],
             due_date: null,
             creation_date: null
         }

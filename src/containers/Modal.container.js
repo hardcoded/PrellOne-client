@@ -4,14 +4,18 @@ import { closeModal } from '../actions/modal.action'
 
 
 const mapStateToProps = (state) => {
-  return ({
-    modal: state.reducerModal.modal,
-    title: state.reducerModal.title,
-    description: state.reducerModal.description,
-    labelIds: state.reducerModal.labelIds,
-    memberIds: state.reducerModal.memberIds,
-    comments: state.reducerModal.comments
-  })
+  const card = state.reducerCardPrello[state.reducerModal.activeCard] 
+  if (card) {
+    return ({
+      cardId: card.id,
+      modal: state.reducerModal.modal,
+      title: card.title,
+      description: card.description,
+      labelIds: card.labelIds,
+      memberIds: card.memberIds,
+      comments: card.comments
+    })
+  }
 }
 
 const mapDispatchToProps = dispatch => ({

@@ -4,8 +4,9 @@ import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
+import AddComment from '../containers/AddComment.container';
 
-const ModalPrello = ({modal, title, description, labelIds, memberIds, comments, closeModal})=>(
+const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, comments, closeModal})=>(
   <div>
     <Modal isOpen={modal} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
@@ -38,6 +39,7 @@ const ModalPrello = ({modal, title, description, labelIds, memberIds, comments, 
               <Comment commentId={comment.id} content={comment.content} userId={comment.userId}></Comment>
             )
           }
+          <AddComment userId='user1' cardId={cardId}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="success" onClick={closeModal}>Cancel</Button>
@@ -47,6 +49,7 @@ const ModalPrello = ({modal, title, description, labelIds, memberIds, comments, 
   )
 
 ModalPrello.propTypes={
+  cardId: PropTypes.string.isRequired,
   modal: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

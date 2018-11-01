@@ -18,6 +18,19 @@ const cardPrello = (state = demoData.cards, action) => {
                 };
             }
 
+            case 'ADD_COMMENT':
+                return {
+                    ...state,
+                    [action.id]: {
+                        ...state[action.id],
+                        comments: [
+                            ...state[action.id].comments,
+                            action.comment
+                        ]
+                    }
+
+                }
+
         case 'UPDATE_DESC':
             if (state.id !== action.id) {
                 return state
