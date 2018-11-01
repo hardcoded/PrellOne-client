@@ -4,10 +4,11 @@ import reducerListPrello from './listPrello.reducer'
 import reducerLabel from './label.reducer'
 import reducerMember from './member.reducer'
 import reducerBoard from './board.reducer'
-import reducerModal from './modal.reducer'
+import reducerModalCard from './modalCard.reducer'
 import reducerAddList from './addList.reducer'
 import reducerAppNav from './appNav.reducer'
 import reducerHome from './home.reducer'
+import reducerAddBoard from './addBoard.reducer'
 
 export default combineReducers({
     reducerCardPrello,
@@ -15,8 +16,9 @@ export default combineReducers({
     reducerListPrello,
     reducerLabel,
     reducerMember,
-    reducerModal,
+    reducerModalCard,
     reducerAddList,
     reducerAppNav,
     reducerHome,
+    reducerAddBoard,
 })

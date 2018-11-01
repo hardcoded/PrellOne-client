@@ -7,9 +7,9 @@ import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
 
-const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, comments, dueDate, closeModal})=>(
+const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDate, isOpen, closeModal})=>(
   <div>
-    <Modal isOpen={modal} toggle={closeModal} >
+    <Modal isOpen={isOpen} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
         <ModalBody className="container-fluid">
           <h5>Due date</h5>
@@ -42,7 +42,7 @@ const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, co
               <Comment commentId={comment.id} content={comment.content} userId={comment.userId}></Comment>
             )
           }
-          <AddComment userId='user1' cardId={cardId}></AddComment>
+          <AddComment userId='user1' cardId={id}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="success" onClick={closeModal}>Cancel</Button>
@@ -51,8 +51,8 @@ const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, co
 </div>
   )
 
-ModalPrello.propTypes={
-  cardId: PropTypes.string.isRequired,
+ModalCard.propTypes={
+  id: PropTypes.string.isRequired,
   modal: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -63,4 +63,4 @@ ModalPrello.propTypes={
   closeModal: PropTypes.func.isRequired
   
 }
-export default ModalPrello
+export default ModalCard
