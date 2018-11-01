@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import CardPrello from '../components/CardPrello'
-import { openModal } from '../actions/modal.action'
+import { openModal } from '../actions/modalCard.action'
 
 
 const mapStateToProps = (state, ownProps) => {

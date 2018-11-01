@@ -1,14 +1,14 @@
 import { connect } from 'react-redux'
-import ModalPrello from '../components/ModalPrello'
-import { closeModal } from '../actions/modal.action'
+import ModalPrello from '../components/ModalCard'
+import { closeModal } from '../actions/modalCard.action'
 
 
 const mapStateToProps = (state) => {
-  const card = state.reducerCardPrello[state.reducerModal.activeCard] 
+  const card = state.reducerCardPrello[state.reducerModalCard.activeCard] 
   if (card) {
     return ({
       cardId: card.id,
-      modal: state.reducerModal.modal,
+      modal: state.reducerModalCard.modal,
       title: card.title,
       description: card.description,
       labelIds: card.labelIds,

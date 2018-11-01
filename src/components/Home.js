@@ -29,6 +29,13 @@ const Home = ({boards}) => (
                             </CardBody>
                         </Card>
                     ))}
+                        <Card>
+                            <CardBody>
+                                <CardTitle>
+                                    Create a board...
+                                </CardTitle>
+                            </CardBody>
+                        </Card>
                 </Row>
             </Container>
             </div>

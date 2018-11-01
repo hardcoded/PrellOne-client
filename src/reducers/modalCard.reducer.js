@@ -1,5 +1,3 @@
-import demoData from '../components/demo-data'
-
 const modal = (state = {}, action) => {
     switch (action.type) {
 
