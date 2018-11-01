@@ -21,7 +21,7 @@ const AppNav = ({isOpen, open }) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link className="nav-link" to="/board/">Board</Link>
+                <Link className="nav-link" to="/board/board1">Demo Board</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

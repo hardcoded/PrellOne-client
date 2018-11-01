@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Container, Jumbotron, Row, Card, CardBody,
     CardTitle } from 'reactstrap'
 
@@ -19,7 +20,12 @@ const Home = ({boards}) => (
                     {boards.map(board => (
                         <Card>
                             <CardBody>
-                                <CardTitle>{board.title}</CardTitle>
+                                <CardTitle>
+                                <Link className="nav-link" to={"/board/"+board.id}>
+                                    {board.title}
+                                </Link>
+                                    
+                                </CardTitle>
                             </CardBody>
                         </Card>
                     ))}

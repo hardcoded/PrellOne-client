@@ -9,7 +9,7 @@ const App = () => (
       <AppNav />
       <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/board' component={Board}/>
+      <Route path='/board/:boardId' component={Board}/>
       </Switch>
     </div>
   )

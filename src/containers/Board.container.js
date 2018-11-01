@@ -2,12 +2,14 @@ import { connect } from 'react-redux'
 import Board from '../components/Board'
 
 
-const mapStateToProps = state => ({
-    id: state.reducerBoard['board1'].id,
-    title: state.reducerBoard['board1'].title,
-    lists: state.reducerBoard['board1'].lists,
+const mapStateToProps = (state, ownProps) => {
+  const boardId = ownProps.match.params.boardId //boardId passed by router
+  return({
+    id: state.reducerBoard[boardId].id,
+    title: state.reducerBoard[boardId].title,
+    lists: state.reducerBoard[boardId].lists,
     labels: state.reducerLabel
-  })
+  })}
 
 const mapDispatchToProps = dispatch => ({})
 
