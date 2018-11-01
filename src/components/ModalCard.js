@@ -1,16 +1,19 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Badge, Button, Row, Col} from 'reactstrap';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
+import DueDate from './DueDate'
 
-const ModalCard = ({cardId, modal, title, description, labelIds, memberIds, comments, closeModal})=>(
+const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDate, isOpen, closeModal})=>(
   <div>
-    <Modal isOpen={modal} toggle={closeModal} >
+    <Modal isOpen={isOpen} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
         <ModalBody className="container-fluid">
+          <h5>Due date</h5>
+          <h5><DueDate date={dueDate}></DueDate></h5>
           <h5>Labels</h5>
           <Row className="pl-3 mb-3">
             {
@@ -39,7 +42,7 @@ const ModalCard = ({cardId, modal, title, description, labelIds, memberIds, comm
               <Comment commentId={comment.id} content={comment.content} userId={comment.userId}></Comment>
             )
           }
-          <AddComment userId='user1' cardId={cardId}></AddComment>
+          <AddComment userId='user1' cardId={id}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="success" onClick={closeModal}>Cancel</Button>
@@ -49,13 +52,14 @@ const ModalCard = ({cardId, modal, title, description, labelIds, memberIds, comm
   )
 
 ModalCard.propTypes={
-  cardId: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   modal: PropTypes.bool.isRequired,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  labelIds: PropTypes.array,
-  memberIds: PropTypes.array,
-  comments: PropTypes.array,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  labelIds: PropTypes.array.isRequired,
+  memberIds: PropTypes.array.isRequired,
+  comments: PropTypes.array.isRequired,
+  dueDate: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired
   
 }
