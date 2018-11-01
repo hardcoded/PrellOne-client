@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Home from '../components/Home'
-import { openModal } from '../actions/addBoard.action'
+import { openModalCreateBoard } from '../actions/addBoard.action'
 
 
 const mapStateToProps = ( state )=> ({
@@ -14,8 +14,8 @@ const mapStateToProps = ( state )=> ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  openModal: () => {
-    dispatch(openModal())}
+  openModalCreateBoard: () => {
+    dispatch(openModalCreateBoard())}
 })
 
 

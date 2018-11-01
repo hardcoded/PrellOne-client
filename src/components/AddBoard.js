@@ -1,12 +1,13 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input} from 'reactstrap';
 import PropTypes from  'prop-types'
 
-const AddBoard = ({closeModal})=>(
+const AddBoard = ({modal, closeModalCreateBoard})=> (
+
   <div>
-    <Modal isOpen={modal} toggle={closeModal} >
-        <ModalHeader toggle={closeModal}>
-        <input className="mb-2 form-control" placeholder="Add a title to the board"  ref={node => input = node} />
+    <Modal toggle={closeModalCreateBoard} isOpen={modal}  >
+        <ModalHeader toggle={closeModalCreateBoard}>
+        <input className="mb-2 form-control" placeholder="Add a title to the board"/>
         </ModalHeader>
         <ModalBody className="container-fluid">
         <Input type="select">
@@ -14,14 +15,15 @@ const AddBoard = ({closeModal})=>(
         </Input>
         </ModalBody>
         <ModalFooter>
-          <Button color="success" onClick={closeModal}>Cancel</Button>
+          <Button color="success">Create board</Button>
         </ModalFooter>
    </Modal>
 </div>
-  )
+)
 
 AddBoard.propTypes={
-    closeModal: PropTypes.func.isRequired
+    closeModalCreateBoard: PropTypes.func.isRequired,
+    modal: PropTypes.bool.isRequired,
   
 }
 export default AddBoard

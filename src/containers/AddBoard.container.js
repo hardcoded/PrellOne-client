@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { closeModal } from '../actions/addBoard.action'
+import { closeModalCreateBoard } from '../actions/addBoard.action'
 import AddBoard from '../components/AddBoard'
 
 
@@ -8,8 +8,8 @@ const mapStateToProps = (state) =>({
 })
 
 const mapDispatchToProps = dispatch => ({
-    closeModal: () => {
-        dispatch(closeModal())}
+    closeModalCreateBoard: () => {
+        dispatch(closeModalCreateBoard())}
   })
 
 export default connect(

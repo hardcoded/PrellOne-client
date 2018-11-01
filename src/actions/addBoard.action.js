@@ -1,8 +1,8 @@
 
-export const openModal = () => ({
-    type: 'OPEN_MODAL',
+export const openModalCreateBoard = () => ({
+    type: 'OPEN_MODAL_CREATE_BOARD',
 })
 
-export const closeModal = () => ({
-    type: 'CLOSE_MODAL'
+export const closeModalCreateBoard = () => ({
+    type: 'CLOSE_MODAL_CREATE_BOARD'
 })
