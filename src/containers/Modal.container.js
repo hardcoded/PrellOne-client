@@ -7,13 +7,9 @@ const mapStateToProps = (state) => {
   const card = state.reducerCardPrello[state.reducerModal.activeCard] 
   if (card) {
     return ({
-      cardId: card.id,
+      ...card,
       modal: state.reducerModal.modal,
-      title: card.title,
-      description: card.description,
-      labelIds: card.labelIds,
-      memberIds: card.memberIds,
-      comments: card.comments
+
     })
   }
 }

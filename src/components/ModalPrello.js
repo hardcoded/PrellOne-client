@@ -1,16 +1,19 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Badge, Button, Row, Col} from 'reactstrap';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
+import DueDate from './DueDate'
 
-const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, comments, closeModal})=>(
+const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, comments, dueDate, closeModal})=>(
   <div>
     <Modal isOpen={modal} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
         <ModalBody className="container-fluid">
+          <h5>Due date</h5>
+          <h5><DueDate date={dueDate}></DueDate></h5>
           <h5>Labels</h5>
           <Row className="pl-3 mb-3">
             {
@@ -56,6 +59,7 @@ ModalPrello.propTypes={
   labelIds: PropTypes.array.isRequired,
   memberIds: PropTypes.array.isRequired,
   comments: PropTypes.array.isRequired,
+  dueDate: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired
   
 }

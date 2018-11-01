@@ -35,7 +35,7 @@ const demoData = {
                     userId: 'user2'
                 },
             ],
-            due_date: null,
+            dueDate: '2018-11-01T18:00:00+01:00',
             creation_date: null
         },
         'task2': {
@@ -46,7 +46,7 @@ const demoData = {
             membersIds: [],
             labelIds: ['label1','label2'],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-03T18:00:00+01:00',
             creation_date: null
         },
         'task3': {
@@ -57,7 +57,7 @@ const demoData = {
             members: [],
             labelIds: ['label1','label2'],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-15T18:00:00+01:00',
             creation_date: null
         },
         'task4': {
@@ -68,7 +68,7 @@ const demoData = {
             membersIds: [],
             labelIds: ['label4','label2','label1'],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-01T18:00:00+01:00',
             creation_date: null
         },
         'task5': {
@@ -79,7 +79,7 @@ const demoData = {
             membersIds: [],
             labelIds: [],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-01T18:00:00+01:00',
             creation_date: null
         },
         'task6': {
@@ -90,7 +90,7 @@ const demoData = {
             membersIds: [],
             labelIds: ['label1'],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-01T18:00:00+01:00',
             creation_date: null
         },
         'task7': {
@@ -101,7 +101,7 @@ const demoData = {
             membersIds: [],
             labelIds: ['label1','label3'],
             comments: [],
-            due_date: null,
+            dueDate: '2018-11-01T18:00:00+01:00',
             creation_date: null
         }
     },
