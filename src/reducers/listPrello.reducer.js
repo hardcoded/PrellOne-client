@@ -19,6 +19,15 @@ const listPrello = (state = demoData.lists, action) => {
                     ]
                 }
             }
+        case 'UPDATE_LIST':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    title: action.title
+                }
+            }
+
         case 'SHOW_ADD_CARD':
             return {
                 ...state,

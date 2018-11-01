@@ -147,6 +147,7 @@ const demoData = {
             color: 'warning'
         }
     },
+
     boards: {
         'board1': {
             id: 'board1',
@@ -159,7 +160,23 @@ const demoData = {
             lists: ['list1']
         }
     },
-    home: ['board1','board2']
+    teams:{
+        'Team1':{
+            id:'Team1',
+            name:'lala',
+            boards:['board1'],
+            members:[]
+        },
+        'Team2':{
+            id:'Team2',
+            name:'Teamzer',
+            boards:['board1','board2'],
+            members:[]
+        }
+
+    },
+    home: ['board1','board2'],
+    teamsManager:['Team1','Team2']
 }
 
 export default demoData;
