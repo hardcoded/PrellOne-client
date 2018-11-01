@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Jumbotron, Row, Card, CardBody,
     CardTitle } from 'reactstrap'
 
-const Home = ({boards}) => (
+const Home = ({boards, openModal}) => (
             <div>
             <header>
                 <Jumbotron>
@@ -29,7 +29,7 @@ const Home = ({boards}) => (
                             </CardBody>
                         </Card>
                     ))}
-                        <Card>
+                        <Card onClick={() => openModal()}>
                             <CardBody>
                                 <CardTitle>
                                     Create a board...

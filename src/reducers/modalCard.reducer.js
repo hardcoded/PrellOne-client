@@ -4,12 +4,12 @@ const modal = (state = {}, action) => {
     case 'OPEN_MODAL':
             return {
                 activeCard: action.cardId,
-                modal: true
+                modalCard: true
             }
         case 'CLOSE_MODAL':
         return {
             activeCard: undefined,
-            modal: false
+            modalCard: false
         }
     default: return state;
     }

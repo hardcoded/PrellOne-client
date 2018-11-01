@@ -6,7 +6,7 @@ import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 
-const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, comments, closeModal})=>(
+const ModalCard = ({cardId, modal, title, description, labelIds, memberIds, comments, closeModal})=>(
   <div>
     <Modal isOpen={modal} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
@@ -48,15 +48,15 @@ const ModalPrello = ({cardId, modal, title, description, labelIds, memberIds, co
 </div>
   )
 
-ModalPrello.propTypes={
+ModalCard.propTypes={
   cardId: PropTypes.string.isRequired,
   modal: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  labelIds: PropTypes.array.isRequired,
-  memberIds: PropTypes.array.isRequired,
-  comments: PropTypes.array.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  labelIds: PropTypes.array,
+  memberIds: PropTypes.array,
+  comments: PropTypes.array,
   closeModal: PropTypes.func.isRequired
   
 }
-export default ModalPrello
+export default ModalCard

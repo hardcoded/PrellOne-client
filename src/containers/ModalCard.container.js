@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import ModalPrello from '../components/ModalCard'
+import ModalCard from '../components/ModalCard'
 import { closeModal } from '../actions/modalCard.action'
 
 
@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
   if (card) {
     return ({
       cardId: card.id,
-      modal: state.reducerModalCard.modal,
+      modal: state.reducerModalCard.modalCard,
       title: card.title,
       description: card.description,
       labelIds: card.labelIds,
@@ -26,4 +26,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ModalPrello)
+)(ModalCard)

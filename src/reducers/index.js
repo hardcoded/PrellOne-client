@@ -8,6 +8,7 @@ import reducerModalCard from './modalCard.reducer'
 import reducerAddList from './addList.reducer'
 import reducerAppNav from './appNav.reducer'
 import reducerHome from './home.reducer'
+import reducerAddBoard from './addBoard.reducer'
 
 export default combineReducers({
     reducerCardPrello,
@@ -19,4 +20,5 @@ export default combineReducers({
     reducerAddList,
     reducerAppNav,
     reducerHome,
+    reducerAddBoard,
 })
