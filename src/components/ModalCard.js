@@ -17,7 +17,7 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
             <DueDate date={dueDate} done={done}></DueDate>
           </h5>
           <h6>
-            <CustomInput type="checkbox" id="doneCheckbox" checked={done} onClick={() => toggleDone(id)} label="Done"/>
+            <CustomInput type="checkbox" id="doneCheckbox" checked={done} onChange={() => toggleDone(id)} label="Done"/>
           </h6>
           <h5>Labels</h5>
           <Row className="pl-3 mb-3">

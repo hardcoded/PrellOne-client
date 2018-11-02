@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
   })}
 
 const mapDispatchToProps = dispatch => ({
-  onDragEnd: (result) => {console.log(result);dispatch(dndCard(result))}
+  onDragEnd: (result) => dispatch(dndCard(result))
 })
 
 export default connect(

@@ -1,4 +1,4 @@
-let nextBoardId = 1
+let nextBoardId = 3
 
 export const addBoard = (title) => ({
     type: 'ADD_BOARD',
@@ -8,6 +8,7 @@ export const addBoard = (title) => ({
         lists: [],
     }
 })
+
 export const addTeam = (name) => ({
   type: 'ADD_TEAM',
   id: 'Team' + nextBoardId++,

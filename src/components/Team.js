@@ -1,9 +1,8 @@
 import React from 'react'
-import Board from '../containers/Board.container'
 import Member from '../containers/Member.container'
 import BoardCompo from '../components/Board'
 import MemberCompo from '../components/Member'
-import { Container, Row, Card, CardBody,Col,
+import { Row, Card, CardBody,Col,
     CardTitle} from 'reactstrap'
 import { Link } from 'react-router-dom'
 import PropTypes from  'prop-types'
