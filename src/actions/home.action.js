@@ -1,7 +1,7 @@
-let nextBoardId = 3
+let nextBoardId = 1
 
-export const addTeam = (name) => ({
-  type: 'ADD_TEAM',
-  id: 'Team' + nextBoardId++,
-  name
+export const addBoard = (title) => ({
+  type: 'ADD_BOARD',
+  id: 'board' + nextBoardId++,
+  title
 })

@@ -26,6 +26,12 @@ const team = (state = demoData.teams, action) => {
                 }   
             }
 
+            case 'ADD_TEAM':
+            return{
+                ...state,
+                [action.team.id]:action.team
+            }
+
         default:
             return state
     }
