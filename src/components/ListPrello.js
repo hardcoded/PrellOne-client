@@ -9,7 +9,7 @@ const ListPrello = ({id, title, cardIds}) =>(
     <Card className="bg-light mb-3" tag="div">
       <CardHeader>
         {title} 
-        <Badge  color = "primary" className="float-right"></Badge> 
+        <Badge  color = "primary" className="float-right">{cardIds.length}</Badge> 
       </CardHeader>
           <div className="card-body" style={{flexGrow: 1, minHeight:'50px'}}>
             {

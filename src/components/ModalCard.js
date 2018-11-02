@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col} from 'reactstrap';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
@@ -7,13 +7,18 @@ import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
 
-const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDate, isOpen, closeModal})=>(
+const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDate, done, isOpen, toggleDone, closeModal})=>(
   <div>
     <Modal isOpen={isOpen} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>{title}</ModalHeader>
         <ModalBody className="container-fluid">
           <h5>Due date</h5>
-          <h5><DueDate date={dueDate}></DueDate></h5>
+          <h5>
+            <DueDate date={dueDate} done={done}></DueDate>
+          </h5>
+          <h6>
+            <CustomInput type="checkbox" id="doneCheckbox" checked={done} onClick={() => toggleDone(id)} label="Done"/>
+          </h6>
           <h5>Labels</h5>
           <Row className="pl-3 mb-3">
             {

@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import ModalCard from '../components/ModalCard'
 import { closeModal } from '../actions/modalCard.action'
+import { toggleDone } from '../actions/card.action'
 
 
 const mapStateToProps = (state) => {
@@ -13,7 +14,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
     closeModal: () => {
-        dispatch(closeModal())}
+      dispatch(closeModal())
+    },
+    toggleDone: (id) => {
+      dispatch(toggleDone(id))
+    }
   })
 
 export default connect(

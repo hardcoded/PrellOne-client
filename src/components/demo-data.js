@@ -36,7 +36,8 @@ const demoData = {
                 },
             ],
             dueDate: '2018-11-01T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         },
         'task2': {
             id: 'task2',
@@ -46,8 +47,9 @@ const demoData = {
             membersIds: [],
             labelIds: ['label1','label2'],
             comments: [],
-            dueDate: '2018-11-03T18:00:00+01:00',
-            creation_date: null
+            dueDate: '2018-11-05T18:00:00+01:00',
+            creation_date: null,
+            done: false
         },
         'task3': {
             id: 'task3',
@@ -58,7 +60,8 @@ const demoData = {
             labelIds: ['label1','label2'],
             comments: [],
             dueDate: '2018-11-15T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         },
         'task4': {
             id: 'task4',
@@ -69,7 +72,8 @@ const demoData = {
             labelIds: ['label4','label2','label1'],
             comments: [],
             dueDate: '2018-11-01T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         },
         'task5': {
             id: 'task5',
@@ -80,7 +84,8 @@ const demoData = {
             labelIds: [],
             comments: [],
             dueDate: '2018-11-01T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         },
         'task6': {
             id: 'task6',
@@ -91,7 +96,8 @@ const demoData = {
             labelIds: ['label1'],
             comments: [],
             dueDate: '2018-11-01T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         },
         'task7': {
             id: 'task7',
@@ -102,7 +108,8 @@ const demoData = {
             labelIds: ['label1','label3'],
             comments: [],
             dueDate: '2018-11-01T18:00:00+01:00',
-            creation_date: null
+            creation_date: null,
+            done: false
         }
     },
     lists: {

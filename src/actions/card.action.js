@@ -42,3 +42,8 @@ export const toggleModal = id => ({
     type: 'TOGGLE_CARD_MODAL',
     id
 })
+
+export const toggleDone = id => ({
+    type: 'TOGGLE_DONE',
+    id
+})
