@@ -23,13 +23,16 @@ const AppNav = ({isOpen, open }) => {
               <NavItem>
                 <Link className="nav-link" to="/board/board1">Demo Board</Link>
               </NavItem>
+              <NavItem>
+                <Link className="nav-link" to="/team">Team</Link>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
+                  <DropdownItem >
+                    Option 3
                   </DropdownItem>
                   <DropdownItem>
                     Option 2

@@ -9,7 +9,9 @@ import reducerAddList from './addList.reducer'
 import reducerAppNav from './appNav.reducer'
 import reducerHome from './home.reducer'
 import reducerAddBoard from './addBoard.reducer'
-
+import reducerTeamsManager from './teamsManager.reducer'
+import reducerTeam from './team.reducer'
+import reducerAddTeam from './addTeam.reducer'
 export default combineReducers({
     reducerCardPrello,
     reducerBoard,
@@ -21,4 +23,8 @@ export default combineReducers({
     reducerAppNav,
     reducerHome,
     reducerAddBoard,
+    reducerTeamsManager,
+    reducerTeam,
+    reducerAddTeam
+    
 })
