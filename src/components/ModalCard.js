@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Badge, Button, Row, Col} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Row, Col} from 'reactstrap';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
@@ -53,7 +53,7 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
 
 ModalCard.propTypes={
   id: PropTypes.string.isRequired,
-  modal: PropTypes.bool.isRequired,
+  isOpen: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   labelIds: PropTypes.array.isRequired,
