@@ -18,7 +18,7 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
           <Row className="pl-3 mb-3">
             {
               labelIds && labelIds.map(labelId => 
-                <Col xs="auto" className="p-0">
+                <Col xs="auto" className="p-0" key={labelId}>
                   <Label labelId={labelId}></Label>
                 </Col>
               )
@@ -30,7 +30,7 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
           <Row className="pl-3 mb-3">
             {
               memberIds && memberIds.map(memberId => 
-                <Col xs="2" className="p-2">
+                <Col xs="2" className="p-2" key={memberId}>
                   <Member memberId={memberId}></Member>
                 </Col>
               )
@@ -39,7 +39,7 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
           <h5>Comments</h5>
           {
             comments && comments.map(comment => 
-              <Comment commentId={comment.id} content={comment.content} userId={comment.userId}></Comment>
+              <Comment commentId={comment.id} content={comment.content} userId={comment.userId} key={comment}></Comment>
             )
           }
           <AddComment userId='user1' cardId={id}></AddComment>
@@ -52,14 +52,14 @@ const ModalCard = ({id, title, description, labelIds, memberIds, comments, dueDa
   )
 
 ModalCard.propTypes={
-  id: PropTypes.string.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  labelIds: PropTypes.array.isRequired,
-  memberIds: PropTypes.array.isRequired,
-  comments: PropTypes.array.isRequired,
-  dueDate: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  isOpen: PropTypes.bool,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  labelIds: PropTypes.array,
+  memberIds: PropTypes.array,
+  comments: PropTypes.array,
+  dueDate: PropTypes.string,
   closeModal: PropTypes.func.isRequired
   
 }

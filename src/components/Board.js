@@ -19,8 +19,8 @@ const Board = ({id, title, lists}) => (
         <Row className="scrolling-wrapper-flexbox">
         {
           lists.map(list=> (
-          <Col  md="2" lg="3">
-          <ListPrello key={list} listId={list}></ListPrello>
+          <Col  md="2" lg="3" key={list}>
+          <ListPrello listId={list}></ListPrello>
           </Col>
         ))}
         <Col  md="2" lg="3">

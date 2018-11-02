@@ -21,7 +21,7 @@ const Home = ({boards, openModalCreateBoard}) => (
             <Container>
                 <Row>
                     {boards.map(board => (
-                        <Card>
+                        <Card key={board.id}>
                             <CardBody>
                                 <CardTitle>
                                 <Link className="nav-link" to={"/board/"+board.id}>
