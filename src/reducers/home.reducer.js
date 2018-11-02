@@ -5,7 +5,7 @@ const home = (state = demoData.home, action) => {
         case 'ADD_BOARD' :
             return [
                 ...state,
-                [action.board.id]: action.board
+                action.board.id
             ]
         
         default:
