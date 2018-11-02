@@ -1,4 +1,4 @@
-let nextBoardId = 3
+let nextBoardId = 1
 
 export const addBoard = (title) => ({
     type: 'ADD_BOARD',
