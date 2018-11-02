@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { closeModalCreateBoard } from '../actions/addBoard.action'
 import AddBoard from '../components/AddBoard'
+import { addBoard } from '../actions/home.action'
 
 
 const mapStateToProps = (state) =>({
@@ -9,6 +10,10 @@ const mapStateToProps = (state) =>({
 
 const mapDispatchToProps = dispatch => ({
     closeModalCreateBoard: () => {
+        dispatch(closeModalCreateBoard())},
+
+    addBoard: (title) => { 
+        dispatch(addBoard(title))
         dispatch(closeModalCreateBoard())}
   })
 

@@ -5,7 +5,6 @@ import moment from 'moment';
 
 const DueDate = ({date})=>{
   const now = moment()
-  console.log(now.format());
   
   const dueDate = moment(date)
   const diff = dueDate.diff(now, 'days')

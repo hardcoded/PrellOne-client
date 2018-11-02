@@ -1,7 +1,10 @@
-let nextBoardId = 1
+let nextBoardId = 3
 
-export const addCard = (title) => ({
-  type: 'ADD_BOARD',
-  id: 'board' + nextBoardId++,
-  title
+export const addBoard = (title) => ({
+    type: 'ADD_BOARD',
+    board: {
+        id: 'board' + nextBoardId++,
+        title: title,
+        lists: [],
+    }
 })
