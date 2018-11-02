@@ -165,13 +165,15 @@ const demoData = {
             id:'Team1',
             name:'lala',
             boards:['board1'],
-            members:[]
+            members:[],
+            toggleAddMember:false
         },
         'Team2':{
             id:'Team2',
             name:'Teamzer',
             boards:['board1','board2'],
-            members:[]
+            members:['user2'],
+            toggleAddMember:false
         }
 
     },
