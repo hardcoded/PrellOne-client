@@ -23,7 +23,7 @@ const DueDate = ({date, done})=>{
   )}
 
 DueDate.propTypes={
-  date: PropTypes.string.isRequired,
-  done: PropTypes.bool.isRequired
+  date: PropTypes.string,
+  done: PropTypes.bool
 }
 export default DueDate

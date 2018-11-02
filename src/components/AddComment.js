@@ -36,8 +36,8 @@ const AddComment = ({userName, photo, addComment}) => {
 
 
 AddComment.propTypes={
-  id: PropTypes.string.isRequired,
-  content:PropTypes.string.isRequired,
+  id: PropTypes.string,
+  content:PropTypes.string,
   userName: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired
   

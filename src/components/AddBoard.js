@@ -23,7 +23,7 @@ const AddBoard = ({modal, closeModalCreateBoard})=> (
 
 AddBoard.propTypes={
     closeModalCreateBoard: PropTypes.func.isRequired,
-    modal: PropTypes.bool.isRequired,
+    modal: PropTypes.bool,
   
 }
 export default AddBoard

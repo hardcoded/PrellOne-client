@@ -6,12 +6,10 @@ import { toggleDone } from '../actions/card.action'
 
 const mapStateToProps = (state) => {
   const card = state.reducerCardPrello[state.reducerModalCard.activeCard] 
-  if (card) {
     return ({
       ...card,
       isOpen: state.reducerModalCard.isOpen,
     })
-  }
 }
 
 const mapDispatchToProps = dispatch => ({
@@ -27,3 +25,4 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(ModalCard)
+

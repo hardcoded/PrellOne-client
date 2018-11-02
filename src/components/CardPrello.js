@@ -10,7 +10,7 @@ const CardPrello = ({id, title, labels, openModal})=>(
         <CardText tag="div" className="container">
           <Row>
             {
-              labels.map(labelId => <Label labelId={labelId}></Label> )
+              labels.map(labelId => <Label key={labelId} labelId={labelId}></Label> )
             }    
           </Row>
           <Row>

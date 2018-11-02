@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Jumbotron, Row, Card, CardBody,
     CardTitle } from 'reactstrap'
 import PropTypes from  'prop-types'
+import AddBoard from '../containers/AddBoard.container'
 
 
 const Home = ({boards, openModalCreateBoard}) => (
@@ -20,7 +21,7 @@ const Home = ({boards, openModalCreateBoard}) => (
             <Container>
                 <Row>
                     {boards.map(board => (
-                        <Card>
+                        <Card key={board.id}>
                             <CardBody>
                                 <CardTitle>
                                 <Link className="nav-link" to={"/board/"+board.id}>
@@ -38,6 +39,7 @@ const Home = ({boards, openModalCreateBoard}) => (
                                 </CardTitle>
                             </CardBody>
                         </Card>
+                        <AddBoard/>
                 </Row>
             </Container>
             </div>

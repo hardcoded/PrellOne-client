@@ -7,7 +7,7 @@ const Member = ({id, userName, photo}) => (
 
 Member.propTypes={
   id: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
+  username: PropTypes.string,
+  photo: PropTypes.string,
 }
 export default Member
