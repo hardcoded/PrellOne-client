@@ -3,10 +3,11 @@ import ListPrello from '../containers/ListPrello.container'
 import ListPrelloCompo from '../components/ListPrello'
 import AddList from '../containers/AddList.container'
 import { Container, Row, Col } from 'reactstrap'
+import { DragDropContext } from 'react-beautiful-dnd'
 import ModalCard from '../containers/ModalCard.container'
 import PropTypes from  'prop-types'
 
-const Board = ({id, title, lists}) => (
+const Board = ({id, title, lists, onDragEnd}) => (
 
     <div>
       <header>
@@ -17,15 +18,17 @@ const Board = ({id, title, lists}) => (
       <section>
         <Container style={{maxWidth:"100%"}}>
         <Row className="scrolling-wrapper-flexbox">
-        {
-          lists.map(list=> (
-          <Col xs="12" sm="6" md="4" lg="3" key={list}>
-          <ListPrello listId={list}></ListPrello>
+          <DragDropContext onDragEnd={onDragEnd}>
+            {
+              lists.map(list=> (
+              <Col xs="12" sm="6" md="4" lg="3" key={list}>
+              <ListPrello listId={list}></ListPrello>
+              </Col>
+            ))}
+          </DragDropContext>
+          <Col xs="12" sm="6" md="4" lg="3">
+            <AddList boardId={id}></AddList>
           </Col>
-        ))}
-        <Col xs="12" sm="6" md="4" lg="3">
-        <AddList boardId={id}></AddList>
-        </Col>
         </Row>
         </Container>
         <ModalCard/>
@@ -37,7 +40,8 @@ const Board = ({id, title, lists}) => (
 Board.propTypes={
   id: PropTypes.string.isRequired,
   title:PropTypes.string.isRequired,
-  lists:PropTypes.arrayOf(ListPrelloCompo)
+  lists:PropTypes.arrayOf(ListPrelloCompo),
+  onDragEnd: PropTypes.func.isRequired
 }
 
 export default Board

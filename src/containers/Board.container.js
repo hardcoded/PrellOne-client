@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Board from '../components/Board'
+import { dndCard } from '../actions/board.action'
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -11,7 +12,9 @@ const mapStateToProps = (state, ownProps) => {
     labels: state.reducerLabel
   })}
 
-const mapDispatchToProps = dispatch => ({})
+const mapDispatchToProps = dispatch => ({
+  onDragEnd: (result) => {console.log(result);dispatch(dndCard(result))}
+})
 
 export default connect(
   mapStateToProps,

@@ -21,3 +21,12 @@ export const toggleAddCard = id => ({
     type: 'TOGGLE_ADD_LIST',
     id
 })
+
+/** drag and drop card action
+ * 
+ * @param {*} result contains {destination, source, draggableId}
+ */
+export const dndCard = result => ({
+    ...result,
+    type: 'DND_CARD',
+})
