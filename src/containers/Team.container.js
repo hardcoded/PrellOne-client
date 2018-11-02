@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Team from '../components/Team'
+import { openModalCreateBoard } from '../actions/addBoard.action'
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -16,7 +17,10 @@ const mapStateToProps = (state, ownProps) => {
     members: state.reducerTeam[teamId].members
   })}
 
-const mapDispatchToProps = dispatch => ({})
+const mapDispatchToProps = dispatch => ({
+  openModalCreateBoard: () => {
+    dispatch(openModalCreateBoard())}
+})
 
 export default connect(
   mapStateToProps,

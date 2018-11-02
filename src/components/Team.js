@@ -7,7 +7,8 @@ import { Row, Card, CardBody,Col,
 import { Link } from 'react-router-dom'
 import PropTypes from  'prop-types'
 import AddMember from '../containers/AddMember.container'
-const Team = ({id,name, boards, members}) => (
+import AddBoard from '../containers/AddBoard.container'
+const Team = ({id,name, boards, members,openModalCreateBoard}) => (
 
     <div >
          <h1>{name}</h1> 
@@ -32,6 +33,14 @@ const Team = ({id,name, boards, members}) => (
             </CardBody>
         </Card>
         ))}
+            <Card onClick={() => openModalCreateBoard()}>
+                            <CardBody>
+                                <CardTitle>
+                                    Create a board...
+                                </CardTitle>
+                            </CardBody>
+                        </Card>
+                        <AddBoard/>
         </Row>
 
         <AddMember idTeam={id}></AddMember>
@@ -43,7 +52,8 @@ Team.propTypes={
   id: PropTypes.string.isRequired,
   name:PropTypes.string.isRequired,
   boards:PropTypes.arrayOf(BoardCompo),
-  members:PropTypes.arrayOf(MemberCompo)
+  members:PropTypes.arrayOf(MemberCompo),
+  openModalCreateBoard: PropTypes.func.isRequired
 }
 
 export default Team
