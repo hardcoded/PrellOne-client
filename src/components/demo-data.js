@@ -159,12 +159,14 @@ const demoData = {
         'board1': {
             id: 'board1',
             title: 'First Board',
-            lists: ['list1','list2','list3']
+            lists: ['list1','list2','list3'],
+            teams:[]
         },
         'board2': {
             id: 'board2',
             title: 'Marion Board',
-            lists: ['list1']
+            lists: ['list1'],
+            teams:[]
         }
     },
     teams:{

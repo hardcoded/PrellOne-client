@@ -1,10 +1,10 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input} from 'reactstrap';
 import PropTypes from  'prop-types'
+import team from '../reducers/team.reducer';
 
-const AddBoard = ({modal, closeModalCreateBoard, addBoard})=> {
+const AddBoard = ({id,modal, closeModalCreateBoard, addBoard})=> {
   let titleBoard
-
   return (
   <div>
     <form>
@@ -19,7 +19,7 @@ const AddBoard = ({modal, closeModalCreateBoard, addBoard})=> {
         </ModalBody>
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
-            addBoard(titleBoard.value)
+            addBoard(titleBoard.value,id)
             titleBoard.value = ''
           }}>Create board</Button>
           <Button color="danger" onClick={closeModalCreateBoard}>Cancel</Button>
@@ -31,6 +31,7 @@ const AddBoard = ({modal, closeModalCreateBoard, addBoard})=> {
 }
 
 AddBoard.propTypes={
+    id:PropTypes.string,
     closeModalCreateBoard: PropTypes.func.isRequired,
     modal: PropTypes.bool,
     addBoard: PropTypes.func.isRequired,
