@@ -5,6 +5,7 @@ import { addMemberTeam,hideAddMember,showAddMember } from '../actions/team.actio
 
 
 const mapStateToProps = (state, ownProps) => ({
+  teamId: ownProps.idTeam,
   hidden: state.reducerTeam[ownProps.idTeam].addMember,
 })
 
