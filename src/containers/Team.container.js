@@ -18,8 +18,8 @@ const mapStateToProps = (state, ownProps) => {
   })}
 
 const mapDispatchToProps = dispatch => ({
-  openModalCreateBoard: () => {
-    dispatch(openModalCreateBoard())}
+  openModalCreateBoard: (teamId) => {
+    dispatch(openModalCreateBoard(teamId))}
 })
 
 export default connect(

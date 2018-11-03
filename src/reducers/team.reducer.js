@@ -2,7 +2,6 @@ import demoData from '../components/demo-data'
 
 const team = (state = demoData.teams, action) => {
     switch (action.type) {
-        /*
         case 'ADD_BOARD':
             return {
                 ...state,
@@ -13,7 +12,7 @@ const team = (state = demoData.teams, action) => {
                         action.boards.id
                     ]
                 }   
-            }*/
+            }
             case 'ADD_MEMBER_TEAM':
             return {
                 ...state,

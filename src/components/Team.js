@@ -33,7 +33,7 @@ const Team = ({id,name, boards, members,openModalCreateBoard}) => (
             </CardBody>
         </Card>
         ))}
-            <Card onClick={() => openModalCreateBoard()}>
+            <Card onClick={() => openModalCreateBoard(id)}>
                             <CardBody>
                                 <CardTitle>
                                     Create a board...
