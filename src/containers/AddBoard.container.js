@@ -3,7 +3,6 @@ import { closeModalCreateBoard } from '../actions/addBoard.action'
 import AddBoard from '../components/AddBoard'
 import { addBoard } from '../actions/home.action'
 
-
 const mapStateToProps = (state) =>{
     const team = state.reducerTeam[state.reducerAddBoard.activeTeam] 
    return (

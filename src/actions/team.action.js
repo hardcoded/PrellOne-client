@@ -11,13 +11,14 @@ export const addMemberTeam = (id, username) => ({
     }
 })
 
-export const addBoard = (title,id) => ({
+export const addBoard = (title,idTeam) => ({
     type: 'ADD_BOARD',
-    id, 
+    idTeam, 
     board: {
         id: 'board' + nextBoardId++,
         title: title,
         lists: [],
+        teams:[idTeam]
     }
 })
 

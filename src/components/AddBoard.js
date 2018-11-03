@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input} from 'reactstrap';
 import PropTypes from  'prop-types'
+import team from '../reducers/team.reducer';
 
 const AddBoard = ({id,modal, closeModalCreateBoard, addBoard})=> {
   let titleBoard

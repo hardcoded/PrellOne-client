@@ -5,7 +5,6 @@ import { openModalCreateBoard } from '../actions/addBoard.action'
 
 const mapStateToProps = ( state )=> ({
     boards: state.reducerHome.map((boardId)=> {
-      console.log("deded")
       return {
         id: state.reducerBoard[boardId].id,
         title: state.reducerBoard[boardId].title
