@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Jumbotron, Row, Card, CardBody,
+import { Container, Row, Card, CardBody,
     CardTitle, Col} from 'reactstrap'
 import PropTypes from  'prop-types'
 import AddBoard from '../containers/AddBoard.container'
