@@ -27,9 +27,9 @@ const Home = ({boards, openModalCreateBoard}) => (
                         </Col>  
                     ))}
                     <Col xs="12" sm="6" md="3" lg="2"> 
-                        <Card onClick={() => openModalCreateBoard()} className="card text-white bg-primary mb-3">
+                        <Card onClick={() => openModalCreateBoard()} className="card text-white bg-primary mb-3" style={{cursor:'pointer'}}>
                             <CardBody>
-                                <CardTitle>
+                                <CardTitle >
                                     Create a board...
                                 </CardTitle>
                             </CardBody>
