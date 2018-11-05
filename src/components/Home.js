@@ -8,17 +8,17 @@ import AddBoard from '../containers/AddBoard.container'
 
 const Home = ({boards, openModalCreateBoard}) => (
         <div>
-            <Container style={{maxWidth:"100%"}}>
+            <Container>
             <header>
                     <h1>Boards</h1>
             </header> 
-                <Row>
+                <Row pl>
                     {boards.map(board => (
-                        <Col xs="12" sm="6" md="3" lg="2"> 
+                       <Col xs="12" sm="6" md="4" lg="3"> 
                             <Card key={board.id} className="bg-light mb-3">
                                 <CardBody>
                                     <CardTitle>
-                                    <Link  to={"/board/"+board.id}>
+                                    <Link  to={"/board/"+board.id} st>
                                         {board.title}
                                     </Link>    
                                     </CardTitle>
@@ -26,7 +26,7 @@ const Home = ({boards, openModalCreateBoard}) => (
                             </Card>
                         </Col>  
                     ))}
-                    <Col xs="12" sm="6" md="3" lg="2"> 
+                    <Col xs="12" sm="6" md="4" lg="3"> 
                         <Card onClick={() => openModalCreateBoard()} className="card text-white bg-primary mb-3" style={{cursor:'pointer'}}>
                             <CardBody>
                                 <CardTitle >

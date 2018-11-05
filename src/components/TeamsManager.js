@@ -5,16 +5,22 @@ import Team from '../containers/Team.container';
 import AddTeam from '../containers/AddTeam.container';
 
 const TeamsManager = ({teams}) => (
-    <Container>
+    <div>
+        <Container>
+            <header>
+               <h1>My teams</h1> 
+            </header>
         <div>
-                {teams.map(team=> (
+            {teams.map(team=> (
                 <Team key={team.id} teamId={team.id}></Team>
-                ))}
+            ))}
         </div>
         <div>
             <AddTeam></AddTeam>
         </div>
-    </Container>
+        </Container>    
+    </div>
+    
 )
 
 TeamsManager.propTypes={

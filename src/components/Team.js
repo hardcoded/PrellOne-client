@@ -11,39 +11,45 @@ import AddBoard from '../containers/AddBoard.container'
 const Team = ({id,name, boards, members,openModalCreateBoard}) => (
 
     <div >
-         <h1>{name}</h1> 
-         <Row className="pl-3 mb-3" >
-                  <Col xs="2" className="p-2">
-                  {members.map(member=>(
+         <h4>{name}</h4> 
+         <Row className="pl-3 mb-3">
+                
+                    {members.map(member=>(
+                    <Col lg="1">
                      <Member memberId={member} ></Member>
-                 ))} 
-                 </Col>
-                  
+                     </Col> 
+                    ))} 
+                    
         </Row>  
-        <Row className="scrolling-wrapper-flexbox">
-        {  
-          boards.map(board=> (
-            <Card>
-            <CardBody>
-                <CardTitle>
-                <Link className="nav-link" to={"/board/"+board.id}>
-                    {board.title}
-                </Link>
-                </CardTitle>
-            </CardBody>
-        </Card>
-        ))}
-            <Card onClick={() => openModalCreateBoard(id)}>
+        <Row className="pl-3 mb-3">
+            { boards.map(board=> (
+                <Col xs="12" sm="6" md="4" lg="3"> 
+                    <Card key={board.id} className="bg-light mb-3">
                             <CardBody>
                                 <CardTitle>
-                                    Create a board...
+                                    <Link  to={"/board/"+board.id} st>
+                                        {board.title}
+                                    </Link>    
                                 </CardTitle>
                             </CardBody>
-                        </Card>
-                        <AddBoard/>
+                    </Card>
+                </Col>
+            ))}
+            <Col xs="12" sm="6" md="4" lg="3"> 
+                <Card onClick={() => openModalCreateBoard(id)} className="card text-white bg-primary mb-3" style={{cursor:'pointer'}}>
+                    <CardBody>
+                        <CardTitle>
+                            Create a board...
+                        </CardTitle>
+                    </CardBody>
+                </Card>
+                <AddBoard/>
+            </Col>
         </Row>
-
+        <Row className="pl-3 mb-3">
         <AddMember idTeam={id}></AddMember>
+        </Row>
+        
     </div>
 )
 
