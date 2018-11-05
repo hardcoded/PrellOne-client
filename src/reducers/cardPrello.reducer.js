@@ -78,13 +78,12 @@ const cardPrello = (state = demoData.cards, action) => {
                     labels: [...state.labels.slice(0, action.index), ...state.labels.slice(action.index + 1)]
                 }
             }
-        case 'TOGGLE_CARD_MODAL':
-            if (state.id !== action.id) {
-                return state;
-            } else {
-                return {
-                    ...state,
-                    toggle: !state.toggle
+        case 'UPDATE_CARD_ATTRIBUTE':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    [action.attributeName]: action.value
                 }
             }
         default:
