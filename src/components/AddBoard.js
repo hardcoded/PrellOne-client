@@ -9,12 +9,17 @@ const AddBoard = ({id,modal, closeModalCreateBoard, addBoard})=> {
   <div>
     <form>
     <Modal toggle={closeModalCreateBoard} isOpen={modal}  >
+
         <ModalHeader toggle={closeModalCreateBoard}>
-        <input className="mb-2 form-control" placeholder="Add a title to the board"  ref={node => titleBoard = node} />
+        Create a new board  
         </ModalHeader>
+
         <ModalBody className="container-fluid">
+        <label>Title:</label>
+        <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} />
+        <label>Team:</label>
         <Input type="select">
-          <option> Mettre les teams </option>
+          <option>Team 1 </option>
         </Input>
         </ModalBody>
         <ModalFooter>
