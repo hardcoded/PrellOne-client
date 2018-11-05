@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = dispatch => ({
   addMemberTeam: (id, username) => { 
     dispatch(addMemberTeam(id, username))
+    dispatch(hideAddMember(id))
   },
   hide: (id) => {
     dispatch(hideAddMember(id))
