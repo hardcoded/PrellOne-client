@@ -12,12 +12,12 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap'
 
-const AppNav = ({isOpen, open }) => {
+const AppNav = ({isOpen, open, close }) => {
 
     return (
         <Navbar className="navbar-dark bg-primary" expand="md">
           <Link className="navbar-brand" to="/">Prello</Link>
-          <NavbarToggler onClick={open()} />
+          <NavbarToggler onClick={() => {if (isOpen) {close()} else {open()}}} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

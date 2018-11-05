@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = dispatch => ({
   addCard: (id, title) => { 
     dispatch(addCard(id, title))
+    dispatch(hideAddCard(id))
   },
   hide: (id) => {
     dispatch(hideAddCard(id))
