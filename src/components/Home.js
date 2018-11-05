@@ -1,38 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Container, Jumbotron, Row, Card, CardBody,
-    CardTitle } from 'reactstrap'
+    CardTitle, Col} from 'reactstrap'
 import PropTypes from  'prop-types'
 import AddBoard from '../containers/AddBoard.container'
 
 
 const Home = ({boards, openModalCreateBoard}) => (
-            <div>
+        <div>
+            <Container style={{maxWidth:"100%"}}>
             <header>
-                <Jumbotron>
-                    <h1 className="display-3">Welcome to Prello !</h1>
-                    <p className="lead">Wooow ! this is way better than Trello.</p>
-                    <hr className="my-2" />
-                    <p>It is built with Node.js and React.</p>
-                    <p className="lead">
-                    </p>
-                </Jumbotron>
-            </header>
-            <Container>
+                    <h1>Boards</h1>
+            </header> 
                 <Row>
                     {boards.map(board => (
-                        <Card key={board.id}>
-                            <CardBody>
-                                <CardTitle>
-                                <Link className="nav-link" to={"/board/"+board.id}>
-                                    {board.title}
-                                </Link>
-                                    
-                                </CardTitle>
-                            </CardBody>
-                        </Card>
+                        <Col xs="12" sm="6" md="3" lg="2"> 
+                            <Card key={board.id} className="bg-light mb-3">
+                                <CardBody>
+                                    <CardTitle>
+                                    <Link  to={"/board/"+board.id}>
+                                        {board.title}
+                                    </Link>    
+                                    </CardTitle>
+                                </CardBody>
+                            </Card>
+                        </Col>  
                     ))}
-                        <Card onClick={() => openModalCreateBoard()}>
+                    <Col xs="12" sm="6" md="3" lg="2"> 
+                        <Card onClick={() => openModalCreateBoard()} className="card text-white bg-primary mb-3">
                             <CardBody>
                                 <CardTitle>
                                     Create a board...
@@ -40,9 +35,10 @@ const Home = ({boards, openModalCreateBoard}) => (
                             </CardBody>
                         </Card>
                         <AddBoard/>
+                    </Col>
                 </Row>
             </Container>
-            </div>
+        </div>
     )
 
 Home.propTypes={
