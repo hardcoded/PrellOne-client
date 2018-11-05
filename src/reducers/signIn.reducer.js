@@ -1,6 +1,6 @@
-const signUp = (state = {}, action) => {
+const signIn = (state = {}, action) => {
     switch (action.type) {
-        case 'SUBMIT_SIGN_UP' :
+        case 'LOGIN' :
             return {
                 ...state
             }
@@ -9,4 +9,4 @@ const signUp = (state = {}, action) => {
     }
 }
 
-export default signUp
+export default signIn

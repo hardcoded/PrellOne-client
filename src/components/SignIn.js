@@ -3,7 +3,7 @@ import {Field, reduxForm} from 'redux-form' ;
 import {Container, Input, Button, Col, Form, FormGroup, Label} from 'reactstrap'
 import PropTypes from  'prop-types'
 
-const SignUp = ({handleSubmit}) => {
+const SignIn = ({login}) => {
 
   const renderField = ({
     input,
@@ -24,38 +24,8 @@ const SignUp = ({handleSubmit}) => {
 
   return (
     <Container className="SignInUpForms">
-    <h2>Sign Up</h2>
-      <Form className="form" onSubmit={() => handleSubmit()}>
-      <Col>
-      <FormGroup>
-      <Label>User name</Label>
-          <Field 
-            name='userName'
-            type="text" 
-            component={renderField}
-          />
-          </FormGroup>
-          </Col>
-          <Col>
-          <FormGroup>
-          <Label>First name</Label>
-          <Field 
-            name='firstName' 
-            type="text"
-            component={renderField}
-          />
-          </FormGroup>
-          </Col>
-          <Col>
-          <FormGroup>
-            <Label>Last name</Label>
-          <Field 
-            name='lastName'
-            type="text"
-            component={renderField}
-          />
-          </FormGroup>
-          </Col>
+    <h2>Sign In</h2>
+      <Form className="form" onSubmit={() => login()}>
           <Col>
           <FormGroup>
             <Label>Email</Label>
@@ -82,10 +52,10 @@ const SignUp = ({handleSubmit}) => {
   );
 }
 
-SignUp.propTypes={
-  handleSubmit: PropTypes.func.isRequired
+SignIn.propTypes={
+  login: PropTypes.func.isRequired
 }
 
 export default reduxForm({
-  form: 'signUp'
-})(SignUp)
+  form: 'signIn'
+})(SignIn)

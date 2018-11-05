@@ -12,6 +12,8 @@ import reducerAddBoard from './addBoard.reducer'
 import reducerTeamsManager from './teamsManager.reducer'
 import reducerTeam from './team.reducer'
 import reducerAddTeam from './addTeam.reducer'
+import reducerSignIn from './signIn.reducer'
+import reducerSignUp from './signUp.reducer'
 import { reducer as formReducer } from 'redux-form';
 
 export default combineReducers({
@@ -28,6 +30,8 @@ export default combineReducers({
     reducerTeamsManager,
     reducerTeam,
     reducerAddTeam,
+    reducerSignIn,
+    reducerSignUp,
     form: formReducer
     
 })
