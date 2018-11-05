@@ -1,6 +1,6 @@
 import React from 'react';
 import {Field, reduxForm} from 'redux-form' ;
-import {Container, Form, FormGroup, Input, Button} from 'reactstrap'
+import {Container, Input, Button, Col, Form, FormGroup, Label} from 'reactstrap'
 import PropTypes from  'prop-types'
 
 const SignUp = ({handleSubmit}) => {
@@ -23,49 +23,60 @@ const SignUp = ({handleSubmit}) => {
   )
 
   return (
-    <Container>
-      <Form onSubmit={() => handleSubmit()}>
-        <FormGroup>
+    <Container className="SignUpForm">
+    <h2>Sign Up</h2>
+      <Form className="form" onSubmit={() => handleSubmit()}>
+      <Col>
+      <FormGroup>
+      <Label>User name</Label>
           <Field 
             name='userName'
             type="text" 
             component={renderField}
-            label="Username"
           />
-        </FormGroup>
-        <FormGroup>
+          </FormGroup>
+          </Col>
+          <Col>
+          <FormGroup>
+          <Label>First name</Label>
           <Field 
             name='firstName' 
             type="text"
             component={renderField}
-            label="First name"
           />
-        </FormGroup>
-        <FormGroup>
+          </FormGroup>
+          </Col>
+          <Col>
+          <FormGroup>
+            <Label>Last name</Label>
           <Field 
             name='lastName'
             type="text"
             component={renderField}
-            label="Last name"
           />
-        </FormGroup>
-        <FormGroup>
+          </FormGroup>
+          </Col>
+          <Col>
+          <FormGroup>
+            <Label>Email</Label>
           <Field 
             name='email'
             type="email"
             component={renderField}
-            label="E-mail"
           />
-        </FormGroup>
-        <FormGroup>
+          </FormGroup>
+          </Col>
+          <Col>
+          <FormGroup>
+            <Label>Password</Label>
           <Field 
             name='password'
             type="password"
             component={renderField}
-            label="Password"
           />
-        </FormGroup>
-        <Button fluid type='submit'>Submit</Button>
+          </FormGroup>
+          </Col>
+        <Button type='submit' className="mt-2" >Submit</Button>
       </Form>
     </Container>
   );

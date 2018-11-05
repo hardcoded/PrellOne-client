@@ -26,6 +26,9 @@ const AppNav = ({isOpen, open }) => {
               <NavItem>
                 <Link className="nav-link" to="/team">Team</Link>
               </NavItem>
+              <NavItem>
+                <Link className="nav-link" to="/signUp">Sign up</Link>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Options
