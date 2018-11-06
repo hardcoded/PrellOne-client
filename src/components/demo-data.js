@@ -1,14 +1,14 @@
 const demoData = {
     users: {
         'user1': {
-            id: 'user1',
+            id: '5be185207afb8f1507e6c663',
             userName: 'medihebfaiza',
             firstName: 'Mohamed Iheb',
             lastName: 'FAIZA',
             photo: 'https://avatars1.githubusercontent.com/u/22474480?s=460&v=4'
         },
         'user2': {
-            id: 'user2',
+            id: '5be185217afb8f1507e6c664',
             userName: 'marion-rul',
             firstName: 'Marion',
             lastName: 'RUL',
@@ -156,14 +156,14 @@ const demoData = {
     },
 
     boards: {
-        'board1': {
-            id: 'board1',
+        '5be185217afb8f1507e6c666': {
+            id: '5be185217afb8f1507e6c666',
             title: 'First Board',
             lists: ['list1','list2','list3'],
             teams:[]
         },
-        'board2': {
-            id: 'board2',
+        '5be185217afb8f1507e6c667': {
+            id: '5be185217afb8f1507e6c667',
             title: 'Marion Board',
             lists: ['list1'],
             teams:[]
@@ -173,21 +173,61 @@ const demoData = {
         'Team1':{
             id:'Team1',
             name:'lala',
-            boards:['board1'],
+            boards:['5be185217afb8f1507e6c666'],
             members:[],
             toggleAddMember:false
         },
         'Team2':{
             id:'Team2',
             name:'Teamzer',
-            boards:['board1','board2'],
+            boards:['5be185217afb8f1507e6c666','5be185217afb8f1507e6c667'],
             members:['user2'],
             toggleAddMember:false
         }
 
     },
-    home: ['board1','board2'],
+    home: ['5be185217afb8f1507e6c666','5be185217afb8f1507e6c667'],
     teamsManager:['Team1','Team2']
 }
+
+/*
+
+0:
+createdAt: "2018-11-06T12:12:17.042Z"
+labels: []
+lists: []
+members: Array(2)
+0: "5be185207afb8f1507e6c663"
+1: "5be185217afb8f1507e6c664"
+length: 2
+__proto__: Array(0)
+owner: "5be185207afb8f1507e6c663"
+teams: []
+title: "First Board"
+updatedAt: "2018-11-06T12:12:17.042Z"
+__v: 0
+_id: "5be185217afb8f1507e6c666"
+__proto__: Object
+
+
+1:
+createdAt: "2018-11-06T12:12:17.044Z"
+labels: []
+lists: []
+members: Array(2)
+0: "5be185207afb8f1507e6c663"
+1: "5be185217afb8f1507e6c664"
+length: 2
+__proto__: Array(0)
+owner: "5be185217afb8f1507e6c664"
+teams: []
+title: "Marion Board"
+updatedAt: "2018-11-06T12:12:17.044Z"
+__v: 0
+_id: "5be185217afb8f1507e6c666"
+__proto__: Object
+length: 2
+__proto__: Array(0)
+ */
 
 export default demoData;

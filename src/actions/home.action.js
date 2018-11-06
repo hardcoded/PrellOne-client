@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 let nextBoardId = 3
 
 export const addBoard = (title,idTeam) => 
@@ -26,8 +28,25 @@ export const addBoard = (title,idTeam) =>
     
 }
 
-export const addTeam = (name) => ({
-  type: 'ADD_TEAM',
-  id: 'Team' + nextBoardId++,
-  name
-})
+export const getBoards = () => {
+    return dispatch => {
+        axios.get('http://localhost:8080/api/boards') 
+            .then(function (response) { 
+                // handle succes 
+                console.log(response);
+                return  dispatch({
+                    type: 'BOARDS_LOADED',
+                    boards: response.data
+                }) 
+            }) 
+            .catch(function (error) { 
+                // handle error 
+                console.log(error); 
+                return dispatch({
+                    type: 'BOARDS_LOAD_FAILED',
+                    boards: []
+                })
+            })
+    }
+     
+}
