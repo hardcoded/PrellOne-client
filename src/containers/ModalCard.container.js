@@ -9,7 +9,8 @@ const mapStateToProps = (state) => {
     return ({
       ...card,
       ...state.reducerModalCard,
-      descEditorState: state.reducerTextEditor.value
+      descEditorState: state.reducerTextEditor.value,
+      labels: state.reducerLabel
     })
 }
 

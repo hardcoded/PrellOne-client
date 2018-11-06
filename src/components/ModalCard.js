@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import RichTextEditor from 'react-rte';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
@@ -14,6 +14,7 @@ const ModalCard = ({
   title,
   description,
   labelIds,
+  labels,
   memberIds,
   comments,
   dueDate,
@@ -54,15 +55,37 @@ const ModalCard = ({
             <CustomInput type="checkbox" id="doneCheckbox" checked={done} onChange={() => toggleDone(id)} label="Done"/>
           </h6>
           <h5>Labels</h5>
-          <Row className="pl-3 mb-3">
-            {
-              labelIds && labelIds.map(labelId => 
-                <Col xs="auto" className="p-0" key={labelId}>
-                  <Label labelId={labelId}></Label>
-                </Col>
-              )
-            }
-          </Row>
+          {
+            <Row className="pl-3 mb-3">
+              {
+                labelIds && labelIds.map((labelId, index) => 
+                  <Col xs="auto" className="p-0" key={labelId} onClick={() => {updateAttribute(id, 'labelIds', labelIds.filter((id)=> id !== labelId))}}>
+                    <Label labelId={labelId}>
+                    </Label>
+                  </Col>
+                )
+              }
+              <Col xs="auto" className="p-0">
+                <Dropdown isOpen={edit.labels} size="sm" toggle={() => toggleEdit(id, 'labels')}>
+                  <DropdownToggle caret>
+                    Add Label
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    {
+                      labels && Object.keys(labels).map((key, index) => 
+                        <DropdownItem 
+                          value={key}
+                          onClick={() => updateAttribute(id, 'labelIds', [...labelIds, labels[key].id])}
+                        >
+                          {labels[key].title}
+                        </DropdownItem>
+                      )
+                    }
+                  </DropdownMenu>
+                </Dropdown>
+              </Col>
+            </Row>
+          }
           <h5>Description</h5>
           {
             !edit.description && 
@@ -111,6 +134,7 @@ ModalCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string.isRequired,
   labelIds: PropTypes.array.isRequired,
+  labels: PropTypes.object.isRequired,
   memberIds: PropTypes.array.isRequired,
   comments: PropTypes.array.isRequired,
   dueDate: PropTypes.string.isRequired,
