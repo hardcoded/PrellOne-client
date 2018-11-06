@@ -3,6 +3,36 @@ import {Field, reduxForm} from 'redux-form' ;
 import {Container, Input, Button, Col, Form, FormGroup, Label} from 'reactstrap'
 import PropTypes from  'prop-types'
 
+const validate = values => {
+  const errors = {}
+  if (!values.userName) {
+    errors.userName = 'Required'
+  } else if (values.userName.length < 2) {
+    errors.userName = 'Minimum be 2 characters or more'
+  }
+  if (!values.firstName) {
+    errors.firstName = 'Required'
+  } else if (values.firstName.length < 2) {
+    errors.firstName = 'Minimum be 2 characters or more'
+  }
+  if (!values.lastName) {
+    errors.lastName = 'Required'
+  } else if (values.lastName.length < 2) {
+    errors.lastName = 'Minimum be 2 characters or more'
+  }
+  if (!values.email) {
+    errors.email = 'Required'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address'
+  }
+  if (!values.password) {
+    errors.password = 'Required'
+  } else if (values.password.length < 6) {
+    errors.password = 'Minimum be 6 characters or more'
+  }
+  return errors
+}
+
 const SignUp = ({handleSubmit}) => {
 
   const renderField = ({
@@ -16,7 +46,7 @@ const SignUp = ({handleSubmit}) => {
       <div>
         <Input {...input} placeholder={label} type={type} />
         {touched &&
-          ((error && <span>{error}</span>) ||
+          ((error && <span className="text-danger">{error}</span>) ||
             (warning && <span>{warning}</span>))}
       </div>
     </div>
@@ -87,5 +117,6 @@ SignUp.propTypes={
 }
 
 export default reduxForm({
-  form: 'signUp'
+  form: 'signUp',
+  validate
 })(SignUp)
