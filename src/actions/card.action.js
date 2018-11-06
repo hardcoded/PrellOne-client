@@ -38,6 +38,13 @@ export const addComment = (cardId, content, userId) => ({
     }
 })
 
+export const updateAttribute = (cardId, attributeName, value) => ({
+    type: 'UPDATE_CARD_ATTRIBUTE',
+    id: cardId,
+    attributeName,
+    value
+})
+
 export const toggleModal = id => ({
     type: 'TOGGLE_CARD_MODAL',
     id
