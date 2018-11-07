@@ -10,11 +10,10 @@ class HomeContainer extends Component {
     componentWillMount() {
         this.props.getBoards(this.props.match.params.username)
     }
-
+ 
     render() {
-        console.log(this.props)
         if (this.props.user) return (<Home {...this.props}></Home>)
-        else return "hello"
+        else return "hello"     // TODO: component with loader
     }
 
 }

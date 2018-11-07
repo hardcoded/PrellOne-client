@@ -13,7 +13,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         dispatch(login("Logging you in, please wait..."))
         try {
             const data = await authLogin(email, password)
-            console.log(data)
             dispatch(loginSuccess(data.token))
             storeToken(data.token)
             return data.user
@@ -21,6 +20,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         catch(error) {
             const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
             dispatch(loginFailed(message))
+            throw error
         }
     }
 })
