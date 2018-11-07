@@ -1,0 +1,31 @@
+import { connect } from 'react-redux'
+import Login from '../components/Login'
+import { login, loginSuccess, loginFailed } from '../actions/login.action'
+import { storeToken, login as authLogin } from '../services/auth.service';
+
+const mapStateToProps = (state, ownProps) => ({
+    error: state.login.error,
+    waiting: state.login.waiting
+})
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+    login: async(email, password) => {
+        dispatch(login("Logging you in, please wait..."))
+        try {
+            const data = await authLogin(email, password)
+            console.log(data)
+            dispatch(loginSuccess(data.token))
+            storeToken(data.token)
+            return data.user
+        }
+        catch(error) {
+            const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+            dispatch(loginFailed(message))
+        }
+    }
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login)

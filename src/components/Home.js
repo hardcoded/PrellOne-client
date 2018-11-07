@@ -6,14 +6,14 @@ import PropTypes from  'prop-types'
 import AddBoard from '../containers/AddBoard.container'
 
 
-const Home = ({boards, openModalCreateBoard}) => (
+const Home = ({user, openModalCreateBoard}) => (
         <div>
             <Container>
             <header>
                     <h1>Boards</h1>
             </header> 
                 <Row pl>
-                    {boards.map(board => (
+                    {user.boards.map(board => (
                        <Col xs="12" sm="6" md="4" lg="3"> 
                             <Card key={board.id} className="bg-light mb-3">
                                 <CardBody>

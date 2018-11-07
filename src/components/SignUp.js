@@ -8,17 +8,17 @@ const validate = values => {
   if (!values.userName) {
     errors.userName = 'Required'
   } else if (values.userName.length < 2) {
-    errors.userName = 'Minimum be 2 characters or more'
+    errors.userName = 'Must be 2 characters or more'
   }
   if (!values.firstName) {
     errors.firstName = 'Required'
   } else if (values.firstName.length < 2) {
-    errors.firstName = 'Minimum be 2 characters or more'
+    errors.firstName = 'Must be 2 characters or more'
   }
   if (!values.lastName) {
     errors.lastName = 'Required'
   } else if (values.lastName.length < 2) {
-    errors.lastName = 'Minimum be 2 characters or more'
+    errors.lastName = 'Must be 2 characters or more'
   }
   if (!values.email) {
     errors.email = 'Required'
@@ -28,7 +28,7 @@ const validate = values => {
   if (!values.password) {
     errors.password = 'Required'
   } else if (values.password.length < 6) {
-    errors.password = 'Minimum be 6 characters or more'
+    errors.password = 'Must be 6 characters or more'
   }
   return errors
 }

@@ -13,7 +13,7 @@ import reducerAddBoard from './addBoard.reducer'
 import reducerTeamsManager from './teamsManager.reducer'
 import reducerTeam from './team.reducer'
 import reducerAddTeam from './addTeam.reducer'
-import reducerSignIn from './signIn.reducer'
+import reducerLogin from './login.reducer'
 import reducerSignUp from './signUp.reducer'
 import { reducer as formReducer } from 'redux-form';
 
@@ -27,12 +27,12 @@ export default combineReducers({
     reducerTextEditor,
     reducerAddList,
     reducerAppNav,
-    reducerHome,
+    home: reducerHome,
     reducerAddBoard,
     reducerTeamsManager,
     reducerTeam,
     reducerAddTeam,
-    reducerSignIn,
+    login: reducerLogin,
     reducerSignUp,
     form: formReducer
     
