@@ -10,7 +10,8 @@ class Login extends React.Component {
             password: '',
             validate: {
                 emailState: '',
-            }
+            },
+            focused: false
         }
         this.handleChange = this.handleChange.bind(this)
         this.submitForm = this.submitForm.bind(this)
@@ -27,20 +28,23 @@ class Login extends React.Component {
         this.setState({ validate })
     }
 
-    handleChange = async (event) => {
-        const { target } = event
-        const value = target.type === 'checkbox' ? target.checked : target.value
-        const { name } = target
-        await this.setState({
-            [name]: value,
+    handleChange(event) {
+        const { name, value } = event.target
+        this.setState({
+            [name]: value
         })
     }
 
-    keyDown = async (event) => {
+    keyDown(event) {
        if (event.key === "Enter" && event.keyCode === 13) this.submitForm()
     }
 
-    submitForm = async() => {
+    toggleFocus = () => {
+        const focus = !this.state.focused
+        this.setState({ focused: focus })
+    }
+
+    async submitForm() {
         // e.preventDefault()
         try {
             const user = await this.props.login(this.state.email, this.state.password)
@@ -53,7 +57,7 @@ class Login extends React.Component {
         const { email, password } = this.state
         return (
             <Container className="SignInUpForms">
-                <h2>Sign In</h2>
+                <h2>Login</h2>
                 <Form className="form">
                     {this.props.error &&
                         <Alert color="danger">
@@ -76,16 +80,20 @@ class Login extends React.Component {
                                 value={email}
                                 valid={this.state.validate.emailState === 'has-success'}
                                 invalid={this.state.validate.emailState === 'has-danger'}
+                                focused={this.state.focused}
                                 onChange={(e) => {
                                     this.validateEmail(e)
                                     this.handleChange(e)
                                 }}
+                                onFocus={this.toggleFocus}
+                                onBlur={this.toggleFocus}
                             />
+                            {this.state.focused && 
                             <FormFeedback valid>
                                 This email is looking good!
-                            </FormFeedback>
-                            <FormFeedback>
-                                Doesn't look like a valid email!
+                            </FormFeedback>}
+                            <FormFeedback invalid>
+                                Doesn't look like an email!
                             </FormFeedback>
                         </FormGroup>
                     </Col>
