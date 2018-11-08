@@ -16,7 +16,7 @@ const AppNav = ({isOpen, open, close }) => {
 
     return (
         <Navbar className="navbar-dark bg-primary" expand="md">
-          <Link className="navbar-brand" to="/">Prello</Link>
+          <Link className="navbar-brand" to="/">PrellOne</Link>
           <NavbarToggler onClick={() => {if (isOpen) {close()} else {open()}}} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
