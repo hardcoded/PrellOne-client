@@ -15,6 +15,7 @@ import reducerTeam from './team.reducer'
 import reducerAddTeam from './addTeam.reducer'
 import reducerLogin from './login.reducer'
 import reducerRegister from './register.reducer'
+import reducerUpdatePassword from './updatePassword.reducer'
 
 export default combineReducers({
     reducerCardPrello,
@@ -32,5 +33,6 @@ export default combineReducers({
     reducerTeam,
     reducerAddTeam,
     login: reducerLogin,
-    register: reducerRegister
+    register: reducerRegister,
+    reducerUpdatePassword
 })

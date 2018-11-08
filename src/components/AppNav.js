@@ -38,6 +38,9 @@ const AppNav = ({ isOpen, token, open, close }) => {
                         <NavItem>
                             <Link className="nav-link" to="/team">Team</Link>
                         </NavItem>
+                        <NavItem>
+                            <Link className="nav-link" to="/updatePwd">Update password</Link>
+                        </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
                                 Options
