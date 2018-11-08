@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import {Container, Input, Button, Col, Form, FormGroup, Label, FormFeedback} from 'reactstrap'
+import {Container, Input, Button, Col, Form, FormGroup, Label, FormFeedback, Row} from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 class UpdatePassword extends React.Component {
     constructor(props) {
@@ -34,7 +35,7 @@ class UpdatePassword extends React.Component {
     passwordMatch(event) {
         const { value } = event.target
         const { validate } = this.state
-        validate.passwordMatch = (value === this.state.newPwd2) ? 'has-success' : 'has-danger'
+        validate.passwordMatch = (value === this.state.newPwd) ? 'has-success' : 'has-danger'
     }
 
     async submitForm() {
@@ -95,11 +96,22 @@ class UpdatePassword extends React.Component {
                             It's a match!
                         </FormFeedback>
                         <FormFeedback invalid>
-                            Confirmation needs to matchpassword!
+                            Passwords need to match!
                         </FormFeedback>
                     </FormGroup>
                     </Col>
-                    <Button onClick={this.submitForm} className="mt-2" >Change password</Button>
+                    <Row>
+                        <Col xs="6">
+                    <Button block onClick={this.submitForm} className="mt-2" >Change password</Button>
+                    </Col>
+                    <Col >
+                    <Button block className="mt-2">
+                        <Link  to={"/account"} >
+                        Return
+                        </Link>   
+                    </Button>
+                    </Col>
+                    </Row>
                 </Form>
             </Container>
         );
