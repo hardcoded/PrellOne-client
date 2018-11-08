@@ -14,3 +14,15 @@ export const updatePassword = async (user, oldPwd, newPwd) => {
     }
 }
 
+export const updateInfo = async (user, firstname, lastname) => {
+    try {
+        const update = await axios.put(`${API_URL}/api/users/${user}`, {
+            firstname: firstname,
+            lastname: lastname
+        })
+        return update.data
+    }
+    catch (error) {
+        throw error.response
+    }
+}
