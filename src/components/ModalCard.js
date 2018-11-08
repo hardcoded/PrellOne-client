@@ -115,10 +115,10 @@ const ModalCard = ({
           <h5>Comments</h5>
           {
             comments && comments.map(comment => 
-              <Comment commentId={comment.id} content={comment.content} userId={comment.userId} key={comment}></Comment>
+              <Comment commentId={comment.id} content={comment.content} writer={comment.writer} key={comment}></Comment>
             )
           }
-          <AddComment userId='user1' cardId={id}></AddComment>
+          <AddComment writer="5be2a5cca8ec9a0fcfcb38ad" cardId={id}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="danger" onClick={closeModal}>Cancel</Button>
@@ -129,24 +129,24 @@ const ModalCard = ({
 }
 
 ModalCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  isOpen: PropTypes.bool.isRequired,
+  id: PropTypes.string,
+  isOpen: PropTypes.bool,
   title: PropTypes.string,
-  description: PropTypes.string.isRequired,
-  labelIds: PropTypes.array.isRequired,
-  labels: PropTypes.object.isRequired,
-  memberIds: PropTypes.array.isRequired,
-  comments: PropTypes.array.isRequired,
-  dueDate: PropTypes.string.isRequired,
-  done: PropTypes.bool.isRequired,
+  description: PropTypes.string,
+  labelIds: PropTypes.array,
+  labels: PropTypes.object,
+  memberIds: PropTypes.array,
+  comments: PropTypes.array,
+  dueDate: PropTypes.string,
+  done: PropTypes.bool,
   edit: PropTypes.object,
-  toggleEdit: PropTypes.func.isRequired,
-  openEditCardDesc: PropTypes.func.isRequired,
-  editCardDesc: PropTypes.func.isRequired,
-  descEditorState: PropTypes.object.isRequired,
-  updateAttribute: PropTypes.func.isRequired,
-  toggleDone: PropTypes.bool.isRequired,
-  closeModal: PropTypes.func.isRequired
+  toggleEdit: PropTypes.func,
+  openEditCardDesc: PropTypes.func,
+  editCardDesc: PropTypes.func,
+  descEditorState: PropTypes.object,
+  updateAttribute: PropTypes.func,
+  toggleDone: PropTypes.func,
+  closeModal: PropTypes.func
 }
 
 export default ModalCard

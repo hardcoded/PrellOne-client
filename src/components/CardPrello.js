@@ -17,7 +17,7 @@ const CardPrello = ({id, title, labels, index, openModal}) => (
           <CardBody className="p-2">
             <CardText tag="div" className="container">
               <Row>
-                {
+                { labels &&
                   labels.map(labelId => <Label key={labelId} labelId={labelId}></Label> )
                 }    
               </Row>
@@ -38,6 +38,7 @@ CardPrello.propTypes={
   id: PropTypes.string.isRequired,
   title:PropTypes.string.isRequired,
   labels: PropTypes.array.isRequired,
+  index: PropTypes.integer,
   openModal: PropTypes.func.isRequired
   
 }

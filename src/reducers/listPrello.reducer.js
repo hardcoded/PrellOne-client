@@ -1,5 +1,3 @@
-import demoData from '../components/demo-data'
-
 const onDragEnd = (state, result) => {
     const {destination, source, draggableId} = result
      // Do nothing if there is no destination
@@ -16,15 +14,15 @@ const onDragEnd = (state, result) => {
 
     const startList = state[source.droppableId]
     const finishList = state[destination.droppableId]
-    const newCardIds = Array.from(startList.cardIds)
+    const newCards = Array.from(startList.cards)
     
     // Dragging inside same list
     if (startList === finishList){
-        newCardIds.splice(source.index, 1) // remove dragged item from source
-        newCardIds.splice(destination.index, 0, draggableId) // insert added card id
+        newCards.splice(source.index, 1) // remove dragged item from source
+        newCards.splice(destination.index, 0, startList.cards[source.index]) // insert added card id
         const newList = {
             ...startList,
-            cardIds: newCardIds
+            cards: newCards
         }
        const newState = {
             ...state,
@@ -34,17 +32,17 @@ const onDragEnd = (state, result) => {
     }
     
     // Moving from one list to another
-    const startCardIds = Array.from(startList.cardIds)
-    startCardIds.splice(source.index, 1)
+    const startCards = Array.from(startList.cards)
+    startCards.splice(source.index, 1)
     const newStartList = {
       ...startList,
-      cardIds: startCardIds
+      cards: startCards
     }
-     const finishCardIds = Array.from(finishList.cardIds)
-    finishCardIds.splice(destination.index, 0, draggableId)
+    const finishCards = Array.from(finishList.cards)
+    finishCards.splice(destination.index, 0, startList.cards[source.index])
     const newFinishList = {
       ...finishList,
-      cardIds: finishCardIds
+      cards: finishCards
     }
     const newState = {
         ...state,
@@ -55,8 +53,17 @@ const onDragEnd = (state, result) => {
 }
 
 
-const listPrello = (state = demoData.lists, action) => {
+const listPrello = (state = {}, action) => {
     switch (action.type) {
+        case 'BOARD_LOADED':
+            console.log(action)
+            return action.board.lists.reduce((map, list) => {
+                map[list.id] = list;
+                return map;
+            }, {});
+        case 'LISTS_LOAD_FAILED':
+            return state
+            
         case 'ADD_LIST' :
             return {
                 ...state,
@@ -68,8 +75,8 @@ const listPrello = (state = demoData.lists, action) => {
                 ...state,
                 [action.id]: {
                     ...state[action.id],
-                    cardIds: [
-                        ...state[action.id].cardIds,
+                    cards: [
+                        ...state[action.id].cards,
                         action.card.id
                     ]
                 }

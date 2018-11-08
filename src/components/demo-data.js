@@ -156,14 +156,14 @@ const demoData = {
     },
 
     boards: {
-        '5be185217afb8f1507e6c666': {
-            id: '5be185217afb8f1507e6c666',
+        '5be1bc49f711b032cb13bdc3': {
+            id: '5be1bc49f711b032cb13bdc3',
             title: 'First Board',
             lists: ['list1','list2','list3'],
             teams:[]
         },
-        '5be185217afb8f1507e6c667': {
-            id: '5be185217afb8f1507e6c667',
+        '5be1bc49f711b032cb13bdc4': {
+            id: '5be1bc49f711b032cb13bdc4',
             title: 'Marion Board',
             lists: ['list1'],
             teams:[]
@@ -173,61 +173,75 @@ const demoData = {
         'Team1':{
             id:'Team1',
             name:'lala',
-            boards:['5be185217afb8f1507e6c666'],
+            boards:['5be1bc49f711b032cb13bdc3'],
             members:[],
             toggleAddMember:false
         },
         'Team2':{
             id:'Team2',
             name:'Teamzer',
-            boards:['5be185217afb8f1507e6c666','5be185217afb8f1507e6c667'],
+            boards:['5be1bc49f711b032cb13bdc3','5be1bc49f711b032cb13bdc4'],
             members:['user2'],
             toggleAddMember:false
         }
 
     },
-    home: ['5be185217afb8f1507e6c666','5be185217afb8f1507e6c667'],
+    home: ['5be1bc49f711b032cb13bdc3','5be1bc49f711b032cb13bdc4'],
     teamsManager:['Team1','Team2']
 }
 
 /*
-
-0:
-createdAt: "2018-11-06T12:12:17.042Z"
-labels: []
-lists: []
-members: Array(2)
-0: "5be185207afb8f1507e6c663"
-1: "5be185217afb8f1507e6c664"
+    0:
+createdAt: "2018-11-06T16:07:37.424Z"
+labels: Array(4)
+0: "5be1bc49f711b032cb13bdc8"
+1: "5be1bc49f711b032cb13bdc9"
+2: "5be1bc49f711b032cb13bdca"
+3: "5be1bc49f711b032cb13bdcb"
+length: 4
+__proto__: Array(0)
+lists: Array(2)
+0: "5be1bc49f711b032cb13bdc5"
+1: "5be1bc49f711b032cb13bdc6"
 length: 2
 __proto__: Array(0)
-owner: "5be185207afb8f1507e6c663"
-teams: []
+members: (2) ["5be1bc49f711b032cb13bdc0", "5be1bc49f711b032cb13bdc1"]
+owner: "5be1bc49f711b032cb13bdc0"
+teams: (2) ["5be1bc49f711b032cb13bdd9", "5be1bc49f711b032cb13bdda"]
 title: "First Board"
-updatedAt: "2018-11-06T12:12:17.042Z"
+updatedAt: "2018-11-06T16:07:37.519Z"
 __v: 0
-_id: "5be185217afb8f1507e6c666"
+_id: "5be1bc49f711b032cb13bdc3"
 __proto__: Object
-
-
 1:
-createdAt: "2018-11-06T12:12:17.044Z"
-labels: []
-lists: []
-members: Array(2)
-0: "5be185207afb8f1507e6c663"
-1: "5be185217afb8f1507e6c664"
-length: 2
+createdAt: "2018-11-06T16:07:37.427Z"
+labels: Array(4)
+0: "5be1bc49f711b032cb13bdcc"
+1: "5be1bc49f711b032cb13bdcd"
+2: "5be1bc49f711b032cb13bdce"
+3: "5be1bc49f711b032cb13bdcf"
+length: 4
 __proto__: Array(0)
-owner: "5be185217afb8f1507e6c664"
-teams: []
+lists: Array(1)
+0: "5be1bc49f711b032cb13bdc7"
+length: 1
+__proto__: Array(0)
+members: (2) ["5be1bc49f711b032cb13bdc0", "5be1bc49f711b032cb13bdc1"]
+owner: "5be1bc49f711b032cb13bdc1"
+teams: ["5be1bc49f711b032cb13bdda"]
 title: "Marion Board"
-updatedAt: "2018-11-06T12:12:17.044Z"
+updatedAt: "2018-11-06T16:07:37.520Z"
 __v: 0
-_id: "5be185217afb8f1507e6c666"
+_id: "5be1bc49f711b032cb13bdc4"
 __proto__: Object
 length: 2
 __proto__: Array(0)
+headers: {content-type: "application/json; charset=utf-8"}
+request: XMLHttpRequest {onreadystatechange: ƒ, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+status: 200
+statusText: "OK"
+
+
  */
 
 export default demoData;

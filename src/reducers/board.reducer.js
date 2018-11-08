@@ -2,6 +2,14 @@ import demoData from '../components/demo-data'
 
 const board = (state = demoData.boards, action) => {
     switch (action.type) {
+        case 'BOARDS_LOADED':
+            console.log(action)
+            return action.boards.reduce((map, board) => {
+                map[board.id] = board;
+                return map;
+            }, {});
+        case 'BOARDS_LOAD_FAILED':
+            return state
 
         case 'ADD_LIST':
             return {

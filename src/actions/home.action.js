@@ -50,3 +50,26 @@ export const getBoards = () => {
     }
      
 }
+
+export const getTeams = () => {
+    return dispatch => {
+        axios.get('http://localhost:8080/api/teams') 
+            .then(function (response) { 
+                // handle succes 
+                console.log(response);
+                return  dispatch({
+                    type: 'TEAMS_LOADED',
+                    teams: response.data
+                }) 
+            }) 
+            .catch(function (error) { 
+                // handle error 
+                console.log(error); 
+                return dispatch({
+                    type: 'TEAMS_LOAD_FAILED',
+                    teams: []
+                })
+            })
+    }
+     
+}

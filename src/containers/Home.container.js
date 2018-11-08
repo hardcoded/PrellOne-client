@@ -10,19 +10,20 @@ class HomeContainer extends Component{
   }
 
   render(){
-    console.log(this.props.boards)
     return (<Home {...this.props}></Home>)
   }
   
 }
 
-const mapStateToProps = ( state )=> ({
-
-  boards: state.reducerHome.map((board) => ({
-    id: board._id,
-    title: board.title
-  }))
-})
+const mapStateToProps = ( state ) => {
+  return({
+    boards: state.reducerHome.map((boardId) => ({ 
+        id: state.reducerBoard[boardId].id, 
+        title: state.reducerBoard[boardId].title 
+      }) 
+    )
+  })
+}
 
 const mapDispatchToProps = dispatch => ({
   openModalCreateBoard: () => {

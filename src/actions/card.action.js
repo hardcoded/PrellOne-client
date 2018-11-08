@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 let nextCommentId = 2
 
 export const updateDesc = (desc, id) => ({
@@ -28,13 +30,13 @@ export const removeLabel = (indexLabel, id) => ({
     id,
     indexLabel
 })
-export const addComment = (cardId, content, userId) => ({
+export const addComment = (cardId, content, writer) => ({
     type: 'ADD_COMMENT',
     id: cardId,
     comment : {
         id: 'comment' + nextCommentId++,
         content,
-        userId    
+        writer    
     }
 })
 
@@ -54,3 +56,25 @@ export const toggleDone = id => ({
     type: 'TOGGLE_DONE',
     id
 })
+
+export const getLabels = () => {
+    return dispatch => {
+        axios.get('http://localhost:8080/api/labels') 
+            .then(function (response) { 
+                // handle succes 
+                console.log(response);
+                return  dispatch({
+                    type: 'LABELS_LOADED',
+                    labels: response.data
+                }) 
+            }) 
+            .catch(function (error) { 
+                // handle error 
+                console.log(error); 
+                return dispatch({
+                    type: 'LABELS_LOAD_FAILED',
+                    labels: []
+                })
+            })
+    }
+}

@@ -4,10 +4,17 @@ import { addCard } from '../actions/list.action'
 import { hideAddCard } from '../actions/list.action'
 import { showAddCard } from '../actions/list.action'
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state, ownProps) => {
+  if (state.reducerListPrello[ownProps.listId] === undefined) {
+    return ({
+      listId: '',
+      hidden: true
+    })
+  }
+  return ({
   listId: ownProps.listId,
   hidden: state.reducerListPrello[ownProps.listId].addCard,
-})
+})}
 
 const mapDispatchToProps = dispatch => ({
   addCard: (id, title) => { 

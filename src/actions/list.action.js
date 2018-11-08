@@ -1,5 +1,6 @@
-let nextCardId = 8
+import axios from 'axios'
 
+let nextCardId = 8
 
 export const addCard = (id, title) => ({
     type: 'ADD_CARD',
@@ -39,3 +40,25 @@ export const getList=(id,title,cardsIds)=>({
     title,
     cardsIds
 })
+
+export const getCards = () => {
+    return dispatch => {
+        axios.get('http://localhost:8080/api/cards') 
+            .then(function (response) { 
+                // handle succes 
+                console.log(response);
+                return  dispatch({
+                    type: 'CARDS_LOADED',
+                    cards: response.data
+                }) 
+            }) 
+            .catch(function (error) { 
+                // handle error 
+                console.log(error); 
+                return dispatch({
+                    type: 'CARDS_LOAD_FAILED',
+                    cards: []
+                })
+            })
+    }
+}

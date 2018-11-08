@@ -1,7 +1,17 @@
-import demoData from '../components/demo-data'
-
-const cardPrello = (state = demoData.cards, action) => {
+const cardPrello = (state = {}, action) => {
     switch (action.type) {
+        case 'BOARD_LOADED':
+            console.log(action)
+            var allCards = [];
+            action.board.lists.map((list) => {
+                allCards = [...allCards, ...list.cards]
+                return list
+            });
+            return allCards.reduce((map, card) => {
+                map[card.id] = card;
+                return map;
+            }, {});
+
         case 'ADD_CARD':
         return {
             ...state,

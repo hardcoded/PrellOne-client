@@ -1,7 +1,12 @@
-import demoData from '../components/demo-data'
 
-const Member = (state = demoData.users, action) => {
+const Member = (state = {}, action) => {
     switch (action.type) {
+        case 'BOARD_LOADED':
+            console.log(action)
+            return action.board.members.reduce((map, member) => {
+                map[member.id] = member;
+                return map;
+            }, {});
         case 'ADD_MEMBER_TEAM':
             return {
                 ...state,

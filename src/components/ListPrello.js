@@ -19,6 +19,7 @@ const ListPrello = ({id, title, cardIds}) =>(
               {...provided.droppableProps}
               className="card-body" style={{flexGrow: 1, minHeight:'50px'}}>
               {
+                cardIds &&
                 cardIds.map((cardId,key) => 
                   <CardPrello key={cardId} cardId={cardId} index={key}></CardPrello>
                 )

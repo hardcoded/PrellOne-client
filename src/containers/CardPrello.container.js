@@ -7,7 +7,7 @@ const mapStateToProps = (state, ownProps) => {
   return ({
     id: state.reducerCardPrello[ownProps.cardId].id,
     title: state.reducerCardPrello[ownProps.cardId].title,
-    labels: state.reducerCardPrello[ownProps.cardId].labelIds,
+    labels: state.reducerCardPrello[ownProps.cardId].labels,
     index: ownProps.index
   })
 }
