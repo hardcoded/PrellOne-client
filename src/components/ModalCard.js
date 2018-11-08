@@ -13,9 +13,9 @@ const ModalCard = ({
   isOpen,
   title,
   description,
-  labelIds,
   labels,
-  memberIds,
+  allLabels,
+  members,
   comments,
   dueDate,
   done,
@@ -58,9 +58,9 @@ const ModalCard = ({
           {
             <Row className="pl-3 mb-3">
               {
-                labelIds && labelIds.map((labelId, index) => 
-                  <Col xs="auto" className="p-0" key={labelId} onClick={() => {updateAttribute(id, 'labelIds', labelIds.filter((id)=> id !== labelId))}}>
-                    <Label labelId={labelId}>
+                labels && labels.map((label, index) => 
+                  <Col xs="auto" className="p-0" key={label} onClick={() => {updateAttribute(id, 'labels', labels.filter((id)=> id !== label))}}>
+                    <Label labelId={label}>
                     </Label>
                   </Col>
                 )
@@ -72,12 +72,12 @@ const ModalCard = ({
                   </DropdownToggle>
                   <DropdownMenu>
                     {
-                      labels && Object.keys(labels).map((key, index) => 
+                      allLabels && Object.keys(allLabels).map((key, index) => 
                         <DropdownItem 
                           value={key}
-                          onClick={() => updateAttribute(id, 'labelIds', [...labelIds, labels[key].id])}
+                          onClick={() => updateAttribute(id, 'labels', [...labels, allLabels[key].id])}
                         >
-                          {labels[key].title}
+                          {allLabels[key].title}
                         </DropdownItem>
                       )
                     }
@@ -105,9 +105,9 @@ const ModalCard = ({
           <h5>Members</h5>
           <Row className="pl-3 mb-3">
             {
-              memberIds && memberIds.map(memberId => 
-                <Col xs="2" className="p-2" key={memberId}>
-                  <Member memberId={memberId}></Member>
+              members && members.map(member=> 
+                <Col xs="2" className="p-2" key={member}>
+                  <Member memberId={member}></Member>
                 </Col>
               )
             }
@@ -133,9 +133,9 @@ ModalCard.propTypes = {
   isOpen: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
-  labelIds: PropTypes.array,
-  labels: PropTypes.object,
-  memberIds: PropTypes.array,
+  labels: PropTypes.array,
+  allLabels: PropTypes.object,
+  members: PropTypes.array,
   comments: PropTypes.array,
   dueDate: PropTypes.string,
   done: PropTypes.bool,

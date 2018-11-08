@@ -1,12 +1,4 @@
-import axios from 'axios'
-
 let nextCommentId = 2
-
-export const updateDesc = (desc, id) => ({
-    type: 'UPDATE_DESC',
-    id,
-    desc
-})
 
 export const addMember = (member, id) => ({
     type: 'ADD_MEMBER',
@@ -15,7 +7,7 @@ export const addMember = (member, id) => ({
 })
 
 export const removeMember = (indexMember, id) => ({
-    type: 'ADD_MEMBER',
+    type: 'REMOVE_MEMBER',
     id,
     indexMember
 })
@@ -25,11 +17,13 @@ export const addLabel = (label, id) => ({
     id,
     label
 })
+
 export const removeLabel = (indexLabel, id) => ({
-    type: 'ADD_MEMBER',
+    type: 'REMOVE_LABEL',
     id,
     indexLabel
 })
+
 export const addComment = (cardId, content, writer) => ({
     type: 'ADD_COMMENT',
     id: cardId,
@@ -38,6 +32,12 @@ export const addComment = (cardId, content, writer) => ({
         content,
         writer    
     }
+})
+
+export const removeComment = (cardId, index) => ({
+    type: 'REMOVE_COMMENT',
+    id: cardId,
+    index
 })
 
 export const updateAttribute = (cardId, attributeName, value) => ({
@@ -57,24 +57,3 @@ export const toggleDone = id => ({
     id
 })
 
-export const getLabels = () => {
-    return dispatch => {
-        axios.get('http://localhost:8080/api/labels') 
-            .then(function (response) { 
-                // handle succes 
-                console.log(response);
-                return  dispatch({
-                    type: 'LABELS_LOADED',
-                    labels: response.data
-                }) 
-            }) 
-            .catch(function (error) { 
-                // handle error 
-                console.log(error); 
-                return dispatch({
-                    type: 'LABELS_LOAD_FAILED',
-                    labels: []
-                })
-            })
-    }
-}

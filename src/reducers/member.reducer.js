@@ -1,9 +1,8 @@
 
 const Member = (state = {}, action) => {
     switch (action.type) {
-        case 'BOARD_LOADED':
-            console.log(action)
-            return action.board.members.reduce((map, member) => {
+        case 'BOARD_FETCHED':
+            return action.payload.members.reduce((map, member) => {
                 map[member.id] = member;
                 return map;
             }, {});

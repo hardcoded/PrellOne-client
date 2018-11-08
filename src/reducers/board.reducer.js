@@ -1,6 +1,4 @@
-import demoData from '../components/demo-data'
-
-const board = (state = demoData.boards, action) => {
+const board = (state = {}, action) => {
     switch (action.type) {
         case 'BOARDS_LOADED':
             console.log(action)
@@ -8,9 +6,17 @@ const board = (state = demoData.boards, action) => {
                 map[board.id] = board;
                 return map;
             }, {});
+
         case 'BOARDS_LOAD_FAILED':
             return state
-
+        
+        case 'BOARD_FETCHED':
+            console.log(action)
+            return { 
+                ...state,
+                [action.payload.id]: action.payload 
+            }
+            
         case 'ADD_LIST':
             return {
                 ...state,

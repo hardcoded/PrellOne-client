@@ -1,21 +1,24 @@
 //import demoData from '../components/demo-data'
 
 
-const home = (state = [], action) => {
+const home = (state = { user: null, error: null }, action) => {
     switch (action.type) {
-        case 'BOARDS_LOADED':
-            return action.boards.map(board => board.id) ;
+        case 'USER_FETCHED':
+            return { 
+                user: action.payload 
+            }
         case 'BOARDS_LOAD_FAILED':
-            return state
+            return {
+                user: null,
+                error: action.payload
+            }
         case 'ADD_BOARD' :
             return [
                 ...state,
                 action.board.id
             ]
-        
         default:
             return state
-
     }
 }
 

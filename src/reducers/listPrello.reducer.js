@@ -55,9 +55,8 @@ const onDragEnd = (state, result) => {
 
 const listPrello = (state = {}, action) => {
     switch (action.type) {
-        case 'BOARD_LOADED':
-            console.log(action)
-            return action.board.lists.reduce((map, list) => {
+        case 'BOARD_FETCHED':
+            return action.payload.lists.reduce((map, list) => {
                 map[list.id] = list;
                 return map;
             }, {});

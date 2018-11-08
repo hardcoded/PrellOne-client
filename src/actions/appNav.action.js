@@ -1,9 +1,7 @@
 export const open = () => ({
-    type: 'OPEN',
-    payload: true,
+    type: 'OPEN_NAVBAR'
 })
 
 export const close = () => ({
-    type: 'CLOSE',
-    payload: false
+    type: 'CLOSE_NAVBAR'
 })

@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 let nextBoardId = 3
 
 export const addBoard = (title,idTeam) => 
@@ -14,7 +12,7 @@ export const addBoard = (title,idTeam) =>
             teams:[idTeam]
         }
     })
-    }else{
+    } else {
        return ({
             type: 'ADD_BOARD',
             board: {
@@ -28,48 +26,17 @@ export const addBoard = (title,idTeam) =>
     
 }
 
-export const getBoards = () => {
-    return dispatch => {
-        axios.get('http://localhost:8080/api/boards') 
-            .then(function (response) { 
-                // handle succes 
-                console.log(response);
-                return  dispatch({
-                    type: 'BOARDS_LOADED',
-                    boards: response.data
-                }) 
-            }) 
-            .catch(function (error) { 
-                // handle error 
-                console.log(error); 
-                return dispatch({
-                    type: 'BOARDS_LOAD_FAILED',
-                    boards: []
-                })
-            })
-    }
-     
+export const userFetched = (user) => {
+    return ({
+        type: 'USER_FETCHED',
+        payload: user
+    }) 
 }
 
-export const getTeams = () => {
-    return dispatch => {
-        axios.get('http://localhost:8080/api/teams') 
-            .then(function (response) { 
-                // handle succes 
-                console.log(response);
-                return  dispatch({
-                    type: 'TEAMS_LOADED',
-                    teams: response.data
-                }) 
-            }) 
-            .catch(function (error) { 
-                // handle error 
-                console.log(error); 
-                return dispatch({
-                    type: 'TEAMS_LOAD_FAILED',
-                    teams: []
-                })
-            })
-    }
-     
+export const errorFetchingUser = (message) => {
+    return ({
+        type: 'ERROR_FETCH_USER',
+        payload: message
+    }) 
 }
+

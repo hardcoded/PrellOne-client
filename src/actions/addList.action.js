@@ -1,9 +1,7 @@
 export const hide = () => ({
-    type: 'HIDE',
-    payload: true,
+    type: 'HIDE_ADD_LIST'
 })
 
 export const show = () => ({
-    type: 'SHOW',
-    payload: false
+    type: 'SHOW_ADD_LIST'
 })

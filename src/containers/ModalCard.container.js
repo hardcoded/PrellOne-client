@@ -6,12 +6,17 @@ import { toggleDone, updateAttribute } from '../actions/card.action'
 
 const mapStateToProps = (state) => {
   const card = state.reducerCardPrello[state.reducerModalCard.activeCard] 
-    return ({
-      ...card,
-      ...state.reducerModalCard,
-      descEditorState: state.reducerTextEditor.value,
-      labels: state.reducerLabel
-    })
+  console.clear()
+  console.log("OPENED MODAL WITH")
+  console.log(card)
+  console.log(state.reducerCardPrello)
+  console.log(state.reducerModalCard)
+  return ({
+    ...card,
+    ...state.reducerModalCard,
+    descEditorState: state.reducerTextEditor.value,
+    allLabels: state.reducerLabel
+  })
 }
 
 const mapDispatchToProps = dispatch => ({

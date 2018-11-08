@@ -1,16 +1,16 @@
 
 const appNav = (state = {}, action) => {
     switch (action.type) {
-        case 'OPEN':
+        case 'OPEN_NAVBAR':
             return {
                 ...state,
-                isOpen: action.payload
+                isOpen: true
             }
 
-        case 'CLOSE':
+        case 'CLOSE_NAVBAR':
             return {
                 ...state,
-                isOpen: action.payload
+                isOpen: false
             }
 
         default:

@@ -1,16 +1,16 @@
 
 const addList = (state = {}, action) => {
     switch (action.type) {
-        case 'HIDE':
+        case 'HIDE_ADD_LIST':
             return {
                 ...state,
-                hidden: action.payload
+                hidden: false
             }
 
-        case 'SHOW':
+        case 'SHOW_ADD_LIST':
             return {
                 ...state,
-                hidden: action.payload
+                hidden: true
             }
 
         default:

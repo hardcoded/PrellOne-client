@@ -1,8 +1,7 @@
 const Label = (state = {}, action) => {
     switch (action.type) {
-        case 'BOARD_LOADED':
-            console.log(action)
-            return action.board.labels.reduce((map, label) => {
+        case 'BOARD_FETCHED':
+            return action.payload.labels.reduce((map, label) => {
                 map[label.id] = label;
                 return map;
             }, {});
