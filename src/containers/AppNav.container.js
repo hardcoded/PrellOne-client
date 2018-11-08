@@ -4,6 +4,7 @@ import { open, close } from '../actions/appNav.action'
 
 const mapStateToProps = (state, ownProps) => ({
   isOpen: state.reducerAppNav.isOpen,
+  token: state.login.token
 })
 
 const mapDispatchToProps = dispatch => ({
