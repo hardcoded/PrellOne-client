@@ -7,6 +7,9 @@ import Login from '../containers/Login.container'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import TeamsManager from '../containers/TeamsManager.container'
 import { isAuthenticated } from '../services/auth.service'
+import UpdatePassword from '../containers/UpdatePassword.container'
+import Account from '../containers/Account.container.js'
+import UpdateInfo from '../containers/UpdateInfo.container'
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
@@ -31,6 +34,9 @@ const App = ({ dispatch }) => (
             <PrivateRoute path='/team' component={TeamsManager} />
             <Route path='/register' component={Register} />
             <Route path='/login' component={Login} />
+            <Route path='/updatePwd' component={UpdatePassword}/>
+            <Route path='/updateInfo' component={UpdateInfo}/>
+            <Route path='/account' component={Account}/>
         </Switch>
     </div>
 )
