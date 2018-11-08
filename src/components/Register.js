@@ -13,7 +13,7 @@ class Register extends React.Component {
             validate: {
                 firstname: '',
                 lastname: '',
-                emailState: '',
+                email: '',
                 password: ''
             },
             focus: false
@@ -27,11 +27,7 @@ class Register extends React.Component {
     validateEmail(e) {
         const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         const { validate } = this.state
-        if (emailRex.test(e.target.value)) {
-            validate.emailState = 'has-success'
-        } else {
-            validate.emailState = 'has-danger'
-        }
+        validate.email = emailRex.test(e.target.value) ? 'has-success' : 'has-danger'
         this.setState({ validate })
     }
 
@@ -40,6 +36,7 @@ class Register extends React.Component {
         const { validate } = this.state
         validate.firstname = this.state.firstname === '' ? 'has-danger' : ''
         validate.lastname = this.state.lastname === '' ? 'has-danger' : ''
+        validate.email = this.state.email === '' ? 'has-danger' : ''
         validate.password = this.state.password === '' ? 'has-danger' : ''
         error = this.state.firstname === '' || this.state.lastname === '' || this.state.password === ''
         this.setState({ validate })
@@ -49,7 +46,7 @@ class Register extends React.Component {
     handleChange(event) {
         const { name, value } = event.target
         const { validate } = this.state
-        validate[name] = ''
+        if(name !== 'email') validate[name] = ''
         this.setState({
             [name]: value,
             validate
@@ -91,7 +88,7 @@ class Register extends React.Component {
                     }
                     <Col>
                         <FormGroup>
-                            <Label>First name</Label>
+                            <Label>First name *</Label>
                             <Input
                                 type="text"
                                 name="firstname"
@@ -110,7 +107,7 @@ class Register extends React.Component {
                     </Col>
                     <Col>
                         <FormGroup>
-                            <Label>Last name</Label>
+                            <Label>Last name *</Label>
                             <Input
                                 type="text"
                                 name="lastname"
@@ -144,15 +141,15 @@ class Register extends React.Component {
                     </Col>
                     <Col>
                         <FormGroup>
-                            <Label>Email</Label>
+                            <Label>Email *</Label>
                             <Input
                                 type="email"
                                 name="email"
                                 id="exampleEmail"
                                 placeholder="email@prellone.com"
                                 value={email}
-                                valid={this.state.validate.emailState === 'has-success'}
-                                invalid={this.state.validate.emailState === 'has-danger'}
+                                valid={this.state.validate.email === 'has-success'}
+                                invalid={this.state.validate.email === 'has-danger'}
                                 onChange={(e) => {
                                     this.validateEmail(e)
                                     this.handleChange(e)
@@ -161,17 +158,25 @@ class Register extends React.Component {
                                 onBlur={this.toggleFocus}
                             />
                             {this.state.focused && 
-                            <FormFeedback valid>
-                                This email is looking good!
-                            </FormFeedback>}
-                            <FormFeedback invalid>
-                                Doesn't look like an email!
-                            </FormFeedback>
+                                <FormFeedback valid>
+                                    This email is looking good!
+                                </FormFeedback>
+                            }
+                            {this.state.email === '' &&
+                                <FormFeedback invalid>
+                                        Please fill in this field
+                                </FormFeedback>
+                            }
+                            {this.state.email !== '' &&
+                                <FormFeedback invalid>
+                                        Doesn't look like an email!
+                                </FormFeedback>
+                            }
                         </FormGroup>
                     </Col>
                     <Col>
                         <FormGroup>
-                            <Label for="examplePassword">Password</Label>
+                            <Label for="examplePassword">Password *</Label>
                             <Input
                                 type="password"
                                 name="password"
@@ -188,6 +193,7 @@ class Register extends React.Component {
                     </Col>
                     <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
                 </Form>
+                <Label>* required</Label>
             </Container>
         );
     }
