@@ -11,13 +11,15 @@ class UpdatePassword extends React.Component {
             newPwd: '',
             newPwd2: '',
             validate: {
-                passwordMatch: ''
+                passwordMatch: '',
+                newPwd: ''
             }
         }
         this.handleChange = this.handleChange.bind(this)
         this.passwordMatch = this.passwordMatch.bind(this)
         this.keyDown = this.keyDown.bind(this)
         this.submitForm = this.submitForm.bind(this)
+        this.validateForm = this.validateForm.bind(this)
 
     }
 
@@ -32,6 +34,16 @@ class UpdatePassword extends React.Component {
        if (event.key === "Enter" && event.keyCode === 13) this.submitForm()
     }
 
+    
+    validateForm() {
+        let error = false
+        const { validate } = this.state
+        validate.newPwd = this.state.newPwd === '' ? 'has-danger' : ''
+        error = this.state.password === ''
+        this.setState({ validate })
+        return !error
+    }
+
     passwordMatch(event) {
         const { value } = event.target
         const { validate } = this.state
@@ -39,7 +51,7 @@ class UpdatePassword extends React.Component {
     }
 
     async submitForm() {
-        if (this.state.validate.passwordMatch !== 'has-danger') {
+        if (this.state.validate.passwordMatch !== 'has-danger' && this.validateForm()) {
             try {
                 await this.props.updatePassword(this.props.user.id, this.state.oldPwd, this.state.newPwd)
             } 
@@ -72,7 +84,11 @@ class UpdatePassword extends React.Component {
                         name="newPwd" 
                         value={newPwd}
                         placeholder="New password"
-                        onChange={(e) => this.handleChange(e)} />
+                        onChange={(e) => this.handleChange(e)} 
+                        invalid={this.state.validate.newPwd === 'has-danger'}/>
+                    <FormFeedback invalid>
+                         Please fill in this field
+                    </FormFeedback>
                     </FormGroup>
                     </Col>
                     <Col>
