@@ -27,10 +27,10 @@ const AppNav = ({isOpen, open, close }) => {
                 <Link className="nav-link" to="/team">Team</Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/signUp">Sign up</Link>
+                <Link className="nav-link" to="/register">Sign up</Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/signIn">Sign in</Link>
+                <Link className="nav-link" to="/login">Sign in</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
