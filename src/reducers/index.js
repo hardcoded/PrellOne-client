@@ -13,9 +13,8 @@ import reducerAddBoard from './addBoard.reducer'
 import reducerTeamsManager from './teamsManager.reducer'
 import reducerTeam from './team.reducer'
 import reducerAddTeam from './addTeam.reducer'
-import reducerSignIn from './signIn.reducer'
-import reducerSignUp from './signUp.reducer'
-import { reducer as formReducer } from 'redux-form';
+import reducerLogin from './login.reducer'
+import reducerRegister from './register.reducer'
 
 export default combineReducers({
     reducerCardPrello,
@@ -27,13 +26,11 @@ export default combineReducers({
     reducerTextEditor,
     reducerAddList,
     reducerAppNav,
-    reducerHome,
+    home: reducerHome,
     reducerAddBoard,
     reducerTeamsManager,
     reducerTeam,
     reducerAddTeam,
-    reducerSignIn,
-    reducerSignUp,
-    form: formReducer
-    
+    login: reducerLogin,
+    register: reducerRegister
 })

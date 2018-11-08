@@ -1,39 +1,44 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Home from '../components/Home'
 import { openModalCreateBoard } from '../actions/addBoard.action'
-import { getBoards } from '../actions/home.action'
+import { getUserBoards } from '../services/home.service'
+import { userFetched, errorFetchingUser } from '../actions/home.action'
 
-class HomeContainer extends Component{
-  componentWillMount(){
-    this.props.getBoards()
-  }
+class HomeContainer extends Component {
 
-  render(){
-    console.log(this.props.boards)
-    return (<Home {...this.props}></Home>)
-  }
-  
+    componentWillMount() {
+        this.props.getBoards(this.props.match.params.username)
+    }
+ 
+    render() {
+        if (this.props.user) return (<Home {...this.props}></Home>)
+        else return "hello"     // TODO: component with loader
+    }
+
 }
 
-const mapStateToProps = ( state )=> ({
-
-  boards: state.reducerHome.map((board) => ({
-    id: board._id,
-    title: board.title
-  }))
+const mapStateToProps = (state) => ({
+    user: state.home.user
 })
 
 const mapDispatchToProps = dispatch => ({
-  openModalCreateBoard: () => {
-    dispatch(openModalCreateBoard())
-  },
-  getBoards: () => {
-    dispatch(getBoards())
-  }
+    openModalCreateBoard: () => {
+        dispatch(openModalCreateBoard())
+    },
+    getBoards: async(username) => {
+        try {
+            const data = await getUserBoards(username)
+            dispatch(userFetched(data))
+        }
+        catch(error) {
+            const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+            dispatch(errorFetchingUser(message))
+        }
+    }
 })
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(HomeContainer)
