@@ -8,6 +8,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import TeamsManager from '../containers/TeamsManager.container'
 import { isAuthenticated } from '../services/auth.service'
 import UpdatePassword from '../containers/UpdatePassword.container'
+import Account from '../containers/Account.container.js'
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
@@ -33,6 +34,7 @@ const App = ({ dispatch }) => (
             <Route path='/register' component={Register} />
             <Route path='/login' component={Login} />
             <Route path='/updatePwd' component={UpdatePassword}/>
+            <Route path='/account' component={Account}/>
         </Switch>
     </div>
 )
