@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import { Alert, Container, Input, Button, Col, Form, FormGroup, Label, FormFeedback } from 'reactstrap'
 
 class Login extends React.Component {
@@ -15,6 +15,9 @@ class Login extends React.Component {
         }
         this.handleChange = this.handleChange.bind(this)
         this.submitForm = this.submitForm.bind(this)
+        this.validateEmail = this.validateEmail.bind(this)
+        this.keyDown = this.keyDown.bind(this)
+        this.toggleFocus = this.toggleFocus.bind(this)
     }
 
     validateEmail(e) {
@@ -45,7 +48,6 @@ class Login extends React.Component {
     }
 
     async submitForm() {
-        // e.preventDefault()
         try {
             const user = await this.props.login(this.state.email, this.state.password)
             this.props.history.push(`${user.username}/boards`)
@@ -113,6 +115,7 @@ class Login extends React.Component {
                     </Col>
                     <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
                 </Form>
+                <Label>Don't have an account yet? <Link className="nav-link" to="/register">Sign up</Link></Label>
             </Container>
         );
     }
