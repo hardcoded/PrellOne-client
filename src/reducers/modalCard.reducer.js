@@ -1,5 +1,3 @@
-import RichTextEditor from 'react-rte';
-
 const modalCard = (state = {edit:{}}, action) => {
     switch (action.type) {
 

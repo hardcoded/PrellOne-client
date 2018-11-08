@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import {Container, Input, Button, Col, Form, FormGroup, Label } from 'reactstrap'
+import {Container, Input, Button, Col, Form, FormGroup, Label, FormFeedback} from 'reactstrap'
 
 class UpdatePassword extends React.Component {
     constructor(props) {
@@ -9,7 +9,6 @@ class UpdatePassword extends React.Component {
             oldPwd: '',
             newPwd: '',
             newPwd2: '',
-            focused: false,
             validate: {
                 passwordMatch: ''
             }
