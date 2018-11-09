@@ -16,7 +16,6 @@ export const isAuthenticated = () => {
 }
 
 export const setTokenHeader = () => {
-    axios.defaults.headers.common['authorization'] = `Bearer ${getToken()}`
     axios.defaults.headers.common['Authorization'] = `Bearer ${getToken()}`
 }
 
