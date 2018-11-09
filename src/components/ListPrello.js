@@ -5,7 +5,7 @@ import { Droppable } from 'react-beautiful-dnd'
 import CardPrello from '../containers/CardPrello.container'
 import AddCard from '../containers/AddCard.container'
 
-const ListPrello = ({id, title, cards}) =>(
+const ListPrello = ({id, title, cards, board}) =>(
     <Card className="bg-light mb-3" tag="div">
       <CardHeader>
         {title} 
@@ -30,13 +30,14 @@ const ListPrello = ({id, title, cards}) =>(
         }
         </Droppable>
       <CardFooter>
-      <AddCard listId={id}></AddCard>
+      <AddCard listId={id} boardId={board}></AddCard>
       </CardFooter>
     </Card>
   )
 
 ListPrello.propTypes = {
   id: PropTypes.string.isRequired,
+  board: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   cards: PropTypes.array.isRequired
 }

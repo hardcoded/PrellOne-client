@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from  'prop-types'
 import { Row, Col, Button } from 'reactstrap'
 
-const AddCard = ({listId, addCard, hidden, hide, show})=> {
+const AddCard = ({listId, boardId, addCard, hidden, hide, show})=> {
   let input
   
 
   return (
     <div>
     <form onSubmit={e => {e.preventDefault()
-      addCard(listId, input.value)
+      addCard(input.value, listId, boardId)
       input.value = ''
     }}>
     
@@ -41,6 +41,7 @@ const AddCard = ({listId, addCard, hidden, hide, show})=> {
 
 AddCard.propTypes={
   listId: PropTypes.string.isRequired,
+  boardId: PropTypes.string.isRequired,
   addCard: PropTypes.func.isRequired,
   hidden: PropTypes.bool,
   show: PropTypes.func.isRequired,
