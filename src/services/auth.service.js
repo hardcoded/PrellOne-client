@@ -3,6 +3,7 @@ import API_URL from '../config'
 
 export const storeToken = (token) => {
     window.localStorage.setItem('prello_access_token', token)
+    setTokenHeader()
 }
 
 export const getToken = () => {
@@ -16,10 +17,11 @@ export const isAuthenticated = () => {
 
 export const setTokenHeader = () => {
     axios.defaults.headers.common['authorization'] = `Bearer ${getToken()}`
+    axios.defaults.headers.common['Authorization'] = `Bearer ${getToken()}`
 }
 
 export const unsetTokenHeader = () => {
-    axios.defaults.headers.common['authorization'] = null
+    axios.defaults.headers.common['Authorization'] = null
 }
 
 export const removeToken = () => {
