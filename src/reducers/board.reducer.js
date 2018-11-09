@@ -29,7 +29,7 @@ const board = (state = {}, action) => {
                 }   
             }
 
-        case 'ADD_BOARD' :
+        case 'BOARD_ADDED' :
             return {
                 ...state,
                 [action.board.id] : action.board

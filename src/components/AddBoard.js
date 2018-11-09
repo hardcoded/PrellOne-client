@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input} from 'reactstrap';
 import PropTypes from  'prop-types'
 
-const AddBoard = ({id,modal, closeModalCreateBoard, addBoard})=> {
+const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard})=> {
   let titleBoard
   return (
   <div>
@@ -23,7 +23,7 @@ const AddBoard = ({id,modal, closeModalCreateBoard, addBoard})=> {
         </ModalBody>
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
-            addBoard(titleBoard.value,id)
+            addBoard(titleBoard.value,owner)
             titleBoard.value = ''
           }}>Create board</Button>
           <Button color="danger" onClick={closeModalCreateBoard}>Cancel</Button>
@@ -38,6 +38,7 @@ AddBoard.propTypes={
     id:PropTypes.string,
     closeModalCreateBoard: PropTypes.func.isRequired,
     modal: PropTypes.bool,
+    owner: PropTypes.string,
     addBoard: PropTypes.func.isRequired,
   
 }

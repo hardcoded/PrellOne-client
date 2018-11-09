@@ -4,13 +4,13 @@ const addList = (state = {}, action) => {
         case 'HIDE_ADD_LIST':
             return {
                 ...state,
-                hidden: false
+                hidden: true
             }
 
         case 'SHOW_ADD_LIST':
             return {
                 ...state,
-                hidden: true
+                hidden: false
             }
 
         default:

@@ -12,11 +12,20 @@ const home = (state = { user: null, error: null }, action) => {
                 user: null,
                 error: action.payload
             }
-        case 'ADD_BOARD' :
-            return [
+        case 'BOARD_ADDED' :
+            return {
                 ...state,
-                action.board.id
-            ]
+                user : {
+                    ...state.user,
+                    boards: [
+                        ...state.user.boards,
+                        {
+                            id: action.board.id,
+                            title: action.board.title
+                        }
+                    ]   
+                }
+            }
         default:
             return state
     }
