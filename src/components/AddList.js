@@ -16,7 +16,7 @@ const AddList = ({boardId, addList, hidden, hide, show})=> {
       </Col>
       <Col xs="6">
         <Button block color="success" type="submit" onClick = {e => {e.preventDefault()
-          addList(boardId, input.value)
+          addList(input.value, boardId)
           input.value = ''
         }}>Add a list</Button>
       </Col>

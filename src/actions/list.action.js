@@ -2,6 +2,11 @@ import axios from 'axios'
 
 let nextCardId = 8
 
+export const listAdded = (list) => ({
+    type: 'LIST_ADDED',
+    list
+})
+
 export const addCard = (id, title) => ({
     type: 'ADD_CARD',
     id, // list id

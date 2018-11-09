@@ -28,13 +28,9 @@ const mapStateToProps = (state, ownProps) =>{
 
 const mapDispatchToProps = dispatch => ({
     closeModalCreateBoard: () => {
-        dispatch(closeModalCreateBoard())},
-/*
-    addBoard: (title,id) => { 
-        dispatch(addBoard(title,id))
         dispatch(closeModalCreateBoard())
-    }
-*/
+    },
+
     addBoard: async (title, owner) => {
         try {
           const data = await postBoard({title, owner})
@@ -46,7 +42,10 @@ const mapDispatchToProps = dispatch => ({
           //dispatch(errorFetchingBoard(message))
           console.log(message)
         }
-      }
+        finally {
+            dispatch(closeModalCreateBoard())
+        }
+    }
   })
 
 export default connect(

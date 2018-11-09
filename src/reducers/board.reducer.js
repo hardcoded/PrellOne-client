@@ -17,14 +17,14 @@ const board = (state = {}, action) => {
                 [action.payload.id]: action.payload 
             }
             
-        case 'ADD_LIST':
+        case 'LIST_ADDED':
             return {
                 ...state,
-                [action.id]: {
-                    ...state[action.id],
+                [action.list.board]: {
+                    ...state[action.list.board],
                     lists: [
-                        ...state[action.id].lists,
-                        action.list.id
+                        ...state[action.list.board].lists,
+                        action.list
                     ]
                 }   
             }

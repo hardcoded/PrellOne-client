@@ -1,25 +1,8 @@
-export const boardAdded = (board) => 
-{   
-    if(board.idTeam){
-        return ({
-            type: 'BOARD_ADDED',
-            board
-        })
-    } 
-    else {
-       return ({
-            type: 'BOARD_ADDED',
-            board
-        })  
-    }
-    
-}
+export const boardAdded = (board) => ({
+    type: 'BOARD_ADDED',
+    board
+})  
 
-export const addList = (boardId, list) => ({
-    type: 'ADD_LIST',
-    boardId,
-    list
-})
 
 /** drag and drop card action
  * 

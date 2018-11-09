@@ -63,7 +63,7 @@ const listPrello = (state = {}, action) => {
         case 'LISTS_LOAD_FAILED':
             return state
             
-        case 'ADD_LIST' :
+        case 'LIST_ADDED' :
             return {
                 ...state,
                 [action.list.id]: action.list
