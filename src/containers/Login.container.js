@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import Login from '../components/Login'
 import { login, loginSuccess, loginFailed } from '../actions/login.action'
-import { storeToken, login as authLogin } from '../services/auth.service';
+import { login as authLogin } from '../services/auth.service';
 
 const mapStateToProps = (state, ownProps) => ({
     error: state.login.error,
@@ -14,7 +14,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         try {
             const data = await authLogin(email, password)
             dispatch(loginSuccess(data.token))
-            storeToken(data.token)
             return data.user
         }
         catch(error) {

@@ -21,7 +21,7 @@ const ListPrello = ({id, title, cards, board}) =>(
               {
                 cards &&
                 cards.map((card,key) => 
-                  <CardPrello key={card} cardId={card.id} index={key}></CardPrello>
+                  <CardPrello key={key} cardId={card.id} index={key}></CardPrello>
                 )
               }
               {provided.placeholder}

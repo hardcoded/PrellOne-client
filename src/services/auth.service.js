@@ -1,9 +1,9 @@
 import axios from 'axios'
 import API_URL from '../config'
+import { setConnectedUser } from '../actions/home.action'
 
 export const storeToken = (token) => {
     window.localStorage.setItem('prello_access_token', token)
-    setTokenHeader()
 }
 
 export const getToken = () => {
@@ -11,8 +11,26 @@ export const getToken = () => {
 }
 
 export const isAuthenticated = () => {
-    return (window.localStorage.getItem('prello_access_token') !== undefined &&
-        window.localStorage.getItem('prello_access_token') !== null)
+    if (getToken()) {
+        setTokenHeader()
+        setUserProfile()
+        return true
+    } else {
+        unsetTokenHeader()
+        return false
+    }
+}
+
+export const setUserProfile = async() => {
+    const localUserProfile = getLocalStorageUserProfile()
+    if (localUserProfile) {
+        setConnectedUser(localUserProfile)
+    } 
+    else {
+        const profile = await fetchProfile()
+        setConnectedUser(profile)
+        storeUserProfileLocalStorage(profile)
+    }
 }
 
 export const setTokenHeader = () => {
@@ -29,6 +47,7 @@ export const removeToken = () => {
 
 export const logout = () => {
     removeToken()
+    deleteUserProfileLocalStorage()
     window.location = '/login'
 }
 
@@ -38,6 +57,8 @@ export const login = async (email, password) => {
             email: email,
             password: password
         })
+        storeToken(login.data.token)
+        storeUserProfileLocalStorage(login.data.user)
         return login.data
     }
     catch (error) {
@@ -45,7 +66,7 @@ export const login = async (email, password) => {
     }
 }
 
-export const register = async(firstName, lastName, username, email, password) => {
+export const register = async (firstName, lastName, username, email, password) => {
     try {
         const user = await axios.post(`${API_URL}/api/auth/register`, {
             email: email,
@@ -59,4 +80,26 @@ export const register = async(firstName, lastName, username, email, password) =>
     catch (error) {
         throw error
     }
+}
+
+const getLocalStorageUserProfile = () => {
+    if (window.localStorage.getItem('prello_profile') !== undefined &&
+    window.localStorage.getItem('prello_profile') !== null) {
+        return JSON.parse(window.localStorage.getItem('prello_profile'))
+    }
+    else {
+        return null
+    } 
+}
+
+const storeUserProfileLocalStorage = (profile) => {
+    window.localStorage.setItem('prello_profile', JSON.stringify(profile))
+}
+
+const deleteUserProfileLocalStorage = () => {
+    window.localStorage.removeItem('prello_profile')
+}
+
+const fetchProfile = async() => {
+    return await axios.get(`${API_URL}/users/current`)
 }

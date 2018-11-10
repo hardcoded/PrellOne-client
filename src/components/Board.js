@@ -20,8 +20,8 @@ const Board = ({id, title, lists, onDragEnd}) => (
         <Row className="scrolling-wrapper-flexbox">
           <DragDropContext onDragEnd={onDragEnd}>
             {
-              lists.map(list=> (
-              <Col xs="12" sm="6" md="4" lg="3" key={list}>
+              lists.map((list, index) => (
+              <Col xs="12" sm="6" md="4" lg="3" key={index}>
               <ListPrello id={list.id}></ListPrello>
               </Col>
             ))}

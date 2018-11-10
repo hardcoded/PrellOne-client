@@ -9,10 +9,9 @@ export const boardAdded = (board) => ({
  * @param {*} result contains {destination, source, draggableId}
  */
 export const dndCard = result => ({
-    type: 'DND_CARD',
-    ...result
-})
-
+        ...result,
+        type: 'DND_CARD_END',
+    })
 
 export const boardFetched = board =>({
     type: 'BOARD_FETCHED',

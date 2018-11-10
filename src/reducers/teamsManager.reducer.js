@@ -1,6 +1,4 @@
-import demoData from '../components/demo-data'
-
-const TeamsManager = (state = demoData.teamsManager, action) => {
+const TeamsManager = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TEAM':
             return [
@@ -8,7 +6,8 @@ const TeamsManager = (state = demoData.teamsManager, action) => {
             ] 
             default:
             return state
-
+        case 'TEAMS_FETCHED':
+            return action.teams
     }
 }
 

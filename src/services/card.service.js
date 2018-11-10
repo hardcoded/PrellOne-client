@@ -1,9 +1,7 @@
 import axios from 'axios'
 import API_URL from '../config'
-import { getToken } from './auth.service'
 
 export const getCard = async (cardId) => {
-  const headers = {headers: { 'Authorization': `Bearer ${getToken()}`}}
   try {
     const card = await axios.get(`${API_URL}/api/cards/${cardId}`)
     return card.data
@@ -14,7 +12,6 @@ export const getCard = async (cardId) => {
 }
 
 export const postCard = async (card) => {
-  const headers = {headers: { 'Authorization': `Bearer ${getToken()}`}}
   try {
     console.log("POSTING CARD");
     console.log(card)

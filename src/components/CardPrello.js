@@ -38,7 +38,7 @@ CardPrello.propTypes={
   id: PropTypes.string.isRequired,
   title:PropTypes.string.isRequired,
   labels: PropTypes.array.isRequired,
-  index: PropTypes.integer,
+  index: PropTypes.number,
   openModal: PropTypes.func.isRequired
   
 }

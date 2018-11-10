@@ -16,7 +16,7 @@ const Team = ({id,name, boards, members,openModalCreateBoard}) => (
                 
                     {members.map(member=>(
                     <Col lg="1">
-                     <Member memberId={member} ></Member>
+                     <Member memberId={member.id} ></Member>
                      </Col> 
                     ))} 
                     

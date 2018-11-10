@@ -1,7 +1,10 @@
-import demoData from '../components/demo-data'
-
-const team = (state = demoData.teams, action) => {
+const team = (state = {}, action) => {
     switch (action.type) {
+        case 'TEAMS_FETCHED':
+            return action.teams.reduce((map, team) => {
+                map[team.id] = team;
+                return map;
+            }, {});
         case 'ADD_BOARD':
         if (action.idTeam){
             return {

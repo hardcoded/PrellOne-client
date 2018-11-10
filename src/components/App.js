@@ -34,9 +34,9 @@ const App = ({ dispatch }) => (
             <PrivateRoute path='/team' component={TeamsManager} />
             <Route path='/register' component={Register} />
             <Route path='/login' component={Login} />
-            <Route path='/updatePwd' component={UpdatePassword}/>
-            <Route path='/updateInfo' component={UpdateInfo}/>
-            <Route path='/account' component={Account}/>
+            <PrivateRoute path='/updatePwd' component={UpdatePassword}/>
+            <PrivateRoute path='/updateInfo' component={UpdateInfo}/>
+            <PrivateRoute path='/account' component={Account}/>
         </Switch>
     </div>
 )

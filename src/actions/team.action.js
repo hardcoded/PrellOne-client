@@ -1,6 +1,11 @@
 let userId = 8
 let nextBoardId = 3
 
+export const teamsFetched = (teams) => ({
+    type: 'TEAMS_FETCHED',
+    teams,
+})
+
 export const addMemberTeam = (id, username) => ({
     type: 'ADD_MEMBER_TEAM',
     id, 
