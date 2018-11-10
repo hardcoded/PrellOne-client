@@ -8,9 +8,11 @@ socket.on("error",(error)=>{
 
 export default {
     init(store){
-        socket.on( "action" ,(action)=>
+        socket.on( "action" ,(action)=>{
+            console.log("from emit")
+            console.log(action)
             store.dispatch(action)
-        )
+        })
         socket.on("connect",()=>
             console.log("user connected!")
         )

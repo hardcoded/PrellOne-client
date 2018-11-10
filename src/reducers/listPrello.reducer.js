@@ -80,6 +80,19 @@ const listPrello = (state = {}, action) => {
                     ]
                 }
             }
+
+        case 'CARD_ADDED_SUCCESS':
+            console.log("marche coté liste")
+            return {
+                ...state,
+                [action.card.list]: {
+                    ...state[action.card.list],
+                    cards: [
+                        ...state[action.card.list].cards.filter(card => card.id != "idTemp"),
+                        action.card
+                    ]
+                }
+            }
         case 'UPDATE_LIST':
             return {
                 ...state,
