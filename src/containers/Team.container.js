@@ -8,12 +8,7 @@ const mapStateToProps = (state, ownProps) => {
   return({
     id: state.reducerTeam[teamId].id,
     name: state.reducerTeam[teamId].name,
-    boards: state.reducerTeam[teamId].boards.map((boardId)=> {
-      return {
-        id: state.reducerBoard[boardId].id,
-        title: state.reducerBoard[boardId].title
-      }
-    }),
+    boards: state.reducerTeam[teamId].boards,
     members: state.reducerTeam[teamId].members
   })}
 
