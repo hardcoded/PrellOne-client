@@ -22,7 +22,7 @@ const Board = ({id, title, lists, onDragEnd}) => (
             {
               lists.map(list=> (
               <Col xs="12" sm="6" md="4" lg="3" key={list}>
-              <ListPrello {...list}></ListPrello>
+              <ListPrello id={list.id}></ListPrello>
               </Col>
             ))}
           </DragDropContext>

@@ -69,14 +69,14 @@ const listPrello = (state = {}, action) => {
                 [action.list.id]: action.list
             }
         
-        case 'ADD_CARD':
+        case 'CARD_ADDED':
             return {
                 ...state,
-                [action.id]: {
-                    ...state[action.id],
+                [action.card.list]: {
+                    ...state[action.card.list],
                     cards: [
-                        ...state[action.id].cards,
-                        action.card.id
+                        ...state[action.card.list].cards,
+                        action.card
                     ]
                 }
             }

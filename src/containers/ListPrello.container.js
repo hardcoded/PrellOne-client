@@ -14,8 +14,8 @@ class ListPrelloContainer extends Component{
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps)
-  return ownProps
+  const list = state.reducerListPrello[ownProps.id]
+  return list
 }
 
 const mapDispatchToProps = dispatch => ({ })

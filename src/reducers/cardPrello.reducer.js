@@ -12,7 +12,7 @@ const cardPrello = (state = {}, action) => {
                 return map;
             }, {});
 
-        case 'ADD_CARD':
+        case 'CARD_ADDED':
             return {
                 ...state,
                 [action.card.id]: action.card

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
 import PropTypes from  'prop-types';
 
-const AddComment = ({userName, photo, addComment}) => {
+const AddComment = ({userId, userName, photo, addComment}) => {
   let contentInput
 
   return (
@@ -21,7 +21,7 @@ const AddComment = ({userName, photo, addComment}) => {
           </Col>
           <Col xs="auto">
             <Button color="primary" onClick = {() => {
-              addComment(contentInput.value)
+              addComment(contentInput.value, userId)
               contentInput.value = ''
             }}>
               Send
@@ -36,11 +36,10 @@ const AddComment = ({userName, photo, addComment}) => {
 
 
 AddComment.propTypes={
-  id: PropTypes.string,
-  content:PropTypes.string,
+  userId: PropTypes.string,
   userName: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired
-  
+  photo: PropTypes.string.isRequired,
+  addComment: PropTypes.func
 }
 
 export default AddComment;

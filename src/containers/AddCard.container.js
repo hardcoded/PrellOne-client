@@ -1,35 +1,52 @@
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import AddCard from '../components/AddCard'
-import { addCard } from '../actions/list.action'
-import { hideAddCard } from '../actions/list.action'
-import { showAddCard } from '../actions/list.action'
+import { showAddCard, hideAddCard } from '../actions/list.action'
+import { cardAdded } from '../actions/card.action'
+import { postCard } from '../services/card.service'
+
+class AddCardContainer extends Component {
+  componentWillMount = () => {}
+  render = () => (
+    <AddCard {...this.props}></AddCard>
+  )
+}
 
 const mapStateToProps = (state, ownProps) => {
-  if (state.reducerListPrello[ownProps.listId] === undefined) {
-    return ({
-      listId: '',
-      hidden: true
-    })
-  }
   return ({
-  listId: ownProps.listId,
-  hidden: state.reducerListPrello[ownProps.listId].addCard,
-})}
+    listId: ownProps.listId,
+    boardId: ownProps.boardId,
+    hidden: state.reducerListPrello[ownProps.listId].addCard,
+  })
+}
 
 const mapDispatchToProps = dispatch => ({
-  addCard: (id, title) => { 
-    dispatch(addCard(id, title))
-    dispatch(hideAddCard(id))
-  },
   hide: (id) => {
     dispatch(hideAddCard(id))
   },
   show: (id) => {
     dispatch(showAddCard(id))
+  },
+  addCard: async (title, list, board) => {
+    try {
+      const data = await postCard({title, list, board})
+      console.log("CARD ADDED")
+      console.log(data)
+      dispatch(cardAdded(data))
+    } 
+    catch (error) {
+      console.log(error);
+      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      //dispatch(errorFetchingBoard(message))
+      console.log(message)
+    }
+    finally {
+      dispatch(hideAddCard(list))
+    }
   }
 })
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AddCard)
+)(AddCardContainer)

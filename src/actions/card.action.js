@@ -1,5 +1,10 @@
 let nextCommentId = 2
 
+export const cardAdded = (card) => ({
+    type: 'CARD_ADDED',
+    card
+})
+
 export const addMember = (member, id) => ({
     type: 'ADD_MEMBER',
     id,

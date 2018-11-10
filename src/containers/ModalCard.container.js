@@ -6,11 +6,6 @@ import { toggleDone, updateAttribute } from '../actions/card.action'
 
 const mapStateToProps = (state) => {
   const card = state.reducerCardPrello[state.reducerModalCard.activeCard] 
-  console.clear()
-  console.log("OPENED MODAL WITH")
-  console.log(card)
-  console.log(state.reducerCardPrello)
-  console.log(state.reducerModalCard)
   return ({
     ...card,
     ...state.reducerModalCard,
