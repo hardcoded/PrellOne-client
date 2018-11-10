@@ -7,6 +7,10 @@ const home = (state = { user: null, error: null }, action) => {
             return { 
                 user: action.payload 
             }
+        case 'SET_USER_PROFILE':
+            return { 
+                user: action.payload 
+            }
         case 'BOARDS_LOAD_FAILED':
             return {
                 user: null,
