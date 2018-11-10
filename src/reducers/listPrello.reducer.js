@@ -105,8 +105,7 @@ const listPrello = (state = {}, action) => {
                     addCard: false
                 }
             }
-        case 'DND_CARD':
-            console.log("YEAH")
+        case 'DND_CARD_END':
             return onDragEnd(state, action)
         default:
             return state
