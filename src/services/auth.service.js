@@ -11,8 +11,14 @@ export const getToken = () => {
 }
 
 export const isAuthenticated = () => {
-    return (window.localStorage.getItem('prello_access_token') !== undefined &&
-        window.localStorage.getItem('prello_access_token') !== null)
+    if (window.localStorage.getItem('prello_access_token') !== undefined &&
+        window.localStorage.getItem('prello_access_token') !== null) {
+        setTokenHeader()
+        return true
+    } else {
+        unsetTokenHeader()
+        return false
+    }
 }
 
 export const setTokenHeader = () => {
@@ -45,7 +51,7 @@ export const login = async (email, password) => {
     }
 }
 
-export const register = async(firstName, lastName, username, email, password) => {
+export const register = async (firstName, lastName, username, email, password) => {
     try {
         const user = await axios.post(`${API_URL}/api/auth/register`, {
             email: email,
