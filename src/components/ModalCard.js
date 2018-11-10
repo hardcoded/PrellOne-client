@@ -74,6 +74,7 @@ const ModalCard = ({
                     {
                       allLabels && Object.keys(allLabels).map((key, index) => 
                         <DropdownItem 
+                          key={index}
                           value={key}
                           onClick={() => updateAttribute(id, 'labels', [...labels, allLabels[key].id])}
                         >

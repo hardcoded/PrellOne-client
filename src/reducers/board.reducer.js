@@ -1,7 +1,6 @@
 const board = (state = {}, action) => {
     switch (action.type) {
         case 'BOARDS_LOADED':
-            console.log(action)
             return action.boards.reduce((map, board) => {
                 map[board.id] = board;
                 return map;
@@ -11,7 +10,6 @@ const board = (state = {}, action) => {
             return state
         
         case 'BOARD_FETCHED':
-            console.log(action)
             return { 
                 ...state,
                 [action.payload.id]: action.payload 

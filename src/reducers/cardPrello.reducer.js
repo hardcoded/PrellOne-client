@@ -1,7 +1,6 @@
 const cardPrello = (state = {}, action) => {
     switch (action.type) {
         case 'BOARD_FETCHED':
-            console.log(action)
             var allCards = [];
             action.payload.lists.map((list) => {
                 allCards = [...allCards, ...list.cards]

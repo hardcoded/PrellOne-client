@@ -1,5 +1,3 @@
-let nextBoardId = 3
-
 export const userFetched = (user) => {
     return ({
         type: 'USER_FETCHED',
