@@ -32,9 +32,8 @@ const mapDispatchToProps = dispatch => ({
 
   addList: async (title, board) => {
     try {
+      dispatch(listAdded({title,board,id:'idTemp'}))
       const data = await postList({title, board})
-      dispatch(listAdded(data))
-      console.log(data)
     } 
     catch (error) {
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
