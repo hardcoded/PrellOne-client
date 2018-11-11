@@ -38,7 +38,7 @@ const mapDispatchToProps = dispatch => ({
         console.log(message)
         //dispatch(errorFetchingTeams(message))
     }
-}
+  }
 })
 
 

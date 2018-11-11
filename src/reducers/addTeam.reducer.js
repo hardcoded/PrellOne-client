@@ -1,15 +1,15 @@
 const addTeam = (state = {}, action) => {
     switch (action.type) {
-        case 'HIDE':
+        case 'HIDE_ADD_TEAM':
             return {
                 ...state,
-                hidden: action.payload
+                hidden: true
             }
 
-        case 'SHOW':
+        case 'SHOW_ADD_TEAM':
             return {
                 ...state,
-                hidden: action.payload
+                hidden: false
             }
 
         default:

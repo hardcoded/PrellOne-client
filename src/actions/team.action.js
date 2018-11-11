@@ -6,6 +6,11 @@ export const teamsFetched = (teams) => ({
     teams,
 })
 
+export const teamAdded = (team) => ({
+    type: 'TEAM_ADDED',
+    team
+})
+
 export const addMemberTeam = (id, username) => ({
     type: 'ADD_MEMBER_TEAM',
     id, 

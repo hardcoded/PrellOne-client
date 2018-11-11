@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from  'prop-types'
 import { Row, Col, Button } from 'reactstrap'
 
-const AddTeam = ({addTeam, hidden, hide, show})=> {
+const AddTeam = ({addTeam, user, hidden, hide, show})=> {
   let input
   
 
@@ -16,7 +16,7 @@ const AddTeam = ({addTeam, hidden, hide, show})=> {
       </Col>
       <Col xs="6">
         <Button block color="success" type="submit" onClick = {e => {e.preventDefault()
-          addTeam(input.value)
+          addTeam(input.value, user)
           input.value = ''
         }}>Add a Team</Button>
       </Col>
@@ -32,6 +32,7 @@ const AddTeam = ({addTeam, hidden, hide, show})=> {
 }
 
 AddTeam.propTypes={
+  user: PropTypes.string.isRequired,
   addTeam: PropTypes.func.isRequired,
   hide: PropTypes.func.isRequired,
   show: PropTypes.func.isRequired

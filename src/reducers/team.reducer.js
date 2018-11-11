@@ -5,6 +5,13 @@ const team = (state = {}, action) => {
                 map[team.id] = team;
                 return map;
             }, {});
+
+        case 'TEAM_ADDED': 
+            return {
+                ...state,
+                [action.team.id]: action.team
+            }
+            
         case 'ADD_BOARD':
         if (action.idTeam){
             return {
