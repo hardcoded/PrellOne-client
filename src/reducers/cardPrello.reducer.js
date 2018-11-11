@@ -17,6 +17,12 @@ const cardPrello = (state = {}, action) => {
                 [action.card.id]: action.card
             }
 
+        case 'CARD_UPDATED':
+            return {
+                ...state,
+                [action.card.id]: action.card
+            }
+
         case 'ADD_MEMBER':
             if (state.id !== action.id) {
                 return state;

@@ -9,22 +9,15 @@ import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
 
 const ModalCard = ({
-  id,
+  card,
   isOpen,
-  title,
-  description,
-  labels,
   allLabels,
-  members,
-  comments,
-  dueDate,
-  done,
   edit,
   openEditCardDesc,
   editCardDesc,
   descEditorState,
   toggleEdit,
-  updateAttribute,
+  updateCard,
   toggleDone,
   closeModal
 }) => {
@@ -34,39 +27,38 @@ const ModalCard = ({
     <Modal isOpen={isOpen} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>
           {
-            !edit.title && <div onClick={() => toggleEdit(id, 'title')}>{title}</div>
+            !edit.title && <div onClick={() => toggleEdit(card.id, 'title')}>{card.title}</div>
           }
           {
             edit.title && 
             <Input 
-              onBlur={() => toggleEdit(id, 'title')} 
-              onChange={(e) => updateAttribute(id, 'title', e.target.value)} 
-              value={title}>
-              Hi
+              onBlur={() => toggleEdit(card.id, 'title')} 
+              onChange={(e) => updateCard({...card, title: e.target.value})} 
+              value={card.title}>
             </Input>
           }
         </ModalHeader>
         <ModalBody className="container-fluid">
           <h5>Due date</h5>
           <h5>
-            <DueDate date={dueDate} done={done}></DueDate>
+            <DueDate date={card.dueDate} done={card.done}></DueDate>
           </h5>
           <h6>
-            <CustomInput type="checkbox" id="doneCheckbox" checked={done} onChange={() => toggleDone(id)} label="Done"/>
+            <CustomInput type="checkbox" id="doneCheckbox" checked={card.done} onChange={() => toggleDone(card.id)} label="Done"/>
           </h6>
           <h5>Labels</h5>
           {
             <Row className="pl-3 mb-3">
               {
-                labels && labels.map((label, index) => 
-                  <Col xs="auto" className="p-0" key={label} onClick={() => {updateAttribute(id, 'labels', labels.filter((id)=> id !== label))}}>
+                card.labels && card.labels.map((label, index) => 
+                  <Col xs="auto" className="p-0" key={label} onClick={() => {updateCard({...card, labels: card.labels.filter((id)=> id !== label)})}}>
                     <Label labelId={label}>
                     </Label>
                   </Col>
                 )
               }
               <Col xs="auto" className="p-0">
-                <Dropdown isOpen={edit.labels} size="sm" toggle={() => toggleEdit(id, 'labels')}>
+                <Dropdown isOpen={edit.labels} size="sm" toggle={() => toggleEdit(card.id, 'labels')}>
                   <DropdownToggle caret>
                     Add Label
                   </DropdownToggle>
@@ -76,7 +68,7 @@ const ModalCard = ({
                         <DropdownItem 
                           key={index}
                           value={key}
-                          onClick={() => updateAttribute(id, 'labels', [...labels, allLabels[key].id])}
+                          onClick={() => updateCard({...card, labels: [...card.labels, allLabels[key].id]})}
                         >
                           {allLabels[key].title}
                         </DropdownItem>
@@ -91,7 +83,7 @@ const ModalCard = ({
           {
             !edit.description && 
             
-            <div onClick={() => {toggleEdit(id, 'description'); openEditCardDesc(description)}} dangerouslySetInnerHTML={{__html: description}}></div>
+            <div onClick={() => {toggleEdit(card.id, 'description'); openEditCardDesc(card.description)}} dangerouslySetInnerHTML={{__html: card.description}}></div>
           }
           {
             edit.description && 
@@ -101,12 +93,12 @@ const ModalCard = ({
           }
           {
             edit.description && 
-            <Button className="mt-2" color="success" onClick={(e) => {toggleEdit(id, 'description'); updateAttribute(id, 'description', descEditorState.toString('html'))}}>Save</Button>
+            <Button className="mt-2" color="success" onClick={(e) => {toggleEdit(card.id, 'description'); updateCard({...card, description: descEditorState.toString('html')})}}>Save</Button>
           }
           <h5>Members</h5>
           <Row className="pl-3 mb-3">
             {
-              members && members.map(member=> 
+              card.members && card.members.map(member=> 
                 <Col xs="2" className="p-2" key={member}>
                   <Member memberId={member}></Member>
                 </Col>
@@ -115,11 +107,11 @@ const ModalCard = ({
           </Row>
           <h5>Comments</h5>
           {
-            comments && comments.map(comment => 
+            card.comments && card.comments.map(comment => 
               <Comment commentId={comment.id} content={comment.content} writer={comment.writer} key={comment}></Comment>
             )
           }
-          <AddComment cardId={id}></AddComment>
+          <AddComment cardId={card.id}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="danger" onClick={closeModal}>Cancel</Button>
@@ -130,17 +122,10 @@ const ModalCard = ({
 }
 
 ModalCard.propTypes = {
-  id: PropTypes.string,
+  card: PropTypes.object,
   isOpen: PropTypes.bool,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  labels: PropTypes.array,
   allLabels: PropTypes.object,
-  members: PropTypes.array,
-  comments: PropTypes.array,
-  dueDate: PropTypes.string,
-  done: PropTypes.bool,
-  edit: PropTypes.object,
+  edit: PropTypes.object.isRequired,
   toggleEdit: PropTypes.func,
   openEditCardDesc: PropTypes.func,
   editCardDesc: PropTypes.func,

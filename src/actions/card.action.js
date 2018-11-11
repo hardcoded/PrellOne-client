@@ -5,6 +5,11 @@ export const cardAdded = (card) => ({
     card
 })
 
+export const cardUpdated = (card) => ({
+    type: 'CARD_UPDATED',
+    card
+})
+
 export const addMember = (member, id) => ({
     type: 'ADD_MEMBER',
     id,

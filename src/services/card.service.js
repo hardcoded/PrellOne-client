@@ -22,3 +22,15 @@ export const postCard = async (card) => {
     throw error.response
   }
 }
+
+export const updateCard = async (card) => {
+  try {
+    console.log("UPDATING CARD");
+    console.log(card)
+    const newCard = await axios.put(`${API_URL}/api/cards/`, card)
+    return newCard.data
+  }
+  catch (error) {
+    throw error.response
+  }
+}
