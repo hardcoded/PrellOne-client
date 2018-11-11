@@ -13,8 +13,6 @@ export const getCard = async (cardId) => {
 
 export const postCard = async (card) => {
   try {
-    console.log("POSTING CARD");
-    console.log(card)
     const newCard = await axios.post(`${API_URL}/api/cards/`, card)
     return newCard.data
   }
@@ -25,8 +23,6 @@ export const postCard = async (card) => {
 
 export const updateCard = async (card) => {
   try {
-    console.log("UPDATING CARD");
-    console.log(card)
     const newCard = await axios.put(`${API_URL}/api/cards/`, card)
     return newCard.data
   }
