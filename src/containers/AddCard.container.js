@@ -30,12 +30,9 @@ const mapDispatchToProps = dispatch => ({
   addCard: async (title, list, board) => {
     try {
       const data = await postCard({title, list, board})
-      console.log("CARD ADDED")
-      console.log(data)
       dispatch(cardAdded(data))
     } 
     catch (error) {
-      console.log(error);
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
       //dispatch(errorFetchingBoard(message))
       console.log(message)

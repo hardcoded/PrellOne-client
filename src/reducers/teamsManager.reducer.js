@@ -8,6 +8,12 @@ const TeamsManager = (state = [], action) => {
             return state
         case 'TEAMS_FETCHED':
             return action.teams
+
+        case 'TEAM_ADDED': 
+            return [
+                ...state,
+                action.team
+            ]
     }
 }
 
