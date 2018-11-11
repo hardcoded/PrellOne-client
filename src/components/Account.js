@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Button, Container, Col, Row} from 'reactstrap'
+import { Button, Container, Col, Row, Card, CardText, CardTitle} from 'reactstrap'
 import PropTypes from  'prop-types'
 
-const Account = ({}) => (
+const Account = ({id, firstname, lastname, username}) => (
         <div>
             <Container>
             <header>
                     <h1>Account Manager</h1>
             </header> 
-            <img  className={"img-fluid rounded-circle"}/>
+            <Col>
+            <Card className="bg-light mb-3">
+            <CardTitle>Information</CardTitle>
+            <CardText>{firstname}</CardText>
+            <CardText>{lastname}</CardText>
+            <CardText>{username}</CardText>
+            </Card>
+            </Col>
             <Row>
             <Col xs="6">
             <Button block>
@@ -33,7 +40,8 @@ const Account = ({}) => (
 Account.propTypes={
     id: PropTypes.string.isRequired,
     username: PropTypes.string,
-    photo: PropTypes.string,
+    firstname: PropTypes.string,
+    lastname: PropTypes.string,
       
 }
     
