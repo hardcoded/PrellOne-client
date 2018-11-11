@@ -7,10 +7,14 @@ socket.on("error",(error)=>{
 })
 
 export default {
+    joinBoard(boardId){
+        socket.emit("joinBoard",boardId)
+    },
+    leaveBoard(boardId){
+        socket.emit("leaveBoard",boardId)
+    },
     init(store){
         socket.on( "action" ,(action)=>{
-            console.log("from emit")
-            console.log(action)
             store.dispatch(action)
         })
         socket.on("connect",()=>
@@ -18,6 +22,7 @@ export default {
         )
     },
     emit(type,payload){
+        console.log(type+" "+payload)
         socket.emit(type,payload)
     }
 }

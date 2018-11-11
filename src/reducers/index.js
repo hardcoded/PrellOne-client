@@ -18,7 +18,7 @@ import reducerRegister from './register.reducer'
 import reducerUpdatePassword from './updatePassword.reducer'
 import reducerAccount from './account.reducer'
 import reducerUpdateInfo from './updateInfo.reducer'
-import reducerSocket from './socket.reducer'
+
 
 export default combineReducers({
     reducerCardPrello,
@@ -40,5 +40,4 @@ export default combineReducers({
     reducerUpdatePassword,
     reducerAccount,
     reducerUpdateInfo,
-    reducerSocket
 })

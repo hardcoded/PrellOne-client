@@ -4,10 +4,16 @@ import Board from '../components/Board'
 import { dndCard, boardFetched } from '../actions/board.action'
 import { getBoard } from '../services/board.service'
 import Spinner from '../components/Spinner';
+import Socket from '../services/socket.service'
 
 class BoardContainer extends Component{
   componentWillMount(){
+    Socket.joinBoard(this.props.match.params.boardId)
+    
     this.props.getBoard(this.props.match.params.boardId)
+  }
+  componentWillUnmount(){
+    Socket.emit("leaveBoard",this.props.match.params.boardId)
   }
 
   render(){
