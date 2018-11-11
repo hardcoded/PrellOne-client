@@ -26,7 +26,17 @@ const board = (state = {}, action) => {
                     ]
                 }   
             }
-
+        case 'LIST_ADDED_SUCCESS':
+            return {
+                ...state,
+                [action.list.board]: {
+                    ...state[action.list.board],
+                    lists: [
+                        ...state[action.list.board].lists.filter(list => list.id != "idTemp"),
+                        action.list
+                    ]
+                }
+            }
         case 'BOARD_ADDED' :
             return {
                 ...state,
