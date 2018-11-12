@@ -51,10 +51,10 @@ export const logout = () => {
     window.location = '/login'
 }
 
-export const login = async (email, password) => {
+export const login = async (credential, password) => {
     try {
         const login = await axios.post(`${API_URL}/api/auth/login`, {
-            email: email,
+            credential: credential,
             password: password
         })
         storeToken(login.data.token)
