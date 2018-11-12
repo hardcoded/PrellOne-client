@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         dispatch(login("Logging you in, please wait..."))
         try {
             const data = await authLogin(credential, password)
-            dispatch(loginSuccess(data.token))
+            dispatch(loginSuccess(data.token, data.user.username))
             return data.user
         }
         catch(error) {

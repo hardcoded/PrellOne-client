@@ -10,11 +10,12 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem,
+    Button
 } from 'reactstrap'
-import { isAuthenticated } from '../services/auth.service'
+import { isAuthenticated, logout } from '../services/auth.service'
 
-const AppNav = ({ isOpen, token, open, user, close }) => {
+const AppNav = ({ isOpen, token, open, username, close }) => {
 
     return (
         <Navbar className="navbar-dark bg-primary" expand="md">
@@ -34,13 +35,13 @@ const AppNav = ({ isOpen, token, open, user, close }) => {
                 {(token || isAuthenticated()) &&
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link className="nav-link" to={`${user.username}/boards`}>Boards</Link>
+                            <Link className="nav-link" to={`/${username}/boards`}>Boards</Link>
                         </NavItem>
                         <NavItem>
                             <Link className="nav-link" to="/team">Team</Link>
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link" to={`${user.username}/account`}>Account</Link>
+                            <Link className="nav-link" to={`/${username}/account`}>Account</Link>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
@@ -59,6 +60,9 @@ const AppNav = ({ isOpen, token, open, user, close }) => {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <Button onClick={logout}>Log out</Button>
+                        </NavItem>
                     </Nav>
                 }
             </Collapse>

@@ -7,8 +7,8 @@ class UpdateInfo extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            firstname: '',
-            lastname: '',
+            firstname: this.props.user.firstname,
+            lastname: this.props.user.lastname,
             validate: {
                 firstname: '',
                 lastname: ''
@@ -94,7 +94,7 @@ class UpdateInfo extends React.Component {
                     </Col>
                     <Col >
                     <Button block className="mt-2">
-                        <Link  to={"/account"} >
+                        <Link  to={`/${this.props.user.username}/account`} >
                         Return
                         </Link>   
                     </Button>

@@ -1,6 +1,9 @@
-export const loginSuccess = (token) => ({
+export const loginSuccess = (token, username) => ({
     type: 'LOGGED_IN',
-    payload: token
+    payload: {
+        token: token,
+        username: username
+    }
 })
 
 export const login = (message) => ({

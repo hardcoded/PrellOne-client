@@ -36,7 +36,7 @@ class Login extends React.Component {
     }
 
     async ldapLogin() {
-        this.props.history.push('/login/ldap')
+        this.props.history.push('/login/polytech')
     }
 
     render() {

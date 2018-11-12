@@ -8,7 +8,8 @@ const login = (state = { token: null , waiting: null, error: null}, action) => {
         case 'LOGGED_IN':
             return {
                 ...state,
-                token: action.payload,
+                token: action.payload.token,
+                username: action.payload.username,
                 error:null,
                 waiting: null
             }
