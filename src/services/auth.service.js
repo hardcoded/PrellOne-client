@@ -33,6 +33,11 @@ export const setUserProfile = async() => {
     }
 }
 
+export const updateUserProfileLocalStorage = (userProfile) => {
+    storeUserProfileLocalStorage(userProfile)
+    setUserProfile()
+}
+
 export const setTokenHeader = () => {
     axios.defaults.headers.common['Authorization'] = `Bearer ${getToken()}`
 }
