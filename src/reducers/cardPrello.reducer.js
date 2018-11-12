@@ -16,8 +16,7 @@ const cardPrello = (state = {}, action) => {
                 ...state,
                 [action.card.id]: action.card
             }
-        case 'CARD_ADDED_SUCCESS':
-            console.log(action)
+        case 'CARD_ADDED_SUCCESS':  
             if(state["idTemp"]){
                 return {
                     ...state,
@@ -32,12 +31,18 @@ const cardPrello = (state = {}, action) => {
                 }
             }
 
-
+        case 'CARD_UPDATED_SUCCESS':
+            return {
+                ...state,
+                [action.card.id]: action.card
+            }
+            
         case 'CARD_UPDATED':
             return {
                 ...state,
                 [action.card.id]: action.card
             }
+        
 
         case 'ADD_MEMBER':
             if (state.id !== action.id) {
