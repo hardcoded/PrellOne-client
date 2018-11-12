@@ -33,9 +33,6 @@ const mapDispatchToProps = dispatch => ({
     closeModal: () => {
       dispatch(closeModal())
     },
-    toggleDone: (id) => {
-      dispatch(toggleDone(id))
-    },
     toggleEdit: (id, field) => {
       dispatch(toggleEdit(id, field))
     },

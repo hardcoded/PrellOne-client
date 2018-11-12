@@ -18,7 +18,6 @@ const ModalCard = ({
   descEditorState,
   toggleEdit,
   updateCard,
-  toggleDone,
   closeModal
 }) => {
 
@@ -44,7 +43,7 @@ const ModalCard = ({
             <DueDate date={card.dueDate} done={card.done}></DueDate>
           </h5>
           <h6>
-            <CustomInput type="checkbox" id="doneCheckbox" checked={card.done} onChange={() => toggleDone(card.id)} label="Done"/>
+            <CustomInput type="checkbox" id="doneCheckbox" checked={card.done} onChange={() => {updateCard({...card, done: !card.done})}} label="Done"/>
           </h6>
           <h5>Labels</h5>
           {
@@ -131,7 +130,6 @@ ModalCard.propTypes = {
   editCardDesc: PropTypes.func,
   descEditorState: PropTypes.object,
   updateAttribute: PropTypes.func,
-  toggleDone: PropTypes.func,
   closeModal: PropTypes.func
 }
 
