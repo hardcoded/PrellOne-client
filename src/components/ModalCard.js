@@ -7,6 +7,7 @@ import Comment from '../containers/Comment.container'
 import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
+import GoogleClient from '../containers/GoogleClient.container'
 
 const ModalCard = ({
   card,
@@ -94,6 +95,8 @@ const ModalCard = ({
             edit.description && 
             <Button className="mt-2" color="success" onClick={(e) => {toggleEdit(card.id, 'description'); updateCard({...card, description: descEditorState.toString('html')})}}>Save</Button>
           }
+          <h5>Attached Files</h5>
+          <GoogleClient></GoogleClient>
           <h5>Members</h5>
           <Row className="pl-3 mb-3">
             {

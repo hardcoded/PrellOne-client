@@ -30,3 +30,13 @@ export const updateCard = async (card) => {
     throw error.response
   }
 }
+
+export const listGoogleFiles = async () => {
+  try {
+    const filesList = await axios.get(`${API_URL}/api/cards/googleFiles`)
+    return filesList.data
+  }
+  catch (error) {
+    throw error.response
+  }
+}
