@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import AddComment from '../components/AddComment'
-import { addComment } from '../actions/card.action'
+import {cardUpdated} from '../actions/card.action'
+import {updateCard} from '../services/card.service'
 
 const mapStateToProps = (state, ownProps) => {
   return ({
@@ -10,8 +11,15 @@ const mapStateToProps = (state, ownProps) => {
   })
 }
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  addComment: (content, userId) => { 
-    dispatch(addComment(ownProps.cardId, content, userId))
+  addComment: async (content, userId) => {
+    try {
+      const data = await updateCard({...ownProps.card, comments: [...ownProps.card.comments, {writer: userId, content: content}]})
+      dispatch(cardUpdated(data))
+    }
+    catch(error) {
+      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      //dispatch(errorFetchingUser(message))
+    }
   },
 })
 

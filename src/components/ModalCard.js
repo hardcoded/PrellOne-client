@@ -111,7 +111,7 @@ const ModalCard = ({
               <Comment commentId={comment.id} content={comment.content} writer={comment.writer} key={comment}></Comment>
             )
           }
-          <AddComment cardId={card.id}></AddComment>
+          <AddComment card={card}></AddComment>
         </ModalBody>
         <ModalFooter>
           <Button color="danger" onClick={closeModal}>Cancel</Button>
