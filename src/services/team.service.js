@@ -11,6 +11,16 @@ export const getTeam = async (teamId) => {
   }
 }
 
+export const getTeams=async()=>{
+  try {
+    const teams = await axios.get(`${API_URL}/api/teams`)
+    return teams.data
+  }
+  catch (error) {
+    throw error.response
+  }
+}
+
 export const postTeam = async (team) => {
   try {
     const newTeam = await axios.post(`${API_URL}/api/teams/`, team)
