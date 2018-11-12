@@ -8,9 +8,9 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    register: async (userName, firstName, lastName, email, password) => {
+    register: async (username, firstname, lastname, email, password) => {
         try {
-            await register(userName, firstName, lastName, email, password)
+            await register(username, firstname, lastname, email, password)
             dispatch(registerSuccess())
         }
         catch (error) {

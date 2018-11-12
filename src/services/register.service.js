@@ -1,12 +1,12 @@
 import axios from 'axios'
 import API_URL from '../config'
 
-export const register = async (userName, firstName, lastName, email, password) => {
+export const register = async (username, firstname, lastname, email, password) => {
     try {
         const postBody = {
-            username: userName,
-            firstName: firstName,
-            lastName: lastName,
+            username: username,
+            firstname: firstname,
+            lastname: lastname,
             email: email,
             password: password
         }
