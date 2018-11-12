@@ -35,7 +35,7 @@ const App = ({ dispatch }) => (
             <PrivateRoute path='/team' component={TeamsManager} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/login' component={Login} />
-            <Route exact path='/login/ldap' component={LoginLdap} />
+            <Route exact path='/login/polytech' component={LoginLdap} />
             <PrivateRoute path='/updatePwd' component={UpdatePassword}/>
             <PrivateRoute path='/updateInfo' component={UpdateInfo}/>
             <PrivateRoute path='/account' component={Account}/>
