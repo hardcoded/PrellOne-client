@@ -94,6 +94,7 @@ class Register extends React.Component {
                                 name="firstname"
                                 id="exampleFirstName"
                                 placeholder="First name"
+                                autoComplete="name"
                                 value={firstname}
                                 invalid={this.state.validate.firstname === 'has-danger'}
                                 onChange={(e) => {
@@ -113,6 +114,7 @@ class Register extends React.Component {
                                 name="lastname"
                                 id="exampleLastName"
                                 placeholder="Last name"
+                                autoComplete="family-name"
                                 value={lastname}
                                 invalid={this.state.validate.lastname === 'has-danger'}
                                 onChange={(e) => {
@@ -132,6 +134,7 @@ class Register extends React.Component {
                                 name="username"
                                 id="exampleUsername"
                                 placeholder="FancyUsername"
+                                autoComplete="username"
                                 value={username}
                                 onChange={(e) => {
                                     this.handleChange(e)
@@ -147,6 +150,7 @@ class Register extends React.Component {
                                 name="email"
                                 id="exampleEmail"
                                 placeholder="email@prellone.com"
+                                autoComplete="email"
                                 value={email}
                                 valid={this.state.validate.email === 'has-success'}
                                 invalid={this.state.validate.email === 'has-danger'}
@@ -182,6 +186,7 @@ class Register extends React.Component {
                                 name="password"
                                 id="examplePassword"
                                 placeholder="********"
+                                autoComplete="password"
                                 value={password}
                                 invalid={this.state.validate.password === 'has-danger'}
                                 onChange={(e) => this.handleChange(e)}

@@ -31,7 +31,7 @@ const mapDispatchToProps = dispatch => ({
     try {
       dispatch(cardAdded({title,list,board,id:"idTemp"}))
       const data = await postCard({title, list, board})
-      dispatch(cardAdded(data))
+      //dispatch(cardAdded(data))
     } 
     catch (error) {
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message

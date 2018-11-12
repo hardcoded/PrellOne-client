@@ -17,7 +17,7 @@ const AddCard = ({listId, boardId, addCard, hidden, hide, show})=> {
         hidden &&
         <Row>
           <Col xs="12">
-            <input className="mb-2 form-control" placeholder="Type a title for the card"  ref={node => input = node} />
+            <input className="mb-2 form-control" placeholder="Type a title for the card"  ref={node => input = node} autoFocus={true} />
           </Col>
           <Col>
             <Button block color="success" type="submit">Add</Button>
