@@ -9,10 +9,10 @@ const mapStateToProps = (state, ownProps) => ({
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    login: async(email, password) => {
+    login: async(credential, password) => {
         dispatch(login("Logging you in, please wait..."))
         try {
-            const data = await authLogin(email, password)
+            const data = await authLogin(credential, password)
             dispatch(loginSuccess(data.token))
             return data.user
         }
