@@ -2,7 +2,7 @@ import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import { Alert, Container, Input, Button, Col, Form, FormGroup, Label } from 'reactstrap'
 
-class Login extends React.Component {
+class LoginLdap extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -13,7 +13,6 @@ class Login extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.submitForm = this.submitForm.bind(this)
         this.keyDown = this.keyDown.bind(this)
-        this.ldapLogin = this.ldapLogin.bind(this)
     }
 
     handleChange(event) {
@@ -30,13 +29,9 @@ class Login extends React.Component {
     async submitForm() {
         try {
             const user = await this.props.login(this.state.credential, this.state.password)
-            this.props.history.push(`${user.username}/boards`)
+            this.props.history.push(`/${user.username}/boards`)
         } 
         catch (error) { }
-    }
-
-    async ldapLogin() {
-        this.props.history.push('/login/ldap')
     }
 
     render() {
@@ -57,13 +52,13 @@ class Login extends React.Component {
                     }
                     <Col>
                         <FormGroup>
-                            <Label>Username or email</Label>
+                            <Label>Username</Label>
                             <Input
                                 type="text"
                                 name="credential"
                                 id="exampleCredential"
-                                placeholder="Username or email@prellone.fr"
-                                autoComplete="email"
+                                placeholder="firstname.lastname"
+                                autoComplete="username"
                                 autoFocus={true}
                                 value={credential}
                                 onChange={(e) => this.handleChange(e)}
@@ -87,11 +82,10 @@ class Login extends React.Component {
                     </Col>
                     <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
                 </Form>
-                <Button onClick={this.ldapLogin} className="mt-2" >Connect with Polytech account</Button>
                 <Label>Don't have an account yet? <Link className="nav-link" to="/register">Sign up</Link></Label>
             </Container>
         );
     }
 }
 
-export default withRouter(Login)
+export default withRouter(LoginLdap)

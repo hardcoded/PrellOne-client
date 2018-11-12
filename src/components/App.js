@@ -10,6 +10,7 @@ import { isAuthenticated } from '../services/auth.service'
 import UpdatePassword from '../containers/UpdatePassword.container'
 import Account from '../containers/Account.container.js'
 import UpdateInfo from '../containers/UpdateInfo.container'
+import LoginLdap from '../containers/LoginLdap.container';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
@@ -32,8 +33,9 @@ const App = ({ dispatch }) => (
             <PrivateRoute exact path='/:username/boards' component={Home} />
             <PrivateRoute path='/board/:boardId' component={Board} />
             <PrivateRoute path='/team' component={TeamsManager} />
-            <Route path='/register' component={Register} />
-            <Route path='/login' component={Login} />
+            <Route exact path='/register' component={Register} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/login/ldap' component={LoginLdap} />
             <PrivateRoute path='/updatePwd' component={UpdatePassword}/>
             <PrivateRoute path='/updateInfo' component={UpdateInfo}/>
             <PrivateRoute path='/account' component={Account}/>
