@@ -2,7 +2,9 @@ import { connect } from 'react-redux'
 import Account from '../components/Account'
 
 const mapStateToProps = (state, ownProps) => ({
-  user: state.home.user
+  firstname: state.home.user.firstName,
+  lastname: state.home.user.lastName,
+  username: state.home.user.username
 })
 
 const mapDispatchToProps = dispatch => ({})

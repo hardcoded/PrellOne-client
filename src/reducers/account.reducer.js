@@ -1,6 +1,4 @@
-import demoData from '../components/demo-data'
-
-const account = (state = demoData.users, action) => {
+const account = (state = {}, action) => {
     switch (action.type) {
         default:
             return state
