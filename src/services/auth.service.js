@@ -51,12 +51,15 @@ export const logout = () => {
     window.location = '/login'
 }
 
-export const login = async (credential, password) => {
+export const login = async (credential, password, ldap = false) => {
+    const url = ldap ? `${API_URL}/api/auth/login/ldap` : `${API_URL}/api/auth/login`
+    console.log(url)
     try {
-        const login = await axios.post(`${API_URL}/api/auth/login`, {
+        const login = await axios.post(url, {
             credential: credential,
             password: password
         })
+        console.log(login.data)
         storeToken(login.data.token)
         storeUserProfileLocalStorage(login.data.user)
         return login.data
