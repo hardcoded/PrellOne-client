@@ -9,12 +9,14 @@ import { userFetched, errorFetchingUser } from '../actions/home.action'
 class HomeContainer extends Component {
 
     componentWillMount() {
-        this.props.getBoards(this.props.match.params.username)
+        if (this.props && !this.props.user) {
+            this.props.getBoards(this.props.match.params.username)
+        }
     }
  
     render() {
         if (this.props.user) return (<Home {...this.props}></Home>)
-        else return (<Spinner></Spinner>)     // TODO: component with loader
+        else return (<Spinner></Spinner>)
     }
 
 }
