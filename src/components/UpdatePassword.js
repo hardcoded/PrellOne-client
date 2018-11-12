@@ -122,7 +122,7 @@ class UpdatePassword extends React.Component {
                     </Col>
                     <Col >
                     <Button block className="mt-2">
-                        <Link  to={"/account"} >
+                        <Link  to={`/${this.props.user.username}/account`} >
                         Return
                         </Link>   
                     </Button>

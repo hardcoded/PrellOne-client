@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import LoginLdap from '../components/LoginLdap'
-import { login, loginSuccess, loginFailed } from '../actions/loginLdap.action'
+import { login, loginSuccess, loginFailed } from '../actions/login.action'
 import { login as authLogin } from '../services/auth.service';
 
 const mapStateToProps = (state, ownProps) => ({
@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         dispatch(login("Logging you in, please wait..."))
         try {
             const data = await authLogin(credential, password, true)
-            dispatch(loginSuccess(data.token))
+            dispatch(loginSuccess(data.token, data.user.username))
             return data.user
         }
         catch(error) {
