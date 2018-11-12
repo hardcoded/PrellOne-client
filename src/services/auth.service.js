@@ -52,14 +52,12 @@ export const logout = () => {
 }
 
 export const login = async (credential, password, ldap = false) => {
-    const url = ldap ? `${API_URL}/api/auth/login/ldap` : `${API_URL}/api/auth/login`
-    console.log(url)
+    const url = ldap ? `${API_URL}/api/auth/login/polytech` : `${API_URL}/api/auth/login`
     try {
         const login = await axios.post(url, {
             credential: credential,
             password: password
         })
-        console.log(login.data)
         storeToken(login.data.token)
         storeUserProfileLocalStorage(login.data.user)
         return login.data
@@ -69,12 +67,12 @@ export const login = async (credential, password, ldap = false) => {
     }
 }
 
-export const register = async (firstName, lastName, username, email, password) => {
+export const register = async (firstname, lastname, username, email, password) => {
     try {
         const user = await axios.post(`${API_URL}/api/auth/register`, {
             email: email,
-            firstName: firstName,
-            lastName: lastName,
+            firstname: firstname,
+            lastname: lastname,
             username: username,
             password: password
         })
