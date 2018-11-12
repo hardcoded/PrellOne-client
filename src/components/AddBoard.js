@@ -15,7 +15,7 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard})=> {
 
         <ModalBody className="container-fluid">
         <label>Title:</label>
-        <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} />
+        <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} autoFocus={true} />
         <label>Team:</label>
         <Input type="select">
           <option>Team 1 </option>
