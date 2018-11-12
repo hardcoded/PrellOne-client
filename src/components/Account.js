@@ -3,18 +3,49 @@ import { Link } from 'react-router-dom'
 import { Button, Container, Col, Row, Card, CardText, CardTitle} from 'reactstrap'
 import PropTypes from  'prop-types'
 
-const Account = ({id, firstname, lastname, username}) => (
-        <div>
-            <Container>
+const Account = ({user}) => (
+        <Container>
             <header>
                     <h1>Account Manager</h1>
             </header> 
             <Col>
             <Card className="bg-light mb-3">
-            <CardTitle>Information</CardTitle>
-            <CardText>{firstname}</CardText>
-            <CardText>{lastname}</CardText>
-            <CardText>{username}</CardText>
+                <CardHeader>
+                    <CardTitle>Information</CardTitle>
+                </CardHeader>
+                <CardBody>
+                    <Col xs="auto" className="p-0">
+                        <img width="65px" src={user.profilePicture} alt={user.username} className={"img-fluid rounded"}/>
+                    </Col>
+                    <CardText>
+                        <h5>First Name : </h5>
+                        {user.firstname}
+                        <h5>Last Name : </h5>
+                        {user.lastname}  
+                        <h5>Username : </h5>
+                        {user.username}
+                    </CardText>
+                </CardBody>
+                <CardFooter>
+                    <Row>
+                        {user.loginType === 'classic' && 
+                            <Col xs="6">
+                                <Button block>
+                                    <Link  to={`${user.username}/updatePwd`} >
+                                        Change password
+                                    </Link>   
+                                </Button>
+                            </Col>
+                        }
+                        <Col xs="6">
+                            <Button block>
+                                <Link  to={`${user.username}/updateInfo`} >
+                                Change information
+                                </Link>   
+                            </Button>
+                        </Col>
+                    </Row>
+                </CardFooter>
             </Card>
             </Col>
             <Row>
@@ -38,11 +69,8 @@ const Account = ({id, firstname, lastname, username}) => (
     )
 
 Account.propTypes={
-    id: PropTypes.string.isRequired,
-    username: PropTypes.string,
-    firstname: PropTypes.string,
-    lastname: PropTypes.string,
-      
+    user: PropTypes.object
+     
 }
     
 export default Account;

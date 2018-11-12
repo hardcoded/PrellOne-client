@@ -1,8 +1,8 @@
-export const submitRegister = (userName, firstName, lastName, email, password) => ({
+export const submitRegister = (username, firstname, lastname, email, password) => ({
     type: 'SUBMIT_REGISTER',
-    userName,
-    firstName,
-    lastName,
+    username,
+    firstname,
+    lastname,
     email,
     password
 })

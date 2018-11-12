@@ -12,15 +12,16 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap'
+import { isAuthenticated } from '../services/auth.service'
 
-const AppNav = ({ isOpen, token, open, close }) => {
+const AppNav = ({ isOpen, token, open, user, close }) => {
 
     return (
         <Navbar className="navbar-dark bg-primary" expand="md">
             <Link className="navbar-brand" to="/">PrellOne</Link>
             <NavbarToggler onClick={() => { if (isOpen) { close() } else { open() } }} />
             <Collapse isOpen={isOpen} navbar>
-                {!token &&
+                {!token && !isAuthenticated() &&
                     <Nav className="ml-auto" navbar>
                         <NavItem>
                             <Link className="nav-link" to="/register">Sign up</Link>
@@ -30,16 +31,16 @@ const AppNav = ({ isOpen, token, open, close }) => {
                         </NavItem>
                     </Nav>
                 }
-                {token &&
+                {(token || isAuthenticated()) &&
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link className="nav-link" to="/board/board1">Demo Board</Link>
+                            <Link className="nav-link" to={`${user.username}/boards`}>Boards</Link>
                         </NavItem>
                         <NavItem>
                             <Link className="nav-link" to="/team">Team</Link>
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link" to="/account">Account</Link>
+                            <Link className="nav-link" to={`${user.username}/account`}>Account</Link>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
