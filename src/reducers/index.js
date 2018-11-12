@@ -19,6 +19,7 @@ import reducerUpdatePassword from './updatePassword.reducer'
 import reducerAccount from './account.reducer'
 import reducerUpdateInfo from './updateInfo.reducer'
 
+
 export default combineReducers({
     reducerCardPrello,
     reducerBoard,
@@ -38,5 +39,5 @@ export default combineReducers({
     register: reducerRegister,
     reducerUpdatePassword,
     reducerAccount,
-    reducerUpdateInfo
+    reducerUpdateInfo,
 })

@@ -60,6 +60,7 @@ const listPrello = (state = {}, action) => {
                 map[list.id] = list;
                 return map;
             }, {});
+
         case 'LISTS_LOAD_FAILED':
             return state
             
@@ -68,7 +69,21 @@ const listPrello = (state = {}, action) => {
                 ...state,
                 [action.list.id]: action.list
             }
-        
+
+        case 'LIST_ADDED_SUCCESS':
+            if(state["idTemp"]){
+                return {
+                    ...state,
+                    [action.list.id]: action.list,
+                    ["idTemp"]: {}
+                }
+            }
+            else {
+                return {
+                    ...state,
+                    [action.list.id]: action.list
+                }
+            }
         case 'CARD_ADDED':
             return {
                 ...state,
@@ -76,6 +91,18 @@ const listPrello = (state = {}, action) => {
                     ...state[action.card.list],
                     cards: [
                         ...state[action.card.list].cards,
+                        action.card
+                    ]
+                }
+            }
+
+        case 'CARD_ADDED_SUCCESS':
+            return {
+                ...state,
+                [action.card.list]: {
+                    ...state[action.card.list],
+                    cards: [
+                        ...state[action.card.list].cards.filter(card => card.id != "idTemp"),
                         action.card
                     ]
                 }
