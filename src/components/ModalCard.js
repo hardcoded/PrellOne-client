@@ -64,7 +64,7 @@ const ModalCard = ({
                   </DropdownToggle>
                   <DropdownMenu>
                     {
-                      allLabels && Object.keys(allLabels).map((key, index) => 
+                      allLabels && Object.keys(allLabels).filter(label => !card.labels.includes(label)).map((key, index) => 
                         <DropdownItem 
                           key={index}
                           value={key}
