@@ -20,3 +20,13 @@ export const postList = async (list) => {
     throw error.response
   }
 }
+
+export const updateList = async (list) => {
+  try {
+    const newList = await axios.put(`${API_URL}/api/lists/`, list)
+    return newList.data
+  }
+  catch (error) {
+    throw error.response
+  }
+}

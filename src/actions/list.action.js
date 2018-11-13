@@ -3,10 +3,14 @@ export const listAdded = (list) => ({
     list
 })
 
-export const updateTitle = (id, title) => ({
-    type: 'UPDATE_TITLE',
+export const toggleEditTitle = (id) => ({
+    type: 'TOGGLE_EDIT_TITLE',
     id,
-    title
+})
+
+export const listUpdated = (list) => ({
+    type: 'LIST_UPDATED',
+    list
 })
 
 export const hideAddCard = id => ({

@@ -27,12 +27,12 @@ const ModalCard = ({
     <Modal isOpen={isOpen} toggle={closeModal} >
         <ModalHeader toggle={closeModal}>
           {
-            !edit.title && <div onClick={() => toggleEdit(card.id, 'title')}>{card.title}</div>
+            !edit.title && <div onClick={() => toggleEdit('title')}>{card.title}</div>
           }
           {
             edit.title && 
             <Input 
-              onBlur={() => toggleEdit(card.id, 'title')} 
+              onBlur={() => toggleEdit('title')} 
               onChange={(e) => updateCard({...card, title: e.target.value})} 
               value={card.title}>
             </Input>
@@ -58,7 +58,7 @@ const ModalCard = ({
                 )
               }
               <Col xs="auto" className="p-0">
-                <Dropdown isOpen={edit.labels} size="sm" toggle={() => toggleEdit(card.id, 'labels')}>
+                <Dropdown isOpen={edit.labels} size="sm" toggle={() => toggleEdit('labels')}>
                   <DropdownToggle caret>
                     Add Label
                   </DropdownToggle>
@@ -83,7 +83,7 @@ const ModalCard = ({
           {
             !edit.description && 
             
-            <div onClick={() => {toggleEdit(card.id, 'description'); openEditCardDesc(card.description)}} dangerouslySetInnerHTML={{__html: card.description}}></div>
+            <div onClick={() => {toggleEdit('description'); openEditCardDesc(card.description)}} dangerouslySetInnerHTML={{__html: card.description}}></div>
           }
           {
             edit.description && 
@@ -93,7 +93,7 @@ const ModalCard = ({
           }
           {
             edit.description && 
-            <Button className="mt-2" color="success" onClick={(e) => {toggleEdit(card.id, 'description'); updateCard({...card, description: descEditorState.toString('html')})}}>Save</Button>
+            <Button className="mt-2" color="success" onClick={(e) => {toggleEdit('description'); updateCard({...card, description: descEditorState.toString('html')})}}>Save</Button>
           }
           <h5>Attached Files</h5>
           <GoogleClient></GoogleClient>

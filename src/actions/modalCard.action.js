@@ -8,7 +8,7 @@ export const closeModal = () => ({
     type: 'CLOSE_MODAL'
 })
 
-export const toggleEdit = (cardId, field) => ({
+export const toggleEdit = (field) => ({
     type: 'TOGGLE_EDIT',
     field
 })
