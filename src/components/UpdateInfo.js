@@ -47,7 +47,6 @@ class UpdateInfo extends React.Component {
         if (this.validateForm()) {
             try {
                 await this.props.updateInfo(this.props.user.id, this.state.firstname, this.state.lastname)
-                this.props.history.push(`/${this.props.user.username}/account`)
             } 
             catch (error) { }
         }
@@ -91,7 +90,11 @@ class UpdateInfo extends React.Component {
                     </Col>
                     <Row>
                         <Col xs="6">
-                    <Button block onClick={this.submitForm} className="mt-2" >Change info</Button>
+                    <Button block onClick={this.submitForm} className="mt-2" >
+                        <Link to={`/${this.props.user.username}/account`}>
+                        Change info
+                        </Link>
+                    </Button>
                     </Col>
                     <Col >
                     <Button block className="mt-2">

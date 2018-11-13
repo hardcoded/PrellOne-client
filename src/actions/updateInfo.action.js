@@ -1,5 +1,6 @@
-export const updateInfoSuccess = () => ({
-    type: 'UPDATE_INFO_SUCCESS'
+export const updateInfoSuccess = (user) => ({
+    type: 'UPDATE_INFO_SUCCESS',
+    user
 })
 
 export const updateInfoError = (error) => ({

@@ -1,9 +1,7 @@
 const updateInfo = (state = { error: null }, action) => {
     switch (action.type) {
         case 'UPDATE_INFO_SUCCESS' :
-            return {
-                ...state
-            }
+            return action.user
         case 'UPDATE_INFO_ERROR' :
             return {
                 ...state,

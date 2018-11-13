@@ -30,6 +30,11 @@ const home = (state = { user: null, error: null }, action) => {
                     ]   
                 }
             }
+        case 'UPDATE_INFO_SUCCESS' :
+            return {
+                ...state,   
+                user: action.user
+            }
         default:
             return state
     }
