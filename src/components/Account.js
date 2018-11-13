@@ -31,7 +31,7 @@ const Account = ({ user }) => (
                         {user.loginType === 'classic' &&
                             <Col xs="6">
                                 <Button block>
-                                    <Link to={`${user.username}/updatePwd`} >
+                                    <Link to={`/${user.username}/updatePwd`} >
                                         Change password
                                     </Link>
                                 </Button>
