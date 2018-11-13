@@ -9,7 +9,6 @@ import {teamsFetched} from '../actions/team.action'
 
 class AddBoardContainer extends Component {
     componentWillMount = () => {
-        this.props.getTeams()
     }
 
     render = () => (
@@ -20,11 +19,11 @@ class AddBoardContainer extends Component {
 
 const mapStateToProps = (state, ownProps) =>{
     
-    const teams=state.reducerTeam
-    console.log("ici")
-    console.log(teams)
+    const team=state.reducerTeam[state.reducerAddBoard.activeTeam]
+    const teamId=state.reducerAddBoard.activeTeam
     return ({  
-        teams:teams, 
+        ...team,
+        teamId:teamId,
         modal: state.reducerAddBoard.modal,
         owner: state.home.user.id
     })
@@ -49,19 +48,7 @@ const mapDispatchToProps = dispatch => ({
         finally {
             dispatch(closeModalCreateBoard())
         }
-    },
-    getTeams: async () => {
-        try {
-          const data = await getTeams()
-          dispatch(teamsFetched(data))
-          console.log(data)
-        } 
-        catch (error) {
-          const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-          //dispatch(errorFetchingBoard(message))
-          console.log(message)
-        }
-      }
+    }
   })
 
 export default connect(
