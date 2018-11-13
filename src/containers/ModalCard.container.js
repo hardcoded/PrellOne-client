@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import ModalCard from '../components/ModalCard'
 import { closeModal, toggleEdit, openEditCardDesc, editCardDesc } from '../actions/modalCard.action'
-import { toggleDone } from '../actions/card.action'
 import {cardUpdated} from '../actions/card.action'
 import {updateCard} from '../services/card.service'
 
@@ -33,8 +32,8 @@ const mapDispatchToProps = dispatch => ({
     closeModal: () => {
       dispatch(closeModal())
     },
-    toggleEdit: (id, field) => {
-      dispatch(toggleEdit(id, field))
+    toggleEdit: (field) => {
+      dispatch(toggleEdit(field))
     },
     updateCard: async (card) => {
       try {

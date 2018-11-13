@@ -107,13 +107,22 @@ const listPrello = (state = {}, action) => {
                     ]
                 }
             }
-        case 'UPDATE_LIST':
+
+        case 'TOGGLE_EDIT_TITLE':
             return {
                 ...state,
                 [action.id]: {
                     ...state[action.id],
-                    title: action.title
+                    editTitle: !state[action.id].editTitle 
                 }
+            }
+        case 'LIST_UPDATED':
+            return {
+                ...state,
+                [action.list.id]: {
+                    ...state[action.list.id],
+                    title: action.list.title
+                } 
             }
 
         case 'SHOW_ADD_CARD':
