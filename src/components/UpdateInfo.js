@@ -47,6 +47,7 @@ class UpdateInfo extends React.Component {
         if (this.validateForm()) {
             try {
                 await this.props.updateInfo(this.props.user.id, this.state.firstname, this.state.lastname)
+                this.props.history.push(`/${this.props.user.username}/account`)
             } 
             catch (error) { }
         }
