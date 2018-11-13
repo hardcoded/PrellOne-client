@@ -43,7 +43,7 @@ const Team = ({id,name, boards, members,openModalCreateBoard}) => (
                         </CardTitle>
                     </CardBody>
                 </Card>
-                <AddBoard/>
+                <AddBoard ></AddBoard>
             </Col>
         </Row>
         <Row className="pl-3 mb-3">

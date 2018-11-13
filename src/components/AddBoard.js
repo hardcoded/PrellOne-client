@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, Input, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+import { Button, Input, Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import Team from '../components/Team'
 
-const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teams})=> {
+const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teamId})=> {
   let titleBoard
   return (
   <div>
     <form>
+
     <Modal toggle={closeModalCreateBoard} isOpen={modal}  >
 
         <ModalHeader toggle={closeModalCreateBoard}>
@@ -17,13 +18,11 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teams})=> {
         <ModalBody className="container-fluid">
         <label>Title:</label>
         <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} autoFocus={true} />
-        <label>Team:</label>
-        <Input type="select">
-        </Input>
         </ModalBody>
+        {console.log(teamId)}
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
-            addBoard(titleBoard.value,owner)
+            addBoard(titleBoard.value,owner,teamId)
             titleBoard.value = ''
           }}>Create board</Button>
           <Button color="danger" onClick={closeModalCreateBoard}>Cancel</Button>
@@ -33,14 +32,12 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teams})=> {
 </div>
   );
 }
-
 AddBoard.propTypes={
     id:PropTypes.string,
     closeModalCreateBoard: PropTypes.func.isRequired,
     modal: PropTypes.bool,
     owner: PropTypes.string,
     addBoard: PropTypes.func.isRequired,
-    teams:PropTypes.arrayOf(Team)
-  
+    teamId: PropTypes.string
 }
 export default AddBoard

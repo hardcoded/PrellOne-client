@@ -13,22 +13,12 @@ const team = (state = {}, action) => {
                 [action.team.id]: action.team
             }
             
-        case 'ADD_BOARD':
-        if (action.idTeam){
+        case 'BOARD_ADDED':
+            
             return {
                 ...state,
-                [action.idTeam]: {
-                    ...state[action.idTeam],
-                    boards: [
-                        ...state[action.idTeam].boards,
-                        action.board.id
-                    ]
-                }  
             }
-        }
-        else {
-            return state
-        }
+
             case 'ADD_MEMBER_TEAM':
             return {
                 ...state,
