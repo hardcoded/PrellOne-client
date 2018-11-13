@@ -118,7 +118,11 @@ class UpdatePassword extends React.Component {
                     </Col>
                     <Row>
                         <Col xs="6">
-                    <Button block onClick={this.submitForm} className="mt-2" >Change password</Button>
+                    <Button block onClick={this.submitForm} className="mt-2" >
+                    <Link to={`/${this.props.user.username}/account`}>
+                    Change password
+                    </Link>
+                    </Button>
                     </Col>
                     <Col >
                     <Button block className="mt-2">
