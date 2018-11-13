@@ -4,10 +4,12 @@ import { closeModalCreateBoard } from '../actions/addBoard.action'
 import AddBoard from '../components/AddBoard'
 import { boardAdded } from '../actions/board.action'
 import { postBoard } from '../services/board.service'
+import {getTeams} from '../services/team.service'
+import {teamsFetched} from '../actions/team.action'
 
 class AddBoardContainer extends Component {
     componentWillMount = () => {
-
+        this.props.getTeams()
     }
 
     render = () => (
@@ -17,9 +19,12 @@ class AddBoardContainer extends Component {
 
 
 const mapStateToProps = (state, ownProps) =>{
-    const team = state.reducerTeam[state.reducerAddBoard.activeTeam] 
-    return ({    
-        ...team,
+    
+    const teams=state.reducerTeam
+    console.log("ici")
+    console.log(teams)
+    return ({  
+        teams:teams, 
         modal: state.reducerAddBoard.modal,
         owner: state.home.user.id
     })
@@ -30,10 +35,9 @@ const mapDispatchToProps = dispatch => ({
     closeModalCreateBoard: () => {
         dispatch(closeModalCreateBoard())
     },
-
-    addBoard: async (title, owner) => {
+    addBoard: async (title, owner,team) => {
         try {
-          const data = await postBoard({title, owner})
+          const data = await postBoard({title, owner,team})
           dispatch(boardAdded(data))
           console.log(data)
         } 
@@ -45,7 +49,19 @@ const mapDispatchToProps = dispatch => ({
         finally {
             dispatch(closeModalCreateBoard())
         }
-    }
+    },
+    getTeams: async () => {
+        try {
+          const data = await getTeams()
+          dispatch(teamsFetched(data))
+          console.log(data)
+        } 
+        catch (error) {
+          const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+          //dispatch(errorFetchingBoard(message))
+          console.log(message)
+        }
+      }
   })
 
 export default connect(

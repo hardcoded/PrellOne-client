@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input} from 'reactstrap';
-import PropTypes from  'prop-types'
+import { Button, Input, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+import Team from '../components/Team'
 
-const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard})=> {
+const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teams})=> {
   let titleBoard
   return (
   <div>
@@ -18,7 +19,6 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard})=> {
         <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} autoFocus={true} />
         <label>Team:</label>
         <Input type="select">
-          <option>Team 1 </option>
         </Input>
         </ModalBody>
         <ModalFooter>
@@ -40,6 +40,7 @@ AddBoard.propTypes={
     modal: PropTypes.bool,
     owner: PropTypes.string,
     addBoard: PropTypes.func.isRequired,
+    teams:PropTypes.arrayOf(Team)
   
 }
 export default AddBoard

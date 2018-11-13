@@ -1,6 +1,7 @@
 const team = (state = {}, action) => {
     switch (action.type) {
         case 'TEAMS_FETCHED':
+            console.log(action)
             return action.teams.reduce((map, team) => {
                 map[team.id] = team;
                 return map;
