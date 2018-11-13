@@ -9,7 +9,7 @@ const ListPrello = ({list, toggleEditTitle, updateList}) =>(
     <Card className="bg-light mb-3" tag="div">
       <CardHeader>
         {
-          !list.editTitle && <span onClick={() => toggleEditTitle()}>{list.title}</span>  
+          !list.editTitle && [<span onClick={() => toggleEditTitle()}>{list.title}</span>, <Badge  color = "primary" className="float-right">{list.cards && list.cards.length}</Badge>]  
         } 
         {
           list.editTitle && <Input 
@@ -17,7 +17,7 @@ const ListPrello = ({list, toggleEditTitle, updateList}) =>(
                               onChange={(e) => updateList({...list, title: e.target.value})} 
                               value={list.title}></Input>
         }
-        <Badge  color = "primary" className="float-right">{list.cards && list.cards.length}</Badge> 
+        
       </CardHeader>
       <Droppable droppableId={list.id}>
         {
