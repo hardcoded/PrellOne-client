@@ -1,8 +1,9 @@
 import axios from 'axios'
+import API_URL from '../config'
 
 export const getLabels = () => {
   return dispatch => {
-      axios.get('http://localhost:8080/api/labels') 
+      axios.get(`${API_URL}/api/labels`) 
           .then(function (response) { 
               // handle succes 
               console.log(response);

@@ -8,22 +8,27 @@ config.api = {};
 config.api.devHost = 'http://localhost';
 config.api.devPort = 8080;
 
-config.api.stagingHost = 'prellone-dev-api.igpolytech.fr';
-config.api.stagingPort = 3000;
+config.api.stagingHost = 'https://prellone-dev-api.igpolytech.fr';
 
-config.api.host = 'prellone-api.igpolytech.fr';
-config.api.port = 3000;
+config.api.host = 'https://prellone-api.igpolytech.fr';
 
-const env = process.env.REACT_ENV
+const env = process.env.NODE_ENV
+
+console.log(process.env)
+console.log(env)
+
 let apiUrl = null;
 if (env !== 'production' && env !== 'staging') {
     apiUrl = `${config.api.devHost}:${config.api.devPort}`;
 }
 else if (env === 'staging') {
-    apiUrl = `${config.api.stagingHost}:${config.api.stagingPort}`;
+    apiUrl = `${config.api.stagingHost}`;
 }
 else if (env === 'production') {
-    apiUrl = `${config.api.host}:${config.api.port}`;
+    console.log("env = prod")
+    apiUrl = `${config.api.host}`;
 }
+
+console.log('api url', apiUrl)
 
 module.exports = apiUrl;

@@ -1,19 +1,21 @@
-FROM node:8
+FROM node:latest
 
 # Create app directory
-WORKDIR /usr/src/app
+RUN mkdir /home/prellone
+WORKDIR /home/prellone
 
 # Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+COPY package.json .
 
-RUN npm install --only=production
-# If you are building your code for production
-# RUN npm install --only=production
+RUN npm install
+RUN npm install react-scripts@1.1.1 yarn@1.12.3 -g
 
 # Bundle app source
 COPY . .
 
-EXPOSE 80
-CMD [ "npm", "start" ]
+RUN npm run build 
+RUN yarn global add serve
+
+EXPOSE 3000
+
+CMD [ "npm", "run", "prod" ]
