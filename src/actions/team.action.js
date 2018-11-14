@@ -41,3 +41,9 @@ export const showAddMember = id => ({
     type: 'SHOW_ADD_MEMBER',
     id
 })
+
+export const memberAddedTeam = (id, member) => ({
+    type: 'MEMBER_ADDED_TEAM',
+    id,
+    member
+})

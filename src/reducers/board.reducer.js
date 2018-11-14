@@ -52,6 +52,42 @@ const board = (state = {}, action) => {
                     toggleAddList: !state.toggleAddList
                 }
             }
+
+        case 'SHOW_ADD_MEMBER_BOARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addMember: true
+                }
+            }
+
+        case 'HIDE_ADD_MEMBER_BOARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addMember: false
+                }
+            }
+
+        case 'MEMBER_ADDED_BOARD':
+            if (!state[action.id].members.some(member => member.id === action.member.id)){
+                return {
+                    ...state,
+                    [action.id]: {
+                        ...state[action.id],
+                        members: [
+                            ...state[action.id].members,
+                            action.member
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
+            
         default:
             return state
     }

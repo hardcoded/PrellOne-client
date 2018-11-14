@@ -38,11 +38,9 @@ const mapDispatchToProps = dispatch => ({
         try {
           const data = await postBoard({title, owner,team})
           dispatch(boardAdded(data))
-          console.log(data)
         } 
         catch (error) {
           const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-          //dispatch(errorFetchingBoard(message))
           console.log(message)
         }
         finally {

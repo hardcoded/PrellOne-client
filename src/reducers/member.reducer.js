@@ -23,6 +23,24 @@ const Member = (state = {}, action) => {
                 ...state,
                 [action.member.id]:action.member
             }
+        case 'MEMBER_ADDED_TEAM':
+            return {
+                ...state,
+                [action.member.id]: action.member
+            }
+
+        case 'MEMBER_ADDED_BOARD':
+            return {
+                ...state,
+                [action.member.id]: action.member
+            }
+
+        case 'MEMBER_ADDED_CARD':
+            return {
+                ...state,
+                [action.member.id]: action.member
+            }
+
         default:
             return state
     }

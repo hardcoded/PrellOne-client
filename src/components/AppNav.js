@@ -43,23 +43,6 @@ const AppNav = ({ isOpen, token, open, username, close }) => {
                         <NavItem>
                             <Link className="nav-link" to={`/${username}/account`}>Account</Link>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem >
-                                    Option 3
-                                </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
-                                </DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>
-                                    Reset
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
                         <NavItem>
                             <Button onClick={logout}>Log out</Button>
                         </NavItem>

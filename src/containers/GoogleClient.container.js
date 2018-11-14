@@ -9,7 +9,8 @@ class GoogleClientContainer extends Component{
   }
 
   render = () => (
-    <GoogleClient></GoogleClient>
+    //<GoogleClient></GoogleClient>
+    null
   )
 }
 

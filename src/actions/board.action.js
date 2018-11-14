@@ -1,3 +1,4 @@
+
 export const boardAdded = (board) => ({
     type: 'BOARD_ADDED',
     board
@@ -16,4 +17,20 @@ export const dndCard = result => ({
 export const boardFetched = board =>({
     type: 'BOARD_FETCHED',
     payload: board
+})
+
+export const hideAddMemberBoard = id => ({
+    type: 'HIDE_ADD_MEMBER_BOARD',
+    id
+})
+
+export const showAddMemberBoard = id => ({
+    type: 'SHOW_ADD_MEMBER_BOARD',
+    id
+})
+
+export const memberAddedBoard = (id, member) => ({
+    type: 'MEMBER_ADDED_BOARD',
+    id,
+    member
 })
