@@ -38,7 +38,7 @@ class LoginLdap extends React.Component {
         const { credential, password } = this.state
         return (
             <Container className="SignInUpForms">
-                <h2>Login</h2>
+                <h2>Polytech login</h2>
                 <Form className="form">
                     {this.props.error &&
                         <Alert color="danger">
