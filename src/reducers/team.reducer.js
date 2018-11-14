@@ -1,6 +1,7 @@
 const team = (state = {}, action) => {
     switch (action.type) {
         case 'TEAMS_FETCHED':
+            console.log(action)
             return action.teams.reduce((map, team) => {
                 map[team.id] = team;
                 return map;
@@ -11,24 +12,24 @@ const team = (state = {}, action) => {
                 ...state,
                 [action.team.id]: action.team
             }
-            
-        case 'ADD_BOARD':
-        if (action.idTeam){
-            return {
-                ...state,
-                [action.idTeam]: {
-                    ...state[action.idTeam],
-                    boards: [
-                        ...state[action.idTeam].boards,
-                        action.board.id
-                    ]
-                }  
-            }
-        }
-        else {
-            return state
-        }
-            case 'ADD_MEMBER_TEAM':
+        
+        case 'BOARD_ADDED': 
+            if (action.idTeam){
+                return { 
+                    ...state, 
+                    [action.idTeam]: { 
+                        ...state[action.idTeam], 
+                        boards: [ 
+                            ...state[action.idTeam].boards, 
+                            action.board
+                        ] 
+                    }   
+                } 
+            } 
+            else { 
+                return state 
+            } 
+        case 'ADD_MEMBER_TEAM':
             return {
                 ...state,
                 [action.id]: {
