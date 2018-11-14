@@ -72,7 +72,14 @@ const listPrello = (state = {}, action) => {
                     title: action.list.title
                 } 
             }
-
+        case 'LIST_UPDATED_SUCCESS':
+            return {
+                ...state,
+                [action.list.id]: {
+                    ...state[action.list.id],
+                    title: action.list.title
+                } 
+            }
         case 'SHOW_ADD_CARD':
             return {
                 ...state,
