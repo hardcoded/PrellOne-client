@@ -21,6 +21,18 @@ const modalCard = (state = {edit:{}}, action) => {
                 [action.field]: !state.edit[action.field] 
             }
         }
+
+    case 'SHOW_ADD_MEMBER_CARD':
+        return {
+            ...state,
+            addMember: true
+        }
+
+    case 'HIDE_ADD_MEMBER_CARD':
+        return {
+            ...state,
+            addMember: false
+        }
     default: return state;
     }
 }

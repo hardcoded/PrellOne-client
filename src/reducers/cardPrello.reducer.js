@@ -114,6 +114,23 @@ const cardPrello = (state = {}, action) => {
                     done: !state[action.id].done
                 }
             }
+
+        case 'MEMBER_ADDED_CARD':
+            if (!state[action.id].members.some(member => member === action.member.id)){
+                return {
+                    ...state,
+                    [action.id]: {
+                        ...state[action.id],
+                        members: [
+                            ...state[action.id].members,
+                            action.member.id
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
         default:
             return state
     }

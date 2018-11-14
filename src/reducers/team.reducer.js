@@ -62,6 +62,23 @@ const team = (state = {}, action) => {
                     addMember: false
                 }
             }
+        case 'MEMBER_ADDED_TEAM':
+            if (!state[action.id].members.some(member => member.id === action.member.id)){
+                return {
+                    ...state,
+                    [action.id]: {
+                        ...state[action.id],
+                        members: [
+                            ...state[action.id].members,
+                            action.member
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
+            
         default:
             return state
     }

@@ -75,7 +75,6 @@ class Register extends React.Component {
             <Container className="SignInUpForms">
                 <h2>Create your account</h2>
                 <Form className="form">
-                    {console.log(this.props.error)}
                     {this.props.error &&
                         <Alert color="danger">
                             {this.props.error}

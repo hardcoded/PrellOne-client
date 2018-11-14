@@ -8,6 +8,7 @@ import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
 import GoogleClient from '../containers/GoogleClient.container'
+import AddMember from '../containers/AddMember.container'
 
 const ModalCard = ({
   card,
@@ -106,6 +107,7 @@ const ModalCard = ({
                 </Col>
               )
             }
+          <AddMember idCard={card.id}></AddMember>
           </Row>
           <h5>Comments</h5>
           {

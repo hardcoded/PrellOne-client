@@ -67,3 +67,9 @@ export const toggleDone = id => ({
     id
 })
 
+export const memberAddedCard = (id, member) => ({
+    type: 'MEMBER_ADDED_CARD',
+    id,
+    member
+})
+

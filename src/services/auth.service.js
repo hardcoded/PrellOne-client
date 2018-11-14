@@ -62,7 +62,6 @@ export const login = async (credential, password, ldap = false) => {
             credential: credential,
             password: password
         })
-        console.log(login.data)
         storeToken(login.data.token)
         storeUserProfileLocalStorage(login.data.user)
         return login.data
