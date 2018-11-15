@@ -13,6 +13,11 @@ export const toggleEdit = (field) => ({
     field
 })
 
+export const closeEdit = (field) => ({
+    type: 'CLOSE_EDIT',
+    field
+})
+
 export const openEditCardDesc = (description) => ({
     type: 'OPEN_EDIT_CARD_DESCRIPTION',
     description

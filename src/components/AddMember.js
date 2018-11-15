@@ -7,7 +7,7 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
   if (!hidden) {
     return (
       <Col xs="3" className="mb-2">
-        <button type="button" class="btn btn-primary btn-circle" onClick={() => {
+        <button type="button" className="btn btn-primary btn-circle" onClick={() => {
           if(teamId) showAddMemberTeam(teamId)
         else if(boardId) showAddMemberBoard(boardId)
         else if(cardId) showAddMemberCard(cardId)
