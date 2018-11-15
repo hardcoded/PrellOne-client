@@ -37,7 +37,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       dispatch(hideAddMemberBoard(id))
     }
     catch (error) {
-      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
       console.log(message)
     }
   },
@@ -48,7 +48,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       dispatch(hideAddMember(id))
     } 
     catch (error) {
-      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
       console.log(message)
     }
   },
@@ -59,7 +59,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       dispatch(hideAddMemberCard(id))
     } 
     catch (error) {
-      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
       console.log(message)
     }
   },

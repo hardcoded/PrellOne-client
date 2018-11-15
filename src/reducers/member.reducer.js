@@ -36,9 +36,10 @@ const Member = (state = {}, action) => {
             }
 
         case 'MEMBER_ADDED_CARD':
+            console.log('member reducer :', action.member)
             return {
                 ...state,
-                [action.member.id]: action.member
+                [action.member]: action.member
             }
 
         default:

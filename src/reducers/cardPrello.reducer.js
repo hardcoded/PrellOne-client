@@ -123,7 +123,7 @@ const cardPrello = (state = {}, action) => {
                         ...state[action.id],
                         members: [
                             ...state[action.id].members,
-                            action.member.id
+                            action.member
                         ]
                     }
                 }

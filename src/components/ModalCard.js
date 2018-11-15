@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Badge } from 'reactstrap';
 import RichTextEditor from 'react-rte';
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
@@ -71,7 +71,9 @@ const ModalCard = ({
                           value={key}
                           onClick={() => updateCard({...card, labels: [...card.labels, allLabels[key].id]})}
                         >
-                          {allLabels[key].title}
+                          <Badge className="mr-1" color={allLabels[key].color} style={{minWidth:'5px'}}>
+                            {allLabels[key].title}
+                          </Badge>
                         </DropdownItem>
                       )
                     }
@@ -102,8 +104,8 @@ const ModalCard = ({
           <Row className="pl-3 mb-3">
             {
               card.members && card.members.map(member=> 
-                <Col xs="2" className="p-2" key={member}>
-                  <Member memberId={member}></Member>
+                member && <Col xs="2" className="p-2" key={member}>
+                  <Member memberId={member.id} size={'35px'}></Member>
                 </Col>
               )
             }

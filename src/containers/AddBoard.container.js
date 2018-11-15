@@ -40,7 +40,7 @@ const mapDispatchToProps = dispatch => ({
           dispatch(boardAdded(data, team))
         } 
         catch (error) {
-          const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+          const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
           console.log(message)
         }
         finally {

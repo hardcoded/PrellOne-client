@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
             return data.user
         }
         catch(error) {
-            const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+            const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
             dispatch(loginFailed(message))
             throw error
         }

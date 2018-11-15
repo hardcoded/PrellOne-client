@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => ({
             dispatch(registerSuccess())
         }
         catch (error) {
-            const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+            const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
             dispatch(registerError(message))
             throw error
         }

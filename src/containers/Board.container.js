@@ -5,6 +5,7 @@ import { dndCard, boardFetched } from '../actions/board.action'
 import { getBoard } from '../services/board.service'
 import Spinner from '../components/Spinner';
 import Socket from '../services/socket.service'
+import { logout } from '../services/auth.service';
 
 class BoardContainer extends Component{
   componentWillMount(){
@@ -54,9 +55,10 @@ const mapDispatchToProps = (dispatch) => ({
       dispatch(boardFetched(data))
     } 
     catch (error) {
-      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
+      const message = error.status === 500 && !error.data ? "Oops, something went wrong..." : error.data.message
       //dispatch(errorFetchingBoard(message))
       console.log(message)
+      if (error.status === 400 && message === "Invalid token") logout()
     }
   }
 })
