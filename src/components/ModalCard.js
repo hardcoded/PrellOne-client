@@ -71,7 +71,7 @@ const ModalCard = ({
                           value={key}
                           onClick={() => updateCard({...card, labels: [...card.labels, allLabels[key].id]})}
                         >
-                          <Badge className="mr-1" color={allLabels[key].color} style={{minWidth:'5px'}}>
+                          <Badge className="mr-1" color={allLabels[key].color} style={{minWidth:'5px', width: 'inherit'}}>
                             {allLabels[key].title}
                           </Badge>
                         </DropdownItem>
