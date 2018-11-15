@@ -21,6 +21,7 @@ export const isAuthenticated = () => {
     }
 }
 
+// TODO Problem here, boards are not updated
 export const setUserProfile = async() => {
     const localUserProfile = getLocalStorageUserProfile()
     if (localUserProfile) {

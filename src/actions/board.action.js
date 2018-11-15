@@ -1,9 +1,16 @@
 
-export const boardAdded = (board, idTeam) => ({
-    type: 'BOARD_ADDED',
-    board,
-    idTeam
-})  
+export const boardAdded = (board, idTeam, members) => {
+    console.clear()
+    console.log(idTeam)
+    console.log(members)
+    return {
+        type: 'BOARD_ADDED',
+        board,
+        idTeam,
+        members
+    }
+
+}
 
 
 /** drag and drop card action
