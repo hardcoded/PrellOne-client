@@ -11,6 +11,8 @@ class BoardContainer extends Component{
     Socket.joinBoard(this.props.match.params.boardId)
     
     this.props.getBoard(this.props.match.params.boardId)
+    
+
   }
   componentWillUnmount(){
     Socket.emit("leaveBoard",this.props.match.params.boardId)
@@ -51,6 +53,7 @@ const mapDispatchToProps = (dispatch) => ({
   getBoard: async (boardId) => {
     try {
       const data = await getBoard(boardId)
+      console.log(data)
       dispatch(boardFetched(data))
     } 
     catch (error) {

@@ -1,7 +1,9 @@
 
 export const boardAdded = (board) => ({
     type: 'BOARD_ADDED',
-    board
+    board,
+    idTeam
+
 })  
 
 

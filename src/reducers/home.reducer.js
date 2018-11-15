@@ -23,10 +23,10 @@ const home = (state = { user: null, error: null }, action) => {
                     ...state.user,
                     boards: [
                         ...state.user.boards,
-                        {
-                            id: action.board.id,
-                            title: action.board.title
-                        }
+                            {
+                                id:action.board.id,
+                                title:action.board.title
+                            }
                     ]   
                 }
             }

@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Input, Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import Team from '../components/Team'
 
-const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teamId})=> {
+const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,team})=> {
   let titleBoard
   return (
   <div>
@@ -19,10 +19,9 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,teamId})=> {
         <label>Title:</label>
         <input className="mb-2 form-control" placeholder="Add the title of the new board"  ref={node => titleBoard = node} autoFocus={true} />
         </ModalBody>
-        {console.log(teamId)}
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
-            addBoard(titleBoard.value,owner,teamId)
+            addBoard(titleBoard.value,owner,team)
             titleBoard.value = ''
           }}>Create board</Button>
           <Button color="danger" onClick={closeModalCreateBoard}>Cancel</Button>
@@ -38,6 +37,6 @@ AddBoard.propTypes={
     modal: PropTypes.bool,
     owner: PropTypes.string,
     addBoard: PropTypes.func.isRequired,
-    teamId: PropTypes.string
+    team: PropTypes.object
 }
 export default AddBoard

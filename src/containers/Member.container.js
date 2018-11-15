@@ -2,6 +2,8 @@ import { connect } from 'react-redux'
 import Member from '../components/Member'
 
 const mapStateToProps = (state, ownProps) => {
+  console.log(state)
+  console.log(ownProps)
   return ({
     id: state.reducerMember[ownProps.memberId].id,
     userName: state.reducerMember[ownProps.memberId].userName,
