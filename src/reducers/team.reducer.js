@@ -21,7 +21,10 @@ const team = (state = {}, action) => {
                         ...state[action.idTeam], 
                         boards: [ 
                             ...state[action.idTeam].boards, 
-                            action.board
+                            {
+                                id:action.board.id,
+                                title:action.board.title
+                            }
                         ] 
                     }   
                 } 

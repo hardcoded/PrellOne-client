@@ -6,6 +6,7 @@ import { boardAdded } from '../actions/board.action'
 import { postBoard } from '../services/board.service'
 import {getTeams} from '../services/team.service'
 import {teamsFetched} from '../actions/team.action'
+import { cpus } from 'os';
 
 class AddBoardContainer extends Component {
     componentWillMount = () => {
@@ -20,10 +21,9 @@ class AddBoardContainer extends Component {
 const mapStateToProps = (state, ownProps) =>{
     
     const team=state.reducerTeam[state.reducerAddBoard.activeTeam]
-    const teamId=state.reducerAddBoard.activeTeam
     return ({  
         ...team,
-        teamId:teamId,
+        team:team,
         modal: state.reducerAddBoard.modal,
         owner: state.home.user.id
     })
@@ -36,8 +36,15 @@ const mapDispatchToProps = dispatch => ({
     },
     addBoard: async (title, owner,team) => {
         try {
-          const data = await postBoard({title, owner,teams: [team]})
-          dispatch(boardAdded(data, team))
+          const data = await postBoard({title, owner,team})
+          if(team){
+              
+            dispatch(boardAdded(data, team.id))
+          }
+          else{
+            dispatch(boardAdded(data, null))
+          }
+          
         } 
         catch (error) {
           const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
