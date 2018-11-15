@@ -22,6 +22,15 @@ const modalCard = (state = {edit:{}}, action) => {
             }
         }
 
+    case 'CLOSE_EDIT' :
+        return {
+            ...state,
+            edit: {
+                ...state.edit,
+                [action.field]: false 
+            }
+        }
+
     case 'SHOW_ADD_MEMBER_CARD':
         return {
             ...state,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import RichTextEditor from 'react-rte';
+import DatePicker from '../containers/DatePicker.container'
 import Member from '../containers/Member.container'
 import Label from '../containers/Label.container'
 import Comment from '../containers/Comment.container'
@@ -19,6 +20,7 @@ const ModalCard = ({
   editCardDesc,
   descEditorState,
   toggleEdit,
+  closeEdit,
   updateCard,
   closeModal
 }) => {
@@ -42,7 +44,13 @@ const ModalCard = ({
         <ModalBody className="container-fluid">
           <h5>Due date</h5>
           <h5>
-            <DueDate date={card.dueDate} done={card.done}></DueDate>
+            {
+              !edit.date && <div onClick={() => toggleEdit('date')}><DueDate date={card.dueDate} done={card.done}></DueDate></div>
+            }
+            {
+              edit.date && 
+              <DatePicker closeEdit={() => closeEdit('date')} card={card} updateCard={updateCard}></DatePicker>
+            }
           </h5>
           <h6>
             <CustomInput type="checkbox" id="doneCheckbox" checked={card.done} onChange={() => {updateCard({...card, done: !card.done})}} label="Done"/>
@@ -131,6 +139,7 @@ ModalCard.propTypes = {
   allLabels: PropTypes.object,
   edit: PropTypes.object.isRequired,
   toggleEdit: PropTypes.func,
+  closeEdit: PropTypes.func,
   openEditCardDesc: PropTypes.func,
   editCardDesc: PropTypes.func,
   descEditorState: PropTypes.object,
