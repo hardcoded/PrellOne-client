@@ -39,10 +39,10 @@ const mapDispatchToProps = dispatch => ({
           const data = await postBoard({title, owner,team})
           if(team){
               
-            dispatch(boardAdded(data, team.id))
+            dispatch(boardAdded(data, team.id,team.members))
           }
           else{
-            dispatch(boardAdded(data, null))
+            dispatch(boardAdded(data, null,[owner]))
           }
           
         } 

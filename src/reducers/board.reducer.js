@@ -40,7 +40,10 @@ const board = (state = {}, action) => {
         case 'BOARD_ADDED':
             return {
                 ...state,
-                [action.board.id] : action.board
+                [action.board.id] : {
+                    ...action.board,
+                    members: action.members
+                }
             }
         
         case 'TOGGLE_ADD_LIST':
