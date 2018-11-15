@@ -37,6 +37,11 @@ const mapDispatchToProps = dispatch => ({
     },
     updateCard: async (card) => {
       try {
+        const membersIds = []
+        card.members && card.members.map( member =>
+            membersIds.push(member.id)
+        )
+        card.members = membersIds
         const data = await updateCard(card)
         dispatch(cardUpdated(data))
       }
