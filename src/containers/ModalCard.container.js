@@ -24,7 +24,8 @@ const mapStateToProps = (state) => {
     card,
     ...state.reducerModalCard,
     descEditorState: state.reducerTextEditor.value,
-    allLabels: state.reducerLabel
+    allLabels: state.reducerLabel,
+    allMembers: state.reducerMember
   })
 }
 

@@ -6,7 +6,6 @@ const Member = (state = {}, action) => {
                 map[member.id] = member;
                 return map;
             }, {});
-            
         case 'TEAMS_FETCHED':
             var allMembers = [];
             action.teams.map((team) => {
@@ -17,6 +16,25 @@ const Member = (state = {}, action) => {
                 map[member.id] = member;
                 return map;
             }, {});
+
+        case 'TEAM_ADDED_BOARD':
+            const newMembers = action.team.members.reduce((map, member) => {
+                map[member.id] = member;
+                return map;
+            }, {});
+            return {
+                ...state,
+                ...newMembers
+            }
+        case 'TEAM_ADDED': 
+            const members = action.team.members.reduce((map, member) => {
+                map[member.id] = member;
+                return map;
+            }, {});
+            return {
+                ...state,
+                ...members
+            }
 
         case 'ADD_MEMBER_TEAM':
             return {

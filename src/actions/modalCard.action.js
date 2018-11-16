@@ -27,13 +27,3 @@ export const editCardDesc = (value) => ({
     type: 'EDIT_CARD_DESCRIPTION',
     value
 })
-
-export const showAddMemberCard = id => ({
-    type: 'SHOW_ADD_MEMBER_CARD',
-    id
-})
-
-export const hideAddMemberCard = id => ({
-    type: 'HIDE_ADD_MEMBER_CARD',
-    id
-})

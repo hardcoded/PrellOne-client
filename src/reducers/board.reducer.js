@@ -74,6 +74,25 @@ const board = (state = {}, action) => {
                 }
             }
 
+        case 'SHOW_ADD_TEAM_BOARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addTeam: true
+                }
+            }
+
+        case 'HIDE_ADD_TEAM_BOARD':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    addTeam: false
+                }
+            }
+
+
         case 'MEMBER_ADDED_BOARD':
             if (!state[action.id].members.some(member => member.id === action.member.id)){
                 return {
@@ -83,6 +102,26 @@ const board = (state = {}, action) => {
                         members: [
                             ...state[action.id].members,
                             action.member
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
+        case 'TEAM_ADDED_BOARD':
+            if (!state[action.id].teams.some(team => team.id === action.team.id)){
+                return {
+                    ...state,
+                    [action.id]: {
+                        ...state[action.id],
+                        teams: [
+                            ...state[action.id].teams,
+                            action.team
+                        ],
+                        members: [
+                            ...state[action.id].members,
+                            ...action.team.members.filter(member => !state[action.id].members.some(oldMember => oldMember.id === member.id))
                         ]
                     }
                 }
