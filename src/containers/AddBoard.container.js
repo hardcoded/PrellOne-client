@@ -25,7 +25,7 @@ const mapStateToProps = (state, ownProps) =>{
         ...team,
         team:team,
         modal: state.reducerAddBoard.modal,
-        owner: state.home.user.id
+        owner: state.home.user
     })
     
 }
@@ -36,7 +36,8 @@ const mapDispatchToProps = dispatch => ({
     },
     addBoard: async (title, owner,team) => {
         try {
-          const data = await postBoard({title, owner,team})
+            const ownerId=owner.id
+          const data = await postBoard({title, ownerId,team})
           if(team){
               
             dispatch(boardAdded(data, team.id,team.members))
