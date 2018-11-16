@@ -118,6 +118,10 @@ const board = (state = {}, action) => {
                         teams: [
                             ...state[action.id].teams,
                             action.team
+                        ],
+                        members: [
+                            ...state[action.id].members,
+                            ...action.team.members.filter(member => !state[action.id].members.some(oldMember => oldMember.id === member.id))
                         ]
                     }
                 }
