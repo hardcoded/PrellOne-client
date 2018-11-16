@@ -64,7 +64,7 @@ const listPrello = (state = {}, action) => {
                     editTitle: !state[action.id].editTitle 
                 }
             }
-        case 'LIST_UPDATED':
+        case 'TITLE_LIST_UPDATED':
             return {
                 ...state,
                 [action.list.id]: {
@@ -75,10 +75,18 @@ const listPrello = (state = {}, action) => {
         case 'LIST_UPDATED_SUCCESS':
             return {
                 ...state,
+                [action.list.id]: action.list
+
+            }
+        case 'TITLE_LIST_UPDATED_SUCCESS':
+            console.log("ici")
+            return {
+                ...state,
                 [action.list.id]: {
                     ...state[action.list.id],
-                    title: action.list.title
-                } 
+                    title:action.list.title
+                }
+
             }
         case 'SHOW_ADD_CARD':
             return {
