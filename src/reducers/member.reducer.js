@@ -17,6 +17,16 @@ const Member = (state = {}, action) => {
                 return map;
             }, {});
 
+        case 'TEAM_ADDED_BOARD':
+            const newMembers = action.team.members.reduce((map, member) => {
+                map[member.id] = member;
+                return map;
+            }, {});
+            return {
+                ...state,
+                ...newMembers
+            }
+
         case 'ADD_MEMBER_TEAM':
             return {
                 ...state,
