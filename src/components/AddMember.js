@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from  'prop-types'
 import { Col, InputGroup, InputGroupAddon,Button } from 'reactstrap'
 
-const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hidden, hideAddMemberTeam, showAddMemberTeam, hideAddMemberBoard, showAddMemberBoard, addMemberCard, hideAddMemberCard, showAddMemberCard})=> {
+const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hidden, hideAddMemberTeam, showAddMemberTeam, hideAddMemberBoard, showAddMemberBoard})=> {
   let input
   if (!hidden) {
     return (
@@ -10,7 +10,6 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
         <button type="button" className="btn btn-primary btn-circle" onClick={() => {
           if(teamId) showAddMemberTeam(teamId)
         else if(boardId) showAddMemberBoard(boardId)
-        else if(cardId) showAddMemberCard(cardId)
         }}>&#43;</button>
       </Col>
     )
@@ -22,7 +21,6 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
           e.preventDefault()
           if (teamId) addMemberTeam(teamId, input.value)
           else if (boardId) addMemberBoard(boardId, input.value)
-          else if (cardId) addMemberCard(cardId, input.value)
           input.value = ''
         }}>
           <InputGroup>
@@ -33,8 +31,7 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
             <InputGroupAddon addonType="append">
               <Button color="danger" onClick={() => {
                 if(teamId) hideAddMemberTeam(teamId)
-              else if(boardId) hideAddMemberBoard(boardId)
-              else if(cardId) hideAddMemberCard(cardId)}} className="pl-3 pr-3">&#10005;</Button>
+              else if(boardId) hideAddMemberBoard(boardId)}} className="pl-3 pr-3">&#10005;</Button>
             </InputGroupAddon>
           </InputGroup>
         </form>
@@ -53,10 +50,7 @@ AddMember.propTypes={
   showAddMemberTeam: PropTypes.func.isRequired,
   hideAddMemberTeam: PropTypes.func.isRequired,
   hideAddMemberBoard: PropTypes.func.isRequired,
-  showAddMemberBoard: PropTypes.func.isRequired,
-  addMemberCard: PropTypes.func.isRequired,
-  hideAddMemberCard: PropTypes.func.isRequired,
-  showAddMemberCard: PropTypes.func.isRequired
+  showAddMemberBoard: PropTypes.func.isRequired
 }
 
 export default AddMember
