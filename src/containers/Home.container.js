@@ -12,6 +12,9 @@ class HomeContainer extends Component {
         if (this.props && !this.props.user) {
             this.props.getBoards(this.props.match.params.username)
         }
+        else {
+            this.props.getBoards(this.props.user.username)
+        }
     }
  
     render() {
