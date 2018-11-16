@@ -30,3 +30,13 @@ export const addMemberBoard = async (boardId, username) => {
       throw error.response
     }
   }
+
+export const addTeamBoard = async (boardId, name) => {
+    try {
+      const addedTeam = await axios.put(`${API_URL}/api/boards/addTeam`, {boardId, name})
+      return addedTeam.data
+    }
+    catch (error) {
+      throw error.response
+    }
+  }

@@ -37,8 +37,24 @@ export const showAddMemberBoard = id => ({
     id
 })
 
+export const hideAddTeamBoard = id => ({
+    type: 'HIDE_ADD_TEAM_BOARD',
+    id
+})
+
+export const showAddTeamBoard = id => ({
+    type: 'SHOW_ADD_TEAM_BOARD',
+    id
+}) 
+
 export const memberAddedBoard = (id, member) => ({
     type: 'MEMBER_ADDED_BOARD',
     id,
     member
+})
+
+export const teamAddedBoard = (id, team) => ({
+    type: 'TEAM_ADDED_BOARD',
+    id,
+    team
 })

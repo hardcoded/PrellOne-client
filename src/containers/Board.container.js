@@ -34,6 +34,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
       id: state.reducerBoard[boardId].id,
       title: state.reducerBoard[boardId].title,
+      teams: state.reducerBoard[boardId].teams,
       lists: state.reducerBoard[boardId].lists,
       members: state.reducerBoard[boardId].members,
       labels: state.reducerLabel,
