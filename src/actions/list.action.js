@@ -8,8 +8,8 @@ export const toggleEditTitle = (id) => ({
     id,
 })
 
-export const listUpdated = (list) => ({
-    type: 'LIST_UPDATED',
+export const listUpdatedTitle = (list) => ({
+    type: 'TITLE_LIST_UPDATED',
     list
 })
 
