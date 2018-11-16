@@ -21,6 +21,7 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,team})=> {
         </ModalBody>
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
+            {console.log(owner)}
             addBoard(titleBoard.value,owner,team)
             titleBoard.value = ''
           }}>Create board</Button>
@@ -35,7 +36,7 @@ AddBoard.propTypes={
     id:PropTypes.string,
     closeModalCreateBoard: PropTypes.func.isRequired,
     modal: PropTypes.bool,
-    owner: PropTypes.string,
+    owner: PropTypes.object,
     addBoard: PropTypes.func.isRequired,
     team: PropTypes.object
 }
