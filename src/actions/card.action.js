@@ -66,10 +66,3 @@ export const toggleDone = id => ({
     type: 'TOGGLE_DONE',
     id
 })
-
-export const memberAddedCard = (id, member) => ({
-    type: 'MEMBER_ADDED_CARD',
-    id,
-    member
-})
-

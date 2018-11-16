@@ -2,11 +2,8 @@ import { connect } from 'react-redux'
 import AddMember from '../components/AddMember'
 import { hideAddMember,showAddMember, memberAddedTeam } from '../actions/team.action'
 import { hideAddMemberBoard, showAddMemberBoard, memberAddedBoard } from '../actions/board.action'
-import { hideAddMemberCard, showAddMemberCard } from '../actions/modalCard.action'
-import { memberAddedCard } from '../actions/card.action'
 import { addMemberTeam } from '../services/team.service'
 import { addMemberBoard } from '../services/board.service'
-import { addMemberCard } from '../services/card.service'
 
 const mapStateToProps = (state, ownProps) => {
   if (ownProps.idTeam){
@@ -19,12 +16,6 @@ const mapStateToProps = (state, ownProps) => {
     return {
       boardId: ownProps.idBoard,
       hidden: state.reducerBoard[ownProps.idBoard].addMember,
-    }
-  }
-  else if (ownProps.idCard) {
-    return {
-      cardId: ownProps.idCard,
-      hidden: state.reducerModalCard.addMember
     }
   }
 }
@@ -52,17 +43,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       console.log(message)
     }
   },
-  addMemberCard: async (id, username) => {
-    try {
-      const data = await addMemberCard(id, username)
-      dispatch(memberAddedCard(id, data))
-      dispatch(hideAddMemberCard(id))
-    } 
-    catch (error) {
-      const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-      console.log(message)
-    }
-  },
   hideAddMemberTeam: (id) => {
     dispatch(hideAddMember(id))
   },
@@ -74,12 +54,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   },
   showAddMemberBoard: (id) => {
     dispatch(showAddMemberBoard(id))
-  },
-  hideAddMemberCard: (id) => {
-    dispatch(hideAddMemberCard(id))
-  },
-  showAddMemberCard: (id) => {
-    dispatch(showAddMemberCard(id))
   }
 })
 

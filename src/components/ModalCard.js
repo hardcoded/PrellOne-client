@@ -22,7 +22,8 @@ const ModalCard = ({
   toggleEdit,
   closeEdit,
   updateCard,
-  closeModal
+  closeModal,
+  allMembers
 }) => {
 
   return (
@@ -115,7 +116,24 @@ const ModalCard = ({
                 </Col>
               )
             }
-          <AddMember idCard={card.id}></AddMember>
+            <Dropdown isOpen={edit.members} size="sm" toggle={() => toggleEdit('members')}>
+              <DropdownToggle caret>
+                Add Member
+              </DropdownToggle>
+                  <DropdownMenu>
+                    {
+                      allMembers && Object.keys(allMembers).filter(member => !card.members.includes(member)).map((key, index) => 
+                        <DropdownItem 
+                          key={index}
+                          value={key}
+                          onClick={() => updateCard({...card, members: [...card.members, allMembers[key].id]})}
+                        >
+                          {allMembers[key].username}
+                        </DropdownItem>
+                      )
+                    }
+                  </DropdownMenu>
+                </Dropdown>
           </Row>
           <h5>Comments</h5>
           {

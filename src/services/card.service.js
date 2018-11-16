@@ -40,13 +40,3 @@ export const listGoogleFiles = async () => {
     throw error.response
   }
 }
-
-export const addMemberCard = async (cardId, username) => {
-  try {
-    const addedMember = await axios.put(`${API_URL}/api/cards/addMember`, {cardId, username})
-    return addedMember.data
-  }
-  catch (error) {
-    throw error.response
-  }
-}

@@ -6,7 +6,6 @@ const Member = (state = {}, action) => {
                 map[member.id] = member;
                 return map;
             }, {});
-            
         case 'TEAMS_FETCHED':
             var allMembers = [];
             action.teams.map((team) => {
