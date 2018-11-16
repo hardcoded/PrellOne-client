@@ -7,6 +7,12 @@ const team = (state = {}, action) => {
                 return map;
             }, {});
 
+        case 'BOARD_FETCHED':
+            return action.payload.teams.reduce((map, team) => {
+                map[team.id] = team;
+                return map;
+            }, {});
+
         case 'TEAM_ADDED': 
             return {
                 ...state,
@@ -87,7 +93,12 @@ const team = (state = {}, action) => {
             else {
                 return state
             }
-            
+        case 'TEAM_ADDED_BOARD':
+            return {
+                ...state,
+                [action.team.id]: action.team
+            } 
+           
         default:
             return state
     }
