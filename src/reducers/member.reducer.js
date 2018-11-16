@@ -39,7 +39,6 @@ const Member = (state = {}, action) => {
                 ...state,
                 [action.member.id]: action.member
             }
-
         default:
             return state
     }
