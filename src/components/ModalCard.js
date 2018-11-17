@@ -9,7 +9,8 @@ import PropTypes from  'prop-types'
 import AddComment from '../containers/AddComment.container';
 import DueDate from './DueDate'
 import GoogleClient from '../containers/GoogleClient.container'
-import AddMember from '../containers/AddMember.container'
+import FileUploader from '../containers/FileUploader.container'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ModalCard = ({
   card,
@@ -22,6 +23,7 @@ const ModalCard = ({
   toggleEdit,
   closeEdit,
   updateCard,
+  download,
   closeModal,
   allMembers
 }) => {
@@ -43,27 +45,36 @@ const ModalCard = ({
           }
         </ModalHeader>
         <ModalBody className="container-fluid">
-          <h5>Due date</h5>
-          <h5>
-            {
-              !edit.date && <div onClick={() => toggleEdit('date')}><DueDate date={card.dueDate} done={card.done}></DueDate></div>
-            }
-            {
-              edit.date && 
-              <DatePicker closeEdit={() => closeEdit('date')} card={card} updateCard={updateCard}></DatePicker>
-            }
-          </h5>
-          <h6>
-            <CustomInput type="checkbox" id="doneCheckbox" checked={card.done} onChange={() => {updateCard({...card, done: !card.done})}} label="Done"/>
-          </h6>
-          <h5>Labels</h5>
+          <Row>
+            <Col xs="12">
+              <h5>Due date</h5>
+              <h5>
+                {
+                  !edit.date && <div onClick={() => toggleEdit('date')}><DueDate date={card.dueDate} done={card.done}></DueDate></div>
+                }
+                {
+                  edit.date && 
+                  <DatePicker closeEdit={() => closeEdit('date')} card={card} updateCard={updateCard}></DatePicker>
+                }
+              </h5>
+            </Col>
+            <Col xs="12">
+              <h6>
+                <CustomInput type="checkbox" id="doneCheckbox" checked={!!card.done} onChange={() => {updateCard({...card, done: !card.done})}} label="Done"/>
+              </h6>
+            </Col>
+          </Row>
+          <Row className="mt-3">
+            <Col xs="12">
+              <h5>Labels</h5>
+            </Col>
+          </Row>
           {
-            <Row className="pl-3 mb-3">
+            <Row className="pl-3">
               {
-                card.labels && card.labels.map((label, index) => 
+                card.labels && card.labels.map(label => 
                   <Col xs="auto" className="p-0" key={label} onClick={() => {updateCard({...card, labels: card.labels.filter((id)=> id !== label)})}}>
-                    <Label labelId={label}>
-                    </Label>
+                    <Label editable={false} labelId={label}></Label>
                   </Col>
                 )
               }
@@ -74,9 +85,9 @@ const ModalCard = ({
                   </DropdownToggle>
                   <DropdownMenu>
                     {
-                      allLabels && Object.keys(allLabels).filter(label => !card.labels.includes(label)).map((key, index) => 
+                      allLabels && Object.keys(allLabels).filter(label => !card.labels.includes(label)).map((key, ind) => 
                         <DropdownItem 
-                          key={index}
+                          key={ind}
                           value={key}
                           onClick={() => updateCard({...card, labels: [...card.labels, allLabels[key].id]})}
                         >
@@ -89,7 +100,11 @@ const ModalCard = ({
               </Col>
             </Row>
           }
-          <h5>Description</h5>
+          <Row className="mt-3">
+            <Col xs="12">
+              <h5>Description</h5>
+            </Col>
+          </Row>
           {
             !edit.description && 
             
@@ -105,9 +120,38 @@ const ModalCard = ({
             edit.description && 
             <Button className="mt-2" color="success" onClick={(e) => {toggleEdit('description'); updateCard({...card, description: descEditorState.toString('html')})}}>Save</Button>
           }
-          <h5>Attached Files</h5>
-          <GoogleClient></GoogleClient>
-          <h5>Members</h5>
+          <Row className="mt-3">
+            <Col xs="12">
+              <h5>Attached Files</h5>
+            </Col>
+          </Row>
+          <Row>
+          {
+            card.attachments.map(file => 
+              ( 
+                <Col className="mb-2" xs="4">
+                  <div className="text-center" style={{cursor: 'pointer'}} onClick = {() => download(file.name)}>
+                    <div className="display-4 mb-0"><FontAwesomeIcon icon="file" /></div>
+                    <small>{file.name}</small>
+                  </div>
+                </Col>    
+              )
+            )
+          }
+          </Row>
+          <Row>
+            <Col xs="6">
+              <FileUploader updateCard={updateCard} cardId={card.id}></FileUploader>
+            </Col>
+            <Col xs="6">
+              <GoogleClient></GoogleClient>
+            </Col>
+          </Row>
+          <Row className="mt-3">
+            <Col xs="12">
+              <h5>Members</h5>
+            </Col>
+          </Row>
           <Row className="pl-3 mb-3">
             {
               card.members && card.members.map(member=> 
@@ -122,23 +166,27 @@ const ModalCard = ({
               </DropdownToggle>
                   <DropdownMenu>
                     {
-                      allMembers && Object.keys(allMembers).filter(member => !card.members.includes(member)).map((key, index) => 
+                      allMembers && Object.keys(allMembers).filter(member => !card.members.includes(member)).map(member => 
                         <DropdownItem 
-                          key={index}
-                          value={key}
-                          onClick={() => updateCard({...card, members: [...card.members, allMembers[key].id]})}
+                          key={member}
+                          value={member}
+                          onClick={() => updateCard({...card, members: [...card.members, allMembers[member].id]})}
                         >
-                          {allMembers[key].username}
+                          {allMembers[member].username}
                         </DropdownItem>
                       )
                     }
                   </DropdownMenu>
                 </Dropdown>
           </Row>
-          <h5>Comments</h5>
+          <Row>
+            <Col xs="12">
+              <h5>Comments</h5>
+            </Col>
+          </Row>
           {
-            card.comments && card.comments.map(comment => 
-              <Comment commentId={comment.id} content={comment.content} writer={comment.writer} key={comment}></Comment>
+            card.comments && card.comments.map((comment,i) => 
+              <Comment key={i} commentId={comment.id} content={comment.content} writer={comment.writer} ></Comment>
             )
           }
           <AddComment card={card}></AddComment>
@@ -162,6 +210,7 @@ ModalCard.propTypes = {
   editCardDesc: PropTypes.func,
   descEditorState: PropTypes.object,
   updateAttribute: PropTypes.func,
+  download: PropTypes.func,
   closeModal: PropTypes.func
 }
 
