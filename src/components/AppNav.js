@@ -7,10 +7,6 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
     Button
 } from 'reactstrap'
 import { isAuthenticated, logout } from '../services/auth.service'

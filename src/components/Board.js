@@ -1,6 +1,5 @@
 import React from 'react'
 import Member from '../containers/Member.container'
-import Team from '../containers/Team.container'
 import AddMember from '../containers/AddMember.container'
 import AddTeamBoard from '../containers/AddTeamBoard.container'
 import ListPrello from '../containers/ListPrello.container'
@@ -10,8 +9,9 @@ import { Row, Col } from 'reactstrap'
 import { DragDropContext } from 'react-beautiful-dnd'
 import ModalCard from '../containers/ModalCard.container'
 import PropTypes from  'prop-types'
+import Label from '../containers/Label.container';
 
-const Board = ({id, title, lists, members, onDragEnd, teams}) => (
+const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
 
     <div>
       <section>
@@ -42,6 +42,14 @@ const Board = ({id, title, lists, members, onDragEnd, teams}) => (
               }
               <AddTeamBoard idBoard={id}></AddTeamBoard>
               </Row>
+              <h5>Labels</h5>
+              <Row>
+                {
+                  labels.map(label => (
+                    <Label size="10" editable={true} labelId={label.id}></Label>
+                  ))
+                }
+              </Row>
 
             </Col>
           <DragDropContext onDragEnd={onDragEnd}>
@@ -68,6 +76,7 @@ Board.propTypes={
   title:PropTypes.string.isRequired,
   lists:PropTypes.arrayOf(ListPrelloCompo),
   members: PropTypes.array,
+  labels: PropTypes.array,
   onDragEnd: PropTypes.func.isRequired,
   teams: PropTypes.array
 }
