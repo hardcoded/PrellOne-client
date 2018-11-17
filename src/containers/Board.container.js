@@ -15,6 +15,7 @@ class BoardContainer extends Component{
 
   }
   componentWillUnmount(){
+
     Socket.emit("leaveBoard",this.props.match.params.boardId)
   }
 
@@ -30,6 +31,7 @@ class BoardContainer extends Component{
 
 const mapStateToProps = (state, ownProps) => {
   const boardId = ownProps.match.params.boardId //boardId passed by router
+  console.log(state.reducerBoard[boardId])
   if (state.reducerBoard[boardId]) {
     return {
       id: state.reducerBoard[boardId].id,

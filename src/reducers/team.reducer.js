@@ -8,6 +8,7 @@ const team = (state = {}, action) => {
             }, {});
 
         case 'BOARD_FETCHED':
+            console.log(action)
             return action.payload.teams.reduce((map, team) => {
                 map[team.id] = team;
                 return map;
