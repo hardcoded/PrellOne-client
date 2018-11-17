@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ModalCard from '../components/ModalCard'
 import { closeModal, toggleEdit, closeEdit, openEditCardDesc, editCardDesc } from '../actions/modalCard.action'
 import {cardUpdated} from '../actions/card.action'
-import {updateCard} from '../services/card.service'
+import {updateCard, downloadDocument} from '../services/card.service'
 
 class ModalCardContainer extends Component {
   componentWillMount() {
@@ -41,12 +41,23 @@ const mapDispatchToProps = dispatch => ({
     },
     updateCard: async (card) => {
       try {
+        console.clear()
+        console.clear("Update Card Called Haaaa")
         const data = await updateCard(card)
         dispatch(cardUpdated(data))
       }
       catch(error) {
         const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
         //dispatch(errorFetchingUser(message))
+      }
+    },
+    download: async (fileName) => {
+      try {
+        const file = await downloadDocument(fileName)
+        console.log("Download should be starting ...")
+      }
+      catch (error){
+        const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
       }
     },
     openEditCardDesc: (description) => {

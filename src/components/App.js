@@ -11,6 +11,11 @@ import UpdatePassword from '../containers/UpdatePassword.container'
 import Account from '../containers/Account.container.js'
 import UpdateInfo from '../containers/UpdateInfo.container'
 import LoginLdap from '../containers/LoginLdap.container';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFile, faUpload, faCloud } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faFile, faUpload, faCloud)
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
