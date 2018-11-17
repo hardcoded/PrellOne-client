@@ -7,14 +7,13 @@ import { teamsFetched } from '../actions/team.action'
 class TeamsManagerContainer extends Component {
   
   componentDidMount() {
-    console.log(this.props.teams)
+  
     this.props.getTeams(this.props.user)
+    
   }
 
   render() {
     if (this.props.teams) {
-      console.log("ici")
-      console.log(this.props)
       return (<TeamsManager {...this.props}></TeamsManager>)
     }
     else {
