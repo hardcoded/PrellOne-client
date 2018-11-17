@@ -4,15 +4,17 @@ import TeamsManager from '../components/TeamsManager'
 import Spinner from '../components/Spinner'
 import { getUserTeams } from '../services/home.service'
 import { teamsFetched } from '../actions/team.action'
-
 class TeamsManagerContainer extends Component {
   
-  componentWillMount() {
+  componentDidMount() {
+    console.log(this.props.teams)
     this.props.getTeams(this.props.user)
   }
 
   render() {
     if (this.props.teams) {
+      console.log("ici")
+      console.log(this.props)
       return (<TeamsManager {...this.props}></TeamsManager>)
     }
     else {
