@@ -4,11 +4,12 @@ import TeamsManager from '../components/TeamsManager'
 import Spinner from '../components/Spinner'
 import { getUserTeams } from '../services/home.service'
 import { teamsFetched } from '../actions/team.action'
-
 class TeamsManagerContainer extends Component {
   
-  componentWillMount() {
+  componentDidMount() {
+  
     this.props.getTeams(this.props.user)
+    
   }
 
   render() {
