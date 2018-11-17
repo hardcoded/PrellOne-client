@@ -13,8 +13,8 @@ const TeamsManager = ({teams}) => (
                 </Col>
             </Row>
             {
-                teams.map((team, index) => (
-                    <Row key={index}>
+                teams.map(team => (
+                    <Row key={team.id}>
                         <Col>
                             <Team key={team.id} teamId={team.id}></Team>
                         </Col>

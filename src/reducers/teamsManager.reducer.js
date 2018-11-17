@@ -17,7 +17,7 @@ const TeamsManager = (state = [], action) => {
 
         case 'BOARD_ADDED': 
             if (action.idTeam){
-                return state.map(team => {if (team.id == action.idTeam){
+                return state.map(team => {if (team.id === action.idTeam){
                     return {
                         ...team,
                         boards: [

@@ -20,7 +20,7 @@ const Comment = ({id, content, userName, photo}) => {
 
 
 Comment.propTypes={
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   content:PropTypes.string.isRequired,
   userName: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired

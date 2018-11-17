@@ -28,7 +28,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     }
     catch(error) {
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-      //dispatch(errorFetchingUser(message))
     }
   },
  })

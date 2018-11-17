@@ -23,8 +23,8 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
               <h5>Members</h5>
               <Row>
               {
-                members.map(member => (
-                  <Col xs="3" className="p-2">
+                members.map((member,ind) => (
+                  <Col xs="3" className="p-2" key={ind}>
                     <Member memberId={member.id}></Member> 
                   </Col>
                 ))
@@ -35,7 +35,7 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
               <Row>
               {
                 teams.map(team => (
-                  <Col xs="3" className="p-2">
+                  <Col xs="3" className="p-2" key={team.id}>
                     {team.name}
                   </Col>
                 ))
@@ -45,8 +45,8 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
               <h5>Labels</h5>
               <Row>
                 {
-                  labels.map(label => (
-                    <Label size="10" editable={true} labelId={label.id}></Label>
+                  labels.map((label,i) => (
+                    <Label editable={true} key={i} labelId={label.id}></Label>
                   ))
                 }
               </Row>
@@ -54,8 +54,8 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
             </Col>
           <DragDropContext onDragEnd={onDragEnd}>
             {
-              lists.map((list, index) => (
-              <Col xs="12" sm="6" md="4" lg="3" key={index}>
+              lists.map(list => (
+              <Col xs="12" sm="6" md="4" lg="3" key={list.id}>
               <ListPrello id={list.id}></ListPrello>
               </Col>
             ))}
@@ -78,7 +78,8 @@ Board.propTypes={
   members: PropTypes.array,
   labels: PropTypes.array,
   onDragEnd: PropTypes.func.isRequired,
-  teams: PropTypes.array
+  teams: PropTypes.array,
+  editable: PropTypes.bool
 }
 
 export default Board

@@ -11,7 +11,7 @@ const Label = (state = {}, action) => {
                 ...state,
                 [action.id]: {
                     ...state[action.id],
-                    editTitle: state[action.id].editTitle ? !state[action.id].editTitle : true 
+                    editTitle: !state[action.id].editTitle 
                 }
             }
         case 'TITLE_LABEL_UPDATED':

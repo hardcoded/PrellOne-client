@@ -13,12 +13,12 @@ const Home = ({user, openModalCreateBoard}) => (
                     <h1>Boards</h1>
             </header> 
                 <Row>
-                    {user.boards.map(board => (
-                       <Col xs="12" sm="6" md="4" lg="3"> 
-                            <Card key={board.id} className="bg-light mb-3">
+                    {user.boards.map((board, index) => (
+                       <Col xs="12" sm="6" md="4" lg="3" key={index}> 
+                            <Card className="bg-light mb-3">
                                 <CardBody>
                                     <CardTitle>
-                                    <Link  to={"/board/"+board.id}>
+                                    <Link to={"/board/"+board.id}>
                                         {board.title}
                                     </Link>    
                                     </CardTitle>

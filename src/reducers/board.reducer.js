@@ -32,7 +32,7 @@ const board = (state = {}, action) => {
                 [action.list.board]: {
                     ...state[action.list.board],
                     lists: [
-                        ...state[action.list.board].lists.filter(list => list.id != "idTemp"),
+                        ...state[action.list.board].lists.filter(list => list.id !== "idTemp"),
                         action.list
                     ]
                 }
