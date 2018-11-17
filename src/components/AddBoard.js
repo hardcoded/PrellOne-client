@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, Input, Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
-import Team from '../components/Team'
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 
 const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,team})=> {
   let titleBoard

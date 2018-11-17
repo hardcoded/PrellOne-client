@@ -1,8 +1,5 @@
 
 export const boardAdded = (board, idTeam, members) => {
-    console.clear()
-    console.log(idTeam)
-    console.log(members)
     return {
         type: 'BOARD_ADDED',
         board,

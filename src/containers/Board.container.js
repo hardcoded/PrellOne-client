@@ -39,7 +39,7 @@ const mapStateToProps = (state, ownProps) => {
       teams: state.reducerBoard[boardId].teams,
       lists: state.reducerBoard[boardId].lists,
       members: state.reducerBoard[boardId].members,
-      labels: state.reducerLabel,
+      labels: state.reducerBoard[boardId].labels,
       loading: false
     }
   }
