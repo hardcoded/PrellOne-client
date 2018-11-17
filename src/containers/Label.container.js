@@ -2,16 +2,33 @@ import { connect } from 'react-redux'
 import Label from '../components/Label'
 import {toggleEditTitleLabel, labelUpdatedTitle} from '../actions/label.action'
 import { updateLabel } from '../services/label.service'
+import React, { Component } from 'react'
+import Spinner from '../components/Spinner'
+
+class LabelContainer extends Component {
+
+  render() {
+      if (this.props.id) return (<Label {...this.props}></Label>)
+      else return (<Spinner></Spinner>)
+  }
+
+}
 
 const mapStateToProps = (state, ownProps) => {
-  return ({
-    id: state.reducerLabel[ownProps.labelId].id,
-    title: state.reducerLabel[ownProps.labelId].title,
-    color: state.reducerLabel[ownProps.labelId].color,
-    editTitle: state.reducerLabel[ownProps.labelId].editTitle,
-    editable: ownProps.editable,
-    size: ownProps.size
-  })
+  if(state.reducerLabel[ownProps.labelId]){
+    return ({
+      id: state.reducerLabel[ownProps.labelId].id,
+      title: state.reducerLabel[ownProps.labelId].title,
+      color: state.reducerLabel[ownProps.labelId].color,
+      editTitle: state.reducerLabel[ownProps.labelId].editTitle,
+      editable: ownProps.editable,
+      size: ownProps.size
+    })
+  }
+  else{
+    return undefined
+  }
+  
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
@@ -30,4 +47,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Label)
+)(LabelContainer)
