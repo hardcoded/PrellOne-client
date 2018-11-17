@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from  'prop-types'
-import { Col, InputGroup, InputGroupAddon,Button } from 'reactstrap'
+import { Row,Col, InputGroup, InputGroupAddon,Button } from 'reactstrap'
 
 const AddTeamBoard = ({ boardId, addTeamBoard, hidden, hideAddTeamBoard, showAddTeamBoard})=> {
   let input
   if (!hidden) {
     return (
-      <Col xs="3" className="mb-2">
+      <Col xs="3" className="p-3"> 
         <button type="button" className="btn btn-primary btn-circle" onClick={() => {
         showAddTeamBoard(boardId)
         }}>&#43;</button>
@@ -15,14 +15,15 @@ const AddTeamBoard = ({ boardId, addTeamBoard, hidden, hideAddTeamBoard, showAdd
   }
   else {
     return (
-      <Col xs="12" sm="10" md="8" lg="3" className="pt-3">
+    
         <form onSubmit={e => {
           e.preventDefault()
           addTeamBoard(boardId, input.value)
           input.value = ''
         }}>
           <InputGroup>
-            <input className="form-control" placeholder="Type a username"  ref={node => input = node} />
+            <input className="form-control" placeholder="Type a team name"  ref={node => input = node} />
+            <Row>
             <InputGroupAddon addonType="append">
               <Button color="success" type="submit" className="pl-3 pr-3">&#43;</Button>
             </InputGroupAddon>
@@ -30,9 +31,9 @@ const AddTeamBoard = ({ boardId, addTeamBoard, hidden, hideAddTeamBoard, showAdd
               <Button color="danger" onClick={() => {
                 hideAddTeamBoard(boardId)}} className="pl-3 pr-3">&#10005;</Button>
             </InputGroupAddon>
+            </Row>
           </InputGroup>
         </form>
-      </Col>
     )
   }
 }

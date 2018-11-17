@@ -22,6 +22,15 @@ const Label = (state = {}, action) => {
                     title: action.label.title
                 } 
             }
+
+        case 'TITLE_LABEL_UPDATED_SUCCESS':
+            return {
+                ...state,
+                [action.label.id]: {
+                    ...state[action.label.id],
+                    title: action.label.title
+                } 
+            }
         default:
             return state
     }

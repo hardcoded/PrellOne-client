@@ -15,9 +15,14 @@ class ListPrelloContainer extends Component{
   
 }
 
-const mapStateToProps = (state, ownProps) => ({
-  list: state.reducerListPrello[ownProps.id]
-})
+const mapStateToProps = (state, ownProps) => {
+  if(state.reducerListPrello[ownProps.id]){
+    return {list:state.reducerListPrello[ownProps.id]}
+  }
+  else{
+    return undefined
+  }
+}
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   toggleEditTitle: () => dispatch(toggleEditTitle(ownProps.id)),

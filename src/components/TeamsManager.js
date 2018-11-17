@@ -5,26 +5,25 @@ import Team from '../containers/Team.container';
 import AddTeam from '../containers/AddTeam.container';
 
 const TeamsManager = ({teams}) => (
-    <div>
-        <Container>
+    <div className="container-fluid mt-4">
+      
             <Row>
                 <Col>
-                    <h1>My teams</h1> 
+                    <h1>My teams</h1>
                 </Col>
-            </Row>
+            </Row>   
+            <Row>
             {
                 teams.map(team => (
-                    <Row key={team.id}>
-                        <Col>
-                            <Team key={team.id} teamId={team.id}></Team>
+                        <Col key={team.id} xs="12" sm="6" md="4" lg="3">
+                            <Team teamId={team.id}></Team>
                         </Col>
-                    </Row>
                 ))
             }
+            </Row>
             <div>
                 <AddTeam></AddTeam>
-            </div>
-        </Container>    
+            </div> 
     </div>
 
 )

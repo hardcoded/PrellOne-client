@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from  'prop-types'
-import { Col, InputGroup, InputGroupAddon,Button } from 'reactstrap'
+import { Col, InputGroup, InputGroupAddon,Button,Row} from 'reactstrap'
 
 const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hidden, hideAddMemberTeam, showAddMemberTeam, hideAddMemberBoard, showAddMemberBoard})=> {
   let input
   if (!hidden) {
     return (
-      <Col xs="3" className="mb-2">
+      <Col xs="2" className="p-2"> 
         <button type="button" className="btn btn-primary btn-circle" onClick={() => {
           if(teamId) showAddMemberTeam(teamId)
         else if(boardId) showAddMemberBoard(boardId)
         }}>&#43;</button>
-      </Col>
+         </Col> 
     )
   }
   else {
     return (
-      <Col xs="12" sm="10" md="8" lg="3" className="pt-3">
+
         <form onSubmit={e => {
           e.preventDefault()
           if (teamId) addMemberTeam(teamId, input.value)
@@ -25,6 +25,7 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
         }}>
           <InputGroup>
             <input className="form-control" placeholder="Type a username"  ref={node => input = node} />
+            <Row>
             <InputGroupAddon addonType="append">
               <Button color="success" type="submit" className="pl-3 pr-3">&#43;</Button>
             </InputGroupAddon>
@@ -33,9 +34,9 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
                 if(teamId) hideAddMemberTeam(teamId)
               else if(boardId) hideAddMemberBoard(boardId)}} className="pl-3 pr-3">&#10005;</Button>
             </InputGroupAddon>
+            </Row>
           </InputGroup>
-        </form>
-      </Col>
+        </form> 
     )
   }
 }
