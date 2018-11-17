@@ -109,6 +109,24 @@ const board = (state = {}, action) => {
             else {
                 return state
             }
+        case 'MEMBER_ADDED_BOARD_SUCCESS': 
+            console.log(state[action.payload.id].members)
+            if (!state[action.payload.id].members.some(member => member.id === action.payload.member.id)){
+                return {
+                    ...state,
+                    [action.payload.id]: {
+                        ...state[action.payload.id],
+                        members: [
+                            ...state[action.payload.id].members,
+                            action.payload.member
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
+
         case 'TEAM_ADDED_BOARD':
             if (!state[action.id].teams.some(team => team.id === action.team.id)){
                 return {
@@ -122,6 +140,28 @@ const board = (state = {}, action) => {
                         members: [
                             ...state[action.id].members,
                             ...action.team.members.filter(member => !state[action.id].members.some(oldMember => oldMember.id === member.id))
+                        ]
+                    }
+                }
+            }
+            else {
+                return state
+            }
+
+            case 'TEAM_ADDED_BOARD_SUCCESS':
+            console.log(action.payload.team.id)
+            if (!state[action.payload.id].teams.some(team => team.id === action.payload.team.id)){
+                return {
+                    ...state,
+                    [action.payload.id]: {
+                        ...state[action.payload.id],
+                        teams: [
+                            ...state[action.payload.id].teams,
+                            action.payload.team
+                        ],
+                        members: [
+                            ...state[action.payload.id].members,
+                            ...action.payload.team.members.filter(member => !state[action.payload.id].members.some(oldMember => oldMember.id === member.id))
                         ]
                     }
                 }

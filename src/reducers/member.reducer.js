@@ -52,6 +52,11 @@ const Member = (state = {}, action) => {
                 ...state,
                 [action.member.id]: action.member
             }
+        case 'MEMBER_ADDED_BOARD_SUCCESS':
+            return {
+                ...state,
+                [action.payload.member.id]: action.payload.member
+            }
 
         case 'MEMBER_ADDED_CARD':
             return {
