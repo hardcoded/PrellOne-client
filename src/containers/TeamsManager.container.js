@@ -22,10 +22,12 @@ class TeamsManagerContainer extends Component {
   }
 }
 
-const mapStateToProps = (state)=> ({
+const mapStateToProps = (state)=> {
+  return {
     user: state.home.user.username,
     teams: state.reducerTeamsManager
-})
+  }
+}
 
 
 const mapDispatchToProps = dispatch => ({

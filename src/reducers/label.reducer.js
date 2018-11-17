@@ -5,6 +5,23 @@ const Label = (state = {}, action) => {
                 map[label.id] = label;
                 return map;
             }, {});
+
+        case 'TOGGLE_EDIT_TITLE_LABEL':
+            return {
+                ...state,
+                [action.id]: {
+                    ...state[action.id],
+                    editTitle: state[action.id].editTitle ? !state[action.id].editTitle : true 
+                }
+            }
+        case 'TITLE_LABEL_UPDATED':
+            return {
+                ...state,
+                [action.label.id]: {
+                    ...state[action.label.id],
+                    title: action.label.title
+                } 
+            }
         default:
             return state
     }
