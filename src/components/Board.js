@@ -16,42 +16,75 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
     <div>
       <section>
         <div className="container-fluid mt-4">
-        <Row className="scrolling-wrapper-flexbox">
-            <Col xs="12" sm="6" md="4" lg="3">
-              <h1>{title}</h1>
-              
-              <h5>Members</h5>
-              <Row>
-              {
-                members.map(member => (
-                  <Col xs="3" className="p-2">
-                    <Member memberId={member.id}></Member> 
-                  </Col>
-                ))
-              }
-              <AddMember idBoard={id}></AddMember>
-              </Row>
-              <h5>Teams</h5>
-              <Row>
-              {
-                teams.map(team => (
-                  <Col xs="3" className="p-2">
-                    {team.name}
-                  </Col>
-                ))
-              }
-              <AddTeamBoard idBoard={id}></AddTeamBoard>
-              </Row>
-              <h5>Labels</h5>
-              <Row>
-                {
-                  labels.map(label => (
-                    <Label size="10" editable={true} labelId={label.id}></Label>
-                  ))
-                }
-              </Row>
+        <Row>
+        <h1>{title}</h1>
+        </Row>
+      
+          <Row>
 
+          <Col xs="12" sm="6" md="4" lg="3">
+          <Row>
+            <Col xs="4" >  
+                <h5>Members:</h5>
             </Col>
+            </Row>
+            <Row>
+                {
+                  members.map(member => (
+                    <Col xs="2" className="p-2">
+                      <div>
+                      <Member memberId={member.id}></Member> 
+                      </div>
+                      
+                    </Col>
+                  ))
+                } 
+                <AddMember idBoard={id}></AddMember>
+          </Row> 
+        </Col>
+
+
+        <Col xs="12" sm="6" md="4" lg="3"> 
+        <Row>     
+        <Col xs="4" >   
+              <h5>Teams:</h5>
+          </Col>
+          </Row>
+           <Row>
+           {
+                teams.map(team => (
+                  <Col xs="2" >
+                  
+                    <h6>{team.name}</h6>
+            
+                  </Col>
+                ))
+              }
+          <AddTeamBoard idBoard={id}></AddTeamBoard> 
+        </Row> 
+        </Col>
+
+     
+
+         <Col xs="12" sm="8" md="4" lg="4">
+         <Row>
+         <Col xs="3">   
+            <h5>Labels</h5>
+          </Col>
+          <Col xs="3">
+              {
+                labels.map(label => (
+                  <Row>
+                   <Label size="10" editable={true} labelId={label.id}></Label>
+                   </Row>
+                ))
+              }
+          </Col>
+          </Row>
+          </Col>
+         
+        </Row>
+        <Row className="scrolling-wrapper-flexbox">
           <DragDropContext onDragEnd={onDragEnd}>
             {
               lists.map((list, index) => (

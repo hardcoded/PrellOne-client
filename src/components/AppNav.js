@@ -15,7 +15,7 @@ const AppNav = ({ isOpen, token, open, username, close }) => {
 
     return (
         <Navbar className="navbar-dark bg-primary" expand="md">
-            <Link className="navbar-brand" to="/">PrellOne</Link>
+            <Link className="navbar-brand" to={`/${username}/boards`}>PrellOne</Link>
             <NavbarToggler onClick={() => { if (isOpen) { close() } else { open() } }} />
             <Collapse isOpen={isOpen} navbar>
                 {!token && !isAuthenticated() &&

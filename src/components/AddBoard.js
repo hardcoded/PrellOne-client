@@ -9,7 +9,6 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,team})=> {
     <form>
 
     <Modal toggle={closeModalCreateBoard} isOpen={modal}  >
-
         <ModalHeader toggle={closeModalCreateBoard}>
         Create a new board  
         </ModalHeader>
