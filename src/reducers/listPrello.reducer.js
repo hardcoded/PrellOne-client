@@ -50,7 +50,7 @@ const listPrello = (state = {}, action) => {
                 [action.card.list]: {
                     ...state[action.card.list],
                     cards: [
-                        ...state[action.card.list].cards.filter(card => card.id != "idTemp"),
+                        ...state[action.card.list].cards.filter(card => card.id !== "idTemp"),
                         action.card
                     ]
                 }

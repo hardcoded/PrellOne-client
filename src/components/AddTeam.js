@@ -32,7 +32,7 @@ const AddTeam = ({addTeam, user, hidden, hide, show})=> {
 }
 
 AddTeam.propTypes={
-  user: PropTypes.string.isRequired,
+  user: PropTypes.object.isRequired,
   addTeam: PropTypes.func.isRequired,
   hide: PropTypes.func.isRequired,
   show: PropTypes.func.isRequired

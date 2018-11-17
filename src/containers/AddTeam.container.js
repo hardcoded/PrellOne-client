@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import AddTeam from '../components/AddTeam'
-//import { addTeam } from '../actions/teamsManager.action'
 import { hide, show } from '../actions/addTeam.action'
 import { teamAdded } from '../actions/team.action'
 import { postTeam } from '../services/team.service'

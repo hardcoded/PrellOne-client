@@ -12,11 +12,12 @@ const TeamsManager = ({teams}) => (
             </Row>   
             <Row>
             {
-                teams.map((team) => (
-                        <Col  xs="12" sm="6" md="4" lg="3" >
+                teams.map(team => (
+                    <Row key={team.id}>
+                        <Col>
                             <Team key={team.id} teamId={team.id}></Team>
                         </Col>
-                  
+                  </Row>
                 ))
             }
             </Row>

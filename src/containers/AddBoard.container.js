@@ -4,9 +4,6 @@ import { closeModalCreateBoard } from '../actions/addBoard.action'
 import AddBoard from '../components/AddBoard'
 import { boardAdded } from '../actions/board.action'
 import { postBoard } from '../services/board.service'
-import {getTeams} from '../services/team.service'
-import {teamsFetched} from '../actions/team.action'
-import { cpus } from 'os';
 
 class AddBoardContainer extends Component {
     componentWillMount = () => {

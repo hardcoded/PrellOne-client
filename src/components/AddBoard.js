@@ -19,7 +19,6 @@ const AddBoard = ({id,modal, owner, closeModalCreateBoard, addBoard,team})=> {
         </ModalBody>
         <ModalFooter>
           <Button block color="success" type="submit" onClick={e => {e.preventDefault()
-            {console.log(owner)}
             addBoard(titleBoard.value,owner,team)
             titleBoard.value = ''
           }}>Create board</Button>

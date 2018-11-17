@@ -14,12 +14,12 @@ const Team = ({id,name, boards, members,openModalCreateBoard}) => (
             <h5>{name}</h5>
         </CardHeader>
         <CardBody>
-            <CardText>
-                <h3>Members</h3>
+            <CardText tag="div" >
+                <h5>Members</h5>
                 <Row className="pl-3 mb-3">
                     {
                         members.map( member => (
-                            <Col xs="3" className="p-2">
+                            <Col xs="3" sm="4" md="3" lg="1" className="mb-2" key={member.id}>
                                 <Member memberId={member.id} ></Member>
                             </Col> 
                         ))
@@ -30,7 +30,7 @@ const Team = ({id,name, boards, members,openModalCreateBoard}) => (
                 <h5>Boards</h5>
                 <Row className="pl-3 mb-3">
                     { boards.map(board=> (
-                        <Col xs="6"  className="mb-2"> 
+                        <Col xs="12" sm="6" md="4" lg="3" className="mb-2" key={board.id}> 
                             <Card key={board.id} className="bg-light">
                                 <CardHeader>
                                     

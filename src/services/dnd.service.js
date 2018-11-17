@@ -1,7 +1,7 @@
 import { updateList } from './list.service'
 
 export const onDragEnd = (state, result) => {
-  const {destination, source, draggableId} = result
+  const {destination, source} = result
    // Do nothing if there is no destination
   if (!destination) {
       return state

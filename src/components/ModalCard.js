@@ -130,7 +130,7 @@ const ModalCard = ({
             card.attachments.map(file => 
               ( 
                 <Col className="mb-2" xs="4">
-                  <div className="text-center" style={{cursor: 'pointer'}} onClick = {() => download(file.name)}>
+                  <div className="text-center text-in-bounds" style={{cursor: 'pointer', textOverflow: 'hidden'}} onClick = {() => download(file.name)}>
                     <div className="display-4 mb-0"><FontAwesomeIcon icon="file" /></div>
                     <small>{file.name}</small>
                   </div>

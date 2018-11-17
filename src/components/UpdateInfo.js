@@ -80,6 +80,7 @@ class UpdateInfo extends React.Component {
                         type="text" 
                         name="lastname" 
                         value={lastname}
+                        onKeyDown={this.keyDown}
                         placeholder="Last name"
                         onChange={(e) => this.handleChange(e)} 
                         invalid={this.state.validate.lastname === 'has-danger'}/>

@@ -30,8 +30,7 @@ class BoardContainer extends Component{
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const boardId = ownProps.match.params.boardId //boardId passed by router
-  console.log(state.reducerBoard[boardId])
+  const boardId = ownProps.match.params.boardId 
   if (state.reducerBoard[boardId]) {
     return {
       id: state.reducerBoard[boardId].id,
@@ -48,7 +47,6 @@ const mapStateToProps = (state, ownProps) => {
       loading: true
     }
   }
-  //user: state.home.user
 }
 
 const mapDispatchToProps = (dispatch) => ({
@@ -56,12 +54,10 @@ const mapDispatchToProps = (dispatch) => ({
   getBoard: async (boardId) => {
     try {
       const data = await getBoard(boardId)
-      console.log(data)
       dispatch(boardFetched(data))
     } 
     catch (error) {
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-      //dispatch(errorFetchingBoard(message))
       console.log(message)
     }
   }

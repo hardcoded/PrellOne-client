@@ -17,7 +17,7 @@ const Account = ({ user }) => (
                     <Col xs="auto" className="p-0">
                         <img width="65px" src={user.profilePicture} alt={user.username} className={"img-fluid rounded"} />
                     </Col>
-                    <CardText>
+                    <CardText tag="div">
                         <h5>First Name : </h5>
                         {user.firstname}
                         <h5>Last Name : </h5>

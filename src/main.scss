@@ -60,6 +60,12 @@
     line-height: 1.42857;
   }
 
+  .text-in-bounds {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
 
   @keyframes rotate {
     0%    { transform: rotate(0deg); }

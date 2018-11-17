@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class FileUploaderContainer extends Component {
   render = () => (
     <FilePicker
-      extensions={['md','jpg','jpeg']}
+      extensions={['md','jpg','jpeg', 'pdf']}
       onChange={this.props.handleFileUpload}
       onError={this.props.onError}>
 
