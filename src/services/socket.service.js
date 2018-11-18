@@ -5,7 +5,9 @@ const socket=io('http://localhost:8080')
 socket.on("error",(error)=>{
     console.log(error)
 })
-
+/**
+ * functions for the socket 
+ */
 export default {
     joinBoard(boardId){
         socket.emit("joinBoard",boardId)

@@ -1,4 +1,8 @@
-
+/**
+ * Function to handle appNav action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const appNav = (state = {}, action) => {
     switch (action.type) {
         case 'OPEN_NAVBAR':

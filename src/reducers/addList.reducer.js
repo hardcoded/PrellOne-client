@@ -1,4 +1,8 @@
-
+/**
+ * Function to handle addList action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const addList = (state = {}, action) => {
     switch (action.type) {
         case 'HIDE_ADD_LIST':

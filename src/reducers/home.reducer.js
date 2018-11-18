@@ -1,6 +1,8 @@
-//import demoData from '../components/demo-data'
-
-
+/**
+ * Function to handle home action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const home = (state = { user: null, error: null }, action) => {
     switch (action.type) {
         case 'USER_FETCHED':

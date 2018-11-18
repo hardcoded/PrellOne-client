@@ -1,3 +1,8 @@
+/**
+ * Function to handle addBoard action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const addBoard = (state = {}, action) => {
     switch (action.type) {
 

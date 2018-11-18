@@ -34,7 +34,6 @@ const mapDispatchToProps = dispatch => ({
     } 
     catch (error) {
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-      console.log(message)
     }
     finally {
       dispatch(hideAddCard(list))

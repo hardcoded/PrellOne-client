@@ -1,6 +1,12 @@
 import axios from 'axios'
 import API_URL from '../config'
 
+/**
+ * get the card data 
+ * @param {string} cardId id of the card 
+ * @return {*} data of the card
+ * 
+ */
 export const getCard = async (cardId) => {
   try {
     const card = await axios.get(`${API_URL}/api/cards/${cardId}`)
@@ -11,6 +17,11 @@ export const getCard = async (cardId) => {
   }
 }
 
+/**
+ * Create a new card
+ * @param {Card} card the new card
+ * @return {*} new card data
+ */
 export const postCard = async (card) => {
   try {
     const newCard = await axios.post(`${API_URL}/api/cards/`, card)
@@ -21,6 +32,11 @@ export const postCard = async (card) => {
   }
 }
 
+/**
+ * Update a card
+ * @param {Card} card the card updated
+ * @return {*} card updated data
+ */
 export const updateCard = async (card) => {
   try {
     const newCard = await axios.put(`${API_URL}/api/cards/`, card)
@@ -30,7 +46,10 @@ export const updateCard = async (card) => {
     throw error.response
   }
 }
-
+/**
+ * 
+ * @return {*} list of file from google drive
+ */
 export const listGoogleFiles = async () => {
   try {
     const filesList = await axios.get(`${API_URL}/api/cards/googleFiles`)
@@ -41,13 +60,15 @@ export const listGoogleFiles = async () => {
   }
 }
 
+/**
+ * @param {File} file the file to upload
+ * @param {cardId} cardId id of the card where the file will be upload
+ * @return {Card} card updated
+ */
 export const uploadDocumentRequest = async (file, cardId) => {
- 
   var data = new FormData();
   data.append('file', file);
   data.append('cardId', cardId);
-  console.log("Sending file to server")
-  console.log(data)
   try {
     const uploadResult = await axios.post(`${API_URL}/api/cards/attachFile`, data)
     return uploadResult.data
@@ -57,9 +78,12 @@ export const uploadDocumentRequest = async (file, cardId) => {
   }
 }
 
+/**
+ * 
+ * @param {string} fileName name of the fiile to download
+ * @return launch client downloaded 
+ */
 export const downloadDocument = async (fileName) => {
-  console.log("Asing to download")
-  console.log(fileName)
   try {
     const file = await axios.get(`${API_URL}/api/cards/file/${fileName}`)
     axios({

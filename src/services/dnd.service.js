@@ -1,5 +1,10 @@
 import { updateList } from './list.service'
-
+/**
+ * Service to handle drag and drop of the list
+ * @param {*} state 
+ * @param {*} result 
+ * @return {*} the new state with the position of cards updated
+ */
 export const onDragEnd = (state, result) => {
   const {destination, source} = result
    // Do nothing if there is no destination
@@ -36,7 +41,6 @@ export const onDragEnd = (state, result) => {
     }
     catch(error){
       const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-      console.log(message)
       return state
     }
   }
@@ -66,7 +70,6 @@ export const onDragEnd = (state, result) => {
   }
   catch (error) {
     const message = error.status === 500 ? "Oops, something went wrong..." : error.data.message
-    console.log(message)
     return state
   }
 }

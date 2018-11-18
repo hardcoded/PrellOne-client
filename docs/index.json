@@ -1,0 +1,5359 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/actions/addBoard.action.js",
+    "content": "\n/**\n *\n * @param {string} idTeam id of the team\n * @return {action} action 'OPEN_MODAL_CREATE_BOARD' and payload with idTeam\n */\nexport const openModalCreateBoard = (idTeam) => ({\n    type: 'OPEN_MODAL_CREATE_BOARD',\n    idTeam\n})\n\n/**\n * \n * @return {action} action 'OPEN_MODAL_CREATE_BOARD' and payload with idTeam\n */\nexport const closeModalCreateBoard = () => ({\n    type: 'CLOSE_MODAL_CREATE_BOARD'\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/addBoard.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "openModalCreateBoard",
+    "memberof": "src/actions/addBoard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addBoard.action.js~openModalCreateBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addBoard.action.js",
+    "importStyle": "{openModalCreateBoard}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idTeam",
+        "description": "id of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'OPEN_MODAL_CREATE_BOARD' and payload with idTeam"
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "closeModalCreateBoard",
+    "memberof": "src/actions/addBoard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addBoard.action.js~closeModalCreateBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addBoard.action.js",
+    "importStyle": "{closeModalCreateBoard}",
+    "description": "",
+    "lineNumber": 16,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'OPEN_MODAL_CREATE_BOARD' and payload with idTeam"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/actions/addList.action.js",
+    "content": "\n/**\n * \n * @return {action} action 'HIDE_ADD_LIST' \n */\nexport const hide = () => ({\n    type: 'HIDE_ADD_LIST'\n})\n\n/**\n *  @return {action} action 'SHOW_ADD_LIST'\n */\nexport const show = () => ({\n    type: 'SHOW_ADD_LIST'\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/addList.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "hide",
+    "memberof": "src/actions/addList.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addList.action.js~hide",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addList.action.js",
+    "importStyle": "{hide}",
+    "description": "",
+    "lineNumber": 6,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'HIDE_ADD_LIST'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "show",
+    "memberof": "src/actions/addList.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addList.action.js~show",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addList.action.js",
+    "importStyle": "{show}",
+    "description": "",
+    "lineNumber": 13,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'SHOW_ADD_LIST'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/actions/addTeam.action.js",
+    "content": "/**\n * @return {action} action 'HIDE_ADD_TEAM'\n */\nexport const hide = () => ({\n    type: 'HIDE_ADD_TEAM'\n})\n\n/**\n * @return {action} action 'SHOW_ADD_TEAM'\n */\nexport const show = () => ({\n    type: 'SHOW_ADD_TEAM'\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/addTeam.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "hide",
+    "memberof": "src/actions/addTeam.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addTeam.action.js~hide",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addTeam.action.js",
+    "importStyle": "{hide}",
+    "description": "",
+    "lineNumber": 4,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'HIDE_ADD_TEAM'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "show",
+    "memberof": "src/actions/addTeam.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/addTeam.action.js~show",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/addTeam.action.js",
+    "importStyle": "{show}",
+    "description": "",
+    "lineNumber": 11,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'SHOW_ADD_TEAM'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/actions/appNav.action.js",
+    "content": "/**\n * @return {action} action 'OPEN_NAVBAR'\n */\nexport const open = () => ({\n    type: 'OPEN_NAVBAR'\n})\n\n/**\n * @return {action} action 'CLOSE_NAVBAR'\n */\nexport const close = () => ({\n    type: 'CLOSE_NAVBAR'\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/appNav.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "open",
+    "memberof": "src/actions/appNav.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/appNav.action.js~open",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/appNav.action.js",
+    "importStyle": "{open}",
+    "description": "",
+    "lineNumber": 4,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'OPEN_NAVBAR'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "close",
+    "memberof": "src/actions/appNav.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/appNav.action.js~close",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/appNav.action.js",
+    "importStyle": "{close}",
+    "description": "",
+    "lineNumber": 11,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'CLOSE_NAVBAR'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/actions/card.action.js",
+    "content": "\n/**\n * \n * @param {Card} card  the new card added\n * @return {action} CARD_ADDED action and the payload  with the new card \n */\nexport const cardAdded = (card) => ({\n    type: 'CARD_ADDED',\n    card\n})\n\n/**\n * \n * @param {Card} card the card updated\n * @return {action} CARD_UPDATED action and the payload  with the card updated\n */\nexport const cardUpdated = (card) => ({\n    type: 'CARD_UPDATED',\n    card \n})\n\n/**\n * \n * @param {Member} member member to add to the card\n * @param {string} id id of the card \n * @return {action} ADD_MEMBER action and the payload  with the id of the card and the member\n */\nexport const addMember = (member, id) => ({\n    type: 'ADD_MEMBER',\n    id,\n    member\n})\n\n/**\n * \n * @param {Member} member member to add to the card\n * @param {string} id id of the card \n * @return {action} REMOVE_MEMBER action and the payload  with the id of the card and the member\n * \n */\nexport const removeMember = (indexMember, id) => ({\n    type: 'REMOVE_MEMBER',\n    id,\n    indexMember\n})\n\n/**\n * \n * @param {Label} label the label to add to the card\n * @param {string} id  id of the card\n * @return {action} ADD_LABEL action and the payload  with the id of the card and the label\n * \n */\nexport const addLabel = (label, id) => ({\n    type: 'ADD_LABEL',\n    id,\n    label\n})\n\n/**\n * \n * @param {number} indexLabel the index label to add to the card\n * @param {string} id  id of the card\n * @return {action} REMOVE_LABEL action and the payload  with the id of the card and the index label\n * \n */\nexport const removeLabel = (indexLabel, id) => ({\n    type: 'REMOVE_LABEL',\n    id,\n    indexLabel\n})\n\n/**\n * \n * @param {string} cardId id of the card\n * @param {string} content the value of the comment\n * @param {User} writer the user who write the comment\n * @return {action} ADD_COMMENT action and the payload  with the id of the card and comment object\n */\nexport const addComment = (cardId, content, writer) => ({\n    type: 'ADD_COMMENT',\n    id: cardId,\n    comment : {\n        id: 'comment' + nextCommentId++,\n        content,\n        writer    \n    }\n})\n\n/**\n * \n * @param {string} cardId id of the card\n * @param {number} index index of the comment \n * @return {action} REMOVE_COMMENT action and the payload  with the id of the card and index of the comment\n */\nexport const removeComment = (cardId, index) => ({\n    type: 'REMOVE_COMMENT',\n    id: cardId,\n    index\n})\n\n/**\n * \n * @param {string} cardId id of the card\n * @param {string} attributeName the name of the attribute\n * @param {*} value the value of the attributeName\n * @return {action} UPDATE_CARD_ATTRIBUTE action and the payload  with the id of the card and attribute name and his value\n */\nexport const updateAttribute = (cardId, attributeName, value) => ({\n    type: 'UPDATE_CARD_ATTRIBUTE',\n    id: cardId,\n    attributeName,\n    value\n})\n\n/**\n * \n * @param {string} id id of the card\n * @return {action} TOGGLE_CARD_MODAL action and the payload with the id\n */\nexport const toggleModal = id => ({\n    type: 'TOGGLE_CARD_MODAL',\n    id\n})\n\n/**\n * \n * @param {string} id id of the card\n * @return {action} TOGGLE_DONE action and the payload with the id\n */\nexpo\nexport const toggleDone = id => ({\n    type: 'TOGGLE_DONE',\n    id\n})\n",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/card.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "cardAdded",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~cardAdded",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{cardAdded}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Card"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "card",
+        "description": "the new card added"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "CARD_ADDED action and the payload  with the new card"
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "cardUpdated",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~cardUpdated",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{cardUpdated}",
+    "description": "",
+    "lineNumber": 17,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Card"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "card",
+        "description": "the card updated"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "CARD_UPDATED action and the payload  with the card updated"
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "addMember",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~addMember",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{addMember}",
+    "description": "",
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Member"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "member",
+        "description": "member to add to the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "ADD_MEMBER action and the payload  with the id of the card and the member"
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "removeMember",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~removeMember",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{removeMember}",
+    "description": "",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Member"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "member",
+        "description": "member to add to the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "REMOVE_MEMBER action and the payload  with the id of the card and the member"
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "addLabel",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~addLabel",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{addLabel}",
+    "description": "",
+    "lineNumber": 54,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Label"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "label",
+        "description": "the label to add to the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "ADD_LABEL action and the payload  with the id of the card and the label"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "removeLabel",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~removeLabel",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{removeLabel}",
+    "description": "",
+    "lineNumber": 67,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "indexLabel",
+        "description": "the index label to add to the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "REMOVE_LABEL action and the payload  with the id of the card and the index label"
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "addComment",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~addComment",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{addComment}",
+    "description": "",
+    "lineNumber": 80,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "id of the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "content",
+        "description": "the value of the comment"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "User"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "writer",
+        "description": "the user who write the comment"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "ADD_COMMENT action and the payload  with the id of the card and comment object"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "removeComment",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~removeComment",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{removeComment}",
+    "description": "",
+    "lineNumber": 96,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "id of the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "index",
+        "description": "index of the comment"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "REMOVE_COMMENT action and the payload  with the id of the card and index of the comment"
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "updateAttribute",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~updateAttribute",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{updateAttribute}",
+    "description": "",
+    "lineNumber": 109,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "id of the card"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "attributeName",
+        "description": "the name of the attribute"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "the value of the attributeName"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "UPDATE_CARD_ATTRIBUTE action and the payload  with the id of the card and attribute name and his value"
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "toggleModal",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~toggleModal",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{toggleModal}",
+    "description": "",
+    "lineNumber": 121,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TOGGLE_CARD_MODAL action and the payload with the id"
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "toggleDone",
+    "memberof": "src/actions/card.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/card.action.js~toggleDone",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/card.action.js",
+    "importStyle": "{toggleDone}",
+    "description": null,
+    "lineNumber": 132,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/actions/fileUploader.action.js",
+    "content": "/**\n * \n * @param {*} {data} the data of the file\n * @return {action} UPLOAD_DOCUMENT_SUCCESS action and the payload with the data\n */\nexport const uploadSuccess = ({ data }) => {\n  return {\n    type: 'UPLOAD_DOCUMENT_SUCCESS',\n    data,\n  };\n}\n\n/**\n * \n * @param {*} error the data of the file\n * @return {action} UPLOAD_DOCUMENT_FAILED action and the payload with the error\n */\nexport const uploadFail = (error) => {\n  return {\n    type: 'UPLOAD_DOCUMENT_FAIL',\n    error,\n  };\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/fileUploader.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "uploadSuccess",
+    "memberof": "src/actions/fileUploader.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/fileUploader.action.js~uploadSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/fileUploader.action.js",
+    "importStyle": "{uploadSuccess}",
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "{data}",
+        "description": "the data of the file"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "UPLOAD_DOCUMENT_SUCCESS action and the payload with the data"
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "uploadFail",
+    "memberof": "src/actions/fileUploader.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/fileUploader.action.js~uploadFail",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/fileUploader.action.js",
+    "importStyle": "{uploadFail}",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "the data of the file"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "UPLOAD_DOCUMENT_FAILED action and the payload with the error"
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/actions/home.action.js",
+    "content": "import store from '../index'\n\n/**\n * \n * @param {User} user user to fetch the data\n * @return {action} USER_FETCHED action and the paylod with the user\n */\nexport const userFetched = (user) => {\n    return ({\n        type: 'USER_FETCHED',\n        payload: user\n    })\n}\n\n/**\n * @param {String} message message error \n * @return {action} ERROR_FETCH_USER action and the paylod with the message\n */\nexport const errorFetchingUser = (message) => {\n    return ({\n        type: 'ERROR_FETCH_USER',\n        payload: message\n    })\n}\n\n/**\n * @param {User} user the connected user\n * @return {action} SET_USER_PROFILE action and the payload with the user\n */\nexport function setConnectedUser(user) {\n    store.dispatch({\n        type: 'SET_USER_PROFILE',\n        payload: user\n    })\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/home.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "userFetched",
+    "memberof": "src/actions/home.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/home.action.js~userFetched",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/home.action.js",
+    "importStyle": "{userFetched}",
+    "description": "",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "User"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": "user to fetch the data"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "USER_FETCHED action and the paylod with the user"
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "errorFetchingUser",
+    "memberof": "src/actions/home.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/home.action.js~errorFetchingUser",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/home.action.js",
+    "importStyle": "{errorFetchingUser}",
+    "description": "",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": "message error"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "ERROR_FETCH_USER action and the paylod with the message"
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "setConnectedUser",
+    "memberof": "src/actions/home.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/home.action.js~setConnectedUser",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/home.action.js",
+    "importStyle": "{setConnectedUser}",
+    "description": "",
+    "lineNumber": 30,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "User"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": "the connected user"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "SET_USER_PROFILE action and the payload with the user"
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "file",
+    "name": "src/actions/label.action.js",
+    "content": "/**\n * \n * @param {string} id id of the label\n * @return {action} TOGGLE_EDIT_TITLE_LABEL and the payload with the id of the label\n */\nexport const toggleEditTitleLabel = (id) => ({\n    type: 'TOGGLE_EDIT_TITLE_LABEL',\n    id,\n})\n\n/**\n * \n * @param {Label} label id of the label\n * @return {action} TITLE_LABEL_UPDATED and the payload with the label\n */\nexport const labelUpdatedTitle = (label) => ({\n    type: 'TITLE_LABEL_UPDATED',\n    label\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/label.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "toggleEditTitleLabel",
+    "memberof": "src/actions/label.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/label.action.js~toggleEditTitleLabel",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/label.action.js",
+    "importStyle": "{toggleEditTitleLabel}",
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the label"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TOGGLE_EDIT_TITLE_LABEL and the payload with the id of the label"
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "labelUpdatedTitle",
+    "memberof": "src/actions/label.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/label.action.js~labelUpdatedTitle",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/label.action.js",
+    "importStyle": "{labelUpdatedTitle}",
+    "description": "",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Label"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "label",
+        "description": "id of the label"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TITLE_LABEL_UPDATED and the payload with the label"
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/actions/list.action.js",
+    "content": "/**\n * \n * @param {List} list list added object\n * @return {action} LIST_ADDED action and the payload with the list\n * \n */\nexport const listAdded = (list) => ({\n    type: 'LIST_ADDED',\n    list\n})\n\n/**\n * \n * @param {string} id  id of the list edited\n * @return {action} TOGGLE_EDIT_TITLE action and the payload with the id of the list edited\n * \n */\nexport const toggleEditTitle = (id) => ({\n    type: 'TOGGLE_EDIT_TITLE',\n    id,\n})\n\n/**\n * \n * @param {List } list list with the new title\n * @return {action} TITLE_LIST_UPDATED action and the payload with the id of the list updated\n */\nexport const listUpdatedTitle = (list) => ({\n    type: 'TITLE_LIST_UPDATED',\n    list\n})\n\n/**\n * \n * @param {string} id  id of the list \n * @return {action} HIDE_ADD_CARD action and the payload with the id of the list edited\n * \n */\nexport const hideAddCard = id => ({\n    type: 'HIDE_ADD_CARD',\n    id\n})\n\n/**\n * \n * @param {string} id  id of the list \n * @return {action} SHOW_ADD_CARD action and the payload with the id of the list edited\n * \n */\nexport const showAddCard = id => ({\n    type: 'SHOW_ADD_CARD',\n    id\n})\n\n/**\n * \n * @param {string} id id of the list   \n * @param {string} title title of the list\n * @param {[Card]} cardsIds array of cards of the list\n * @return {action} GET_LIST action and the payload with the list information\n */\nexport const getList=(id,title,cardsIds)=>({\n    type: \"GET_LIST\",\n    id,\n    title,\n    cardsIds\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/list.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "listAdded",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~listAdded",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{listAdded}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "List"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "list",
+        "description": "list added object"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LIST_ADDED action and the payload with the list"
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "toggleEditTitle",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~toggleEditTitle",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{toggleEditTitle}",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the list edited"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TOGGLE_EDIT_TITLE action and the payload with the id of the list edited"
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "listUpdatedTitle",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~listUpdatedTitle",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{listUpdatedTitle}",
+    "description": "",
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "List "
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "list",
+        "description": "list with the new title"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TITLE_LIST_UPDATED action and the payload with the id of the list updated"
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "function",
+    "name": "hideAddCard",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~hideAddCard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{hideAddCard}",
+    "description": "",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "HIDE_ADD_CARD action and the payload with the id of the list edited"
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "showAddCard",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~showAddCard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{showAddCard}",
+    "description": "",
+    "lineNumber": 50,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "SHOW_ADD_CARD action and the payload with the id of the list edited"
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "getList",
+    "memberof": "src/actions/list.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/list.action.js~getList",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/list.action.js",
+    "importStyle": "{getList}",
+    "description": "",
+    "lineNumber": 62,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the list"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "title",
+        "description": "title of the list"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "[Card]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardsIds",
+        "description": "array of cards of the list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "GET_LIST action and the payload with the list information"
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/actions/login.action.js",
+    "content": "\n/**\n * @param {string} token the token of the user\n * @param {string} username the username of the user\n * @return {action} LOGGED_IN action and the payload composed with the token and the username\n */\nexport const loginSuccess = (token, username) => ({\n    type: 'LOGGED_IN',\n    payload: {\n        token: token,\n        username: username\n    }\n})\n\n/**\n * @param {string} message the login message\n * @return {action} LOGGING_IN action and the payload  with the message\n */\nexport const login = (message) => ({\n    type: 'LOGGING_IN',\n    payload: message\n})\n\n/**\n * @param {*} error the login message\n * @return {action} LOGGIN_IN action and the payload  with the error\n */\n\nexport const loginFailed = (error) => ({\n    type: 'LOGIN_FAILED',\n    payload: error\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/login.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "loginSuccess",
+    "memberof": "src/actions/login.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/login.action.js~loginSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/login.action.js",
+    "importStyle": "{loginSuccess}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "the token of the user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": "the username of the user"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LOGGED_IN action and the payload composed with the token and the username"
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "login",
+    "memberof": "src/actions/login.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/login.action.js~login",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/login.action.js",
+    "importStyle": "{login}",
+    "description": "",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": "the login message"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LOGGING_IN action and the payload  with the message"
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "loginFailed",
+    "memberof": "src/actions/login.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/login.action.js~loginFailed",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/login.action.js",
+    "importStyle": "{loginFailed}",
+    "description": "",
+    "lineNumber": 29,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "the login message"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LOGGIN_IN action and the payload  with the error"
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/actions/loginLdap.action.js",
+    "content": "/**\n * @param {string} token the token of the user\n * @return {action} LDAP_LOGGED_IN action and the payload  with the token \n */\nexport const loginSuccess = (token) => ({\n    type: 'LDAP_LOGGED_IN',\n    payload: token\n})\n\n/**\n * @param {string} message the login message\n * @return {action} LDAP_LOGGING_IN action and the payload  with the message\n */\nexport const login = (message) => ({\n    type: 'LDAP_LOGGING_IN',\n    payload: message\n})\n\n/**\n * @param {*} error the login message\n * @return {action} LDAP_LOGIN_FAILED action and the payload  with the error\n */\nexport const loginFailed = (error) => ({\n    type: 'LDAP_LOGIN_FAILED',\n    payload: error\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/loginLdap.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "loginSuccess",
+    "memberof": "src/actions/loginLdap.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/loginLdap.action.js~loginSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/loginLdap.action.js",
+    "importStyle": "{loginSuccess}",
+    "description": "",
+    "lineNumber": 5,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "the token of the user"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LDAP_LOGGED_IN action and the payload  with the token"
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "function",
+    "name": "login",
+    "memberof": "src/actions/loginLdap.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/loginLdap.action.js~login",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/loginLdap.action.js",
+    "importStyle": "{login}",
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": "the login message"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LDAP_LOGGING_IN action and the payload  with the message"
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "loginFailed",
+    "memberof": "src/actions/loginLdap.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/loginLdap.action.js~loginFailed",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/loginLdap.action.js",
+    "importStyle": "{loginFailed}",
+    "description": "",
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "the login message"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "LDAP_LOGIN_FAILED action and the payload  with the error"
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/actions/modalCard.action.js",
+    "content": "\n/**\n *\n * @param {string} cardId card id\n * @return {action} action 'OPEN_MODAL' and payload with card id\n */\nexport const openModal = (cardId) => ({\n    type: 'OPEN_MODAL',\n    cardId\n})\n\n/**\n * @return {action} action 'CLOSE_MODAL'\n */\nexport const closeModal = () => ({\n    type: 'CLOSE_MODAL'\n})\n\n/**\n * \n * @param {*} field field to edit\n * @return {action} action TOGGLE_EDIT and payload with the field to edit\n */\nexport const toggleEdit = (field) => ({\n    type: 'TOGGLE_EDIT',\n    field\n})\n\n/**\n * \n * @param {*} field field edited\n * @return {action} action CLOSE_EDIT and payload with the field edited\n */\nexport const closeEdit = (field) => ({\n    type: 'CLOSE_EDIT',\n    field\n})\n\n/**\n * \n * @param {*} description the description object\n * @return {action} action OPEN_EDIT_CARD_DESCRIPTION and payload with the description object\n */\nexport const openEditCardDesc = (description) => ({\n    type: 'OPEN_EDIT_CARD_DESCRIPTION',\n    description\n})\n\n/**\n * \n * @param {string} value the value of the description \n * @return {action} action EDIT_CARD_DESCRIPTION and payload with the value of the description \n */\nexport const editCardDesc = (value) => ({\n    type: 'EDIT_CARD_DESCRIPTION',\n    value\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/modalCard.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "openModal",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~openModal",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{openModal}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "card id"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'OPEN_MODAL' and payload with card id"
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "closeModal",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~closeModal",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{closeModal}",
+    "description": "",
+    "lineNumber": 15,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action 'CLOSE_MODAL'"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "toggleEdit",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~toggleEdit",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{toggleEdit}",
+    "description": "",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "field",
+        "description": "field to edit"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action TOGGLE_EDIT and payload with the field to edit"
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "function",
+    "name": "closeEdit",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~closeEdit",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{closeEdit}",
+    "description": "",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "field",
+        "description": "field edited"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action CLOSE_EDIT and payload with the field edited"
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "openEditCardDesc",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~openEditCardDesc",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{openEditCardDesc}",
+    "description": "",
+    "lineNumber": 44,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "the description object"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action OPEN_EDIT_CARD_DESCRIPTION and payload with the description object"
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "function",
+    "name": "editCardDesc",
+    "memberof": "src/actions/modalCard.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/modalCard.action.js~editCardDesc",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/modalCard.action.js",
+    "importStyle": "{editCardDesc}",
+    "description": "",
+    "lineNumber": 54,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "the value of the description"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "action EDIT_CARD_DESCRIPTION and payload with the value of the description"
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "file",
+    "name": "src/actions/register.action.js",
+    "content": "/**\n * \n * @param {string} username  username  of the new user  \n * @param {string} firstname first name of the new user\n * @param {string} lastname   lastname of the new user\n * @param {string} email    email of the new user\n * @param {string} password password of the new user\n * @return {action} SUBMIT_REGISTER action and the payload of the data with the new user\n */\nexport const submitRegister = (username, firstname, lastname, email, password) => ({\n    type: 'SUBMIT_REGISTER',\n    username,\n    firstname,\n    lastname,\n    email,\n    password\n})\n\n/**\n * @return {action} REGISTER_SUCCESS action\n */\nexport const registerSuccess = () => ({\n    type: 'REGISTER_SUCCESS'\n})\n\n/**\n * @param {*} error the error \n * @return {action} REGISTER_ERROR action and the payload with the error\n */\nexport const registerError = (error) => ({\n    type: 'REGISTER_ERROR',\n    payload: error\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/register.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "submitRegister",
+    "memberof": "src/actions/register.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/register.action.js~submitRegister",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/register.action.js",
+    "importStyle": "{submitRegister}",
+    "description": "",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": "username  of the new user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstname",
+        "description": "first name of the new user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastname",
+        "description": "lastname of the new user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "email of the new user"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": "password of the new user"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "SUBMIT_REGISTER action and the payload of the data with the new user"
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "function",
+    "name": "registerSuccess",
+    "memberof": "src/actions/register.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/register.action.js~registerSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/register.action.js",
+    "importStyle": "{registerSuccess}",
+    "description": "",
+    "lineNumber": 22,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "REGISTER_SUCCESS action"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 107,
+    "kind": "function",
+    "name": "registerError",
+    "memberof": "src/actions/register.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/register.action.js~registerError",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/register.action.js",
+    "importStyle": "{registerError}",
+    "description": "",
+    "lineNumber": 30,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "the error"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "REGISTER_ERROR action and the payload with the error"
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/actions/team.action.js",
+    "content": "/**\n * \n * @param {*} teams all the team\n * @return {action} TEAMS_FETCHED action and payload with the teams\n */\n\nexport const teamsFetched = (teams) => ({\n    type: 'TEAMS_FETCHED',\n    teams,\n})\n\n/**\n * \n * @param {*} team the team added\n * @return {action} TEAM_ADDED action and payload with the team\n */\nexport const teamAdded = (team) => ({\n    type: 'TEAM_ADDED',\n    team\n})\n\n/**\n * \n * @param {string} id id of the team\n * @return {action} HIDE_ADD_MEMBER action and payload with id of the team\n */\nexport const hideAddMember = id => ({\n    type: 'HIDE_ADD_MEMBER',\n    id\n})\n\n/**\n * \n * @param {string} id id of the team\n * @return {action} SHOW_ADD_MEMBER action and payload with id of the team\n */\nexport const showAddMember = id => ({\n    type: 'SHOW_ADD_MEMBER',\n    id\n})\n\n/**\n * @param {Member} member the new member of the team\n * @param {string} id id of the team\n * @return {action} MEMBER_ADDED_TEAM action and payload with id of team and the new member\n */\nexport const memberAddedTeam = (id, member) => ({\n    type: 'MEMBER_ADDED_TEAM',\n    id,\n    member\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/team.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "teamsFetched",
+    "memberof": "src/actions/team.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/team.action.js~teamsFetched",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/team.action.js",
+    "importStyle": "{teamsFetched}",
+    "description": "",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "teams",
+        "description": "all the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TEAMS_FETCHED action and payload with the teams"
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "function",
+    "name": "teamAdded",
+    "memberof": "src/actions/team.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/team.action.js~teamAdded",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/team.action.js",
+    "importStyle": "{teamAdded}",
+    "description": "",
+    "lineNumber": 17,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "team",
+        "description": "the team added"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "TEAM_ADDED action and payload with the team"
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "hideAddMember",
+    "memberof": "src/actions/team.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/team.action.js~hideAddMember",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/team.action.js",
+    "importStyle": "{hideAddMember}",
+    "description": "",
+    "lineNumber": 27,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "HIDE_ADD_MEMBER action and payload with id of the team"
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "showAddMember",
+    "memberof": "src/actions/team.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/team.action.js~showAddMember",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/team.action.js",
+    "importStyle": "{showAddMember}",
+    "description": "",
+    "lineNumber": 37,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "SHOW_ADD_MEMBER action and payload with id of the team"
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "memberAddedTeam",
+    "memberof": "src/actions/team.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/team.action.js~memberAddedTeam",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/team.action.js",
+    "importStyle": "{memberAddedTeam}",
+    "description": "",
+    "lineNumber": 47,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Member"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "member",
+        "description": "the new member of the team"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "id of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "MEMBER_ADDED_TEAM action and payload with id of team and the new member"
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/actions/updateInfo.action.js",
+    "content": "/**\n * \n * @param {User} user user to be updated\n * @return {action } UPDATE_INFO_SUCCESS action and the payload with the user\n */\nexport const updateInfoSuccess = (user) => ({\n    type: 'UPDATE_INFO_SUCCESS',\n    user\n})\n\n/**\n * @param {*} error error \n * @return {action } UPDATE_INFO_ERROR action and the payload with the error\n * \n */\nexport const updateInfoError = (error) => ({\n    type: 'UPDATE_INFO_ERROR',\n    payload: error\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/updateInfo.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "updateInfoSuccess",
+    "memberof": "src/actions/updateInfo.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/updateInfo.action.js~updateInfoSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/updateInfo.action.js",
+    "importStyle": "{updateInfoSuccess}",
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "User"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": "user to be updated"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action "
+      ],
+      "spread": false,
+      "description": "UPDATE_INFO_SUCCESS action and the payload with the user"
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "updateInfoError",
+    "memberof": "src/actions/updateInfo.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/updateInfo.action.js~updateInfoError",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/updateInfo.action.js",
+    "importStyle": "{updateInfoError}",
+    "description": "",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "error"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action "
+      ],
+      "spread": false,
+      "description": "UPDATE_INFO_ERROR action and the payload with the error"
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/actions/updatePassword.action.js",
+    "content": "\n/**\n * @return {action} UPDATE_PWD_SUCCESS \n */\nexport const updatePwdSuccess = () => ({\n    type: 'UPDATE_PWD_SUCCESS'\n})\n\n/**\n * @param {*} error error occured\n * @return {action} UPDATE_PWD_SUCCESS \n */\nexport const updatePwdError = (error) => ({\n    type: 'UPDATE_PWD_ERROR',\n    payload: error\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/actions/updatePassword.action.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "updatePwdSuccess",
+    "memberof": "src/actions/updatePassword.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/updatePassword.action.js~updatePwdSuccess",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/updatePassword.action.js",
+    "importStyle": "{updatePwdSuccess}",
+    "description": "",
+    "lineNumber": 5,
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "UPDATE_PWD_SUCCESS"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "updatePwdError",
+    "memberof": "src/actions/updatePassword.action.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/actions/updatePassword.action.js~updatePwdError",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/actions/updatePassword.action.js",
+    "importStyle": "{updatePwdError}",
+    "description": "",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "error",
+        "description": "error occured"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "action"
+      ],
+      "spread": false,
+      "description": "UPDATE_PWD_SUCCESS"
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/config.js",
+    "content": "// define port for app to run on in development mode\n\nconst config = {};\nconfig.api = {};\n\n// API host & port config\n\nconfig.api.devHost = 'http://localhost';\nconfig.api.devPort = 8080;\n\nconfig.api.stagingHost = 'prellone-dev-api.igpolytech.fr';\nconfig.api.stagingPort = 3000;\n\nconfig.api.host = 'prellone-api.igpolytech.fr';\nconfig.api.port = 3000;\n\nconst env = process.env.REACT_ENV\nlet apiUrl = null;\nif (env !== 'production' && env !== 'staging') {\n    apiUrl = `${config.api.devHost}:${config.api.devPort}`;\n}\nelse if (env === 'staging') {\n    apiUrl = `${config.api.stagingHost}:${config.api.stagingPort}`;\n}\nelse if (env === 'production') {\n    apiUrl = `${config.api.host}:${config.api.port}`;\n}\n\nmodule.exports = apiUrl;",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "env",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~env",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "apiUrl",
+    "memberof": "src/config.js",
+    "static": true,
+    "longname": "src/config.js~apiUrl",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "src/containers/Account.container.js",
+    "content": "import { connect } from 'react-redux'\nimport Account from '../components/Account'\n\nconst mapStateToProps = (state, ownProps) => ({\n  user: state.home.user\n})\n\nconst mapDispatchToProps = dispatch => ({})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(Account)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/Account.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/Account.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Account.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Account.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/Account.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Account.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Account.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "file",
+    "name": "src/containers/AddMember.container.js",
+    "content": "import { connect } from 'react-redux'\nimport AddMember from '../components/AddMember'\nimport { hideAddMember,showAddMember, memberAddedTeam } from '../actions/team.action'\nimport { hideAddMemberBoard, showAddMemberBoard, memberAddedBoard } from '../actions/board.action'\nimport { addMemberTeam } from '../services/team.service'\nimport { addMemberBoard } from '../services/board.service'\n\nconst mapStateToProps = (state, ownProps) => {\n  if (ownProps.idTeam){\n    return {\n      teamId: ownProps.idTeam,\n      hidden: state.reducerTeam[ownProps.idTeam].addMember,\n    }\n  }\n  else if (ownProps.idBoard){\n    return {\n      boardId: ownProps.idBoard,\n      hidden: state.reducerBoard[ownProps.idBoard].addMember,\n    }\n  }\n}\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n  addMemberBoard: async (id, username) => {\n    try {\n      const data = await addMemberBoard(id, username)\n      dispatch(memberAddedBoard(id, data))\n      dispatch(hideAddMemberBoard(id))\n    }\n    catch (error) {\n      const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n      console.log(message)\n    }\n  },\n  addMemberTeam: async (id, username) => {\n    try {\n      const data = await addMemberTeam(id, username)\n      dispatch(memberAddedTeam(id, data))\n      dispatch(hideAddMember(id))\n    } \n    catch (error) {\n      const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n      console.log(message)\n    }\n  },\n  hideAddMemberTeam: (id) => {\n    dispatch(hideAddMember(id))\n  },\n  showAddMemberTeam: (id) => {\n    dispatch(showAddMember(id))\n  },\n  hideAddMemberBoard: (id) => {\n    dispatch(hideAddMemberBoard(id))\n  },\n  showAddMemberBoard: (id) => {\n    dispatch(showAddMemberBoard(id))\n  }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(AddMember)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/AddMember.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/AddMember.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddMember.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddMember.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"boardId\": *, \"hidden\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/AddMember.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddMember.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddMember.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "file",
+    "name": "src/containers/AddTeam.container.js",
+    "content": "import { connect } from 'react-redux'\nimport AddTeam from '../components/AddTeam'\nimport { hide, show } from '../actions/addTeam.action'\nimport { teamAdded } from '../actions/team.action'\nimport { postTeam } from '../services/team.service'\n\nconst mapStateToProps = (state) => ({\n  hidden: state.reducerAddTeam.hidden,\n  user: state.home.user\n})\n\nconst mapDispatchToProps = dispatch => ({\n  addTeam: async (name, user) => {\n    try {\n      var data = await postTeam({name, members: [user.id]})\n      data.members = [user]\n      dispatch(teamAdded(data))\n    } \n    catch (error) {\n      console.log(error);\n      const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n      console.log(message)\n    }\n    finally {\n      dispatch(show())\n    }\n  },\n  hide: () => {\n    dispatch(hide())},\n\n  show: () => {\n    dispatch(show())}\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(AddTeam)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/AddTeam.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/AddTeam.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddTeam.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddTeam.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/AddTeam.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddTeam.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddTeam.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/containers/AddTeamBoard.container.js",
+    "content": "import { connect } from 'react-redux'\nimport AddTeamBoard from '../components/AddTeamBoard'\nimport { hideAddTeamBoard, showAddTeamBoard, teamAddedBoard } from '../actions/board.action'\nimport { addTeamBoard } from '../services/board.service'\n\nconst mapStateToProps = (state, ownProps) => {\n    return {\n      boardId: ownProps.idBoard,\n      hidden: state.reducerBoard[ownProps.idBoard].addTeam,\n    }\n}\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n    addTeamBoard: async (id, name) => {\n    try {\n      const data = await addTeamBoard(id, name)\n      dispatch(teamAddedBoard(id, data))\n      dispatch(hideAddTeamBoard(id))\n    } \n    catch (error) {\n      const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n      console.log(message)\n    }\n  },\n  hideAddTeamBoard: (id) => {\n    dispatch(hideAddTeamBoard(id))\n  },\n  showAddTeamBoard: (id) => {\n    dispatch(showAddTeamBoard(id))\n  }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(AddTeamBoard)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/AddTeamBoard.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/AddTeamBoard.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddTeamBoard.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddTeamBoard.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"boardId\": *, \"hidden\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/AddTeamBoard.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AddTeamBoard.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AddTeamBoard.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "file",
+    "name": "src/containers/AppNav.container.js",
+    "content": "import { connect } from 'react-redux'\nimport AppNav from '../components/AppNav'\nimport { open, close } from '../actions/appNav.action'\n\nconst mapStateToProps = (state, ownProps) => {\n  const username = state.home.user ? state.home.user.username : state.login.username\n  return ({\n    isOpen: state.reducerAppNav.isOpen,\n    token: state.login.token,\n    username: username\n  })\n}\n\nconst mapDispatchToProps = dispatch => ({\n    open: () => {\n      dispatch(open())},\n\n    close: () => {\n      dispatch(close())}\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(AppNav)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/AppNav.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 137,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/AppNav.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AppNav.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AppNav.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"isOpen\": *, \"token\": *, \"username\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/AppNav.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/AppNav.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/AppNav.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "file",
+    "name": "src/containers/CardPrello.container.js",
+    "content": "import { connect } from 'react-redux'\nimport CardPrello from '../components/CardPrello'\nimport { openModal } from '../actions/modalCard.action'\n\n\nconst mapStateToProps = (state, ownProps) => {\n  return ({\n    id: state.reducerCardPrello[ownProps.cardId].id,\n    title: state.reducerCardPrello[ownProps.cardId].title,\n    labels: state.reducerCardPrello[ownProps.cardId].labels,\n    index: ownProps.index\n  })\n}\n\nconst mapDispatchToProps = dispatch => ({\n  openModal: (id) => {\n    dispatch(openModal(id))}\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(CardPrello)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/CardPrello.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/CardPrello.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/CardPrello.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/CardPrello.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"id\": *, \"title\": *, \"labels\": *, \"index\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/CardPrello.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/CardPrello.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/CardPrello.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "file",
+    "name": "src/containers/Comment.container.js",
+    "content": "import { connect } from 'react-redux'\nimport Comment from '../components/Comment'\n\n\nconst mapStateToProps = (state, ownProps) => {\n  return ({\n    id: ownProps.commentId,\n    content: ownProps.content,\n    userName: state.reducerMember[ownProps.writer].username,\n    photo: state.reducerMember[ownProps.writer].profilePicture\n  })\n}\n\nconst mapDispatchToProps = dispatch => ({})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(Comment)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/Comment.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 143,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/Comment.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Comment.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Comment.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"id\": *, \"content\": *, \"userName\": *, \"photo\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/Comment.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Comment.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Comment.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/containers/Login.container.js",
+    "content": "import { connect } from 'react-redux'\nimport Login from '../components/Login'\nimport { login, loginSuccess, loginFailed } from '../actions/login.action'\nimport { login as authLogin } from '../services/auth.service';\n\nconst mapStateToProps = (state, ownProps) => ({\n    error: state.login.error,\n    waiting: state.login.waiting\n})\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n    login: async(credential, password) => {\n        dispatch(login(\"Logging you in, please wait...\"))\n        try {\n            const data = await authLogin(credential, password)\n            dispatch(loginSuccess(data.token, data.user.username))\n            return data.user\n        }\n        catch(error) {\n            const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n            dispatch(loginFailed(message))\n            throw error\n        }\n    }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(Login)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/Login.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/Login.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Login.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Login.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/Login.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Login.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Login.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/containers/LoginLdap.container.js",
+    "content": "import { connect } from 'react-redux'\nimport LoginLdap from '../components/LoginLdap'\nimport { login, loginSuccess, loginFailed } from '../actions/login.action'\nimport { login as authLogin } from '../services/auth.service';\n\nconst mapStateToProps = (state, ownProps) => ({\n    error: state.login.error,\n    waiting: state.login.waiting\n})\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n    login: async(credential, password) => {\n        dispatch(login(\"Logging you in, please wait...\"))\n        try {\n            const data = await authLogin(credential, password, true)\n            dispatch(loginSuccess(data.token, data.user.username))\n            return data.user\n        }\n        catch(error) {\n            const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n            dispatch(loginFailed(message))\n            throw error\n        }\n    }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(LoginLdap)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/LoginLdap.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/LoginLdap.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/LoginLdap.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/LoginLdap.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/LoginLdap.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/LoginLdap.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/LoginLdap.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "file",
+    "name": "src/containers/Register.container.js",
+    "content": "import { connect } from 'react-redux'\nimport Register from '../components/Register'\nimport { registerSuccess, registerError } from '../actions/register.action'\nimport { register } from '../services/register.service'\n\nconst mapStateToProps = (state, ownProps) => ({\n    error: state.register.error\n})\n\nconst mapDispatchToProps = dispatch => ({\n    register: async (username, firstname, lastname, email, password) => {\n        try {\n            await register(username, firstname, lastname, email, password)\n            dispatch(registerSuccess())\n        }\n        catch (error) {\n            const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n            dispatch(registerError(message))\n            throw error\n        }\n    }\n})\n\nexport default connect(\n    mapStateToProps,\n    mapDispatchToProps\n)(Register)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/Register.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/Register.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Register.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Register.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/Register.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/Register.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/Register.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "file",
+    "name": "src/containers/UpdateInfo.container.js",
+    "content": "import { connect } from 'react-redux'\nimport UpdateInfo from '../components/UpdateInfo'\nimport { updateInfoSuccess, updateInfoError } from '../actions/updateInfo.action'\nimport { updateInfo } from '../services/user.service';\nimport {updateUserProfileLocalStorage} from '../services/auth.service'\n\nconst mapStateToProps = (state, ownProps) => ({\n    user: state.home.user\n})\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n    updateInfo: async (user, firstname, lastname) => {\n        try {\n            const data = await updateInfo(user, firstname, lastname)\n            dispatch(updateInfoSuccess(data))\n            updateUserProfileLocalStorage(data)\n        }\n        catch (error) {\n            const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n            dispatch(updateInfoError(message))\n            throw error\n        }\n    }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(UpdateInfo)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/UpdateInfo.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 155,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/UpdateInfo.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/UpdateInfo.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/UpdateInfo.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/UpdateInfo.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/UpdateInfo.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/UpdateInfo.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "file",
+    "name": "src/containers/UpdatePassword.container.js",
+    "content": "import { connect } from 'react-redux'\nimport UpdatePassword from '../components/UpdatePassword'\nimport { updatePwdSuccess, updatePwdError } from '../actions/updatePassword.action'\nimport { updatePassword } from '../services/user.service';\n\nconst mapStateToProps = (state, ownProps) => ({\n    user: state.home.user\n})\n\nconst mapDispatchToProps = (dispatch, ownProps) => ({\n    updatePassword: async (user, oldPwd, newPWd) => {\n        try {\n            await updatePassword(user, oldPwd, newPWd)\n            dispatch(updatePwdSuccess())\n        }\n        catch (error) {\n            const message = error.status === 500 ? \"Oops, something went wrong...\" : error.data.message\n            dispatch(updatePwdError(message))\n            throw error\n        }\n    }\n})\n\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(UpdatePassword)",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/containers/UpdatePassword.container.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 158,
+    "kind": "function",
+    "name": "mapStateToProps",
+    "memberof": "src/containers/UpdatePassword.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/UpdatePassword.container.js~mapStateToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/UpdatePassword.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "function",
+    "name": "mapDispatchToProps",
+    "memberof": "src/containers/UpdatePassword.container.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/containers/UpdatePassword.container.js~mapDispatchToProps",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/containers/UpdatePassword.container.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dispatch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ownProps",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "file",
+    "name": "src/reducers/addBoard.reducer.js",
+    "content": "/**\n * Function to handle addBoard action to modify store\n * @param {*} state \n * @param {*} action \n */\nconst addBoard = (state = {}, action) => {\n    switch (action.type) {\n\n    case 'OPEN_MODAL_CREATE_BOARD':\n        return {\n            activeTeam: action.idTeam,\n            modal: true\n        }\n    case 'CLOSE_MODAL_CREATE_BOARD':\n        return {\n            activeTeam: undefined,\n            modal: false\n        }\n    default: return state;\n    }\n}\n\nexport default addBoard",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/reducers/addBoard.reducer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 161,
+    "kind": "function",
+    "name": "addBoard",
+    "memberof": "src/reducers/addBoard.reducer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reducers/addBoard.reducer.js~addBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/reducers/addBoard.reducer.js",
+    "importStyle": "addBoard",
+    "description": "Function to handle addBoard action to modify store",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "state",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "action",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "file",
+    "name": "src/reducers/index.js",
+    "content": "import { combineReducers } from 'redux'\nimport reducerCardPrello from './cardPrello.reducer'\nimport reducerListPrello from './listPrello.reducer'\nimport reducerLabel from './label.reducer'\nimport reducerMember from './member.reducer'\nimport reducerBoard from './board.reducer'\nimport reducerModalCard from './modalCard.reducer'\nimport reducerTextEditor from './textEditor.reducer'\nimport reducerAddList from './addList.reducer'\nimport reducerAppNav from './appNav.reducer'\nimport reducerHome from './home.reducer'\nimport reducerAddBoard from './addBoard.reducer'\nimport reducerTeamsManager from './teamsManager.reducer'\nimport reducerTeam from './team.reducer'\nimport reducerAddTeam from './addTeam.reducer'\nimport reducerLogin from './login.reducer'\nimport reducerRegister from './register.reducer'\nimport reducerUpdatePassword from './updatePassword.reducer'\nimport reducerAccount from './account.reducer'\nimport reducerUpdateInfo from './updateInfo.reducer'\n\n\nexport default combineReducers({\n    reducerCardPrello,\n    reducerBoard,\n    reducerListPrello,\n    reducerLabel,\n    reducerMember,\n    reducerModalCard,\n    reducerTextEditor,\n    reducerAddList,\n    reducerAppNav,\n    home: reducerHome,\n    reducerAddBoard,\n    reducerTeamsManager,\n    reducerTeam,\n    reducerAddTeam,\n    login: reducerLogin,\n    register: reducerRegister,\n    reducerUpdatePassword,\n    reducerAccount,\n    reducerUpdateInfo,\n})",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/reducers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 163,
+    "kind": "file",
+    "name": "src/services/auth.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\nimport { setConnectedUser } from '../actions/home.action'\n\n/**\n * Set the token of the user\n * @param {string} token user token\n * \n */\nexport const storeToken = (token) => {\n    window.localStorage.setItem('prello_access_token', token)\n}\n\n/**\n * @return {string} token of the user\n */\nexport const getToken = () => {\n    return window.localStorage.getItem('prello_access_token')\n}\n\n/**\n * @return {boolean} true if the user is authenticated false if not\n */\nexport const isAuthenticated = () => {\n    if (getToken()) {\n        setTokenHeader()\n        setUserProfile()\n        return true\n    } else {\n        unsetTokenHeader()\n        return false\n    }\n}\n\n/**\n * set the user profile to the local storage\n */\nexport const setUserProfile = async() => {\n    const localUserProfile = getLocalStorageUserProfile()\n    if (localUserProfile) {\n        setConnectedUser(localUserProfile)\n    } \n    else {\n        const profile = await fetchProfile()\n        setConnectedUser(profile)\n        storeUserProfileLocalStorage(profile)\n    }\n}\n\n/**\n * update the user profile to the local storage\n * @param {user} userProfile user connected profile\n */\nexport const updateUserProfileLocalStorage = (userProfile) => {\n    storeUserProfileLocalStorage(userProfile)\n}\n\n/**\n * set the tokenHeader\n */\nexport const setTokenHeader = () => {\n    axios.defaults.headers.common['Authorization'] = `Bearer ${getToken()}`\n}\n\n/**\n * Unset the tokenHeader\n */\nexport const unsetTokenHeader = () => {\n    axios.defaults.headers.common['Authorization'] = null\n}\n\n/**\n * Remove the token\n */\nexport const removeToken = () => {\n    window.localStorage.removeItem('prello_access_token')\n}\n\n/**\n * Service to log out \n */\nexport const logout = () => {\n    removeToken()\n    deleteUserProfileLocalStorage()\n    window.location = '/login'\n}\n\n/**\n * \n * @param {string} credential user information\n * @param {string} password  user password\n * @param {boolean} ldap true if you use ldap credential false if not\n * @return {*} the login data\n */\nexport const login = async (credential, password, ldap = false) => {\n    const url = ldap ? `${API_URL}/api/auth/login/polytech` : `${API_URL}/api/auth/login`\n    try {\n        const login = await axios.post(url, {\n            credential: credential,\n            password: password\n        })\n        storeToken(login.data.token)\n        storeUserProfileLocalStorage(login.data.user)\n        return login.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n\n/**\n * @param {string} firstname new user first name \n * @param {string} lastname new user lastname\n * @param {string} username new user usersname firstname.name if not provided\n * @param {string} email    new user email\n * @param {string} password new user password\n * @return {*} new user data\n * \n */\nexport const register = async (firstname, lastname, username, email, password) => {\n    try {\n        const user = await axios.post(`${API_URL}/api/auth/register`, {\n            email: email,\n            firstname: firstname,\n            lastname: lastname,\n            username: username,\n            password: password\n        })\n        return user.data\n    }\n    catch (error) {\n        throw error\n    }\n}\n\n/**\n * @return {*} profile from the local storage\n */\nconst getLocalStorageUserProfile = () => {\n    if (window.localStorage.getItem('prello_profile') !== undefined &&\n    window.localStorage.getItem('prello_profile') !== null) {\n        return JSON.parse(window.localStorage.getItem('prello_profile'))\n    }\n    else {\n        return null\n    } \n}\n\n/**\n * Store profile in the store\n * @param {*} profile  profile\n */\nconst storeUserProfileLocalStorage = (profile) => {\n    window.localStorage.setItem('prello_profile', JSON.stringify(profile))\n}\n\n/**\n * Remove profile from the store\n */\nconst deleteUserProfileLocalStorage = () => {\n    window.localStorage.removeItem('prello_profile')\n}\n\n/**\n * Fetch  profile\n */\nconst fetchProfile = async() => {\n    return await axios.get(`${API_URL}/users/current`)\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/auth.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 164,
+    "kind": "function",
+    "name": "storeToken",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~storeToken",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{storeToken}",
+    "description": "Set the token of the user",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "token",
+        "description": "user token"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 165,
+    "kind": "function",
+    "name": "getToken",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~getToken",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{getToken}",
+    "description": "",
+    "lineNumber": 17,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "token of the user"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 166,
+    "kind": "function",
+    "name": "isAuthenticated",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~isAuthenticated",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{isAuthenticated}",
+    "description": "",
+    "lineNumber": 24,
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true if the user is authenticated false if not"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 167,
+    "kind": "function",
+    "name": "setUserProfile",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.service.js~setUserProfile",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{setUserProfile}",
+    "description": "set the user profile to the local storage",
+    "lineNumber": 38,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 168,
+    "kind": "function",
+    "name": "updateUserProfileLocalStorage",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~updateUserProfileLocalStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{updateUserProfileLocalStorage}",
+    "description": "update the user profile to the local storage",
+    "lineNumber": 54,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "user"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "userProfile",
+        "description": "user connected profile"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 169,
+    "kind": "function",
+    "name": "setTokenHeader",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~setTokenHeader",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{setTokenHeader}",
+    "description": "set the tokenHeader",
+    "lineNumber": 61,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 170,
+    "kind": "function",
+    "name": "unsetTokenHeader",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~unsetTokenHeader",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{unsetTokenHeader}",
+    "description": "Unset the tokenHeader",
+    "lineNumber": 68,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 171,
+    "kind": "function",
+    "name": "removeToken",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~removeToken",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{removeToken}",
+    "description": "Remove the token",
+    "lineNumber": 75,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 172,
+    "kind": "function",
+    "name": "logout",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~logout",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{logout}",
+    "description": "Service to log out ",
+    "lineNumber": 82,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 173,
+    "kind": "function",
+    "name": "login",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.service.js~login",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{login}",
+    "description": "",
+    "lineNumber": 95,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "credential",
+        "description": "user information"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": "user password"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ldap",
+        "description": "true if you use ldap credential false if not"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the login data"
+    }
+  },
+  {
+    "__docId__": 174,
+    "kind": "function",
+    "name": "register",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.service.js~register",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": "{register}",
+    "description": "",
+    "lineNumber": 120,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstname",
+        "description": "new user first name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastname",
+        "description": "new user lastname"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": "new user usersname firstname.name if not provided"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": "new user email"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": "new user password"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "new user data"
+    }
+  },
+  {
+    "__docId__": 175,
+    "kind": "function",
+    "name": "getLocalStorageUserProfile",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~getLocalStorageUserProfile",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 139,
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "profile from the local storage"
+    },
+    "params": [],
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "function",
+    "name": "storeUserProfileLocalStorage",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~storeUserProfileLocalStorage",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": null,
+    "description": "Store profile in the store",
+    "lineNumber": 153,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "profile",
+        "description": "profile"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "function",
+    "name": "deleteUserProfileLocalStorage",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.service.js~deleteUserProfileLocalStorage",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": null,
+    "description": "Remove profile from the store",
+    "lineNumber": 160,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "function",
+    "name": "fetchProfile",
+    "memberof": "src/services/auth.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.service.js~fetchProfile",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/services/auth.service.js",
+    "importStyle": null,
+    "description": "Fetch  profile",
+    "lineNumber": 167,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "file",
+    "name": "src/services/board.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n/**\n * get a board data\n * @param {string} boardId the id of the board\n * @return {*} all the data from the board with the id board id\n */\nexport const getBoard = async (boardId) => {\n    try {\n        const board = await axios.get(`${API_URL}/api/boards/${boardId}`)\n        return board.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n\n/**\n * create a new board\n * @param {Board} board new board\n * @return {*} new board data\n */\nexport const postBoard = async (board) => {\n    try {\n        const newBoard = await axios.post(`${API_URL}/api/boards/`, board)\n        return newBoard.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n\n/**\n * add a member to a board\n * @param {string} boardId id of the board\n * @param {string} username \n * @return {*} added member data\n */\nexport const addMemberBoard = async (boardId, username) => {\n    try {\n      const addedMember = await axios.put(`${API_URL}/api/boards/addMember`, {boardId, username})\n      return addedMember.data\n    }\n    catch (error) {\n      throw error.response\n    }\n  }\n\n/**\n * add a team to a board\n * @param {string} boardId id of the board\n * @param {string} name name of the team\n * @return {*} the team added data\n */\nexport const addTeamBoard = async (boardId, name) => {\n    try {\n      const addedTeam = await axios.put(`${API_URL}/api/boards/addTeam`, {boardId, name})\n      return addedTeam.data\n    }\n    catch (error) {\n      throw error.response\n    }\n  }",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/board.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 180,
+    "kind": "function",
+    "name": "getBoard",
+    "memberof": "src/services/board.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/board.service.js~getBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/board.service.js",
+    "importStyle": "{getBoard}",
+    "description": "get a board data",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "boardId",
+        "description": "the id of the board"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "all the data from the board with the id board id"
+    }
+  },
+  {
+    "__docId__": 181,
+    "kind": "function",
+    "name": "postBoard",
+    "memberof": "src/services/board.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/board.service.js~postBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/board.service.js",
+    "importStyle": "{postBoard}",
+    "description": "create a new board",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Board"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "board",
+        "description": "new board"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "new board data"
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "function",
+    "name": "addMemberBoard",
+    "memberof": "src/services/board.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/board.service.js~addMemberBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/board.service.js",
+    "importStyle": "{addMemberBoard}",
+    "description": "add a member to a board",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "boardId",
+        "description": "id of the board"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "added member data"
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "function",
+    "name": "addTeamBoard",
+    "memberof": "src/services/board.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/board.service.js~addTeamBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/board.service.js",
+    "importStyle": "{addTeamBoard}",
+    "description": "add a team to a board",
+    "lineNumber": 56,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "boardId",
+        "description": "id of the board"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "name of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the team added data"
+    }
+  },
+  {
+    "__docId__": 184,
+    "kind": "file",
+    "name": "src/services/card.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n/**\n * get the card data \n * @param {string} cardId id of the card \n * @return {*} data of the card\n * \n */\nexport const getCard = async (cardId) => {\n  try {\n    const card = await axios.get(`${API_URL}/api/cards/${cardId}`)\n    return card.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * Create a new card\n * @param {Card} card the new card\n * @return {*} new card data\n */\nexport const postCard = async (card) => {\n  try {\n    const newCard = await axios.post(`${API_URL}/api/cards/`, card)\n    return newCard.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * Update a card\n * @param {Card} card the card updated\n * @return {*} card updated data\n */\nexport const updateCard = async (card) => {\n  try {\n    const newCard = await axios.put(`${API_URL}/api/cards/`, card)\n    return newCard.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n/**\n * \n * @return {*} list of file from google drive\n */\nexport const listGoogleFiles = async () => {\n  try {\n    const filesList = await axios.get(`${API_URL}/api/cards/googleFiles`)\n    return filesList.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * @param {File} file the file to upload\n * @param {cardId} cardId id of the card where the file will be upload\n * @return {Card} card updated\n */\nexport const uploadDocumentRequest = async (file, cardId) => {\n  var data = new FormData();\n  data.append('file', file);\n  data.append('cardId', cardId);\n  try {\n    const uploadResult = await axios.post(`${API_URL}/api/cards/attachFile`, data)\n    return uploadResult.data\n  }\n  catch (error) {\n    throw error\n  }\n}\n\n/**\n * \n * @param {string} fileName name of the fiile to download\n * @return launch client downloaded \n */\nexport const downloadDocument = async (fileName) => {\n  try {\n    const file = await axios.get(`${API_URL}/api/cards/file/${fileName}`)\n    axios({\n      url: `${API_URL}/api/cards/file/${fileName}`,\n      method: 'GET',\n      responseType: 'blob', // important\n    }).then((response) => {\n       const url = window.URL.createObjectURL(new Blob([response.data]));\n       const link = document.createElement('a');\n       link.href = url;\n       link.setAttribute('download', fileName); //or any other extension\n       document.body.appendChild(link);\n       link.click();\n    });\n    return file\n  }\n  catch(error) {\n    throw error\n  }\n}\n\nexport const googleConfig = {\n  clientId: '338898842430-1hb82kvj2u8c7ko1camthf4tl0fc2fg6.apps.googleusercontent.com',\n  developerKey: 'AIzaSyAZL_CRqCzhOL7gou7UAVAvIjCVbZaSgZY' \n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/card.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 185,
+    "kind": "function",
+    "name": "getCard",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~getCard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{getCard}",
+    "description": "get the card data ",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "id of the card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "data of the card"
+    }
+  },
+  {
+    "__docId__": 186,
+    "kind": "function",
+    "name": "postCard",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~postCard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{postCard}",
+    "description": "Create a new card",
+    "lineNumber": 25,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Card"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "card",
+        "description": "the new card"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "new card data"
+    }
+  },
+  {
+    "__docId__": 187,
+    "kind": "function",
+    "name": "updateCard",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~updateCard",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{updateCard}",
+    "description": "Update a card",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Card"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "card",
+        "description": "the card updated"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "card updated data"
+    }
+  },
+  {
+    "__docId__": 188,
+    "kind": "function",
+    "name": "listGoogleFiles",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~listGoogleFiles",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{listGoogleFiles}",
+    "description": "",
+    "lineNumber": 53,
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "list of file from google drive"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 189,
+    "kind": "function",
+    "name": "uploadDocumentRequest",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~uploadDocumentRequest",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{uploadDocumentRequest}",
+    "description": "",
+    "lineNumber": 68,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "File"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "file",
+        "description": "the file to upload"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "cardId"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cardId",
+        "description": "id of the card where the file will be upload"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Card"
+      ],
+      "spread": false,
+      "description": "card updated"
+    }
+  },
+  {
+    "__docId__": 190,
+    "kind": "function",
+    "name": "downloadDocument",
+    "memberof": "src/services/card.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/card.service.js~downloadDocument",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{downloadDocument}",
+    "description": "",
+    "lineNumber": 86,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fileName",
+        "description": "name of the fiile to download"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "launch client downloaded"
+    }
+  },
+  {
+    "__docId__": 191,
+    "kind": "variable",
+    "name": "googleConfig",
+    "memberof": "src/services/card.service.js",
+    "static": true,
+    "longname": "src/services/card.service.js~googleConfig",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/card.service.js",
+    "importStyle": "{googleConfig}",
+    "description": null,
+    "lineNumber": 108,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"clientId\": string, \"developerKey\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 192,
+    "kind": "file",
+    "name": "src/services/home.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n/**\n * @param {string} username username of the user connected\n * @return {*} boards of the user\n */\nexport const getUserBoards = async (username) => {\n    try {\n        const user = await axios.get(`${API_URL}/api/users/${username}/boards`)\n        return user.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n\n/**\n * @param {string} username username of the user connected\n * @return {*} teams of the user\n */\n\nexport const getUserTeams = async (username) => {\n    try {\n        const teams = await axios.get(`${API_URL}/api/users/${username}/teams`)\n        return teams.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/home.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 193,
+    "kind": "function",
+    "name": "getUserBoards",
+    "memberof": "src/services/home.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/home.service.js~getUserBoards",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/home.service.js",
+    "importStyle": "{getUserBoards}",
+    "description": "",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": "username of the user connected"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "boards of the user"
+    }
+  },
+  {
+    "__docId__": 194,
+    "kind": "function",
+    "name": "getUserTeams",
+    "memberof": "src/services/home.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/home.service.js~getUserTeams",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/home.service.js",
+    "importStyle": "{getUserTeams}",
+    "description": "",
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": "username of the user connected"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "teams of the user"
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "file",
+    "name": "src/services/list.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n/**\n * get all the data of a list \n * @param {string} listId id of the list \n * @return {*} list data\n */\nexport const getList = async (listId) => {\n  try {\n    const list = await axios.get(`${API_URL}/api/lists/${listId}`)\n    return list.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * create a new list \n * @param {List} list the new list to post\n * @return {*} new list data \n */\nexport const postList = async (list) => {\n  try {\n    const newList = await axios.post(`${API_URL}/api/lists/`, list)\n    return newList.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * update a list \n * @param {List} list the updated list \n * @return {*} updated list data \n */\nexport const updateList = async (list) => {\n  try {\n    const newList = await axios.put(`${API_URL}/api/lists/`, list)\n    return newList.data\n  }\n  catch (error) {\n    throw error.response\n  }\n \n}\n\n/**\n * update the title of the list \n * @param {List} list the updated list \n * @return {*} updated list data \n */\nexport const updateListTitle = async (list) => {\n  try {\n    const newList = await axios.put(`${API_URL}/api/lists/title`, list)\n    return newList.data\n  }\n  catch (error) {\n    throw error.response\n  }\n \n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/list.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 196,
+    "kind": "function",
+    "name": "getList",
+    "memberof": "src/services/list.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/list.service.js~getList",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/list.service.js",
+    "importStyle": "{getList}",
+    "description": "get all the data of a list ",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listId",
+        "description": "id of the list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "list data"
+    }
+  },
+  {
+    "__docId__": 197,
+    "kind": "function",
+    "name": "postList",
+    "memberof": "src/services/list.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/list.service.js~postList",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/list.service.js",
+    "importStyle": "{postList}",
+    "description": "create a new list ",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "List"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "list",
+        "description": "the new list to post"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "new list data"
+    }
+  },
+  {
+    "__docId__": 198,
+    "kind": "function",
+    "name": "updateList",
+    "memberof": "src/services/list.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/list.service.js~updateList",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/list.service.js",
+    "importStyle": "{updateList}",
+    "description": "update a list ",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "List"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "list",
+        "description": "the updated list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "updated list data"
+    }
+  },
+  {
+    "__docId__": 199,
+    "kind": "function",
+    "name": "updateListTitle",
+    "memberof": "src/services/list.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/list.service.js~updateListTitle",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/list.service.js",
+    "importStyle": "{updateListTitle}",
+    "description": "update the title of the list ",
+    "lineNumber": 55,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "List"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "list",
+        "description": "the updated list"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "updated list data"
+    }
+  },
+  {
+    "__docId__": 200,
+    "kind": "file",
+    "name": "src/services/register.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n\n/**\n * create a new user\n * @param {string} username \n * @param {string} firstname \n * @param {string} lastname \n * @param {string} email \n * @param {string} password \n * @return {*} the new user data\n */\nexport const register = async (username, firstname, lastname, email, password) => {\n    try {\n        const postBody = {\n            username: username,\n            firstname: firstname,\n            lastname: lastname,\n            email: email,\n            password: password\n        }\n        const user = await axios.post(`${API_URL}/api/auth/register`, postBody)\n        return user.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/register.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 201,
+    "kind": "function",
+    "name": "register",
+    "memberof": "src/services/register.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/register.service.js~register",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/register.service.js",
+    "importStyle": "{register}",
+    "description": "create a new user",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstname",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastname",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the new user data"
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "file",
+    "name": "src/services/socket.service.js",
+    "content": "import io from 'socket.io-client'\n\nconst socket=io('http://localhost:8080')\n\nsocket.on(\"error\",(error)=>{\n    console.log(error)\n})\n/**\n * functions for the socket \n */\nexport default {\n    joinBoard(boardId){\n        socket.emit(\"joinBoard\",boardId)\n    },\n    leaveBoard(boardId){\n        socket.emit(\"leaveBoard\",boardId)\n    },\n    init(store){\n        socket.on( \"action\" ,(action)=>{\n            store.dispatch(action)\n        })\n        socket.on(\"connect\",()=>\n            console.log(\"user connected!\")\n        )\n    },\n    emit(type,payload){\n        console.log(type+\" \"+payload)\n        socket.emit(type,payload)\n    }\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/socket.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 203,
+    "kind": "variable",
+    "name": "socket",
+    "memberof": "src/services/socket.service.js",
+    "static": true,
+    "longname": "src/services/socket.service.js~socket",
+    "access": "public",
+    "export": false,
+    "importPath": "prellone-client/src/services/socket.service.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 204,
+    "kind": "file",
+    "name": "src/services/team.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n\n/**\n * Get all informations about one team\n * @param {string} teamId the id of the team\n * @return {*} team data\n */\nexport const getTeam = async (teamId) => {\n  try {\n    const team = await axios.get(`${API_URL}/api/teams/${teamId}`)\n    return team.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * get all the teams\n * @return {*} the data teams \n */\nexport const getTeams=async()=>{\n  try {\n    const teams = await axios.get(`${API_URL}/api/teams`)\n    return teams.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * Create a new team\n * @param {Team} team the new team\n * @return {*} the new team data\n */\nexport const postTeam = async (team) => {\n  try {\n    const newTeam = await axios.post(`${API_URL}/api/teams/`, team)\n    return newTeam.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}\n\n/**\n * Add a member to a team\n * @param {string} teamId \n * @param {string} username \n * @return {*} the member added to the team\n */\nexport const addMemberTeam = async (teamId, username) => {\n  try {\n    const addedMember = await axios.put(`${API_URL}/api/teams/addMember`, {id: teamId, username: username})\n    return addedMember.data\n  }\n  catch (error) {\n    throw error.response\n  }\n}",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/team.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 205,
+    "kind": "function",
+    "name": "getTeam",
+    "memberof": "src/services/team.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/team.service.js~getTeam",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/team.service.js",
+    "importStyle": "{getTeam}",
+    "description": "Get all informations about one team",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "teamId",
+        "description": "the id of the team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "team data"
+    }
+  },
+  {
+    "__docId__": 206,
+    "kind": "function",
+    "name": "getTeams",
+    "memberof": "src/services/team.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/team.service.js~getTeams",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/team.service.js",
+    "importStyle": "{getTeams}",
+    "description": "get all the teams",
+    "lineNumber": 24,
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the data teams"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 207,
+    "kind": "function",
+    "name": "postTeam",
+    "memberof": "src/services/team.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/team.service.js~postTeam",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/team.service.js",
+    "importStyle": "{postTeam}",
+    "description": "Create a new team",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Team"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "team",
+        "description": "the new team"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the new team data"
+    }
+  },
+  {
+    "__docId__": 208,
+    "kind": "function",
+    "name": "addMemberTeam",
+    "memberof": "src/services/team.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/team.service.js~addMemberTeam",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/team.service.js",
+    "importStyle": "{addMemberTeam}",
+    "description": "Add a member to a team",
+    "lineNumber": 55,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "teamId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "username",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the member added to the team"
+    }
+  },
+  {
+    "__docId__": 209,
+    "kind": "file",
+    "name": "src/services/user.service.js",
+    "content": "import axios from 'axios'\nimport API_URL from '../config'\n\n/**\n * Modify the user password\n * @param {User} user \n * @param {string} oldPwd old password  \n * @param {string} newPwd new password\n * @return the user updated\n */\nexport const updatePassword = async (user, oldPwd, newPwd) => {\n    try {\n        const update = await axios.put(`${API_URL}/api/users/${user}/password`, {\n            oldPwd: oldPwd,\n            newPwd: newPwd\n        })\n        return update.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n\n/**\n * Modify user informations\n * @param {*} user \n * @param {*} firstname \n * @param {*} lastname \n * @return user with the data updated\n */\nexport const updateInfo = async (user, firstname, lastname) => {\n    try {\n        const update = await axios.put(`${API_URL}/api/users/${user}`, {\n            firstname: firstname,\n            lastname: lastname\n        })\n        return update.data\n    }\n    catch (error) {\n        throw error.response\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/alexandre/PrellOne-client/src/services/user.service.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 210,
+    "kind": "function",
+    "name": "updatePassword",
+    "memberof": "src/services/user.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/user.service.js~updatePassword",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/user.service.js",
+    "importStyle": "{updatePassword}",
+    "description": "Modify the user password",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "User"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "oldPwd",
+        "description": "old password"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newPwd",
+        "description": "new password"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "the user updated"
+    }
+  },
+  {
+    "__docId__": 211,
+    "kind": "function",
+    "name": "updateInfo",
+    "memberof": "src/services/user.service.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/user.service.js~updateInfo",
+    "access": "public",
+    "export": true,
+    "importPath": "prellone-client/src/services/user.service.js",
+    "importStyle": "{updateInfo}",
+    "description": "Modify user informations",
+    "lineNumber": 31,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "user",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstname",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastname",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "user with the data updated"
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# PrellOne-client",
+    "longname": "/Users/alexandre/PrellOne-client/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"prellone-client\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@fortawesome/fontawesome-svg-core\": \"^1.2.8\",\n    \"@fortawesome/free-solid-svg-icons\": \"^5.5.0\",\n    \"@fortawesome/react-fontawesome\": \"^0.1.3\",\n    \"axios\": \"^0.18.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"i\": \"^0.3.6\",\n    \"npm\": \"^6.4.1\",\n    \"react\": \"^16.5.2\",\n    \"react-datepicker\": \"^1.8.0\",\n    \"react-dom\": \"^16.5.2\",\n    \"react-file-picker\": \"0.0.5\",\n    \"react-google-picker\": \"0.0.9\",\n    \"react-rte\": \"^0.16.1\",\n    \"react-scripts\": \"2.0.4\",\n    \"redux-thunk\": \"^2.3.0\",\n    \"socket.io-client\": \"^2.0.3\"\n  },\n  \"devDependencies\": {\n    \"bootstrap\": \"^4.1.3\",\n    \"bootswatch\": \"^4.1.3\",\n    \"css-loader\": \"^1.0.0\",\n    \"jquery\": \"^3.3.1\",\n    \"moment\": \"^2.22.2\",\n    \"node-sass\": \"^4.9.3\",\n    \"nodemon\": \"^1.18.4\",\n    \"popper.js\": \"^1.14.4\",\n    \"react-beautiful-dnd\": \"^9.0.2\",\n    \"react-redux\": \"^5.0.7\",\n    \"react-router-dom\": \"^4.3.1\",\n    \"reactstrap\": \"^6.4.0\",\n    \"redux\": \"^4.0.1\",\n    \"sass-loader\": \"^7.1.0\",\n    \"style-loader\": \"^0.23.0\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": \"react-app\"\n  },\n  \"browserslist\": [\n    \">0.2%\",\n    \"not dead\",\n    \"not ie <= 11\",\n    \"not op_mini all\"\n  ]\n}\n",
+    "longname": "/Users/alexandre/PrellOne-client/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

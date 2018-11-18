@@ -54,7 +54,6 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
                 </Col>
               ))
             }
-            <AddTeamBoard idBoard={id}></AddTeamBoard> 
           </Row> 
         </Col>
         <Col xs="12" sm="8" md="4" lg="4">

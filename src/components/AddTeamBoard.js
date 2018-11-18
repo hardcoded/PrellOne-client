@@ -7,7 +7,7 @@ const AddTeamBoard = ({ boardId, addTeamBoard, hidden, hideAddTeamBoard, showAdd
   if (!hidden) {
     return (
       <Col xs="3" className="p-3"> 
-        <button type="button" className="btn btn-primary btn-circle" onClick={() => {
+        <button type="button" className="btn btn-primary" onClick={() => {
         showAddTeamBoard(boardId)
         }}>&#43;</button>
       </Col>

@@ -1,3 +1,8 @@
+/**
+ * Function to handle updatePassword action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const updatePassword = (state = { error: null }, action) => {
     switch (action.type) {
         case 'UPDATE_PWD_SUCCESS' :

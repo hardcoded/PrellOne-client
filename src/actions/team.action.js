@@ -1,47 +1,49 @@
-let userId = 8
-let nextBoardId = 3
+/**
+ * 
+ * @param {*} teams all the team
+ * @return {action} TEAMS_FETCHED action and payload with the teams
+ */
 
 export const teamsFetched = (teams) => ({
     type: 'TEAMS_FETCHED',
     teams,
 })
 
+/**
+ * 
+ * @param {*} team the team added
+ * @return {action} TEAM_ADDED action and payload with the team
+ */
 export const teamAdded = (team) => ({
     type: 'TEAM_ADDED',
     team
 })
 
-export const addMemberTeam = (id, username) => ({
-    type: 'ADD_MEMBER_TEAM',
-    id, 
-    member: {
-        id: 'user' + userId++,
-        username:username,
-        photo: 'https://mediasv6.truffaut.com/Articles/jpg/0019000/19324_001_350.jpg'
-    }
-})
-
-export const addBoard = (title,idTeam) => ({
-    type: 'ADD_BOARD',
-    idTeam, 
-    board: {
-        id: 'board' + nextBoardId++,
-        title: title,
-        lists: [],
-        teams:[idTeam]
-    }
-})
-
+/**
+ * 
+ * @param {string} id id of the team
+ * @return {action} HIDE_ADD_MEMBER action and payload with id of the team
+ */
 export const hideAddMember = id => ({
     type: 'HIDE_ADD_MEMBER',
     id
 })
 
+/**
+ * 
+ * @param {string} id id of the team
+ * @return {action} SHOW_ADD_MEMBER action and payload with id of the team
+ */
 export const showAddMember = id => ({
     type: 'SHOW_ADD_MEMBER',
     id
 })
 
+/**
+ * @param {Member} member the new member of the team
+ * @param {string} id id of the team
+ * @return {action} MEMBER_ADDED_TEAM action and payload with id of team and the new member
+ */
 export const memberAddedTeam = (id, member) => ({
     type: 'MEMBER_ADDED_TEAM',
     id,

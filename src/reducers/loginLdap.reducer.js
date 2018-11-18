@@ -1,3 +1,8 @@
+/**
+ * Function to handle loginLdap action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const loginLdap = (state = { token: null , waiting: null, error: null}, action) => {
     switch (action.type) {
         case 'LDAP_LOGGING_IN' :

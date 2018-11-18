@@ -1,3 +1,8 @@
+/**
+ * Function to handle modalCard action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const modalCard = (state = {edit:{}}, action) => {
     switch (action.type) {
 

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "removeMember",
+    "filePath": "src/actions/card.action.js",
+    "lines": [
+      {
+        "lineNumber": 33,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 34,
+        "line": " * "
+      },
+      {
+        "lineNumber": 35,
+        "line": " * @param {Member} member member to add to the card"
+      },
+      {
+        "lineNumber": 36,
+        "line": " * @param {string} id id of the card "
+      },
+      {
+        "lineNumber": 37,
+        "line": " * @return {action} REMOVE_MEMBER action and the payload  with the id of the card and the member"
+      },
+      {
+        "lineNumber": 38,
+        "line": " * "
+      },
+      {
+        "lineNumber": 39,
+        "line": " */"
+      },
+      {
+        "lineNumber": 40,
+        "line": "export const removeMember = (indexMember, id) => ({"
+      }
+    ],
+    "codeParams": [
+      "indexMember",
+      "id"
+    ],
+    "docParams": [
+      "member",
+      "id"
+    ]
+  },
+  {
+    "name": "memberAddedTeam",
+    "filePath": "src/actions/team.action.js",
+    "lines": [
+      {
+        "lineNumber": 41,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 42,
+        "line": " * @param {Member} member the new member of the team"
+      },
+      {
+        "lineNumber": 43,
+        "line": " * @param {string} id id of the team"
+      },
+      {
+        "lineNumber": 44,
+        "line": " * @return {action} MEMBER_ADDED_TEAM action and payload with id of team and the new member"
+      },
+      {
+        "lineNumber": 45,
+        "line": " */"
+      },
+      {
+        "lineNumber": 46,
+        "line": "export const memberAddedTeam = (id, member) => ({"
+      }
+    ],
+    "codeParams": [
+      "id",
+      "member"
+    ],
+    "docParams": [
+      "member",
+      "id"
+    ]
+  }
+]

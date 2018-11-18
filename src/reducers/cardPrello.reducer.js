@@ -1,3 +1,8 @@
+/**
+ * Function to handle card action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const cardPrello = (state = {}, action) => {
     switch (action.type) {
         case 'BOARD_FETCHED':

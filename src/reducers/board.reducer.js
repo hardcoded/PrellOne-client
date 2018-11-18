@@ -1,3 +1,8 @@
+/**
+ * Function to handle board action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const board = (state = {}, action) => {
     switch (action.type) {
         case 'BOARDS_LOADED':
@@ -110,7 +115,6 @@ const board = (state = {}, action) => {
                 return state
             }
         case 'MEMBER_ADDED_BOARD_SUCCESS': 
-            console.log(state[action.payload.id].members)
             if (!state[action.payload.id].members.some(member => member.id === action.payload.member.id)){
                 return {
                     ...state,
@@ -149,7 +153,6 @@ const board = (state = {}, action) => {
             }
 
             case 'TEAM_ADDED_BOARD_SUCCESS':
-            console.log(action.payload.team.id)
             if (!state[action.payload.id].teams.some(team => team.id === action.payload.team.id)){
                 return {
                     ...state,

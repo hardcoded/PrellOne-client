@@ -1,5 +1,9 @@
 import RichTextEditor from 'react-rte';
-
+/**
+ * Function to handle textEditor action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const textEditor = (state = {}, action) => {
     switch (action.type) {
 

@@ -1,3 +1,8 @@
+/**
+ * Function to handle login action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const login = (state = { token: null , waiting: null, error: null}, action) => {
     switch (action.type) {
         case 'LOGGING_IN' :

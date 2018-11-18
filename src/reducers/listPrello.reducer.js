@@ -1,6 +1,10 @@
 import { onDragEnd } from '../services/dnd.service'
 
-
+/**
+ * Function to handle listPrello action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const listPrello = (state = {}, action) => {
     switch (action.type) {
         case 'BOARD_FETCHED':
@@ -79,7 +83,6 @@ const listPrello = (state = {}, action) => {
 
             }
         case 'TITLE_LIST_UPDATED_SUCCESS':
-            console.log("ici")
             return {
                 ...state,
                 [action.list.id]: {

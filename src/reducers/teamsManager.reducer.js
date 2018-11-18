@@ -1,3 +1,8 @@
+/**
+ * Function to handle teamManager action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const TeamsManager = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TEAM':

@@ -1,4 +1,8 @@
-
+/**
+ * Function to handle Member action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const Member = (state = {}, action) => {
     switch (action.type) {
         case 'BOARD_FETCHED':

@@ -1,3 +1,8 @@
+/**
+ * Function to handle Label action to modify store
+ * @param {*} state 
+ * @param {*} action 
+ */
 const Label = (state = {}, action) => {
     switch (action.type) {
         case 'BOARD_FETCHED':
