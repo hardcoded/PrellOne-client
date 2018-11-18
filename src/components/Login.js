@@ -13,7 +13,6 @@ class Login extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.submitForm = this.submitForm.bind(this)
         this.keyDown = this.keyDown.bind(this)
-        this.ldapLogin = this.ldapLogin.bind(this)
     }
 
     handleChange(event) {
