@@ -24,7 +24,7 @@ const AddMember = ({ teamId, boardId, cardId, addMemberTeam, addMemberBoard, hid
           input.value = ''
         }}>
           <InputGroup>
-            <input className="form-control" placeholder="Type a username"  ref={node => input = node} />
+            <input className="form-control" placeholder="Type a username"  ref={node => input = node} autoFocus={true} />
             <Row>
             <InputGroupAddon addonType="append">
               <Button color="success" type="submit" className="pl-3 pr-3">&#43;</Button>

@@ -14,7 +14,8 @@ const Label = ({id, title, color, editable, editTitle, toggleEditTitle, updateLa
     (editTitle && editable) && <Input 
                         onBlur={() => toggleEditTitle()} 
                         onChange={(e) => updateLabel({id, title: e.target.value})} 
-                        value={title}></Input>
+                        value={title}
+                        autoFocus={true}></Input>
   }
 </div>
 )

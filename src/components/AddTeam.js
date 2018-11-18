@@ -12,7 +12,7 @@ const AddTeam = ({addTeam, user, hidden, hide, show})=> {
     {hidden && 
     <Row>
       <Col xs="12">
-        <input className="mb-2 form-control" placeholder="Type the title of the list"  ref={node => input = node} />
+        <input className="mb-2 form-control" placeholder="Type the title of the list"  ref={node => input = node} autoFocus={true} />
       </Col>
       <Col xs="6">
         <Button block color="success" type="submit" onClick = {e => {e.preventDefault()

@@ -15,7 +15,8 @@ const ListPrello = ({list, toggleEditTitle, updateList}) =>(
           list.editTitle && <Input 
                               onBlur={() => toggleEditTitle()} 
                               onChange={(e) => updateList({...list, title: e.target.value})} 
-                              value={list.title}></Input>
+                              value={list.title}
+                              autoFocus={true}></Input>
         }
         
       </CardHeader>
