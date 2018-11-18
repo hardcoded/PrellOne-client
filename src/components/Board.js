@@ -73,6 +73,7 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
             </Col>
           </Row>
         </Col>
+        </Row>
         <Row className="scrolling-wrapper-flexbox">
           <DragDropContext onDragEnd={onDragEnd}>
             {
@@ -86,7 +87,6 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
             <AddList boardId={id}></AddList>
           </Col>
         </Row>
-      </Row>
         <ModalCard/>
     </section>
   </div>
