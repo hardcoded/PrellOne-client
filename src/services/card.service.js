@@ -80,3 +80,8 @@ export const downloadDocument = async (fileName) => {
     throw error
   }
 }
+
+export const googleConfig = {
+  clientId: '338898842430-1hb82kvj2u8c7ko1camthf4tl0fc2fg6.apps.googleusercontent.com',
+  developerKey: 'AIzaSyAZL_CRqCzhOL7gou7UAVAvIjCVbZaSgZY' 
+}

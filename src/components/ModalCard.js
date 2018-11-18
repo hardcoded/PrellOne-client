@@ -144,11 +144,8 @@ const ModalCard = ({
           }
           </Row>
           <Row>
-            <Col xs="6">
+            <Col xs="12">
               <FileUploader updateCard={updateCard} cardId={card.id}></FileUploader>
-            </Col>
-            <Col xs="6">
-              <GoogleClient></GoogleClient>
             </Col>
           </Row>
           <Row className="mt-3">

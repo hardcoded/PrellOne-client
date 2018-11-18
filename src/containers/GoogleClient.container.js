@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
-import GoogleClient from '../components/GoogleClient'
-import {listGoogleFiles} from '../services/card.service'
 import GooglePicker from 'react-google-picker'
 import { Button } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { googleConfig } from '../services/card.service'
 
 class GoogleClientContainer extends Component{
   componentWillMount(){
@@ -13,8 +12,8 @@ class GoogleClientContainer extends Component{
 
   render = () => (
     <GooglePicker 
-        clientId={'338898842430-1hb82kvj2u8c7ko1camthf4tl0fc2fg6.apps.googleusercontent.com'}
-        developerKey={'AIzaSyAZL_CRqCzhOL7gou7UAVAvIjCVbZaSgZY'}
+        clientId={googleConfig.clientId}
+        developerKey={googleConfig.developerKey}
         scope={['https://www.googleapis.com/auth/drive.readonly']}
         onChange={data => console.log('on change:', data)}
         onAuthenticate={token => console.log('oauth token:', token)}
@@ -28,7 +27,6 @@ class GoogleClientContainer extends Component{
           <FontAwesomeIcon icon="cloud" />
         </Button>
     </GooglePicker>
-    //null
   )
 }
 
