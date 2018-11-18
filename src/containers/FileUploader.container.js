@@ -14,7 +14,9 @@ class FileUploaderContainer extends Component {
       onError={this.props.onError}>
 
       <Button block color="primary">
-        <FontAwesomeIcon icon="upload" />
+        <FontAwesomeIcon icon="upload"/>
+
+        Upload a new file
       </Button>
     </FilePicker>
   )
