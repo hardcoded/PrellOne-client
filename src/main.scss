@@ -28,7 +28,7 @@
   }
 
   .SignInUpForms {
-    text-align: left;
+    text-align: center;
     padding: 1em;
     margin: 1em;
     border: 2px solid #d3d3d3;
@@ -73,6 +73,12 @@
   }
 
   .boardTitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .loginTitle {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;

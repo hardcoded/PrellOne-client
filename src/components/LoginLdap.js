@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
-import { Alert, Container, Input, Button, Col, Form, FormGroup, Label } from 'reactstrap'
+import { Alert, Container, Input, Button, Col, Form, FormGroup, Label, Row } from 'reactstrap'
 
 class LoginLdap extends React.Component {
     constructor(props) {
@@ -23,14 +23,14 @@ class LoginLdap extends React.Component {
     }
 
     keyDown(event) {
-       if (event.key === "Enter" && event.keyCode === 13) this.submitForm()
+        if (event.key === "Enter" && event.keyCode === 13) this.submitForm()
     }
 
     async submitForm() {
         try {
             const user = await this.props.login(this.state.credential, this.state.password)
             this.props.history.push(`/${user.username}/boards`)
-        } 
+        }
         catch (error) { }
     }
 
@@ -38,7 +38,7 @@ class LoginLdap extends React.Component {
         const { credential, password } = this.state
         return (
             <Container className="SignInUpForms">
-                <h2>Polytech login</h2>
+                <h2 className="loginTitle">Polytech login</h2>
                 <Form className="form">
                     {this.props.error &&
                         <Alert color="danger">
@@ -82,7 +82,12 @@ class LoginLdap extends React.Component {
                     </Col>
                     <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
                 </Form>
-                <Label>Don't have an account yet? <Link className="nav-link" to="/register">Sign up</Link></Label>
+                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                    <Label>Login with your <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/login"> PrellOne </Link> account</Label>
+                </Row>
+                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                    <Label>Don't have an account yet? <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/register"> Sign up </Link></Label>
+                </Row>
             </Container>
         );
     }

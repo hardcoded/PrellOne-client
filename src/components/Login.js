@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
-import { Alert, Container, Input, Button, Col, Form, FormGroup, Label } from 'reactstrap'
+import { Alert, Container, Input, Button, Col, Form, FormGroup, Label, Row } from 'reactstrap'
 
 class Login extends React.Component {
     constructor(props) {
@@ -35,15 +35,11 @@ class Login extends React.Component {
         catch (error) { }
     }
 
-    async ldapLogin() {
-        this.props.history.push('/login/polytech')
-    }
-
     render() {
         const { credential, password } = this.state
         return (
             <Container className="SignInUpForms">
-                <h2>PrellOne login</h2>
+                <h2 className="loginTitle">PrellOne login</h2>
                 <Form className="form">
                     {this.props.error &&
                         <Alert color="danger">
@@ -87,8 +83,12 @@ class Login extends React.Component {
                     </Col>
                     <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
                 </Form>
-                <Button onClick={this.ldapLogin} className="mt-2" >Connect with Polytech account</Button>
-                <Label>Don't have an account yet? <Link className="nav-link" to="/register">Sign up</Link></Label>
+                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                    <Label>Login with your <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/login/polytech"> Polytech </Link> account</Label>
+                </Row>
+                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                    <Label>Don't have an account yet? <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/register"> Sign up </Link></Label>
+                </Row>
             </Container>
         );
     }
