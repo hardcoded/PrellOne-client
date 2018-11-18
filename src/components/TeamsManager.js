@@ -19,11 +19,12 @@ const TeamsManager = ({teams}) => (
                             <Team teamId={team.id}></Team>
                         </Col>
                 ))
+ 
             }
-            </Row>
-            <div>
+            <Col xs="12" sm="6" md="4" lg="3" className="mb-3 mt-3">
                 <AddTeam></AddTeam>
-            </div> 
+            </Col>
+            </Row>
     </div>
 
 )
