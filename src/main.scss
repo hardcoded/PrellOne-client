@@ -71,3 +71,9 @@
     0%    { transform: rotate(0deg); }
     100%  { transform: rotate(360deg); }
   }
+
+  .boardTitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
