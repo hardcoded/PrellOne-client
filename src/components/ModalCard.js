@@ -1,5 +1,7 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, CustomInput, Button, Row, Col, Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter, 
+         CustomInput, Button, Row, Col, Input, Dropdown, 
+         DropdownToggle, DropdownMenu, DropdownItem, Badge } from 'reactstrap';
 import RichTextEditor from 'react-rte';
 import DatePicker from '../containers/DatePicker.container'
 import Member from '../containers/Member.container'
@@ -91,7 +93,9 @@ const ModalCard = ({
                           value={key}
                           onClick={() => updateCard({...card, labels: [...card.labels, allLabels[key].id]})}
                         >
-                          {allLabels[key].title}
+                          <Badge className="mr-1" color={allLabels[key].color} style={{minWidth:'5px', width: 'inherit'}}>
+                            {allLabels[key].title}
+                          </Badge>
                         </DropdownItem>
                       )
                     }
