@@ -11,6 +11,7 @@ import UpdatePassword from '../containers/UpdatePassword.container'
 import Account from '../containers/Account.container.js'
 import UpdateInfo from '../containers/UpdateInfo.container'
 import LoginLdap from '../containers/LoginLdap.container';
+import Developer from '../containers/Developer.container';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile, faUpload, faCloud } from '@fortawesome/free-solid-svg-icons'
@@ -38,6 +39,7 @@ const App = ({ dispatch }) => (
             <PrivateRoute exact path='/:username/boards' component={Home} />
             <PrivateRoute path='/board/:boardId' component={Board} />
             <PrivateRoute path='/team' component={TeamsManager} />
+            <Route exact path='/developer' component={Developer} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/login/polytech' component={LoginLdap} />

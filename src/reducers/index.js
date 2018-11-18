@@ -18,6 +18,7 @@ import reducerRegister from './register.reducer'
 import reducerUpdatePassword from './updatePassword.reducer'
 import reducerAccount from './account.reducer'
 import reducerUpdateInfo from './updateInfo.reducer'
+import reducerDeveloper from './developer.reducer'
 
 
 export default combineReducers({
@@ -40,4 +41,5 @@ export default combineReducers({
     reducerUpdatePassword,
     reducerAccount,
     reducerUpdateInfo,
+    developer: reducerDeveloper,
 })

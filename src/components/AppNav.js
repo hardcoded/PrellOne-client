@@ -21,6 +21,9 @@ const AppNav = ({ isOpen, token, open, username, close }) => {
                 {!token && !isAuthenticated() &&
                     <Nav className="ml-auto" navbar>
                         <NavItem>
+                            <Link className="nav-link" to="/developer">Developer</Link>
+                        </NavItem>
+                        <NavItem>
                             <Link className="nav-link" to="/register">Sign up</Link>
                         </NavItem>
                         <NavItem>
