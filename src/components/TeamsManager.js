@@ -13,11 +13,9 @@ const TeamsManager = ({teams}) => (
             <Row>
             {
                 teams.map(team => (
-                    <Row key={team.id}>
-                        <Col>
+                        <Col xs="12" sm="6" md="4" lg="3" className="mb-3 mt-3">
                             <Team key={team.id} teamId={team.id}></Team>
                         </Col>
-                  </Row>
                 ))
  
             }
