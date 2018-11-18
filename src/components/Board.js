@@ -12,7 +12,7 @@ import PropTypes from  'prop-types'
 import Label from '../containers/Label.container';
 
 const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
-  <div>
+  <div className="m-3">
     <section>
       <Row>
         <Col>
