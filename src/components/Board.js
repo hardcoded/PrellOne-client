@@ -11,52 +11,29 @@ import ModalCard from '../containers/ModalCard.container'
 import PropTypes from  'prop-types'
 import Label from '../containers/Label.container';
 
-
-const Board = ({ id, title, lists, members, onDragEnd, teams }) => (
-
-    <div>
-        <section>
-            <div className="container-fluid mt-4">
-                <h1 className="boardTitle">{title}</h1>
-                <Row className="scrolling-wrapper-flexbox" style={{ padding: '20px' }}>
-                    <Col>
-                        <Row>
-                            <h5 style={{ marginRight: '20px' }}>Members</h5>
-                            {
-                                members && members.map(member => (
-                                    <div style={{ marginRight: "5px" }}>
-                                        <Member memberId={member.id} size={'35px'}></Member>
-                                    </div>
-                                ))
-                            }
-                            <AddMember idBoard={id}></AddMember>
-                        </Row>
-                    </Col>
-                    <Col>
-                    <Row>
-                        <h5 style={{ marginRight: '20px' }}>Teams</h5>
-                        {
-                            teams && teams.map(team => (
-                                <Col xs="3" className="p-2">
-                                    {team.name}
-                                </Col>
-                            ))
-                        }
-                        <AddTeamBoard idBoard={id}></AddTeamBoard>
-                    </Row>
-                    </Col>
-                </Row>
-            <Row className="scrolling-wrapper-flexbox" style={{ marginTop: '20px' }}>
-                <DragDropContext onDragEnd={onDragEnd}>
-                    {
-                        lists.map((list, index) => (
-                            <Col xs="12" sm="6" md="4" lg="3" key={index}>
-                                <ListPrello id={list.id}></ListPrello>
-                            </Col>
-                        ))}
-                </DragDropContext>
-                <Col xs="12" sm="6" md="4" lg="3">
-                    <AddList boardId={id}></AddList>
+const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
+  <div className="m-3">
+    <section>
+      <Row>
+        <Col>
+          <h1>{title}</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs="12" sm="6" md="4" lg="3">
+          <Row>
+            <Col xs="4" >  
+              <h5>Members:</h5>
+            </Col>
+          </Row>
+          <Row>
+            {
+              members.map((member,ind)=> (
+                <Col xs="2" className="p-2" key={ind}>
+                  <div>
+                  <Member memberId={member.id}></Member> 
+                  </div>
+                  
                 </Col>
             </Row>
             </div>
