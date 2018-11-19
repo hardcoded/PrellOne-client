@@ -80,12 +80,12 @@ class LoginLdap extends React.Component {
                             />
                         </FormGroup>
                     </Col>
-                    <Button onClick={this.submitForm} className="mt-2" >Submit</Button>
+                    <Button onClick={this.submitForm} className="mt-2" color="primary">Submit</Button>
                 </Form>
-                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                <Row style={{ marginLeft: '5px', marginTop: '5px'}}>
                     <Label>Login with your <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/login"> PrellOne </Link> account</Label>
                 </Row>
-                <Row style={{ marginLeft: '5px', marginTop: '5px' }}>
+                <Row style={{ marginLeft: '5px', marginTop: '5px'}}>
                     <Label>Don't have an account yet? <Link style={{ padding: '0px', marginLeft: '5px', marginRight: '5px' }} to="/register"> Sign up </Link></Label>
                 </Row>
             </Container>

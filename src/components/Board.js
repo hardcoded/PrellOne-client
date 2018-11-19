@@ -16,7 +16,7 @@ const Board = ({id, title, lists, members, labels, onDragEnd, teams}) => (
     <section>
       <Row>
         <Col>
-          <h1>{title}</h1>
+          <h1 className="boardTitle">{title}</h1>
         </Col>
       </Row>
       <Row>
