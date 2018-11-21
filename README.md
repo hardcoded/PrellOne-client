@@ -30,3 +30,9 @@ npm start
 ```
 
 The server will watch all the files in the project and restart after each modification saved.
+
+### Documentation
+
+*Temporary*
+
+The documentation has not been merged yet on the master branch but is available on the develop branch
