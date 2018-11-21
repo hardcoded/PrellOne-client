@@ -5,17 +5,17 @@ import { uploadSuccess, uploadFail } from '../actions/fileUploader.action'
 import { FilePicker } from 'react-file-picker'
 import { Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { config } from '@fortawesome/fontawesome-svg-core';
 
 class FileUploaderContainer extends Component {
   render = () => (
     <FilePicker
-      extensions={['md','jpg','jpeg', 'pdf']}
+      extensions={['md','jpg','jpeg', 'png', 'pdf']}
       onChange={this.props.handleFileUpload}
       onError={this.props.onError}>
 
       <Button block color="primary">
         <FontAwesomeIcon icon="upload"/>
-
         Upload a new file
       </Button>
     </FilePicker>
@@ -26,7 +26,6 @@ class FileUploaderContainer extends Component {
 const handleFileUpload = async (dispatch, file, cardId, update) => {
   try {
     const data = await uploadDocumentRequest(file, cardId)
-    console.log("Received Data")
     console.log(data)
     update(data)
   }
@@ -37,11 +36,17 @@ const handleFileUpload = async (dispatch, file, cardId, update) => {
   
 }
 
-const mapStateToProps = (state, ownProps) => {}
+const mapStateToProps = (state, ownProps) => ({
+  cardId: ownProps.cardId,
+  updateCard: ownProps.updateCard
+})
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   handleFileUpload: (data) => handleFileUpload(dispatch, data, ownProps.cardId, ownProps.updateCard),
-  onError : (err) => dispatch(uploadFail(err))
+  onError : (err) => {
+    alert("File format not supported! Please upload a file with one of the following format: .md, .jpg, .jpeg, .png, .pdf")
+    dispatch(uploadFail(err))
+  }
 })
 
 export default connect(
