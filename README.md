@@ -1,4 +1,11 @@
 # PrellOne-client
+
+## Linked repos
+
+[PrellOne-server](https://github.com/JohanBrunet/PrellOne-server)
+
+[PrellOne-oauth](https://github.com/JohanBrunet/PrellOne-oauth)
+
 ## Development
 
 ### Prerequisites
